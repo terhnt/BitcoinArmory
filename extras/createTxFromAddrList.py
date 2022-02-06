@@ -1,6 +1,6 @@
 ################################################################################
 #
-# Copyright (C) 2011-2014, Armory Technologies, Inc.                          
+# Copyright (C) 2011-2014, Armory Technologies, Inc.
 # Distributed under the GNU Affero General Public License (AGPL v3)
 # See LICENSE or http://www.gnu.org/licenses/agpl.html
 #
@@ -15,23 +15,23 @@ from getpass import getpass
 
 def createTxFromAddrList(walletObj, addrList, recipAmtPairList, \
                                           fee=0, changeAddr=None):
-   """ 
+   """
    Create an unsigned transaction.  This method expects a wallet file,
    a list of addresses in that wallet, and then a list of recipients and
-   amounts to send each one.  
+   amounts to send each one.
 
    !!! YOU MUST SPECIFY ALL BITCOIN VALUES IN SATOSHIS !!!
    You can either write it out explicitly -- 150000000
    Or use floats and convert to long      -- long(1.5*ONE_BTC)
 
-   You must also specify an address to which you want change sent.  It will 
-   only be used if necessary (i.e. if you don't specify your recip list to 
+   You must also specify an address to which you want change sent.  It will
+   only be used if necessary (i.e. if you don't specify your recip list to
    exactly match inputs minus fees)
-   
-   If no change address is specified, the next unused address will be 
+
+   If no change address is specified, the next unused address will be
    retrieved from the walletObj
    """
-   
+
    if not TheBDM.getState()==BDM_BLOCKCHAIN_READY:
       # Only executed on the first call if blockchain not loaded yet.
       print '\nLoading blockchain...'
@@ -43,17 +43,17 @@ def createTxFromAddrList(walletObj, addrList, recipAmtPairList, \
       atype, addr160 = addrStr_to_hash160(addr, False)
       if not walletObj.hasAddr(addr160):
          raise WalletAddressError, 'Address is not in wallet! [%s]' % addr
-   
+
 
    print '\nUpdating wallet from blockchain'
    walletObj.setBlockchainSyncFlag(BLOCKCHAIN_READONLY)
    # Out of date code: walletObj.syncWithBlockchainLite()
    print 'Total Wallet Balance:',coin2str(walletObj.getBalance('Spendable'))
-   
+
 
    print '\nCollecting Unspent TXOut List...'
-   # getAddrTxOutList() returns a C++ vector<UnspentTxOut> object, which must 
-   # be converted to a python object using the [:] notation:  it's a weird 
+   # getAddrTxOutList() returns a C++ vector<UnspentTxOut> object, which must
+   # be converted to a python object using the [:] notation:  it's a weird
    # consequence of mixing C++ code with python via SWIG...
    utxoList = []
    for addr in addrList:
@@ -63,11 +63,11 @@ def createTxFromAddrList(walletObj, addrList, recipAmtPairList, \
 
       unspentTxOuts = walletObj.getAddrTxOutList(addr160, 'Spendable')
       utxoList.extend(unspentTxOuts[:])
-   
+
    # Display what we found
    totalUtxo = sumTxOutList(utxoList)
    totalSpend   = sum([pair[1] for pair in recipList])
-   print 'Available:  %d unspent outputs from %d addresses: %s BTC' % \
+   print 'Available:  %d unspent outputs from %d addresses: %s UNO' % \
                   (len(utxoList), len(addrList), coin2str(totalUtxo, ndec=2))
 
    # Print more detailed information
@@ -78,8 +78,8 @@ def createTxFromAddrList(walletObj, addrList, recipAmtPairList, \
    # IF YOU WANT TO CHANGE THE PRIORITIZATION OF HOW COINS ARE SELECTED:
    #        It's not dynamically customizable, yet.  But you can
    #        go into armoryengine.py and look for the WEIGHTS list
-   #        around line 4550.  Change the values to change the 
-   #        optimization.   
+   #        around line 4550.  Change the values to change the
+   #        optimization.
    #############################################################################
 
    # PySelectCoins() assumes that the remaining will be sent to a change addr
@@ -91,7 +91,7 @@ def createTxFromAddrList(walletObj, addrList, recipAmtPairList, \
 
    if minValidFee>fee:
       print '***WARNING:'
-      print 'This transaction requires a fee of at least %s BTC' % coin2str(minValidFee)
+      print 'This transaction requires a fee of at least %s UNO' % coin2str(minValidFee)
       print 'Sending of this transaction *will fail*.  Will you increase the fee?'
       confirm = raw_input('Increase Fee [Y/n]:')
       if 'n' in confirm.lower():
@@ -108,7 +108,7 @@ def createTxFromAddrList(walletObj, addrList, recipAmtPairList, \
    recip160List = [(extractHash160(pair[0]), pair[1]) for pair in recipList]
 
    # Add a change output if necessary
-   totalSelect = sumTxOutList(selectedUtxoList) 
+   totalSelect = sumTxOutList(selectedUtxoList)
    totalChange = totalSelect - (totalSpend + fee)
    if totalChange < 0:
       print '***ERROR: you are trying to spend more than your balance!'
@@ -122,7 +122,7 @@ def createTxFromAddrList(walletObj, addrList, recipAmtPairList, \
    print 'Creating Distribution Proposal (just an unsigned transaction)...'
    print [(hash160_to_addrStr(r),coin2str(v)) for r,v in recip160List]
 
-   
+
    # ACR:  To support P2SH in general, had to change createFromTxOutSelection
    #       to take full scripts, not just hash160 values.  Convert the list
    #       before passing it in
@@ -130,9 +130,9 @@ def createTxFromAddrList(walletObj, addrList, recipAmtPairList, \
    txdp = PyTxDistProposal().createFromTxOutSelection(selectedUtxoList, scrPairs)
 
    return txdp
-   
-   
-   
+
+
+
 ################################################################################
 if __name__ == '__main__':
 
@@ -144,21 +144,21 @@ if __name__ == '__main__':
    # Only use these addresses for this tx
    addrList = ['1dyRSCSJdRiPgGYNTSE31Lodvs3Peiiqx', \
                '131t9NSPV3U1DdyQsEEcEzyyYsWrAcm1ZX']
-   
+
    # Send money to these three outputs (change will be added if/where necessary)
    recipList =[('12V6i8PHhxyYWSEeYsXNr9kzwca1GrW5T8',  long(0.2*ONE_BTC)), \
                ('14CDNme1pFJxLKitdSMqTNETPeLzs1V4RD',  long(0.5*ONE_BTC)), \
                ('16GsZYhzJiv5BHTQaosrwpSpf9Unw3eLuC',  long(1.1*ONE_BTC))   ]
-   
+
    # Works with or without a change address specified
    #sendChangeTo = '151kQbcEdBDehW5gt3fahrHwfBBtEjSSAx'
    sendChangeTo = None
-   
+
    # Remember, must specify amounts in SATOSHIs
    print 'Creating Unsigned Transaction...'
    txdp = createTxFromAddrList(wlt, addrList, recipList, 50000, sendChangeTo)
    txdp.pprint()
-   
+
    print 'Transaction created, now sign it...'
    if wlt.useEncryption and wlt.isLocked:
       passphrase = SecureBinaryData(getpass('Passphrase to unlock wallet: '))
@@ -168,19 +168,18 @@ if __name__ == '__main__':
 
    print 'Signing transaction with wallet...'
    wlt.signTxDistProposal(txdp)
-   
-   print 'Transaction is fully signed?', 
+
+   print 'Transaction is fully signed?',
    print txdp.checkTxHasEnoughSignatures(alsoVerify=True)
-   
+
    print 'Preparing final transaction...'
    pytx = txdp.getPyTxSignedIfPossible()
 
    print '\nRaw transaction (pretty):'
    pprintHex(binary_to_hex(pytx.serialize()))
-   
+
    print '\nRaw transaction (raw hex, copy into http://bitsend.rowit.co.uk):'
    print binary_to_hex(pytx.serialize())
-   
+
    print '\nSigned transaction to be broadcast using Armory "offline transactions"...'
    print txdp.serializeAscii()
-   

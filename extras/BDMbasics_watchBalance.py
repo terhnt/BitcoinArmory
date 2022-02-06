@@ -9,8 +9,8 @@
 This example needs one argument, the path to the wallet to monitor.  It can
 be either a "full" wallet or a watch-only wallet.
 
-The BDM stands for "Block Data Manager." It maintains the history for all 
-registered wallets.  
+The BDM stands for "Block Data Manager." It maintains the history for all
+registered wallets.
 
 In this example, we will list all initialize the BDM and indefinitely wait
 on new blocks, on which occasion we will print out our registered wallet's
@@ -32,7 +32,7 @@ walletPath = CLI_ARGS[0]
 if not os.path.exists(walletPath):
    print 'Wallet file does not exist: "%s"' % walletPath
    exit(1)
-   
+
 # Read it into a PyBtcWallet object
 wlt = PyBtcWallet().readWalletFile(walletPath)
 
@@ -45,8 +45,8 @@ def printWalletBalance(args):
    for balType in ['full', 'spendable', 'unconfirmed']:
       balStr  = coin2str(wlt.getBalance(balType))
       typeStr = balType.upper().rjust(16)
-      print '%s balance for wallet %s: %s BTC' % (typeStr, wlt.uniqueIDB58, balStr)
-   
+      print '%s balance for wallet %s: %s UNO' % (typeStr, wlt.uniqueIDB58, balStr)
+
 
 
 ################################################################################
@@ -55,7 +55,7 @@ TheBDM.RegisterEventForSignal(printWalletBalance, FINISH_LOAD_BLOCKCHAIN_ACTION)
 TheBDM.RegisterEventForSignal(printWalletBalance, NEW_BLOCK_ACTION)
 
 # Register our wallet with the BDM.
-# Pass False during registration because we don't know if the wallet is new. 
+# Pass False during registration because we don't know if the wallet is new.
 # The BDM will make sure the history is up to date before signaling our callback
 wlt.registerWallet(isNew=False)
 
@@ -63,11 +63,11 @@ wlt.registerWallet(isNew=False)
 TheBDM.goOnline()
 
 '''
-The BDM runs on its own thread and will signal our callback when a new event 
+The BDM runs on its own thread and will signal our callback when a new event
 occurs. All actions take place on a signal basis, while the main thread is
-left to perform its own operations. For this reason, our main thread needs it 
-own loop, otherwise it would exit and shutdown our entire process. Here we have 
-nothing to do so we'll use an empty loop that sleeps for a second on every 
+left to perform its own operations. For this reason, our main thread needs it
+own loop, otherwise it would exit and shutdown our entire process. Here we have
+nothing to do so we'll use an empty loop that sleeps for a second on every
 iteration
 '''
 
@@ -76,5 +76,3 @@ try:
       time.sleep(1)
 except KeyboardInterrupt:
    exit(0)
-
-

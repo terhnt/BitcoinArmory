@@ -966,7 +966,7 @@ class DlgPasswd3(ArmoryDialog):
          self.tr('<font color="red"><b>!!! DO NOT FORGET YOUR PASSPHRASE !!!</b></font>'), size=4)
       lblWarnTxt1.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
       lblWarnTxt2 = QRichLabel(self.tr(
-        '<b>No one can help you recover you bitcoins if you forget the '
+        '<b>No one can help you recover you unobtaniums if you forget the '
          'passphrase and don\'t have a paper backup!</b> Your wallet and '
          'any <u>digital</u> backups are useless if you forget it.  '
          '<br><br>'
@@ -1123,16 +1123,16 @@ class DlgWalletDetails(ArmoryDialog):
       self.connect(lbtnExpWOWlt, SIGNAL(CLICKED), self.execExpWOCopy)
       #self.connect(lbtnRecover, SIGNAL(CLICKED), self.recoverPwd)
 
-      lbtnSendBtc.setToolTip(self.tr('Send bitcoins to other users, or transfer between wallets'))
+      lbtnSendBtc.setToolTip(self.tr('Send unobtaniums to other users, or transfer between wallets'))
       if self.wlt.watchingOnly:
          lbtnSendBtc.setToolTip(self.tr('If you have a full-copy of this wallet on another computer, you can prepare a '
                                 'transaction, to be signed by that computer.'))
       lbtnGenAddr.setToolTip(self.tr('Get a new address from this wallet for receiving '
-                             'bitcoins.  Right click on the address list below '
+                             'unobtaniums.  Right click on the address list below '
                              'to copy an existing address.'))
       lbtnImportA.setToolTip(self.tr('Import or "Sweep" an address which is not part '
                              'of your wallet.  Useful for VanityGen addresses '
-                             'and redeeming Casascius physical bitcoins.'))
+                             'and redeeming Casascius physical unobtaniums.'))
       lbtnDeleteA.setToolTip(self.tr('Permanently delete an imported address from '
                              'this wallet.  You cannot delete addresses that '
                              'were generated natively by this wallet.'))
@@ -1300,7 +1300,7 @@ class DlgWalletDetails(ArmoryDialog):
             'password before, only rely on a digital backup if you store '
             'the password with it!'
             '<br><br>'
-            '<a href="https://bitcointalk.org/index.php?topic=152151.0">'
+            '<a href="https://bxtcointalk.org/index.php?topic=152151.0">'
             'Read more about Armory backups</a>'), None, yesStr='Ok', \
             dnaaStartChk=True)
          self.main.setWltSetting(wlt.uniqueIDB58, 'DNAA_RemindBackup', result[1])
@@ -2238,7 +2238,7 @@ class DlgNewAddressDisp(ArmoryDialog):
       wlttype = determineWalletType(self.wlt, self.main)[0]
       notMyWallet = (wlttype == WLTTYPES.WatchOnly)
 
-      lblDescr = QLabel(self.tr('The following address can be used to receive bitcoins:'))
+      lblDescr = QLabel(self.tr('The following address can be used to receive unobtaniums:'))
       self.edtNewAddr = QLineEdit()
       self.edtNewAddr.setReadOnly(True)
       self.edtNewAddr.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
@@ -2262,7 +2262,7 @@ class DlgNewAddressDisp(ArmoryDialog):
       tooltip1 = self.main.createToolTipWidget(self.tr(
             'You can securely use this address as many times as you want. '
             'However, all people to whom you give this address will '
-            'be able to see the number and amount of bitcoins <b>ever</b> '
+            'be able to see the number and amount of unobtaniums <b>ever</b> '
             'sent to it.  Therefore, using a new address for each transaction '
             'improves overall privacy, but there is no security issues '
             'with reusing any address.'))
@@ -2453,7 +2453,7 @@ class DlgImportAddress(ArmoryDialog):
                        'Supported formats are any hexadecimal or Base58 '
                        'representation of a 32-byte private key (with or '
                        'without checksums), and mini-private-key format '
-                       'used on Casascius physical bitcoins.  Private keys '
+                       'used on Casascius physical unobtaniums.  Private keys '
                        'that use <i>compressed</i> public keys are not yet '
                        'supported by Armory.'))
 
@@ -2534,7 +2534,7 @@ class DlgImportAddress(ArmoryDialog):
       sweepTooltip = self.main.createToolTipWidget(self.tr(
          'You should never add an untrusted key to your wallet.  By choosing this '
          'option, you are only moving the funds into your wallet, but not the key '
-         'itself.  You should use this option for Casascius physical bitcoins.'))
+         'itself.  You should use this option for Casascius physical unobtaniums.'))
 
       importTooltip = self.main.createToolTipWidget(self.tr(
          'This option will make the key part of your wallet, meaning that it '
@@ -2724,7 +2724,7 @@ class DlgImportAddress(ArmoryDialog):
                      '<b>Wallet Name</b>: ' + self.main.walletMap[wltID].labelName + '<br>'
                      '<b>Address Type</b>: ' + typ +
                      '<br><br>'
-                     'The sweep operation will simply move bitcoins out of the wallet '
+                     'The sweep operation will simply move unobtaniums out of the wallet '
                      'above into this wallet.  If the network charges a fee for this '
                      'transaction, you balance will be reduced by that much.')
                result = QMessageBox.warning(self, 'Duplicate Address', msg, \
@@ -2851,7 +2851,7 @@ class DlgImportAddress(ArmoryDialog):
             reply = QMessageBox.critical(self, self.tr('Duplicate Addresses!'), self.tr(
                'You are attempting to sweep %1 addresses, but %2 of them '
                'are already part of existing wallets.  That means that some or '
-               'all of the bitcoins you sweep may already be owned by you. '
+               'all of the unobtaniums you sweep may already be owned by you. '
                '<br><br>'
                'Would you like to continue anyway?').arg(len(allWltList), len(dupeWltList)), \
                QMessageBox.Ok | QMessageBox.Cancel)
@@ -2985,7 +2985,7 @@ class DlgVerifySweep(ArmoryDialog):
       # frmLayout.addWidget(QRichLabel('Funds will be <i>swept</i>...'), 0,0, 1,2)
       frmLayout.addWidget(QRichLabel(self.tr('      From %1').arg(inputStr), doWrap=False), 1, 0, 1, 2)
       frmLayout.addWidget(QRichLabel(self.tr('      To %1').arg(outputStr), doWrap=False), 2, 0, 1, 2)
-      frmLayout.addWidget(QRichLabel(self.tr('      Total <b>%1</b> BTC %2').arg(outStr, feeStr), doWrap=False), 3, 0, 1, 2)
+      frmLayout.addWidget(QRichLabel(self.tr('      Total <b>%1</b> UNO %2').arg(outStr, feeStr), doWrap=False), 3, 0, 1, 2)
       frm.setLayout(frmLayout)
 
       lblFinalConfirm = QLabel(self.tr('Are you sure you want to execute this transaction?'))
@@ -3206,9 +3206,9 @@ class DlgAddressInfo(ArmoryDialog):
          if balCoin > 0:
             goodColor = htmlColor('MoneyPos')
             lbls[-1].append(QRichLabel(\
-               '<font color=' + goodColor + '>' + balStr.strip() + '</font> BTC'))
+               '<font color=' + goodColor + '>' + balStr.strip() + '</font> UNO'))
          else:
-            lbls[-1].append(QRichLabel(balStr.strip() + ' BTC'))
+            lbls[-1].append(QRichLabel(balStr.strip() + ' UNO'))
       except:
          lbls[-1].append(QRichLabel("N/A"))
 
@@ -3539,7 +3539,7 @@ class DlgEULA(ArmoryDialog):
          'Additionally, as a condition of receiving this software '
          'for free, you accept all risks associated with using it '
          'and the developers of Armory will not be held liable for any '
-         'loss of money or bitcoins due to software defects. '
+         'loss of money or unobtaniums due to software defects. '
          '<br><br>'
          '<b>Please read the full terms of the license and indicate your '
          'agreement with its terms.</b>'))
@@ -3590,7 +3590,7 @@ class DlgIntroMessage(ArmoryDialog):
          '<b>You are about to use the most secure and feature-rich Unobtanium client '
          'software available!</b>  But please remember, this software '
          'is still <i>Beta</i> - Armory developers will not be held responsible '
-         'for loss of bitcoins resulting from the use of this software!'
+         'for loss of unobtaniums resulting from the use of this software!'
          '<br><br>'))
       lblDescr.setOpenExternalLinks(True)
 
@@ -3938,11 +3938,11 @@ class DlgRemoveWallet(ArmoryDialog):
          lbls.append([])
          lbls[3].append(QLabel(self.tr('Current Balance (w/ unconfirmed):')))
          if bal > 0:
-            lbls[3].append(QLabel('<font color="red"><b>' + coin2str(bal, maxZeros=1).strip() + ' BTC</b></font>'))
+            lbls[3].append(QLabel('<font color="red"><b>' + coin2str(bal, maxZeros=1).strip() + ' UNO</b></font>'))
             lbls[3][-1].setTextFormat(Qt.RichText)
             wltEmpty = False
          else:
-            lbls[3].append(QLabel(coin2str(bal, maxZeros=1) + ' BTC'))
+            lbls[3].append(QLabel(coin2str(bal, maxZeros=1) + ' UNO'))
 
 
       # Add two WARNING images on either side of dialog
@@ -4216,11 +4216,11 @@ class DlgRemoveAddress(ArmoryDialog):
          lbls.append([])
          lbls[-1].append(QLabel(self.tr('Address Balance (w/ unconfirmed):')))
          if bal > 0:
-            lbls[-1].append(QLabel('<font color="red"><b>' + coin2str(bal, maxZeros=1) + ' BTC</b></font>'))
+            lbls[-1].append(QLabel('<font color="red"><b>' + coin2str(bal, maxZeros=1) + ' UNO</b></font>'))
             lbls[-1][-1].setTextFormat(Qt.RichText)
             addrEmpty = False
          else:
-            lbls[3].append(QLabel(coin2str(bal, maxZeros=1) + ' BTC'))
+            lbls[3].append(QLabel(coin2str(bal, maxZeros=1) + ' UNO'))
 
 
       # Add two WARNING images on either side of dialog
@@ -4273,7 +4273,7 @@ class DlgRemoveAddress(ArmoryDialog):
            'Simply deleting an address does not prevent anyone '
            'from sending money to it.  If you have given this address '
            'to anyone in the past, make sure that they know not to '
-           'use it again, since any bitcoins sent to it will be '
+           'use it again, since any unobtaniums sent to it will be '
            'inaccessible.\n\n '
            'If you are maintaining an external copy of this address '
            'please ignore this warning\n\n'
@@ -4468,7 +4468,7 @@ class DlgConfirmSend(ArmoryDialog):
 
 
       lblMsg = QRichLabel(self.tr(
-         'This transaction will spend <b>%1 BTC</b> from '
+         'This transaction will spend <b>%1 UNO</b> from '
          '<font color="%2">Wallet "<b>%3</b>" (%4)</font> to the following '
          'recipients:').arg(totalSendStr, htmlColor('TextBlue'), wlt.labelName, wlt.uniqueIDB58))
 
@@ -4478,7 +4478,7 @@ class DlgConfirmSend(ArmoryDialog):
             'outputs are going to the same wallet from which they came '
             'and do not affect the wallet\'s final balance. '
             'The total balance of the wallet will actually only decrease '
-            '<b>%1 BTC</b> as a result of this transaction.  %2</font>').arg(sendFromWalletStr, showAllMsg))
+            '<b>%1 UNO</b> as a result of this transaction.  %2</font>').arg(sendFromWalletStr, showAllMsg))
       elif len(showAllMsg)>0:
          lblAfterBox.setText(showAllMsg)
 
@@ -5509,7 +5509,7 @@ class DlgDispTxInfo(ArmoryDialog):
                'to determine which is which, and so this fields shows the sum '
                'of <b>all</b> outputs.')))
          lbls[-1].append(QLabel(self.tr('Sum of Outputs:')))
-         lbls[-1].append(QLabel(coin2str(txAmt, maxZeros=1).strip() + '  BTC'))
+         lbls[-1].append(QLabel(coin2str(txAmt, maxZeros=1).strip() + '  UNO'))
       else:
          lbls.append([])
          lbls[-1].append(self.main.createToolTipWidget(
@@ -5522,7 +5522,7 @@ class DlgDispTxInfo(ArmoryDialog):
                self.tr('The value shown here is the net effect on your '
                'wallet, including transaction fee.')))
          lbls[-1].append(QLabel('Transaction Amount:'))
-         lbls[-1].append(QRichLabel(coin2str(txAmt, maxZeros=1).strip() + '  BTC'))
+         lbls[-1].append(QRichLabel(coin2str(txAmt, maxZeros=1).strip() + '  UNO'))
          if txAmt < 0:
             lbls[-1][-1].setText('<font color="red">' + lbls[-1][-1].text() + '</font> ')
          elif txAmt > 0:
@@ -5546,7 +5546,7 @@ class DlgDispTxInfo(ArmoryDialog):
             'computing power for processing transactions and maintaining security.')))
          lbls[-1].append(QLabel('Tx Fee Paid:'))
 
-         fee_str = coin2str(fee, maxZeros=0).strip() + '  BTC'
+         fee_str = coin2str(fee, maxZeros=0).strip() + '  UNO'
          if not self.data[FIELDS.TxWeight] == None:
             fee_byte = float(fee) / float(self.data[FIELDS.TxWeight])
             fee_str += ' (%d sat/B)' % fee_byte
@@ -5591,7 +5591,7 @@ class DlgDispTxInfo(ArmoryDialog):
 
             rlbls[-1].append(QLabel(scrAddr_to_addrStr(sv[0])))
             if numRV > 1:
-               rlbls[-1].append(QLabel(coin2str(sv[1], maxZeros=1) + '  BTC'))
+               rlbls[-1].append(QLabel(coin2str(sv[1], maxZeros=1) + '  UNO'))
             else:
                rlbls[-1].append(QLabel(''))
             ffixBold = GETFONT('Fixed', 10)
@@ -6577,7 +6577,7 @@ class DlgPrintBackup(ArmoryDialog):
             '<b><u>Print Wallet Backup Fragments</u></b><br><br> '
             'When any %1 of these fragments are combined, all <u>previous '
             '<b>and</b> future</u> addresses generated by this wallet will be '
-            'restored, giving you complete access to your bitcoins.  The '
+            'restored, giving you complete access to your unobtaniums.  The '
             'data can be copied by hand if a working printer is not '
             'available.  Please make sure that all data lines contain '
             '<b>9 columns</b> '
@@ -6852,7 +6852,7 @@ class DlgPrintBackup(ArmoryDialog):
          container = 'this wallet' if printType == 'SingleSheetFirstPage' else 'these addresses'
          warnMsg = self.tr(
             '<font color="#aa0000"><b>WARNING:</b></font> Anyone who has access to this '
-            'page has access to all the bitcoins in %1!  Please keep this '
+            'page has access to all the unobtaniums in %1!  Please keep this '
             'page in a safe place.').arg(container)
 
       self.scene.newLine()
@@ -7681,7 +7681,7 @@ class DlgAddressBook(ArmoryDialog):
       if self.isBrowsingOnly or selectExistingOnly:
          lblDescr = QRichLabel(self.tr('Browse all receiving addresses in '
                                'this wallet, and all addresses to which this '
-                               'wallet has sent bitcoins.'))
+                               'wallet has sent unobtaniums.'))
 
       lblToWlt = QRichLabel(self.tr('<b>Send to Wallet:</b>'))
       lblToAddr = QRichLabel(self.tr('<b>Send to Address:</b>'))
@@ -8773,7 +8773,7 @@ class DlgSettings(ArmoryDialog):
       self.radioFlatFee = QRadioButton(self.tr("Flat fee"))
       self.connect(self.radioFlatFee, SIGNAL('clicked()'), getCallbck('FlatFee'))
       self.leFlatFee = QLineEdit(coin2str(txFee, maxZeros=0))
-      toolTipFlatFee = self.main.createToolTipWidget(self.tr('Values in BTC'))
+      toolTipFlatFee = self.main.createToolTipWidget(self.tr('Values in UNO'))
 
       self.checkAdjust = QCheckBox(self.tr("Auto-adjust fee/byte for better privacy"))
       self.checkAdjust.setChecked(adjustFee)
@@ -8908,11 +8908,11 @@ class DlgSettings(ArmoryDialog):
    def accept(self, *args):
 
       if self.chkManageSatoshi.isChecked():
-         # Check valid path is supplied for bitcoin installation
+         # Check valid path is supplied for unobtanium installation
          pathExe = unicode(self.edtSatoshiExePath.text()).strip()
          if len(pathExe) > 0:
             if not os.path.exists(pathExe):
-               exeName = 'bitcoin-qt.exe' if OS_WINDOWS else 'bitcoin-qt'
+               exeName = 'unobtanium-qt.exe' if OS_WINDOWS else 'unobtanium-qt'
                QMessageBox.warning(self, self.tr('Invalid Path'),self.tr(
                   'The path you specified for the Unobtanium software installation '
                   'does not exist.  Please select the directory that contains %1 '
@@ -9014,7 +9014,7 @@ class DlgSettings(ArmoryDialog):
       if modeIdx == USERMODE.Standard:
          strDescr += \
             self.tr('"Standard" is for users that only need the core set of features '
-             'to send and receive bitcoins.  This includes maintaining multiple '
+             'to send and receive unobtaniums.  This includes maintaining multiple '
              'wallets, wallet encryption, and the ability to make backups '
              'of your wallets.')
       elif modeIdx == USERMODE.Advanced:
@@ -9499,9 +9499,9 @@ class DlgRequestPayment(ArmoryDialog):
          'usually begin with "Click here..." to reaffirm to the user it is '
          'is clickable.'))
       ttipAmount = self.main.createToolTipWidget(\
-         self.tr('All amounts are specifed in BTC'))
+         self.tr('All amounts are specifed in UNO'))
       ttipAddress = self.main.createToolTipWidget(\
-         self.tr('The person clicking the link will be sending bitcoins to this address'))
+         self.tr('The person clicking the link will be sending unobtaniums to this address'))
       ttipMessage = self.main.createToolTipWidget(\
          self.tr('This will be pre-filled as the label/comment field '
          'after the user clicks the link. They '
@@ -9684,7 +9684,7 @@ class DlgRequestPayment(ArmoryDialog):
       self.dispText += '<br>'
       self.dispText += self.tr('<b>Pay to</b>:\t%1<br>').arg(addr)
       if amt:
-         self.dispText += self.tr('<b>Amount</b>:\t%1 BTC<br>').arg(coin2str(amt, maxZeros=0).strip())
+         self.dispText += self.tr('<b>Amount</b>:\t%1 UNO<br>').arg(coin2str(amt, maxZeros=0).strip())
       if msgStr:
          self.dispText += self.tr('<b>Message</b>:\t%1<br>').arg(msgStr)
       self.lblLink.setText(self.dispText)
@@ -9699,7 +9699,7 @@ class DlgRequestPayment(ArmoryDialog):
       self.plainText += self.tr('If clicking on the line above does not work, use this payment info:\n')
       self.plainText += self.tr('Pay to:  %1').arg(addr)
       if amt:
-         self.plainText += self.tr('\nAmount:  %1 BTC').arg(coin2str(amt, maxZeros=0).strip())
+         self.plainText += self.tr('\nAmount:  %1 UNO').arg(coin2str(amt, maxZeros=0).strip())
       if msgStr:
          self.plainText += self.tr('\nMessage: %1').arg(msgStr)
       self.plainText += '\n'
@@ -9792,9 +9792,9 @@ class DlgUriCopyAndPaste(ArmoryDialog):
       super(DlgUriCopyAndPaste, self).__init__(parent, main)
 
       self.uriDict = {}
-      lblDescr = QRichLabel(self.tr('Copy and paste a raw bitcoin URL string here.  '
+      lblDescr = QRichLabel(self.tr('Copy and paste a raw unobtanium URL string here.  '
                             'A valid string starts with "unobtanium:" followed '
-                            'by a bitcoin address.'
+                            'by a unobtanium address.'
                             '<br><br>'
                             'You should use this feature if there is a "unobtanium:" '
                             'link in a webpage or email that does not load Armory '
@@ -10000,7 +10000,7 @@ class DlgSimpleBackup(ArmoryDialog):
 
       lblDescr = QRichLabel(self.tr(
          'A failed hard-drive or forgotten passphrase will lead to '
-         '<u>permanent loss of bitcoins</u>!  Luckily, Armory wallets only '
+         '<u>permanent loss of unobtaniums</u>!  Luckily, Armory wallets only '
          'need to be backed up <u>one time</u>, and protect you in both '
          'of these events.   If you\'ve ever forgotten a password or had '
          'a hardware failure, make a backup!'))

@@ -7,12 +7,12 @@ from armoryengine.ALL import *
 
 TIAB_DIR = '.\\tiab'
 TEST_TIAB_DIR = '.\\test\\tiab'
-NEED_TIAB_MSG = "This Test must be run with J:/Development_Stuff/bitcoin-testnet-boxV2.7z (Armory jungle disk). Copy to the test directory."
+NEED_TIAB_MSG = "This Test must be run with J:/Development_Stuff/unobtanium-testnet-boxV2.7z (Armory jungle disk). Copy to the test directory."
 
 class Test:
    def __init__(self):
       self.success=False
-      
+
    def txReturned(self, tx):
       # a round trip was completed
       # print "got something back"
@@ -21,7 +21,7 @@ class Test:
       self.factory2.stopTrying()
       reactor.stop()
       self.success=True
-      
+
    def timeout(self):
       self.factory1.stopTrying()
       self.factory2.stopTrying()
@@ -46,7 +46,7 @@ class Test:
          pytx = PyTx()
          pytx.unserialize(tx)
          protoObj.sendMessage(PayloadTx(pytx))
-         
+
       self.factory1 = ArmoryClientFactory(None, sendTx)
       reactor.callWhenRunning( \
          reactor.connectTCP, '127.0.0.1', \
@@ -60,15 +60,13 @@ class Test:
 
       reactor.callLater(15, self.timeout)
       reactor.run()
-      
+
       return self.success
-   
+
 
 # Disabling this test because it's not actually testing Armory.
 @SkipTest
 class TiabSendTxTest(TiabTest):
-  
+
    def test_sendtx(self):
       self.assertTrue(Test().run(self.tiab))
-
-   

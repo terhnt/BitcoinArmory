@@ -17,7 +17,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-// LedgerEntry  
+// LedgerEntry
 //
 // LedgerEntry class is used for bother ScrAddresses and BtcWallets.  Members
 // have slightly different meanings (or irrelevant) depending which one it's
@@ -26,7 +26,7 @@
 //  Address -- Each entry corresponds to ONE TxIn OR ONE TxOut
 //
 //    scrAddr_    -  useless - just repeating this address
-//    value_     -  net debit/credit on addr balance, in Satoshis (1e-8 BTC)
+//    value_     -  net debit/credit on addr balance, in Satoshis (1e-8 UNO)
 //    blockNum_  -  block height of the tx in which this txin/out was included
 //    txHash_    -  hash of the tx in which this txin/txout was included
 //    index_     -  index of the txin/txout in this tx
@@ -42,9 +42,9 @@
 //  BtcWallet -- Each entry corresponds to ONE WHOLE TRANSACTION
 //
 //    scrAddr_    -  useless - originally had a purpose, but lost it
-//    value_     -  total debit/credit on WALLET balance, in Satoshis (1e-8 BTC)
+//    value_     -  total debit/credit on WALLET balance, in Satoshis (1e-8 UNO)
 //    blockNum_  -  block height of the block in which this tx was included
-//    txHash_    -  hash of this tx 
+//    txHash_    -  hash of this tx
 //    index_     -  index of the tx in the block
 //    isValid_   -  default to true -- invalidated due to reorg/double-spend
 //    isCoinbase -  is the input side a coinbase/generation input
@@ -74,9 +74,9 @@ public:
       usesWitness_(false) {}
 
    LedgerEntry(BinaryData const & ID,
-               int64_t val, 
-               uint32_t blkNum, 
-               BinaryData const & txhash, 
+               int64_t val,
+               uint32_t blkNum,
+               BinaryData const & txhash,
                uint32_t idx,
                uint32_t txtime,
                bool isCoinbase,
@@ -117,7 +117,7 @@ public:
    void setScrAddr(BinaryData const & bd);
    void setWalletID(BinaryData const & bd);
    void changeBlkNum(uint32_t newHgt) {blockNum_ = newHgt; }
-      
+
    bool operator<(LedgerEntry const & le2) const;
    bool operator>(LedgerEntry const & le2) const;
    bool operator==(LedgerEntry const & le2) const;
@@ -137,10 +137,10 @@ public:
                                 const LMDBBlockDatabase* db,
                                 const Blockchain* bc,
                                 bool purge);
-   
+
    set<BinaryData> getScrAddrList(void) const
    { return scrAddrSet_; }
-   
+
 public:
 
    static LedgerEntry EmptyLedger_;
@@ -149,7 +149,7 @@ public:
    static BinaryData EmptyID_;
 
 private:
-   
+
    //holds either a scrAddr or a walletId
    BinaryData       ID_;
 
@@ -167,7 +167,7 @@ private:
 
    //for matching scrAddr comments to LedgerEntries on the Python side
    set<BinaryData> scrAddrSet_;
-}; 
+};
 
 struct LedgerEntry_DescendingOrder
 {

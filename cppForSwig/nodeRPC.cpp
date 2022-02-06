@@ -150,7 +150,7 @@ string NodeRPC::getAuthString()
    auto&& datadir = getDatadir();
 
    auto confPath = datadir;
-   BlockDataManagerConfig::appendPath(confPath, "bitcoin.conf");
+   BlockDataManagerConfig::appendPath(confPath, "unobtanium.conf");
 
    auto getAuthStringFromCookieFile = [&datadir](void)->string
    {
@@ -176,7 +176,7 @@ string NodeRPC::getAuthString()
    {
       auto&& lines = BlockDataManagerConfig::getLines(confPath);
       auto&& keyVals = BlockDataManagerConfig::getKeyValsFromLines(lines, '=');
-      
+
       //get rpcuser
       auto userIter = keyVals.find("rpcuser");
       if (userIter == keyVals.end())
@@ -328,7 +328,7 @@ bool NodeRPC::updateChainStatus(void)
    auto hash_obj = getblockchaininfo_object->getValForKey("bestblockhash");
    if (hash_obj == nullptr)
       return false;
-   
+
    auto params_obj = make_shared<JSON_array>();
    params_obj->add_value(hash_obj);
 
@@ -401,7 +401,7 @@ void NodeRPC::waitOnChainSync(function<void(void)> callbck)
          auto& chainStatus = getChainStatus();
          if (chainStatus.state() == ChainStatus_Ready)
             break;
-      
+
          blkSpeed = chainStatus.getBlockSpeed();
       }
       catch (...)
@@ -467,7 +467,7 @@ string NodeRPC::broadcastTx(const BinaryData& rawTx) const
 const NodeChainState& NodeRPC::getChainStatus(void) const
 {
    ReentrantLock lock(this);
-   
+
    return nodeChainState_;
 }
 

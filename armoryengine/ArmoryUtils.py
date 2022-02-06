@@ -8,7 +8,7 @@
 #
 # Project:    Armory
 # Author:     Alan Reiner
-# Website:    www.bitcoinarmory.com
+# Website:    www.bxtcoinarmory.com
 # Orig Date:  20 November, 2011
 #
 ################################################################################
@@ -90,9 +90,9 @@ ARMORYDB_DEFAULT_PORT = "9001"
 parser = optparse.OptionParser(usage="%prog [options]\n")
 parser.add_option("--settings",        dest="settingsPath",default=DEFAULT, type="str",          help="load Armory with a specific settings file")
 parser.add_option("--datadir",         dest="datadir",     default=DEFAULT, type="str",          help="Change the directory that Armory calls home")
-parser.add_option("--satoshi-datadir", dest="satoshiHome", default=DEFAULT, type='str',          help="The Bitcoin Core/unobtaniumd home directory")
-parser.add_option("--satoshi-port",    dest="satoshiPort", default=DEFAULT, type="str",          help="For Bitcoin Core instances operating on a non-standard port")
-parser.add_option("--satoshi-rpcport", dest="satoshiRpcport",default=DEFAULT,type="str",         help="RPC port Bitcoin Core instances operating on a non-standard port")
+parser.add_option("--satoshi-datadir", dest="satoshiHome", default=DEFAULT, type='str',          help="The Unobtanium Core/unobtaniumd home directory")
+parser.add_option("--satoshi-port",    dest="satoshiPort", default=DEFAULT, type="str",          help="For Unobtanium Core instances operating on a non-standard port")
+parser.add_option("--satoshi-rpcport", dest="satoshiRpcport",default=DEFAULT,type="str",         help="RPC port Unobtanium Core instances operating on a non-standard port")
 #parser.add_option("--unobtaniumd-path",   dest="unobtaniumdPath",default='DEFAULT', type="str",         help="Path to the location of unobtaniumd on your system")
 parser.add_option("--dbdir",           dest="armoryDBDir",  default=DEFAULT, type='str',          help="Location to store blocks database (defaults to --datadir)")
 parser.add_option("--rpcport",         dest="rpcport",     default=DEFAULT, type="str",          help="RPC port for running armoryd.py")
@@ -110,7 +110,7 @@ parser.add_option("--mtdebug",         dest="mtdebug",     default=False,     ac
 parser.add_option("--skip-online-check",dest="forceOnline", default=False,   action="store_true", help="Go into online mode, even if internet connection isn't detected")
 parser.add_option("--tor",             dest="useTorSettings", default=False, action="store_true", help="Enable common settings for when Armory connects through Tor")
 parser.add_option("--keypool",         dest="keypool",     default=100, type="int",                help="Default number of addresses to lookahead in Armory wallets")
-parser.add_option("--redownload",      dest="redownload",  default=False,     action="store_true", help="Delete Bitcoin Core/unobtaniumd databases; redownload")
+parser.add_option("--redownload",      dest="redownload",  default=False,     action="store_true", help="Delete Unobtanium Core/unobtaniumd databases; redownload")
 parser.add_option("--rebuild",         dest="rebuild",     default=False,     action="store_true", help="Rebuild blockchain database and rescan")
 parser.add_option("--rescan",          dest="rescan",      default=False,     action="store_true", help="Rescan existing blockchain DB")
 parser.add_option("--rescanBalance",   dest="rescanBalance", default=False,     action="store_true", help="Rescan balance")
@@ -120,7 +120,7 @@ parser.add_option("--multisigfile",  dest="multisigFile",  default=DEFAULT, type
 parser.add_option("--force-wallet-check", dest="forceWalletCheck", default=False, action="store_true", help="Force the wallet sanity check on startup")
 parser.add_option("--disable-wallet-check", dest="disableWalletCheck", default=False, action="store_true", help="Disable the wallet sanity check on startup")
 parser.add_option("--disable-modules", dest="disableModules", default=False, action="store_true", help="Disable looking for modules in the execution directory")
-parser.add_option("--disable-conf-permis", dest="disableConfPermis", default=False, action="store_true", help="Disable forcing permissions on bitcoin.conf")
+parser.add_option("--disable-conf-permis", dest="disableConfPermis", default=False, action="store_true", help="Disable forcing permissions on unobtanium.conf")
 parser.add_option("--disable-detsign", dest="enableDetSign", action="store_false", help="Disable Transaction Deterministic Signing (RFC 6979)")
 parser.add_option("--enable-detsign", dest="enableDetSign", action="store_true", help="Enable Transaction Deterministic Signing (RFC 6979) - Enabled by default")
 parser.add_option("--armorydb-ip", dest="armorydb_ip", default=ARMORYDB_DEFAULT_IP, type="str", help="Set remote DB IP (default: 127.0.0.1)")
@@ -675,7 +675,7 @@ if sys.argv[0]=='ArmoryQt.py':
    print 'Detected Operating system:', OS_NAME
    print '   OS Variant            :', OS_VARIANT
    print '   User home-directory   :', USER_HOME_DIR
-   print '   Satoshi BTC directory :', BTC_HOME_DIR
+   print '   Satoshi UNO directory :', BTC_HOME_DIR
    print '   Armory home dir       :', ARMORY_HOME_DIR
    print '   ArmoryDB directory     :', ARMORY_DB_DIR
    print '   Armory settings file  :', SETTINGS_PATH
@@ -1010,10 +1010,10 @@ fileDelSettings = os.path.join(ARMORY_HOME_DIR, 'delsettings.flag')
 fileClrMempool  = os.path.join(ARMORY_HOME_DIR, 'clearmempool.flag')
 fileRescanBalance  = os.path.join(ARMORY_HOME_DIR, 'rescanbalance.flag')
 
-# Flag to remove everything in Bitcoin dir except wallet.dat (if requested)
+# Flag to remove everything in Unobtanium dir except wallet.dat (if requested)
 if os.path.exists(fileRedownload):
    # Flag to remove *BITCOIN-Core* databases so it will have to re-download
-   LOGINFO('Found %s, will delete Bitcoin DBs & redownload' % fileRedownload)
+   LOGINFO('Found %s, will delete Unobtanium DBs & redownload' % fileRedownload)
 
    os.remove(fileRedownload)
 
@@ -1076,7 +1076,7 @@ def deleteBitcoindDBs():
       LOGERROR('Could not find Unobtanium Core/unobtaniumd home dir to remove blk data')
       LOGERROR('  Does not exist: %s' % BTC_HOME_DIR)
    else:
-      LOGINFO('Found bitcoin home dir, removing blocks and databases')
+      LOGINFO('Found unobtanium home dir, removing blocks and databases')
 
       # Remove directories
       for btcDir in ['blocks', 'chainstate', 'database']:
@@ -1291,7 +1291,7 @@ LOGINFO('   PyBtcWallet  Version  : ' + getVersionString(PYBTCWALLET_VERSION))
 LOGINFO('Detected Operating system: ' + OS_NAME)
 LOGINFO('   OS Variant            : ' + (OS_VARIANT[0] if OS_MACOSX else '-'.join(OS_VARIANT)))
 LOGINFO('   User home-directory   : ' + USER_HOME_DIR)
-LOGINFO('   Satoshi BTC directory : ' + BTC_HOME_DIR)
+LOGINFO('   Satoshi UNO directory : ' + BTC_HOME_DIR)
 LOGINFO('   Armory home dir       : ' + ARMORY_HOME_DIR)
 LOGINFO('Detected System Specs    : ')
 LOGINFO('   Total Available RAM   : %0.2f GB', SystemSpecs.Memory)
@@ -1301,7 +1301,7 @@ LOGINFO('   System is 64-bit      : ' + str(SystemSpecs.IsX64))
 LOGINFO('   Preferred Encoding    : ' + prefEnc)
 LOGINFO('   Machine Arch          : ' + SystemSpecs.Machine)
 LOGINFO('   Available HDD (ARM)   : %d GB' % SystemSpecs.HddAvailA)
-LOGINFO('   Available HDD (BTC)   : %d GB' % SystemSpecs.HddAvailB)
+LOGINFO('   Available HDD (UNO)   : %d GB' % SystemSpecs.HddAvailB)
 LOGINFO('')
 LOGINFO('Network Name: ' + NETWORKS[ADDRBYTE])
 LOGINFO('Satoshi Port: %d', BITCOIN_PORT)
@@ -1342,7 +1342,7 @@ def GetExecDir():
 
 def coin2str(nSatoshi, ndec=8, rJust=True, maxZeros=8):
    """
-   Converts a raw value (1e-8 BTC) into a formatted string for display
+   Converts a raw value (1e-8 UNO) into a formatted string for display
 
    ndec, guarantees that we get get a least N decimal places in our result
 
@@ -1883,7 +1883,7 @@ def RightNowStr(fmt=DEFAULT_DATE_FORMAT):
 # Define all the hashing functions we're going to need.  We don't actually
 # use any of the first three directly (sha1, sha256, ripemd160), we only
 # use hash256 and hash160 which use the first three to create the ONLY hash
-# operations we ever do in the bitcoin network
+# operations we ever do in the unobtanium network
 # UPDATE:  mini-private-key format requires vanilla sha256...
 def sha1(bits):
    return hashlib.new('sha1', bits).digest()
@@ -2079,7 +2079,7 @@ EmptyHash = hex_to_binary('00'*32)
 # BINARY/BASE58 CONVERSIONS
 def binary_to_base58(binstr):
    """
-   This method applies the Bitcoin-specific conversion from binary to Base58
+   This method applies the Unobtanium-specific conversion from binary to Base58
    which may includes some extra "zero" bytes, such as is the case with the
    main-network addresses.
 
@@ -2109,7 +2109,7 @@ def binary_to_base58(binstr):
 ################################################################################
 def base58_to_binary(addr):
    """
-   This method applies the Bitcoin-specific conversion from Base58 to binary
+   This method applies the Unobtanium-specific conversion from Base58 to binary
    which may includes some extra "zero" bytes, such as is the case with the
    main-network addresses.
 
@@ -2170,7 +2170,7 @@ def privKey_to_base58(binKey):
 ################################################################################
 def hash160_to_addrStr(binStr, netbyte=ADDRBYTE):
    """
-   Converts the 20-byte pubKeyHash to 25-byte binary Bitcoin address
+   Converts the 20-byte pubKeyHash to 25-byte binary Unobtanium address
    which includes the network byte (prefix) and 4-byte checksum (suffix)
    """
 
@@ -2461,7 +2461,7 @@ def verifyChecksum(binaryStr, chksum, hashFunc=hash256, fixIfNecessary=True, \
    return ''
 
 
-# Taken directly from rpc.cpp in reference bitcoin client, 0.3.24
+# Taken directly from rpc.cpp in reference unobtanium client, 0.3.24
 def binaryBits_to_difficulty(b):
    """ Converts the 4-byte binary difficulty string to a float """
    i = binary_to_int(b)
@@ -2481,7 +2481,7 @@ def difficulty_to_binaryBits(i):
    pass
 
 
-# The following params are for the Bitcoin elliptic curves (secp256k1)
+# The following params are for the Unobtanium elliptic curves (secp256k1)
 SECP256K1_MOD   = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2FL
 SECP256K1_ORDER = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141L
 SECP256K1_B     = 0x0000000000000000000000000000000000000000000000000000000000000007L
@@ -2936,7 +2936,7 @@ URI_VERSION_STR = '1.0'
 
 ################################################################################
 # Take in a "unobtanium:" URI string and parse the data out into a dictionary. If
-# the URI isn't a Bitcoin URI, return an empty dictionary.
+# the URI isn't a Unobtanium URI, return an empty dictionary.
 def parseBitcoinURI(uriStr):
    """ Takes a URI string, returns normalized dicitonary with pieces """
    data = {}
@@ -2953,7 +2953,7 @@ def parseBitcoinURI(uriStr):
          query[k] = v[0]
 
    # Now start walking through the parts and get the info out of it.
-   if uri.scheme == 'bitcoin':
+   if uri.scheme == 'unobtanium':
       data['address'] = uri.path
 
       # Apply filters to known keys. Do NOT filter based on the "req-"

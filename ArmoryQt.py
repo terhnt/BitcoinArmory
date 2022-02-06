@@ -3699,8 +3699,8 @@ class ArmoryMainWindow(QMainWindow):
       LOGDEBUG('executeModeSwitch')
 
       if TheSDM.getSDMState() == 'UnobtaniumdExeMissing':
-         bitcoindStat = self.lookForBitcoind()
-         if bitcoindStat=='Running':
+         unobtaniumdStat = self.lookForBitcoind()
+         if unobtaniumdStat=='Running':
             result = QMessageBox.warning(self, self.tr('Already running!'), self.tr(
                'The Unobtanium software appears to be installed now, but it '
                'needs to be closed for Armory to work.  Would you like Armory '
@@ -3708,7 +3708,7 @@ class ArmoryMainWindow(QMainWindow):
             if result==QMessageBox.Yes:
                self.closeExistingBitcoin()
                self.startBitcoindIfNecessary()
-         elif bitcoindStat=='StillMissing':
+         elif unobtaniumdStat=='StillMissing':
             QMessageBox.warning(self, self.tr('Still Missing'), self.tr(
                'The Unobtanium software still appears to be missing.  If you '
                'just installed it, then please adjust your settings to point '
@@ -4178,10 +4178,10 @@ class ArmoryMainWindow(QMainWindow):
       if state == 'NewUserInfo':
          return self.tr(
          'For more information about Armory, and even Unobtanium itself, you should '
-         'visit the <a href="https://bitcointalk.org/index.php?board=97.0">Armory Forum</a> '
+         'visit the <a href="https://bxtcointalk.org/index.php?board=97.0">Armory Forum</a> '
 	     'and <a href="http://unobtanium.uno">Unobtanium.uno</a>.  If '
          'you are experiencing problems using this software, please visit the '
-         '<a href="https://bitcointalk.org/index.php?board=97.0">Armory Forum</a>. Users '
+         '<a href="https://bxtcointalk.org/index.php?board=97.0">Armory Forum</a>. Users '
 	     'there will help you with any issues that you have. '
          '<br><br>'
          '<b><u>IMPORTANT:</u></b> Make a backup of your wallet(s)!  Paper '
@@ -4284,7 +4284,7 @@ class ArmoryMainWindow(QMainWindow):
             'it is complete.  If Unobtanium Core is already running and you believe '
             'the lack of connection is an error (especially if using proxies), '
             'please see <a href="'
-            'https://bitcointalk.org/index.php?topic=155717.msg1719077#msg1719077">'
+            'https://bxtcointalk.org/index.php?topic=155717.msg1719077#msg1719077">'
             'this link</a> for options.'
             '<br><br>'
             '<b>If you prefer to have Armory do this for you</b>, '

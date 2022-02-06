@@ -28,7 +28,7 @@ products = {
     "key": {
         "name": "key",
         "nicename": "USB Key",
-        "description": "Secure your bitcoins with this handsome USB Key.",
+        "description": "Secure your unobtaniums with this handsome USB Key.",
         "img": "key.jpg",
         "price": 0.042,
      },
@@ -83,7 +83,7 @@ def refund():
         # check to see if this refund request already exists
         refund_file = os.path.join(REFUNDS_DIRECTORY,orderid)
         if os.path.isfile(refund_file):
-            error = "order id %s is already in the process of a refund please contact orders@bitcoinarmory.com if you have any questions" % orderid
+            error = "order id %s is already in the process of a refund please contact orders@bxtcoinarmory.com if you have any questions" % orderid
         else:
             # check that the order exists
             order_file = os.path.join(ORDERS_DIRECTORY,orderid)
@@ -152,13 +152,13 @@ def pay():
         return redirect(url_for('ship'))
 
     session["lboxid"] = None
-    if not session.get("bitcoinaddress"):
+    if not session.get("unobtaniumaddress"):
         if lockbox_args:
             lockbox = armoryd_request("createlockbox", lockbox_args)
-            session["bitcoinaddress"] = lockbox["p2shaddr"]
+            session["unobtaniumaddress"] = lockbox["p2shaddr"]
             session["lboxid"] = lockbox["id"]
         else:
-            session["bitcoinaddress"] = armoryd_request("getnewaddress",[])
+            session["unobtaniumaddress"] = armoryd_request("getnewaddress",[])
 
     total = 0
     for product, quantity in session["cart"].items():
@@ -166,13 +166,13 @@ def pay():
             s = products[product]["price"] * quantity
             total += s
     # record the order
-    f = open(os.path.join(ORDERS_DIRECTORY,session["bitcoinaddress"]), "w")
-    data = dict(cart=session["cart"],ship=session["ship"],bitcoinaddress=session["bitcoinaddress"],total=total,lboxid=session["lboxid"])
+    f = open(os.path.join(ORDERS_DIRECTORY,session["unobtaniumaddress"]), "w")
+    data = dict(cart=session["cart"],ship=session["ship"],unobtaniumaddress=session["unobtaniumaddress"],total=total,lboxid=session["lboxid"])
     f.write(json.dumps(data, indent=4, sort_keys=True))
     f.close()
     return render_template(
         "pay.html", ship=session["ship"], total=total,
-        bitcoinaddress=session["bitcoinaddress"])
+        unobtaniumaddress=session["unobtaniumaddress"])
 
 @app.route("/check/<path:address>")
 def check(address):
@@ -222,7 +222,7 @@ def email():
 
 @app.route("/reset")
 def reset():
-    session["bitcoinaddress"] = None
+    session["unobtaniumaddress"] = None
     session["cart"] = None
     return "success"
 
@@ -236,7 +236,7 @@ def ws_disconnect():
 
 @socketio.on('listen', namespace='/ws')
 def ws_listen(message):
-    address = message['bitcoinaddress']
+    address = message['unobtaniumaddress']
     amount = message['amount']
     # wait until we receive something
     received = 0

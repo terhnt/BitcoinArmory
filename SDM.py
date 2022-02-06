@@ -15,7 +15,7 @@ from threading import Event
 from CppBlockUtils import SecureBinaryData, CryptoECDSA, NodeStatusStruct, \
    RpcStatus_Disabled, RpcStatus_Online, RpcStatus_Error_28, \
    NodeStatus_Online, NodeStatus_Offline, ChainStatus_Unknown, ChainStatus_Syncing
-   
+
 from armoryengine.ArmoryUtils import BITCOIN_PORT, LOGERROR, hex_to_binary, \
    ARMORY_INFO_SIGN_PUBLICKEY, LOGINFO, BTC_HOME_DIR, LOGDEBUG, OS_MACOSX, \
    OS_WINDOWS, OS_LINUX, SystemSpecs, subprocess_check_output, LOGEXCEPT, \
@@ -95,7 +95,7 @@ def parseLinkList(theData):
 ################################################################################
 class SatoshiDaemonManager(object):
    """
-   Use an existing implementation of bitcoind
+   Use an existing implementation of unobtaniumd
    """
 
    class BitcoindError(Exception): pass
@@ -111,7 +111,7 @@ class SatoshiDaemonManager(object):
    def __init__(self):
       self.executable = None
       self.satoshiHome = None
-      self.bitcoind = None
+      self.unobtaniumd = None
 
       self.disabled = False
       self.failedFindExe  = False
@@ -137,15 +137,15 @@ class SatoshiDaemonManager(object):
       if OS_MACOSX:
          # OSX separates binaries/start scripts from the Python code. Back up!
          execDir = os.path.join(execDir, '../../bin/')
-      self.dbExecutable = os.path.join(execDir, 'ArmoryDB')  
-         
+      self.dbExecutable = os.path.join(execDir, 'ArmoryDB')
+
       if OS_WINDOWS:
          self.dbExecutable += ".exe"
          if not os.path.exists(self.dbExecutable):
             self.dbExecutable = "./ArmoryDB.exe"
-      
+
       if OS_LINUX:
-         #if there is no local armorydb in the execution folder, 
+         #if there is no local armorydb in the execution folder,
          #look for an installed one
          if not os.path.exists(self.dbExecutable):
             self.dbExecutable = "ArmoryDB"
@@ -165,10 +165,10 @@ class SatoshiDaemonManager(object):
       if pathToBitcoindExe==None:
          pathToBitcoindExe = self.findBitcoind(extraExeSearch)
          if len(pathToBitcoindExe)==0:
-            LOGDEBUG('Failed to find bitcoind')
+            LOGDEBUG('Failed to find unobtaniumd')
             self.failedFindExe = True
          else:
-            LOGINFO('Found bitcoind in the following places:')
+            LOGINFO('Found unobtaniumd in the following places:')
             for p in pathToBitcoindExe:
                LOGINFO('   %s', p)
             pathToBitcoindExe = pathToBitcoindExe[0]
@@ -187,10 +187,10 @@ class SatoshiDaemonManager(object):
          if self.satoshiHome is None:
             self.satoshiHome = BTC_HOME_DIR
 
-      if self.failedFindExe:  raise self.BitcoindError, 'bitcoind not found'
+      if self.failedFindExe:  raise self.BitcoindError, 'unobtaniumd not found'
 
       self.disabled = False
-      self.bitcoind = None  # this will be a Popen object
+      self.unobtaniumd = None  # this will be a Popen object
 
    #############################################################################
    def checkDBIsLocal(self):
@@ -205,7 +205,7 @@ class SatoshiDaemonManager(object):
       s = self.getSDMState()
 
       if newBool==True:
-         if s in ('BitcoindInitializing', 'BitcoindSynchronizing', 'BitcoindReady'):
+         if s in ('UnobtaniumdInitializing', 'UnobtaniumdSynchronizing', 'UnobtaniumdReady'):
             self.stopBitcoind()
 
       self.disabled = newBool
@@ -223,9 +223,9 @@ class SatoshiDaemonManager(object):
       searchPaths = list(extraSearchPaths)  # create a copy
 
       if OS_WINDOWS:
-         # Making sure the search path argument comes with /daemon and /Bitcoin on Windows
+         # Making sure the search path argument comes with /daemon and /Unobtanium on Windows
 
-         searchPaths.extend([os.path.join(sp, 'Bitcoin') for sp in searchPaths])
+         searchPaths.extend([os.path.join(sp, 'Unobtanium') for sp in searchPaths])
          searchPaths.extend([os.path.join(sp, 'daemon') for sp in searchPaths])
          searchPaths.extend([os.path.join(sp, 'bin') for sp in searchPaths])
 
@@ -246,12 +246,12 @@ class SatoshiDaemonManager(object):
          if os.path.exists(desktop):
             dtopfiles = os.listdir(desktop)
             for path in [os.path.join(desktop, fn) for fn in dtopfiles]:
-               if 'bitcoin' in path.lower() and path.lower().endswith('.lnk'):
+               if 'unobtanium' in path.lower() and path.lower().endswith('.lnk'):
                   import win32com.client
                   shell = win32com.client.Dispatch('WScript.Shell')
                   targ = shell.CreateShortCut(path).Targetpath
                   targDir = os.path.dirname(targ)
-                  LOGINFO('Found Bitcoin Core link on desktop: %s', targDir)
+                  LOGINFO('Found Unobtanium Core link on desktop: %s', targDir)
                   possBaseDir.append( targDir )
 
          # Also look in default place in ProgramFiles dirs
@@ -261,12 +261,12 @@ class SatoshiDaemonManager(object):
 
          # Now look at a few subdirs of the
          searchPaths.extend(possBaseDir)
-         searchPaths.extend([os.path.join(p, 'Bitcoin', 'daemon') for p in possBaseDir])
+         searchPaths.extend([os.path.join(p, 'Unobtanium', 'daemon') for p in possBaseDir])
          searchPaths.extend([os.path.join(p, 'daemon') for p in possBaseDir])
-         searchPaths.extend([os.path.join(p, 'Bitcoin') for p in possBaseDir])
+         searchPaths.extend([os.path.join(p, 'Unobtanium') for p in possBaseDir])
 
          for p in searchPaths:
-            testPath = os.path.join(p, 'bitcoind.exe')
+            testPath = os.path.join(p, 'unobtaniumd.exe')
             if os.path.exists(testPath):
                self.foundExe.append(testPath)
 
@@ -277,18 +277,18 @@ class SatoshiDaemonManager(object):
          else:
             searchPaths.extend([os.path.join(p, 'bin/32') for p in extraSearchPaths])
 
-         searchPaths.extend(['/usr/lib/bitcoin/'])
+         searchPaths.extend(['/usr/lib/unobtanium/'])
          searchPaths.extend(os.getenv("PATH").split(':'))
 
          for p in searchPaths:
-            testPath = os.path.join(p, 'bitcoind')
+            testPath = os.path.join(p, 'unobtaniumd')
             if os.path.exists(testPath):
                self.foundExe.append(testPath)
 
          try:
-            locs = subprocess_check_output(['whereis','bitcoind']).split()
+            locs = subprocess_check_output(['whereis','unobtaniumd']).split()
             if len(locs)>1:
-               locs = filter(lambda x: os.path.basename(x)=='bitcoind', locs)
+               locs = filter(lambda x: os.path.basename(x)=='unobtaniumd', locs)
                LOGINFO('"whereis" returned: %s', str(locs))
                self.foundExe.extend(locs)
          except:
@@ -305,10 +305,10 @@ class SatoshiDaemonManager(object):
                foundIt=True
 
          if not foundIt:
-            LOGERROR('Bitcoind could not be found in the specified installation:')
+            LOGERROR('Unobtaniumd could not be found in the specified installation:')
             for p in extraSearchPaths:
                LOGERROR('   %s', p)
-            LOGERROR('Bitcoind is being started from:')
+            LOGERROR('Unobtaniumd is being started from:')
             LOGERROR('   %s', self.foundExe[0])
 
       return self.foundExe
@@ -337,20 +337,20 @@ class SatoshiDaemonManager(object):
          LOGERROR('SDM was disabled, must be re-enabled before starting')
          return
 
-      LOGINFO('Called startBitcoind')
+      LOGINFO('Called startUnobtaniumd')
 
       if self.isRunningBitcoind():
          raise self.BitcoindError, 'Looks like we have already started theSDM'
 
       if not os.path.exists(self.executable):
-         raise self.BitcoindError, 'Could not find bitcoind'
+         raise self.BitcoindError, 'Could not find unobtaniumd'
 
       self.launchBitcoindAndGuardian()
 
    #############################################################################
    @AllowAsync
    def pollBitcoindState(self, callback):
-      while self.getSDMStateLogic() != 'BitcoindReady':
+      while self.getSDMStateLogic() != 'UnobtaniumdReady':
          time.sleep(1.0)
       callback()
 
@@ -368,12 +368,12 @@ class SatoshiDaemonManager(object):
 
       haveSatoshiDir = False
       blocksdir = os.path.join(self.satoshiHome, 'blocks')
-      if os.path.exists(blocksdir):   
+      if os.path.exists(blocksdir):
          pargs.append('--satoshi-datadir="' + blocksdir + '"')
 
       if (CLI_OPTIONS.satoshiPort):
          pargs.append('--satoshi-port=' + str(BITCOIN_PORT))
-         
+
       pargs.append('--datadir="' + dataDir + '"')
       pargs.append('--dbdir="' + dbDir + '"')
 
@@ -383,7 +383,7 @@ class SatoshiDaemonManager(object):
          pargs.append('--rescan')
       elif CLI_OPTIONS.rescanBalance:
          pargs.append('--rescanSSH')
-         
+
       if CLI_OPTIONS.clearMempool:
          pargs.append('--clear_mempool')
 
@@ -440,15 +440,15 @@ class SatoshiDaemonManager(object):
          kargs['shell'] = True
          kargs['creationflags'] = win32process.CREATE_NO_WINDOW
 
-      # Startup bitcoind and get its process ID (along with our own)
+      # Startup unobtaniumd and get its process ID (along with our own)
       argStr = " ".join(astr for astr in pargs)
-      LOGWARN('Spawning bitcoind with command: ' + argStr)      
-      self.bitcoind = launchProcess(pargs, **kargs)
+      LOGWARN('Spawning unobtaniumd with command: ' + argStr)
+      self.unobtaniumd = launchProcess(pargs, **kargs)
 
-      self.btcdpid  = self.bitcoind.pid
+      self.btcdpid  = self.unobtaniumd.pid
       self.selfpid  = os.getpid()
 
-      LOGINFO('PID of bitcoind: %d',  self.btcdpid)
+      LOGINFO('PID of unobtaniumd: %d',  self.btcdpid)
       LOGINFO('PID of armory:   %d',  self.selfpid)
 
       # Startup guardian process -- it will watch Armory's PID
@@ -462,31 +462,31 @@ class SatoshiDaemonManager(object):
 
    #############################################################################
    def stopBitcoind(self):
-      LOGINFO('Called stopBitcoind')
-      if self.bitcoind == False:
-         self.bitcoind = None
+      LOGINFO('Called stopUnobtaniumd')
+      if self.unobtaniumd == False:
+         self.unobtaniumd = None
          return
       try:
          if not self.isRunningBitcoind():
-            LOGINFO('...but bitcoind is not running, to be able to stop')
+            LOGINFO('...but unobtaniumd is not running, to be able to stop')
             return
-         
+
          from armoryengine.BDM import TheBDM
          cookie = TheBDM.getCookie()
          TheBDM.bdv().shutdownNode(cookie);
 
          #poll the pid until it's gone, for as long as 2 minutes
          total = 0
-         while self.bitcoind.poll()==None:
+         while self.unobtaniumd.poll()==None:
             time.sleep(0.1)
             total += 1
 
             if total > 1200:
-               LOGERROR("bitcoind failed to shutdown in less than 2 minutes."
+               LOGERROR("unobtaniumd failed to shutdown in less than 2 minutes."
                       " Terminating.")
                return
 
-         self.bitcoind = None
+         self.unobtaniumd = None
       except Exception as e:
          LOGERROR(e)
          return
@@ -496,33 +496,33 @@ class SatoshiDaemonManager(object):
    def isRunningBitcoind(self):
       """
       armoryengine satoshiIsAvailable() only tells us whether there's a
-      running bitcoind that is actively responding on its port.  But it
+      running unobtaniumd that is actively responding on its port.  But it
       won't be responding immediately after we've started it (still doing
-      startup operations).  If bitcoind was started and still running,
+      startup operations).  If unobtaniumd was started and still running,
       then poll() will return None.  Any othe poll() return value means
       that the process terminated
       """
-      if self.bitcoind==None:
+      if self.unobtaniumd==None:
          return False
       # Assume Bitcoind is running if manually started
-      if self.bitcoind==False:
+      if self.unobtaniumd==False:
          return True
       else:
-         if not self.bitcoind.poll()==None:
-            LOGDEBUG('Bitcoind is no more')
+         if not self.unobtaniumd.poll()==None:
+            LOGDEBUG('Unobtaniumd is no more')
             if self.btcOut==None:
-               self.btcOut, self.btcErr = self.bitcoind.communicate()
-               LOGWARN('bitcoind exited, bitcoind STDOUT:')
+               self.btcOut, self.btcErr = self.unobtaniumd.communicate()
+               LOGWARN('unobtaniumd exited, unobtaniumd STDOUT:')
                for line in self.btcOut.split('\n'):
                   LOGWARN(line)
-               LOGWARN('bitcoind exited, bitcoind STDERR:')
+               LOGWARN('unobtaniumd exited, unobtaniumd STDERR:')
                for line in self.btcErr.split('\n'):
                   LOGWARN(line)
-         return self.bitcoind.poll()==None
+         return self.unobtaniumd.poll()==None
 
    #############################################################################
    def wasRunningBitcoind(self):
-      return (not self.bitcoind==None)
+      return (not self.unobtaniumd==None)
 
    #############################################################################
    def returnSDMInfo(self):
@@ -557,38 +557,38 @@ class SatoshiDaemonManager(object):
    #############################################################################
    def getSDMState(self):
       return self.nodeState
-   
+
    #############################################################################
    def getSDMStateStr(self):
       sdmStr = ""
-      
+
       if self.nodeState.status_ == NodeStatus_Offline:
          sdmStr = "NodeStatus_Offline"
-         
+
          if self.nodeState.rpcStatus_ == RpcStatus_Online or \
-            self.nodeState.rpcStatus_ == RpcStatus_Error_28: 
+            self.nodeState.rpcStatus_ == RpcStatus_Error_28:
             sdmStr = "NodeStatus_Initializing"
          elif isinstance(self.executable, str):
             if not os.path.exists(self.executable):
                sdmStr = "NodeStatus_BadPath"
-      
+
       else:
          sdmStr = "NodeStatus_Ready"
-         
+
          if self.nodeState.rpcStatus_ == RpcStatus_Disabled:
             return sdmStr
-         
+
          if self.nodeState.rpcStatus_ != RpcStatus_Online:
             sdmStr = "NodeStatus_Initializing"
-            
+
          else:
             if self.nodeState.chainState_.state() == ChainStatus_Unknown:
                sdmStr = "NodeStatus_Initializing"
             elif self.nodeState.chainState_.state() == ChainStatus_Syncing:
-               sdmStr = "NodeStatus_Syncing"   
-               
+               sdmStr = "NodeStatus_Syncing"
+
       return sdmStr
-   
+
    #############################################################################
    def satoshiIsAvailable(self):
       return self.nodeState.rpcStatus_ != RpcStatus_Disabled

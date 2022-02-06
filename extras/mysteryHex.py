@@ -19,16 +19,16 @@ def figureOutMysteryHex(hexStr, hashDict={}):
    hexStr.replace(' ','')
    pprintHex(hexStr, '   ')
    print '\n' + '-'*80
-   
+
 
    # These search terms only give us hints about where things are.  We have more
    # operations to determine if something is actually behind these strings
    hintStr = {}
-   hintStr['Empty4B'  ] = hex_to_binary('00000000'      )  
-   hintStr['Version'  ] = hex_to_binary('01000000'      ) 
+   hintStr['Empty4B'  ] = hex_to_binary('00000000'      )
+   hintStr['Version'  ] = hex_to_binary('01000000'      )
    hintStr['PkStart'  ] = hex_to_binary('76a9'          )
-   hintStr['PkEnd'    ] = hex_to_binary('88ac'          )  
-   hintStr['SeqNum'   ] = hex_to_binary('ffffffff'      )  
+   hintStr['PkEnd'    ] = hex_to_binary('88ac'          )
+   hintStr['SeqNum'   ] = hex_to_binary('ffffffff'      )
 
    # These search terms are simple, self-explanatory terms.  We find them, flag
    # them and we're done.
@@ -48,7 +48,7 @@ def figureOutMysteryHex(hexStr, hashDict={}):
    # search it again
    idListExcl = []
 
-   # Inclusive list of multipe random things.  Inclusive means that even if 
+   # Inclusive list of multipe random things.  Inclusive means that even if
    # we already identified a transaction somewhere, we will still ID all the
    # scripts in it, even though it's technically already flagged as ID'd
    idListSimple = []
@@ -63,10 +63,10 @@ def figureOutMysteryHex(hexStr, hashDict={}):
       findIdx = binStr.find(findBin)
       while not findIdx == -1:
          if not theMask[findIdx] == 1:
-            versIdx.append(findIdx) 
+            versIdx.append(findIdx)
          findIdx = binStr.find(hintStr['Version'],findIdx+1)
       return versIdx
-      
+
    # Return all matches for the string, regardless of whether it's ID'd already
    def getIdxList(findBin):
       versIdx = []
@@ -75,7 +75,7 @@ def figureOutMysteryHex(hexStr, hashDict={}):
          versIdx.append(findIdx)
          findIdx = binStr.find(findBin,findIdx+1)
       return versIdx
-         
+
    ############################################################################
    # Search for version numbers which will help us find Tx's and BlockHeaders
    ############################################################################
@@ -87,11 +87,11 @@ def figureOutMysteryHex(hexStr, hashDict={}):
          validTime = timeMin < binary_to_int(binStr[idx+68:idx+72]) < timeMax
          if hashZeros and validTime:
             bin80 = binStr[idx:idx+80]
-            blkhead = PyBlockHeader().unserialize(bin80) 
+            blkhead = PyBlockHeader().unserialize(bin80)
             idListExcl.append(['BlockHeader', idx, idx+80, binary_to_hex(bin80), blkhead])
             maskAll[idx:idx+80] = [1]*80
-            continue 
-      
+            continue
+
       # If not a header, check to see if it's a Tx
       try:
          testTx = PyTx().unserialize(binStr[idx:])
@@ -113,7 +113,7 @@ def figureOutMysteryHex(hexStr, hashDict={}):
          continue
 
    pubkeyList = [ ]
-   
+
    # Try to find a PkScript
    pkIdx = getIdxListNotIdYet(hintStr['PkStart'], maskAll)
    for idx in pkIdx:
@@ -143,18 +143,18 @@ def figureOutMysteryHex(hexStr, hashDict={}):
             maskAll[idx-1] = 1
       except:
          pass # I guess this wasn't a PK after all...
-         
+
 
    ############################################################################
    # Random straightforward things to search for without any extra computation.
    ############################################################################
    for triplet in simpleList:
       foundIdx = getIdxList( hex_to_binary(triplet[0]))
-      for idx in foundIdx:      
+      for idx in foundIdx:
          idListSimple.append([triplet[1], idx, idx+len(triplet[0])/2, triplet[2], ''])
 
 
-         
+
 
    # If we have a useful dictionary of hashes, let's use it
    if len(hashDict) > 0:
@@ -195,7 +195,7 @@ def figureOutMysteryHex(hexStr, hashDict={}):
       idx0,idx1 = ids[1], ids[2]
 
       # If this is a Tx or BH, need to pprint the last arg
-      hexToPrint = ['-'] * 2*len(binStr) 
+      hexToPrint = ['-'] * 2*len(binStr)
       if ids[0] == 'Transaction' or ids[0] == 'BlockHeader':
          hexToPrint[2*ids[1]:2*ids[2]] = ids[3]
          print 'Found: ', ids[0]
@@ -213,7 +213,7 @@ def figureOutMysteryHex(hexStr, hashDict={}):
    # Print all the simple stuff onto a single bytemap
    print 'Other assorted things:'
    idListSimple.sort(key=lambda x: x[1])
-   hexToPrint = ['-'] * 2*len(binStr) 
+   hexToPrint = ['-'] * 2*len(binStr)
    ReprList = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
    for j,ids in enumerate(idListSimple):
       i1 = ids[1]
@@ -228,12 +228,12 @@ def figureOutMysteryHex(hexStr, hashDict={}):
    print ''
    for j,ids in enumerate(idListSimple):
       print '  ', ReprList[j] + ':', ids[0].ljust(16,' '), ':', ids[3]
-      
+
    print '\n\nUnidentified bytes'
    maskedBytes = ['--' if maskAll[i] == 1 else hexStr[2*i:2*i+2] for i in range(len(binStr))]
-   
+
    pprintHex(''.join(maskedBytes));
-   
+
 
 
 ################################################################################
@@ -241,7 +241,7 @@ def figureOutMysteryHex(hexStr, hashDict={}):
 def updateHashList(hashfile, blkfile, rescan=False):
 
    print ''
-   print '\t.Updating hashlist from the blockchain file in your bitcoin directory'
+   print '\t.Updating hashlist from the blockchain file in your unobtanium directory'
    print '\t.This will take 1-5 min the first time you run this script (and on rescan)'
    print '\t\t.Hashfile: ', hashfile
    print '\t\t.BlockFile:', blkfile
@@ -254,12 +254,12 @@ def updateHashList(hashfile, blkfile, rescan=False):
    startBlkByte = binary_to_int(hf.read(8))
    hf.close()
 
-   
+
    assert(path.exists(blkfile))
    blkfileSize = os.stat(blkfile).st_size
    bf = open(blkfile, 'rb')
 
-   
+
    hf = open(hashfile, 'r+')
    hf.write(int_to_binary(blkfileSize, widthBytes=8))
    hf.seek(0,2) # start writing at the end of the file
@@ -292,22 +292,22 @@ def updateHashList(hashfile, blkfile, rescan=False):
          print '.',
          sys.stdout.flush()
 
-   
+
    print '\n\t.Updated hashfile with %d bytes / %d hashes / %d blocks from blkfile' % \
                   (blkfileSize-startBlkByte, newHashes, newBlocksRead)
    hf.close()
 
-   
+
 
 
 if __name__ == '__main__':
-   print '\nTry to identify Bitcoin-related strings in a block of data'
+   print '\nTry to identify Unobtanium-related strings in a block of data'
 
    parser = OptionParser(usage='USAGE: %prog [--binary|-b] -f FILE \n   or: %prog unidentifiedHex')
    parser.add_option('-f', '--file',   dest='filename', \
                   help='Get unidentified data from this file')
    parser.add_option('-k', '--blkfile', dest='blk0001file', default='', \
-                  help='Update hashlist from this file (default ~/.bitcoin/blk0001.dat)')
+                  help='Update hashlist from this file (default ~/.unobtanium/blk0001.dat)')
    parser.add_option('-g', '--hashfile', dest='hashfile', default='./knownHashes.bin', \
                   help='The file to store and retrieve header/tx hashes')
    parser.add_option('-b', '--binary', action='store_false', dest='isHex', default=True, \
@@ -325,8 +325,8 @@ if __name__ == '__main__':
    # Should add option for picking (start,end) bytes for files that are long
    #parser.add_option('-o', '--outfile', dest='outfile', default='', \
                   #help='Redirect results to output file')
-   
-   (opts, args) = parser.parse_args()   
+
+   (opts, args) = parser.parse_args()
 
 
    fn       = opts.filename
@@ -339,11 +339,11 @@ if __name__ == '__main__':
       import platform
       opsys = platform.system()
       if 'win' in opsys.lower():
-         blkfile = path.join(os.getenv('APPDATA'), 'Bitcoin', 'blk0001.dat')
+         blkfile = path.join(os.getenv('APPDATA'), 'Unobtanium', 'blk0001.dat')
       if 'nix' in opsys.lower() or 'nux' in opsys.lower():
-         blkfile = path.join(os.getenv('HOME'), '.bitcoin', 'blk0001.dat')
+         blkfile = path.join(os.getenv('HOME'), '.unobtanium', 'blk0001.dat')
       if 'mac' in opsys.lower() or 'osx' in opsys.lower():
-			blkfile = os.path.expanduser('~/Library/Application Support/Bitcoin/blk0001.dat')
+			blkfile = os.path.expanduser('~/Library/Application Support/Unobtanium/blk0001.dat')
 
    # A variety of error conditions
    if fn == None and len(args)==0:
@@ -396,7 +396,7 @@ if __name__ == '__main__':
          else:
             f.seek(byteStart,0);
             binaryToSearch = f.read(byteStop-byteStart)
-         
+
          f.close()
       else:
          f = open(fn, 'r')
@@ -414,28 +414,7 @@ if __name__ == '__main__':
       # pull data from the remaining arguments (which must be hex)
       hexToSearch = ''.join(args)
       binaryToSearch = hex_to_binary(hexToSearch.replace(' ',''))
-      
-   
+
+
    # Yeah, I know we just converted it to binary, now back to hex
    figureOutMysteryHex(binary_to_hex(binaryToSearch), hashDict)
-         
-         
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

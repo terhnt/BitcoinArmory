@@ -60,7 +60,7 @@ class ArmoryEngineTest(unittest.TestCase):
 
    #############################################################################
    def testBasicUtils(self):
-      addr = '1Ncui8YjT7JJD91tkf42dijPnqywbupf7w'  # Sam Rushing's BTC address
+      addr = '1Ncui8YjT7JJD91tkf42dijPnqywbupf7w'  # Sam Rushing's UNO address
       i    =  4093
       hstr = 'fd0f'
       bstr = '\xfd\x0f'
@@ -405,7 +405,7 @@ class ArmoryEngineTest(unittest.TestCase):
       computed = hash160_to_p2sh_script(scriptHash)
       expected = '\xa9\x14' + scriptHash + '\x87'
       self.assertEqual(computed, expected)
-   
+
       # Make sure it raises an error on non-20-byte inputs
       self.assertRaises(InvalidHashError, hash160_to_p2sh_script, '\xab'*21)
 
@@ -450,7 +450,7 @@ class ArmoryEngineTest(unittest.TestCase):
       pkList4 = [pk1, pkNot, pk3] # error
 
       #self.assertTrue(False) # STUB
-     
+
 
    #############################################################################
    def testCppScrAddr(self):
@@ -464,7 +464,7 @@ class ArmoryEngineTest(unittest.TestCase):
       self.assertEqual(scraddr, script_to_scrAddr(script))  # this uses C++
       # Go round trip to avoid dependency on the network. Works in both main-net or testnet
       self.assertEqual(scraddr, addrStr_to_scrAddr(scrAddr_to_addrStr(scraddr)))
-      
+
 
       ##### Pay to PubKey65
       script = hex_to_binary( "4104"
@@ -496,7 +496,7 @@ class ArmoryEngineTest(unittest.TestCase):
 
       self.assertEqual(scraddr, script_to_scrAddr(script))
 
-      
+
       ##### P2SH
       script  = hex_to_binary("a914d0c15a7d41500976056b3345f542d8c944077c8a87")
       a160    = hex_to_binary(  "d0c15a7d41500976056b3345f542d8c944077c8a")

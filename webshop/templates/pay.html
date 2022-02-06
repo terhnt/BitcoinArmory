@@ -8,7 +8,7 @@
 <script>
 $(document).ready(function(){
     var socket = io.connect('http://' + document.domain + ':' + location.port + '/ws');
-    socket.emit('listen', {bitcoinaddress:'{{bitcoinaddress}}', amount:{{total}}});
+    socket.emit('listen', {unobtaniumaddress:'{{unobtaniumaddress}}', amount:{{total}}});
     socket.on('broadcast', function(msg) {
         if (msg.data == "paid") {
              $('.unpaid').hide();
@@ -35,8 +35,8 @@ $(document).ready(function(){
 <div class="container text-center">
   <div class="col-md-12 col-sm-12">
     <div class="unpaid">
-      <span class="shiplabel">Please send {{total}} to {{bitcoinaddress}}. This is also your order ID.</span>
-      <img src="https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=unobtanium:{{bitcoinaddress}}?amount={{total}}&label=Armory+Web+Shop+Order" class="qrcode">
+      <span class="shiplabel">Please send {{total}} to {{unobtaniumaddress}}. This is also your order ID.</span>
+      <img src="https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=unobtanium:{{unobtaniumaddress}}?amount={{total}}&label=Armory+Web+Shop+Order" class="qrcode">
     </div>
     <div class="paid" style="display:none">Thanks for the payment!</div>
   </div>

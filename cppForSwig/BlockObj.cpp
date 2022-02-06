@@ -29,7 +29,7 @@ void BlockHeader::unserialize(uint8_t const * ptr, uint32_t size)
       throw BlockDeserializingException();
    dataCopy_.copyFrom(ptr, HEADER_SIZE);
    BtcUtils::getHash256(dataCopy_.getPtr(), HEADER_SIZE, thisHash_);
-   difficultyDbl_ = BtcUtils::convertDiffBitsToDouble( 
+   difficultyDbl_ = BtcUtils::convertDiffBitsToDouble(
                               BinaryDataRef(dataCopy_.getPtr()+72, 4));
    isInitialized_ = true;
    nextHash_ = BinaryData(0);
@@ -41,15 +41,15 @@ void BlockHeader::unserialize(uint8_t const * ptr, uint32_t size)
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-void BlockHeader::unserialize(BinaryDataRef const & str) 
-{ 
-   unserialize(str.getPtr(), str.getSize()); 
+void BlockHeader::unserialize(BinaryDataRef const & str)
+{
+   unserialize(str.getPtr(), str.getSize());
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-void BlockHeader::unserialize(BinaryRefReader & brr) 
-{ 
-   unserialize(brr.get_BinaryDataRef(HEADER_SIZE)); 
+void BlockHeader::unserialize(BinaryRefReader & brr)
+{
+   unserialize(brr.get_BinaryDataRef(HEADER_SIZE));
 }
 
 
@@ -64,12 +64,12 @@ void BlockHeader::pprint(ostream & os, int nIndent, bool pBigendian) const
 
    string endstr = (pBigendian ? " (BE)" : " (LE)");
    os << indent << "Block Information: " << blockHeight_ << endl;
-   os << indent << "   Hash:       " 
+   os << indent << "   Hash:       "
                 << getThisHash().toHexStr(pBigendian).c_str() << endstr << endl;
    os << indent << "   Timestamp:  " << getTimestamp() << endl;
-   os << indent << "   Prev Hash:  " 
+   os << indent << "   Prev Hash:  "
                 << getPrevHash().toHexStr(pBigendian).c_str() << endstr << endl;
-   os << indent << "   MerkleRoot: " 
+   os << indent << "   MerkleRoot: "
                 << getMerkleRoot().toHexStr(pBigendian).c_str() << endstr << endl;
    os << indent << "   Difficulty: " << (difficultyDbl_)
                          << "    (" << getDiffBits().toHexStr().c_str() << ")" << endl;
@@ -210,8 +210,8 @@ BinaryDataRef DBOutPoint::getDBkey() const
 ///////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////
-BinaryData DBTxRef::serialize(void) const 
-{ 
+BinaryData DBTxRef::serialize(void) const
+{
    return db_->getFullTxCopy(dbKey6B_).serialize();
 }
 
@@ -267,7 +267,7 @@ BinaryData DBTxRef::getBlockHash(void) const
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-TxIn  DBTxRef::getTxInCopy(uint32_t i)  
+TxIn  DBTxRef::getTxInCopy(uint32_t i)
 {
    return db_->getTxInCopy( dbKey6B_, i);
 }
@@ -299,7 +299,7 @@ UnspentTxOut::UnspentTxOut(void) :
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-void UnspentTxOut::init(LMDBBlockDatabase *db, TxOut & txout, uint32_t blkNum, 
+void UnspentTxOut::init(LMDBBlockDatabase *db, TxOut & txout, uint32_t blkNum,
    bool isMulti)
 {
    TxRef txRef = txout.getParentTxRef();
@@ -325,12 +325,12 @@ uint32_t UnspentTxOut::getNumConfirm(uint32_t currBlkNum) const
 {
    if (txHeight_ == UINT32_MAX)
       throw runtime_error("uninitiliazed UnspentTxOut");
-   
+
    return currBlkNum - txHeight_ + 1;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-bool UnspentTxOut::CompareNaive(UnspentTxOut const & uto1, 
+bool UnspentTxOut::CompareNaive(UnspentTxOut const & uto1,
                                 UnspentTxOut const & uto2)
 {
    float val1 = (float)uto1.getValue();
@@ -385,7 +385,7 @@ void UnspentTxOut::sortTxOutVect(vector<UnspentTxOut> & utovect, int sortType)
 ////////////////////////////////////////////////////////////////////////////////
 void UnspentTxOut::pprintOneLine(uint32_t currBlk)
 {
-   printf(" Tx:%s:%02d   BTC:%0.3f   nConf:%04d\n",
+   printf(" Tx:%s:%02d   UNO:%0.3f   nConf:%04d\n",
              txHash_.copySwapEndian().getSliceCopy(0,8).toHexStr().c_str(),
              txOutIndex_,
              value_/1e8,
@@ -393,4 +393,3 @@ void UnspentTxOut::pprintOneLine(uint32_t currBlk)
 }
 
 // kate: indent-width 3; replace-tabs on;
-

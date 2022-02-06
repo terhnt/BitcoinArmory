@@ -193,19 +193,19 @@ class VerifiedHTTPSConnection(HTTPSConnection):
                 #        very isolated usecase, so I'm leaving it in here.
                 #        Can fix later if we need to 
                 print "***** FIXME *****"
-                print "   ** Had issues with bitcoinarmory.com validation;"
-                print "   ** SSLError: hostname 'scripts.bitcoinarmory.com'"
-                print "   ** doesn't match either of 'bitcoinarmory.com', "
-                print "   ** 'www.bitcoinarmory.com'.  I am hardcoding the"
+                print "   ** Had issues with bxtcoinarmory.com validation;"
+                print "   ** SSLError: hostname 'scripts.bxtcoinarmory.com'"
+                print "   ** doesn't match either of 'bxtcoinarmory.com', "
+                print "   ** 'www.bxtcoinarmory.com'.  I am hardcoding the"
                 print "   ** certname into the bundled requests/urllib3"
                 print "   ** which breaks compatibility using it with any "
-                print "   ** HTTPS hosts other than bitcoinarmory.com."
-                validDNS = ['bitcoinarmory.com', 'scripts.bitcoinarmory.com']
+                print "   ** HTTPS hosts other than bxtcoinarmory.com."
+                validDNS = ['bxtcoinarmory.com', 'scripts.bxtcoinarmory.com']
                 for key,val in self.sock.getpeercert().get('subjectAltName', []):
                     if key=='DNS' and val in validDNS:
                         break 
                 else:
-                    raise ssl.SSLError('Cert does not match bitcoinarmory.com')
+                    raise ssl.SSLError('Cert does not match bxtcoinarmory.com')
 
 
 if ssl:

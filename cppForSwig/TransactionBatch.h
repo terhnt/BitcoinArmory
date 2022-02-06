@@ -2,7 +2,7 @@
 //                                                                            //
 //  Copyright (C) 2016, goatpig.                                              //
 //  Distributed under the MIT license                                         //
-//  See LICENSE-MIT or https://opensource.org/licenses/MIT                    //                                      
+//  See LICENSE-MIT or https://opensource.org/licenses/MIT                    //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -15,19 +15,19 @@ Transaction batching format:
    Entries are delimited by semi colons (;)
    Values within an entry are delimited by commas (,)
 
-   Sections and Entries are single lines (line breaks 
+   Sections and Entries are single lines (line breaks
    before the delimiting character are not tolerated).
-   
+
    Syntax is case sensitive.
-   
-   All data on a given line (prior to a line break) after 
+
+   All data on a given line (prior to a line break) after
    a delimiting colon (:) or semi colon (;) is ignored.
 
    White space and empty line breaks are ignored.
    All lines starting with # are ignored.
 
 2) Data types:
-   
+
    string: ascii text
    hexit: a-f A-F 0-9, in pairs. Hexit strings (one
       or more hexit pairs) must be prefixed with 0x
@@ -51,19 +51,19 @@ Transaction batching format:
 
 4) Encoding (per section):
    a) WalletID: (mandatory)
-      The id of the wallet coins are being spent from. Only one wallet 
+      The id of the wallet coins are being spent from. Only one wallet
       per batch is allowed.
 
    b) Spenders:
       A spender is an outpoint and a sequence. The outpoint is mandatory.
-      the sequence is optional. Spenders as a section is optional. In the 
+      the sequence is optional. Spenders as a section is optional. In the
       absence of spenders, the wallet will fallback to its coin selection
       algorythm. In the presence of Spenders, no coin selection logic is
       applied.
-      
-      The outpoint is a 32 bytes hash represented as hexits followed by 
-      the txid as an integer and the sequence as hexits. 
-      
+
+      The outpoint is a 32 bytes hash represented as hexits followed by
+      the txid as an integer and the sequence as hexits.
+
       Sequence will defaults to 0xFFFFFFFF.
 
       Example:
@@ -74,7 +74,7 @@ Transaction batching format:
 
    c) Recipients:
       A recipient is a base58 address as a string and value as an integer
-      representing an amonut of satoshis. Supports 1 optional comment as 
+      representing an amonut of satoshis. Supports 1 optional comment as
       a string
 
       Example:
@@ -93,13 +93,13 @@ Transaction batching format:
       1myenforcedchangeaddressexample;
 
    e) Fee:
-      Fee can either be a flat_fee amount in BTC as a float or a fee_rate
-      satoshi per byte integer. The two are mutually exclusive. In the 
+      Fee can either be a flat_fee amount in UNO as a float or a fee_rate
+      satoshi per byte integer. The two are mutually exclusive. In the
       absence of a fee, the wallet will use its default fee setup instead
 
       Example:
 
-      (as flat fee of 0.0005 BTC)
+      (as flat fee of 0.0005 UNO)
       Fee:
       flat_fee,0.0005;
 
@@ -177,9 +177,9 @@ class TransactionBatch
 private:
    vector<Spender> spenders_;
    vector<Recipient> recipients_;
-  
+
    Recipient change_;
-   
+
    unsigned locktime_ = 0;
    uint64_t fee_rate_ = 0;
    float fee_ = 0;
@@ -209,7 +209,7 @@ public:
       const string& txHashStr, unsigned txOutIndex, unsigned sequence);
    void addRecipient(const string& b58Address, uint64_t value);
    void setChange(const string& b58Address);
-   
+
    void setWalletID(const string& ID) { walletID_ = ID; }
 
    //ser/deser

@@ -4,13 +4,13 @@ ArmoryDB is a binary used by Armory. The code is written in C++11 and is used to
 ArmoryDB is automatically called whenever Armory starts up; the user needs not intervene. Only advanced users who know what they're doing need any further.
 
 ## ArmoryDB usage
-ArmoryDB works by reading the blockchain downloaded by Bitcoin Core and finding any transactions relevant to the wallets loaded into Armory. This means that the entire blockchain must be rescanned whenever a new wallet or lockbox is loaded. Once a wallet/lockbox has been loaded and the blockchain fully scanned for that wallet, ArmoryDB will keep an eye on the blockchain. Any transactions relevant to the addresses controlled by wallets/lockboxes will be resolved. In addition, as Armory builds its own mempool by talking to the Core node, any relevant zero-confirmation transactions will be resolved by ArmoryDB.
+ArmoryDB works by reading the blockchain downloaded by Unobtanium Core and finding any transactions relevant to the wallets loaded into Armory. This means that the entire blockchain must be rescanned whenever a new wallet or lockbox is loaded. Once a wallet/lockbox has been loaded and the blockchain fully scanned for that wallet, ArmoryDB will keep an eye on the blockchain. Any transactions relevant to the addresses controlled by wallets/lockboxes will be resolved. In addition, as Armory builds its own mempool by talking to the Core node, any relevant zero-confirmation transactions will be resolved by ArmoryDB.
 
 As of v0.96.4, Armory calls ArmoryDB using a particular set of flags. The Armory Python log (`armorylog.txt`) shows attempts at executing ArmoryDB using some default parameters, assuming that `/home/snakamoto` is the user's root directory.
 
 ```
-2018-01-13 13:32:17 (WARNING) -- SDM.py:396 - Spawning DB with command: /home/snakamoto/Armory/ArmoryDB --db-type="DB_FULL" --cookie --satoshi-datadir="/home/snakamoto/.bitcoin/blocks" --datadir="/home/snakamoto/Armory/" --dbdir="/home/snakamoto/Armory/databases"
-2018-01-13 13:32:17 (INFO) -- ArmoryUtils.py:679 - Executing popen: ['/home/snakamoto/Armory/ArmoryDB', '--db-type="DB_FULL"', '--cookie', '--satoshi-datadir="/home/snakamoto/.bitcoin/blocks"', '--datadir="/home/snakamoto/Armory/"', '--dbdir="/home/snakamoto/Armory/databases"']
+2018-01-13 13:32:17 (WARNING) -- SDM.py:396 - Spawning DB with command: /home/snakamoto/Armory/ArmoryDB --db-type="DB_FULL" --cookie --satoshi-datadir="/home/snakamoto/.unobtanium/blocks" --datadir="/home/snakamoto/Armory/" --dbdir="/home/snakamoto/Armory/databases"
+2018-01-13 13:32:17 (INFO) -- ArmoryUtils.py:679 - Executing popen: ['/home/snakamoto/Armory/ArmoryDB', '--db-type="DB_FULL"', '--cookie', '--satoshi-datadir="/home/snakamoto/.unobtanium/blocks"', '--datadir="/home/snakamoto/Armory/"', '--dbdir="/home/snakamoto/Armory/databases"']
 ```
 
 The flags are explained below, as seen in the Armory source code. By default, like Armory, ArmoryDB works on the mainnet network.
@@ -48,7 +48,7 @@ Note that the flags may be added to the Armory root data directory in an ArmoryD
 ```
 db-type="DB_FULL"
 cookie=1
-satoshi-datadir="/home/snakamoto/.bitcoin/blocks""
+satoshi-datadir="/home/snakamoto/.unobtanium/blocks""
 datadir="/home/snakamoto/Armory/"
 dbdir="/home/snakamoto/Armory/databases"
 ```
@@ -56,7 +56,7 @@ dbdir="/home/snakamoto/Armory/databases"
 As always, check the source code for the most up-to-date information.
 
 ## ArmoryDB connection design
-ArmoryDB *must* run alongside the Bitcoin Core node. This is because ArmoryDB does a memory map on the blockchain files. This can only be done if ArmoryDB and the node are running on the same OS and, ideally, on the same storage device. The IP address of the Core node is hardcoded (localhost) and can't be changed without recompiling Armory (and changing the design at your own risk!). Only the node's port can be changed via the `satoshirpc-port` parameter. This design may be changed in the future.
+ArmoryDB *must* run alongside the Unobtanium Core node. This is because ArmoryDB does a memory map on the blockchain files. This can only be done if ArmoryDB and the node are running on the same OS and, ideally, on the same storage device. The IP address of the Core node is hardcoded (localhost) and can't be changed without recompiling Armory (and changing the design at your own risk!). Only the node's port can be changed via the `satoshirpc-port` parameter. This design may be changed in the future.
 
 It is possible for Armory and other clients to talk to ArmoryDB remotely. Possibilities for reaching ArmoryDB include placing ArmoryDB behind an HTTP daemon or logging into the ArmoryDB machine remotely via VPN. Talking to ArmoryDB is done via JSON-encoded packets, as seen in the `armoryd` project.
 
@@ -68,7 +68,7 @@ It is possible for Armory and other clients to talk to ArmoryDB remotely. Possib
 * Visual Studio compiler (Windows) - [Visual Studio page](https://www.visualstudio.com/)
 
 ## Troubleshooting
-Occasionally, a user may have trouble connecting to the Bitcoin Core node. Often, this is because a version of ArmoryDB from a previous run of Armory didn't shut down properly. If a user is unable to connect to the Core node, the following steps are recommended.
+Occasionally, a user may have trouble connecting to the Unobtanium Core node. Often, this is because a version of ArmoryDB from a previous run of Armory didn't shut down properly. If a user is unable to connect to the Core node, the following steps are recommended.
 
 * Shut down Armory.
 * Check the operating system's task manager 30-60 seconds later.

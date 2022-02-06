@@ -30,7 +30,7 @@ if len(argv)<3:
             argv[2]   version type,    "-testing", "-beta", ""
             argv[3]*  output directory      (default ~ ./exportToOffline)
             argv[4]*  unsigned announce dir (default ~ ./unsignedannounce)
-            argv[5]*  Bitcoin Core SHA256SUMS.asc (default ~ "None")
+            argv[5]*  Unobtanium Core SHA256SUMS.asc (default ~ "None")
             """) % argv[0]
    exit(1)
 
@@ -54,7 +54,7 @@ os.makedirs(instDst)  # will create outdir and installers dir
 # Check that unsigned announcements dir exists
 checkExists(annSrc)
 
-# Throw in the Bitcoin Core hashes file if supplied
+# Throw in the Unobtanium Core hashes file if supplied
 if shaCore is not None:
    checkExists(shaCore)
    shutil.copy(shaCore, os.path.join(outDir,'SHA256SUMS.asc'))
@@ -66,12 +66,12 @@ for pkgName,pkgInfo in masterPkgList.iteritems():
    localFn = 'armory_%s%s_%s' % (verStr, verType, pkgInfo['FileSuffix'])
    copyTo = os.path.join(instDst, localFn)
    if cmd=='cp':
-      assert(len(cmdArgs)==1) 
+      assert(len(cmdArgs)==1)
       copyFrom = checkExists(cmdArgs[0] % verStr)
       print 'Copying: %s --> %s' % (copyFrom, copyTo)
       shutil.copy(copyFrom, copyTo)
    if cmd=='scp':
-      assert(len(cmdArgs)==4) 
+      assert(len(cmdArgs)==4)
       usr,ip,port,src = cmdArgs
       remoteSrc = src % verStr
       hostPath = '%s@%s:%s' % (usr, ip, remoteSrc)
@@ -81,5 +81,3 @@ for pkgName,pkgInfo in masterPkgList.iteritems():
 execAndWait(['git', 'clone', CLONE_URL, cloneDir])
 shutil.copytree('../release_scripts', rscrDir)
 shutil.copytree(annSrc, annDst)
-
-

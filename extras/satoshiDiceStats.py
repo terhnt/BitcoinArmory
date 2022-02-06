@@ -27,18 +27,18 @@ def calcAvgAndVar(targ,E,F,X=1):
    avg = winAmt*pwin + losAmt*plos
    var = (winAmt-avg)**2 * pwin  +  (losAmt-avg)**2 * plos
    return [avg,var]
-   
+
 
 print ''
-print 'Breakdown of SatoshiDice profit for bets of size: %0.2f BTC' % amt
+print 'Breakdown of SatoshiDice profit for bets of size: %0.2f UNO' % amt
 print '"House Edge" (actual edge is 1/2 this):           %0.1f%%' % (100*(1-E))
-print 'Standard fee per return transaction:              %0.4f BTC' % F
+print 'Standard fee per return transaction:              %0.4f UNO' % F
 print 'Target'.rjust(10), 'Avg Profit'.rjust(12), '1-sigma'.rjust(12), '3-sigma'.rjust(12)
 print '-'*50
 for targ in Targets:
    avg,var = calcAvgAndVar(targ,E,F,amt)
 
-   print str(targ).rjust(10), 
+   print str(targ).rjust(10),
    print ('%0.6f' % avg).rjust(12),
    print ('%0.4f' % sqrt(var)).rjust(12),
    print ('%0.4f' % (3*sqrt(var))).rjust(12)
@@ -46,9 +46,9 @@ for targ in Targets:
 
 
 print ''
-print 'Breakdown of SatoshiDice profit for *%d* bets:  %0.2f BTC each' % (nBet,amt)
+print 'Breakdown of SatoshiDice profit for *%d* bets:  %0.2f UNO each' % (nBet,amt)
 print '"House Edge" (actual edge is 1/2 this):            %0.1f%%' % (100*(1-E))
-print 'Standard fee per return transaction:               %0.4f BTC' % F
+print 'Standard fee per return transaction:               %0.4f UNO' % F
 print 'Target'.rjust(10), 'Avg Profit'.rjust(12), '1-sigma'.rjust(12), '3-sigma'.rjust(12)
 print '-'*50
 for targ in Targets:
@@ -57,7 +57,7 @@ for targ in Targets:
    avg = nBet*avg
    var = nBet*var
    sig3 = 3*sqrt(var)
-   print str(targ).rjust(10), 
+   print str(targ).rjust(10),
    print ('%0.6f' % avg).rjust(12),
    print ('%0.4f' % sqrt(var)).rjust(12),
    print ('%0.4f' % (3*sqrt(var))).rjust(12),
@@ -86,4 +86,3 @@ for pct in [0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.035]:
       stdStr = ('%0.3f'%(3*std)).rjust(8)
       print '(%s : %s)' % (avgStr, stdStr),
    print ' '
-   

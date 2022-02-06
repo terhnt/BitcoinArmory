@@ -29,7 +29,7 @@ if not os.path.isdir('cppForSwig/reorgTest'):
 fakeBlocks=False
 
 # Use the genesis block to kick things off. (Might not work on Windows.)
-blkfile = open(os.environ['HOME'] + '/.bitcoin/blocks/blk00000.dat','r')
+blkfile = open(os.environ['HOME'] + '/.unobtanium/blocks/blk00000.dat','r')
 blkfile.seek(8,0)
 genBlock = PyBlock().unserialize(blkfile.read(80 + 1 + 285))
 blkfile.close()
@@ -237,7 +237,7 @@ printBlkInfo(Blk5A, '')
 
 
 ################################################################################
-# Now serialize the block data into .dat files so we can feed them into a 
+# Now serialize the block data into .dat files so we can feed them into a
 # program that claims to handle reorgs
 def writeBlkBin(fileHandle, blk):
    fileHandle.write( hex_to_binary('f9beb4d9') )
@@ -296,7 +296,7 @@ for blk,name in ([genBlock, '0'], [Blk1, '1'], [Blk2, '2'], [Blk3, '3'], \
    blkfile = open('cppForSwig/reorgTest/blk_' + name + '.dat','wb+')
    writeBlkBin(blkfile, blk)
    blkfile.close()
-   
+
    addrfile.write("const BinaryData blkHash" + name + " = BinaryData::CreateFromHex(\"" + binary_to_hex(blk.blockHeader.theHash) + "\");\n")
 addrfile.write("\n")
 

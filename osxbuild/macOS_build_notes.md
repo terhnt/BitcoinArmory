@@ -4,7 +4,7 @@ These notes describe what had to be done on fresh installs of macOS 10.8 - 10.13
 ## Requirements / Caveats
 Armory is designed to run only on macOS 10.8 or later. Running on 10.7 may be possible with proper code editing. However, this isn't recommended due to [issues with C++11 support under macOS 10.7](https://github.com/bitcoin/bitcoin/issues/8577#issuecomment-255945996). The latest versions of macOS and Xcode that can compile 10.7-compatible binaries are macOS 10.11 and Xcode 7.3.1. (The binaries are also compatible with macOS 10.12 and beyond.) An [Apple developer account](https://developer.apple.com/) may be used to obtain Xcode 7.3.1.
 
-If a bug is found, please consult the [Bitcoin Forum](https://bitcointalk.org/index.php?board=97.0) or *bitcoin-armory* IRC channel on Freenode for further instructions.
+If a bug is found, please consult the [Bitcoin Forum](https://bxtcointalk.org/index.php?board=97.0) or *bitcoin-armory* IRC channel on Freenode for further instructions.
 
 ## Instructions
  1. Get an Apple developer account (free), log in, and download the latest version of Command Line Tools for Xcode. As an alternative, install the latest version of [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) and download Command Line Tools via Xcode. Either choice will be updated via the App Store.
@@ -57,4 +57,4 @@ Armory.app will be found under the "workspace" subdirectory. It can be moved any
 To avoid runtime issues (e.g. *ImportError: No module named pkg_resources*) when attempting to run builds on other machines/VMs, make sure $PYTHONPATH is empty. In addition, try not to have any "brew"ed libpng, Python or Qt modules installed. Any of the above could lead to unpredictable behavior.
 
 ## Compilation issues
-If you run into any compilation issues, please [post on Bitcoin Forum's Armory subforum](https://bitcointalk.org/index.php?board=97.0) or consult the *bitcoin-armory* IRC channel on Freenode. Note that compilation of "dev"/"testing" versions of Armory may be broken on Linux and macOS. Armory's developed primarily for Windows, with Linux and macOS compilation issues fixed once goatpig's satisfied with the state of the Windows code. The "master" code should never be broken, as it consists of what gets officially released.
+If you run into any compilation issues, please [post on Bitcoin Forum's Armory subforum](https://bxtcointalk.org/index.php?board=97.0) or consult the *bitcoin-armory* IRC channel on Freenode. Note that compilation of "dev"/"testing" versions of Armory may be broken on Linux and macOS. Armory's developed primarily for Windows, with Linux and macOS compilation issues fixed once goatpig's satisfied with the state of the Windows code. The "master" code should never be broken, as it consists of what gets officially released.

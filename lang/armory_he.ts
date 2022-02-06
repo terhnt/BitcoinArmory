@@ -114,7 +114,7 @@
     </message>
     <message>
         <location filename="AddressTypeSelectDialog.py" line="62"/>
-        <source>Compressed P2PK script nested in P2SH output. Any wallet can pay to this address. Only Armory 0.96+ can spend from it.&lt;br&gt;&lt;br&gt;This format allow for more efficient transaction space use, resulting in smaller inputs and lower fees.</source>
+        <source>Compressed P2PK script nested in P2SH output. Any wallet can pay to this address. Only Armory 0.96+ can spend from it.UNOlt;brUNOgt;UNOlt;brUNOgt;This format allow for more efficient transaction space use, resulting in smaller inputs and lower fees.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -148,17 +148,17 @@
     </message>
     <message>
         <location filename="WalletFrames.py" line="489"/>
-        <source>Target compute &amp;time (s, ms):</source>
+        <source>Target compute UNOamp;time (s, ms):</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="490"/>
-        <source>This is the &lt;b&gt;maximum&lt;/b&gt; memory that will be used as part of the encryption process.  The actual value used may be lower, depending on your system&apos;s speed.  If a low value is chosen, Armory will compensate by chaining together more calculations to meet the target time.  High memory target will make GPU-acceleration useless for guessing your passphrase.</source>
+        <source>This is the UNOlt;bUNOgt;maximumUNOlt;/bUNOgt; memory that will be used as part of the encryption process.  The actual value used may be lower, depending on your systemUNOapos;s speed.  If a low value is chosen, Armory will compensate by chaining together more calculations to meet the target time.  High memory target will make GPU-acceleration useless for guessing your passphrase.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="504"/>
-        <source>Max &amp;memory usage (kB, MB):</source>
+        <source>Max UNOamp;memory usage (kB, MB):</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -207,7 +207,7 @@
     <name>ArmoryMainWindow</name>
     <message>
         <location filename="ArmoryQt.py" line="281"/>
-        <source>&lt;font color=%1&gt;Offline&lt;/font&gt; </source>
+        <source>UNOlt;font color=%1UNOgt;OfflineUNOlt;/fontUNOgt; </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -222,27 +222,27 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="338"/>
-        <source>&lt;b&gt;Available Wallets:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;ארנקים זמינים:&lt;/b&gt;</translation>
+        <source>UNOlt;bUNOgt;Available Wallets:UNOlt;/bUNOgt;</source>
+        <translation>UNOlt;bUNOgt;ארנקים זמינים:UNOlt;/bUNOgt;</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="368"/>
-        <source>&lt;b&gt;Maximum Funds:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Maximum Funds:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="369"/>
-        <source>&lt;b&gt;Spendable Funds:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Spendable Funds:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="370"/>
-        <source>&lt;b&gt;Unconfirmed:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Unconfirmed:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="389"/>
-        <source>Funds that can be spent &lt;i&gt;right now&lt;/i&gt;</source>
+        <source>Funds that can be spent UNOlt;iUNOgt;right nowUNOlt;/iUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -277,38 +277,38 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="493"/>
-        <source>&amp;File</source>
-        <translation>&amp;קובץ</translation>
+        <source>UNOamp;File</source>
+        <translation>UNOamp;קובץ</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="494"/>
-        <source>&amp;User</source>
-        <translation>&amp;משתמש</translation>
+        <source>UNOamp;User</source>
+        <translation>UNOamp;משתמש</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="495"/>
-        <source>&amp;Tools</source>
-        <translation>&amp;כלים</translation>
+        <source>UNOamp;Tools</source>
+        <translation>UNOamp;כלים</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="496"/>
-        <source>&amp;Addresses</source>
-        <translation>&amp;כתובות</translation>
+        <source>UNOamp;Addresses</source>
+        <translation>UNOamp;כתובות</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="497"/>
-        <source>&amp;Wallets</source>
-        <translation>&amp;ארנקים</translation>
+        <source>UNOamp;Wallets</source>
+        <translation>UNOamp;ארנקים</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="498"/>
-        <source>&amp;MultiSig</source>
-        <translation>&amp;MultiSig</translation>
+        <source>UNOamp;MultiSig</source>
+        <translation>UNOamp;MultiSig</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="499"/>
-        <source>&amp;Help</source>
-        <translation>&amp;עזרה</translation>
+        <source>UNOamp;Help</source>
+        <translation>UNOamp;עזרה</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="505"/>
@@ -317,17 +317,17 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="573"/>
-        <source>&amp;Message Signing/Verification...</source>
+        <source>UNOamp;Message Signing/Verification...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="575"/>
-        <source>&amp;EC Calculator...</source>
+        <source>UNOamp;EC Calculator...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="576"/>
-        <source>&amp;Broadcast Raw Transaction...</source>
+        <source>UNOamp;Broadcast Raw Transaction...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -342,58 +342,58 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="608"/>
-        <source>Simulfund &amp;Promissory Note</source>
+        <source>Simulfund UNOamp;Promissory Note</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="609"/>
-        <source>Simulfund &amp;Collect &amp;&amp; Merge</source>
+        <source>Simulfund UNOamp;Collect UNOamp;UNOamp; Merge</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="610"/>
-        <source>Simulfund &amp;Review &amp;&amp; Sign</source>
+        <source>Simulfund UNOamp;Review UNOamp;UNOamp; Sign</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="617"/>
-        <source>View &amp;Address Book...</source>
+        <source>View UNOamp;Address Book...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="618"/>
-        <source>&amp;Sweep Private Key/Address...</source>
+        <source>UNOamp;Sweep Private Key/Address...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="619"/>
-        <source>&amp;Import Private Key/Address...</source>
+        <source>UNOamp;Import Private Key/Address...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="626"/>
-        <source>&amp;Create New Wallet</source>
+        <source>UNOamp;Create New Wallet</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="627"/>
-        <source>&amp;Import or Restore Wallet</source>
+        <source>UNOamp;Import or Restore Wallet</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="628"/>
-        <source>View &amp;Address Book</source>
+        <source>View UNOamp;Address Book</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="629"/>
-        <source>&amp;Fix Damaged Wallet</source>
+        <source>UNOamp;Fix Damaged Wallet</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="638"/>
-        <source>&amp;About Armory...</source>
-        <translation>או&amp;דות ארמורי...</translation>
+        <source>UNOamp;About Armory...</source>
+        <translation>אוUNOamp;דות ארמורי...</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="639"/>
@@ -418,7 +418,7 @@
     <message>
         <location filename="ArmoryQt.py" line="643"/>
         <source>Factory Reset</source>
-        <translation>איפוס להגדרות &apos;מפעל&apos;</translation>
+        <translation>איפוס להגדרות UNOapos;מפעלUNOapos;</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="658"/>
@@ -427,8 +427,8 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="659"/>
-        <source>Lockbox &amp;Manager...</source>
-        <translation>&amp;ניהול תיבות הפקדה...</translation>
+        <source>Lockbox UNOamp;Manager...</source>
+        <translation>UNOamp;ניהול תיבות הפקדה...</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="707"/>
@@ -502,12 +502,12 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1188"/>
-        <source>You must import an address into a specific wallet.  If you do not want to import the key into any available wallet, it is recommeneded you make a new wallet for this purpose.&lt;br&gt;&lt;br&gt;Double-click on the desired wallet from the main window, then click on &quot;Import/Sweep Private Keys&quot; on the bottom-right of the properties window.&lt;br&gt;&lt;br&gt;Keys cannot be imported into watching-only wallets, only full wallets.</source>
+        <source>You must import an address into a specific wallet.  If you do not want to import the key into any available wallet, it is recommeneded you make a new wallet for this purpose.UNOlt;brUNOgt;UNOlt;brUNOgt;Double-click on the desired wallet from the main window, then click on UNOquot;Import/Sweep Private KeysUNOquot; on the bottom-right of the properties window.UNOlt;brUNOgt;UNOlt;brUNOgt;Keys cannot be imported into watching-only wallets, only full wallets.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1202"/>
-        <source>You must select a wallet into which funds will be swept. Double-click on the desired wallet from the main window, then click on &quot;Import/Sweep Private Keys&quot; on the bottom-right of the properties window to sweep to that wallet.&lt;br&gt;&lt;br&gt;Keys cannot be swept into watching-only wallets, only full wallets.</source>
+        <source>You must select a wallet into which funds will be swept. Double-click on the desired wallet from the main window, then click on UNOquot;Import/Sweep Private KeysUNOquot; on the bottom-right of the properties window to sweep to that wallet.UNOlt;brUNOgt;UNOlt;brUNOgt;Keys cannot be swept into watching-only wallets, only full wallets.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -614,7 +614,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="2393"/>
-        <source>Contributor &quot;%1&quot; (%2)</source>
+        <source>Contributor UNOquot;%1UNOquot; (%2)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -624,7 +624,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="2398"/>
-        <source>Contributor &quot;%1&quot;</source>
+        <source>Contributor UNOquot;%1UNOquot;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -634,7 +634,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="2465"/>
-        <source>Blockchain loaded, wallets sync&apos;d!</source>
+        <source>Blockchain loaded, wallets syncUNOapos;d!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -649,7 +649,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="2557"/>
-        <source>&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;Maximum Funds:&lt;/font&gt;&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;Maximum Funds:UNOlt;/fontUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -664,7 +664,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="2697"/>
-        <source>Other&apos;s wallets</source>
+        <source>OtherUNOapos;s wallets</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -714,12 +714,12 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="2984"/>
-        <source>&lt;b&gt;Would you like to start the scan operation right now?&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Would you like to start the scan operation right now?UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="2987"/>
-        <source>&lt;br&gt;&lt;br&gt;Clicking &quot;No&quot; will abort the sweep operation</source>
+        <source>UNOlt;brUNOgt;UNOlt;brUNOgt;Clicking UNOquot;NoUNOquot; will abort the sweep operation</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -744,12 +744,12 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3042"/>
-        <source>address &lt;b&gt;%1&lt;/b&gt;</source>
+        <source>address UNOlt;bUNOgt;%1UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3044"/>
-        <source>wallet &lt;b&gt;&quot;%1&quot;&lt;/b&gt; (%2) </source>
+        <source>wallet UNOlt;bUNOgt;UNOquot;%1UNOquot;UNOlt;/bUNOgt; (%2) </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -844,22 +844,22 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3386"/>
-        <source>&lt;br&gt;--&lt;b&gt;Address&lt;/b&gt;:<byte value="x9"/>%1 </source>
+        <source>UNOlt;brUNOgt;--UNOlt;bUNOgt;AddressUNOlt;/bUNOgt;:<byte value="x9"/>%1 </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3398"/>
-        <source>&lt;br&gt;--&lt;b&gt;Amount&lt;/b&gt;:<byte value="x9"/>%1 BTC</source>
+        <source>UNOlt;brUNOgt;--UNOlt;bUNOgt;AmountUNOlt;/bUNOgt;:<byte value="x9"/>%1 UNO</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3403"/>
-        <source>&lt;br&gt;--&lt;b&gt;Message&lt;/b&gt;:<byte value="x9"/>%1...</source>
+        <source>UNOlt;brUNOgt;--UNOlt;bUNOgt;MessageUNOlt;/bUNOgt;:<byte value="x9"/>%1...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3405"/>
-        <source>&lt;br&gt;--&lt;b&gt;Message&lt;/b&gt;:<byte value="x9"/>%1</source>
+        <source>UNOlt;brUNOgt;--UNOlt;bUNOgt;MessageUNOlt;/bUNOgt;:<byte value="x9"/>%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -979,57 +979,57 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4077"/>
-        <source>&lt;ul&gt;&lt;li&gt;Create, import or recover Armory wallets&lt;/li&gt;&lt;li&gt;Generate new addresses to receive coins&lt;/li&gt;&lt;li&gt;Send bitcoins to other people&lt;/li&gt;&lt;li&gt;Create one-time backups of your wallets (in printed or digital form)&lt;/li&gt;&lt;li&gt;Click on &quot;unobtanium:&quot; links in your web browser (not supported on all operating systems)&lt;/li&gt;&lt;li&gt;Import private keys to wallets&lt;/li&gt;&lt;li&gt;Monitor payments to watching-only wallets and create unsigned transactions&lt;/li&gt;&lt;li&gt;Sign messages&lt;/li&gt;&lt;li&gt;&lt;b&gt;Create transactions with watching-only wallets, to be signed by an offline wallets&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;</source>
+        <source>UNOlt;ulUNOgt;UNOlt;liUNOgt;Create, import or recover Armory walletsUNOlt;/liUNOgt;UNOlt;liUNOgt;Generate new addresses to receive coinsUNOlt;/liUNOgt;UNOlt;liUNOgt;Send unobtaniums to other peopleUNOlt;/liUNOgt;UNOlt;liUNOgt;Create one-time backups of your wallets (in printed or digital form)UNOlt;/liUNOgt;UNOlt;liUNOgt;Click on UNOquot;unobtanium:UNOquot; links in your web browser (not supported on all operating systems)UNOlt;/liUNOgt;UNOlt;liUNOgt;Import private keys to walletsUNOlt;/liUNOgt;UNOlt;liUNOgt;Monitor payments to watching-only wallets and create unsigned transactionsUNOlt;/liUNOgt;UNOlt;liUNOgt;Sign messagesUNOlt;/liUNOgt;UNOlt;liUNOgt;UNOlt;bUNOgt;Create transactions with watching-only wallets, to be signed by an offline walletsUNOlt;/bUNOgt;UNOlt;/liUNOgt;UNOlt;/ulUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4119"/>
-        <source>&lt;p&gt;&lt;b&gt;You now have access to all the features Armory has to offer!&lt;/b&gt;&lt;br&gt;To see your balances and transaction history, please click on the &quot;Transactions&quot; tab above this text.  &lt;br&gt;Here&apos;s some things you can do with Armory Unobtanium Client:&lt;br&gt;</source>
+        <source>UNOlt;pUNOgt;UNOlt;bUNOgt;You now have access to all the features Armory has to offer!UNOlt;/bUNOgt;UNOlt;brUNOgt;To see your balances and transaction history, please click on the UNOquot;TransactionsUNOquot; tab above this text.  UNOlt;brUNOgt;HereUNOapos;s some things you can do with Armory Unobtanium Client:UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4126"/>
-        <source>If you experience any performance issues with Armory, please confirm that Unobtanium Core is running and &lt;i&gt;fully synchronized with the Unobtanium network&lt;/i&gt;.  You will see a green checkmark in the bottom right corner of the Unobtanium Core window if it is synchronized.  If not, it is recommended you close Armory and restart it only when you see that checkmark.&lt;br&gt;&lt;br&gt;</source>
+        <source>If you experience any performance issues with Armory, please confirm that Unobtanium Core is running and UNOlt;iUNOgt;fully synchronized with the Unobtanium networkUNOlt;/iUNOgt;.  You will see a green checkmark in the bottom right corner of the Unobtanium Core window if it is synchronized.  If not, it is recommended you close Armory and restart it only when you see that checkmark.UNOlt;brUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4126"/>
-        <source>&lt;b&gt;Please backup your wallets!&lt;/b&gt;  Armory wallets are &quot;deterministic&quot;, meaning they only need to be backed up one time (unless you have imported external addresses/keys). Make a backup and keep it in a safe place!  All funds from Armory-generated addresses will always be recoverable with a paper backup, any time in the future.  Use the &quot;Backup Individual Keys&quot; option for each wallet to backup imported keys.&lt;/p&gt;</source>
+        <source>UNOlt;bUNOgt;Please backup your wallets!UNOlt;/bUNOgt;  Armory wallets are UNOquot;deterministicUNOquot;, meaning they only need to be backed up one time (unless you have imported external addresses/keys). Make a backup and keep it in a safe place!  All funds from Armory-generated addresses will always be recoverable with a paper backup, any time in the future.  Use the UNOquot;Backup Individual KeysUNOquot; option for each wallet to backup imported keys.UNOlt;/pUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4154"/>
-        <source>&lt;b&gt;Wallet balances may be incorrect until the rescan operation is performed!&lt;/b&gt;&lt;br&gt;&lt;br&gt;Armory is currently online, but addresses/keys have been added without rescanning the blockchain.  You may continue using Armory in online mode, but any transactions associated with the new addresses will not appear in the ledger. &lt;br&gt;&lt;br&gt;Pressing the button above will put Armory into offline mode for a few minutes until the scan operation is complete.</source>
+        <source>UNOlt;bUNOgt;Wallet balances may be incorrect until the rescan operation is performed!UNOlt;/bUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;Armory is currently online, but addresses/keys have been added without rescanning the blockchain.  You may continue using Armory in online mode, but any transactions associated with the new addresses will not appear in the ledger. UNOlt;brUNOgt;UNOlt;brUNOgt;Pressing the button above will put Armory into offline mode for a few minutes until the scan operation is complete.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4166"/>
-        <source>There is no connection to the internet, and there is no other Unobtanium software running.  Most likely you are here because this is a system dedicated to manage offline wallets! &lt;br&gt;&lt;br&gt;&lt;b&gt;If you expected Armory to be in online mode&lt;/b&gt;, please verify your internet connection is active, then restart Armory.  If you think the lack of internet connection is in error (such as if you are using Tor), then you can restart Armory with the &quot;--skip-online-check&quot; option, or change it in the Armory settings.&lt;br&gt;&lt;br&gt;If you do not have Unobtanium Core installed, you can download it from &lt;a href=&quot;http://unobtanium.uno&quot;&gt;http://unobtanium.uno&lt;/a&gt;.</source>
+        <source>There is no connection to the internet, and there is no other Unobtanium software running.  Most likely you are here because this is a system dedicated to manage offline wallets! UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;If you expected Armory to be in online modeUNOlt;/bUNOgt;, please verify your internet connection is active, then restart Armory.  If you think the lack of internet connection is in error (such as if you are using Tor), then you can restart Armory with the UNOquot;--skip-online-checkUNOquot; option, or change it in the Armory settings.UNOlt;brUNOgt;UNOlt;brUNOgt;If you do not have Unobtanium Core installed, you can download it from UNOlt;a href=UNOquot;http://unobtanium.unoUNOquot;UNOgt;http://unobtanium.unoUNOlt;/aUNOgt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4189"/>
-        <source>You are currently in offline mode, but can switch to online mode by pressing the button above.  However, it is not recommended that you switch until Unobtanium Core/bitcoind is fully synchronized with the bitcoin network.  You will see a green checkmark in the bottom-right corner of the Unobtanium Core window when it is finished.&lt;br&gt;&lt;br&gt;Switching to online mode will give you access to more Armory functionality, including sending and receiving bitcoins and viewing the balances and transaction histories of each of your wallets.&lt;br&gt;&lt;br&gt;</source>
+        <source>You are currently in offline mode, but can switch to online mode by pressing the button above.  However, it is not recommended that you switch until Unobtanium Core/unobtaniumd is fully synchronized with the unobtanium network.  You will see a green checkmark in the bottom-right corner of the Unobtanium Core window when it is finished.UNOlt;brUNOgt;UNOlt;brUNOgt;Switching to online mode will give you access to more Armory functionality, including sending and receiving unobtaniums and viewing the balances and transaction histories of each of your wallets.UNOlt;brUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4203"/>
-        <source>You are currently in offline mode because Unobtanium Core is not running.  To switch to online mode, start Unobtanium Core and let it synchronize with the network -- you will see a green checkmark in the bottom-right corner when it is complete.  If Unobtanium Core is already running and you believe the lack of connection is an error (especially if using proxies), please see &lt;a href=&quot;https://bitcointalk.org/index.php?topic=155717.msg1719077#msg1719077&quot;&gt;this link&lt;/a&gt; for options.&lt;br&gt;&lt;br&gt;&lt;b&gt;If you prefer to have Armory do this for you&lt;/b&gt;, then please check &quot;Let Armory run Unobtanium Core in the background&quot; under &quot;File&quot;-&gt;&quot;Settings.&quot;&lt;br&gt;&lt;br&gt;If you already know what you&apos;re doing and simply need to fetch the latest version of Unobtanium Core, you can download it from &lt;a href=&quot;http://unobtanium.uno&quot;&gt;http://unobtanium.uno&lt;/a&gt;.</source>
+        <source>You are currently in offline mode because Unobtanium Core is not running.  To switch to online mode, start Unobtanium Core and let it synchronize with the network -- you will see a green checkmark in the bottom-right corner when it is complete.  If Unobtanium Core is already running and you believe the lack of connection is an error (especially if using proxies), please see UNOlt;a href=UNOquot;https://bxtcointalk.org/index.php?topic=155717.msg1719077#msg1719077UNOquot;UNOgt;this linkUNOlt;/aUNOgt; for options.UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;If you prefer to have Armory do this for youUNOlt;/bUNOgt;, then please check UNOquot;Let Armory run Unobtanium Core in the backgroundUNOquot; under UNOquot;FileUNOquot;-UNOgt;UNOquot;Settings.UNOquot;UNOlt;brUNOgt;UNOlt;brUNOgt;If you already know what youUNOapos;re doing and simply need to fetch the latest version of Unobtanium Core, you can download it from UNOlt;a href=UNOquot;http://unobtanium.unoUNOquot;UNOgt;http://unobtanium.unoUNOlt;/aUNOgt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4222"/>
-        <source>You are currently in offline mode because Armory could not detect an internet connection.  If you think this is in error, then restart Armory using the &quot; --skip-online-check&quot; option, or adjust the Armory settings.  Then restart Armory.&lt;br&gt;&lt;br&gt;If this is intended to be an offline computer, note that it is not necessary to have Unobtanium Core or bitcoind running.</source>
+        <source>You are currently in offline mode because Armory could not detect an internet connection.  If you think this is in error, then restart Armory using the UNOquot; --skip-online-checkUNOquot; option, or adjust the Armory settings.  Then restart Armory.UNOlt;brUNOgt;UNOlt;brUNOgt;If this is intended to be an offline computer, note that it is not necessary to have Unobtanium Core or unobtaniumd running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4233"/>
-        <source>You are currently in offline mode because Armory could not find the blockchain files produced by Unobtanium Core.  Do you run Unobtanium Core (or bitcoind) from a non-standard directory?   Armory expects to find the blkXXXX.dat files in &lt;br&gt;&lt;br&gt;%1&lt;br&gt;&lt;br&gt; If you know where they are located, please restart Armory using the &quot; --satoshi-datadir=[path]&quot; to notify Armory where to find them.</source>
+        <source>You are currently in offline mode because Armory could not find the blockchain files produced by Unobtanium Core.  Do you run Unobtanium Core (or unobtaniumd) from a non-standard directory?   Armory expects to find the blkXXXX.dat files in UNOlt;brUNOgt;UNOlt;brUNOgt;%1UNOlt;brUNOgt;UNOlt;brUNOgt; If you know where they are located, please restart Armory using the UNOquot; --satoshi-datadir=[path]UNOquot; to notify Armory where to find them.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4243"/>
-        <source>Armory was previously online, but the connection to Unobtanium Core/bitcoind was interrupted.  You will not be able to send bitcoins or confirm receipt of bitcoins until the connection is reestablished.  &lt;br&gt;&lt;br&gt;Please check that Unobtanium Core is open and synchronized with the network.  Armory will &lt;i&gt;try to reconnect&lt;/i&gt; automatically when the connection is available again.  If Unobtanium Core is available again, and reconnection does not happen, please restart Armory.&lt;br&gt;&lt;br&gt;</source>
+        <source>Armory was previously online, but the connection to Unobtanium Core/unobtaniumd was interrupted.  You will not be able to send unobtaniums or confirm receipt of unobtaniums until the connection is reestablished.  UNOlt;brUNOgt;UNOlt;brUNOgt;Please check that Unobtanium Core is open and synchronized with the network.  Armory will UNOlt;iUNOgt;try to reconnectUNOlt;/iUNOgt; automatically when the connection is available again.  If Unobtanium Core is available again, and reconnection does not happen, please restart Armory.UNOlt;brUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1039,43 +1039,43 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4258"/>
-        <source>Armory is scanning the global transaction history to retrieve information about your wallets.  The &quot;Transactions&quot; tab will be updated with wallet balance and history as soon as the scan is complete.  You may manage your wallets while you wait.&lt;br&gt;&lt;br&gt;</source>
+        <source>Armory is scanning the global transaction history to retrieve information about your wallets.  The UNOquot;TransactionsUNOquot; tab will be updated with wallet balance and history as soon as the scan is complete.  You may manage your wallets while you wait.UNOlt;brUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4270"/>
-        <source>It appears you are already running Unobtanium software (Unobtanium Core or bitcoind). Unlike previous versions of Armory, you should &lt;u&gt;not&lt;/u&gt; run this software yourself --  Armory will run it in the background for you.  Either close the Unobtanium application or adjust your settings.  If you change your settings, then please restart Armory.</source>
+        <source>It appears you are already running Unobtanium software (Unobtanium Core or unobtaniumd). Unlike previous versions of Armory, you should UNOlt;uUNOgt;notUNOlt;/uUNOgt; run this software yourself --  Armory will run it in the background for you.  Either close the Unobtanium application or adjust your settings.  If you change your settings, then please restart Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4279"/>
-        <source>&lt;b&gt;Only one more step to getting online with Armory!&lt;/b&gt;   You must install the Unobtanium software from http://unobtanium.uno in order for Armory to communicate with the Unobtanium network.  If the Unobtanium software is already installed and/or you would prefer to manage it yourself, please adjust your settings and restart Armory.</source>
+        <source>UNOlt;bUNOgt;Only one more step to getting online with Armory!UNOlt;/bUNOgt;   You must install the Unobtanium software from http://unobtanium.uno in order for Armory to communicate with the Unobtanium network.  If the Unobtanium software is already installed and/or you would prefer to manage it yourself, please adjust your settings and restart Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4320"/>
-        <source>Armory&apos;s communication with the Unobtanium network was interrupted. This usually does not happen unless you closed the process that Armory was using to communicate with the network. Armory requires %1 to be running in the background, and this error pops up if it disappears.&lt;br&gt;&lt;br&gt;You may continue in offline mode, or you can close all Unobtanium processes and restart Armory.</source>
+        <source>ArmoryUNOapos;s communication with the Unobtanium network was interrupted. This usually does not happen unless you closed the process that Armory was using to communicate with the network. Armory requires %1 to be running in the background, and this error pops up if it disappears.UNOlt;brUNOgt;UNOlt;brUNOgt;You may continue in offline mode, or you can close all Unobtanium processes and restart Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4329"/>
-        <source>Armory has experienced an issue trying to communicate with the Unobtanium software.  The software is running in the background, but Armory cannot communicate with it through RPC as it expects to be able to.  If you changed any settings in the Unobtanium home directory, please make sure that RPC is enabled and that it is accepting connections from localhost.  &lt;br&gt;&lt;br&gt;If you have not changed anything, please export the log file (from the &quot;File&quot; menu) and open an issue at https://github.com/goatpig/UnobtaniumArmory/issues</source>
+        <source>Armory has experienced an issue trying to communicate with the Unobtanium software.  The software is running in the background, but Armory cannot communicate with it through RPC as it expects to be able to.  If you changed any settings in the Unobtanium home directory, please make sure that RPC is enabled and that it is accepting connections from localhost.  UNOlt;brUNOgt;UNOlt;brUNOgt;If you have not changed anything, please export the log file (from the UNOquot;FileUNOquot; menu) and open an issue at https://github.com/goatpig/UnobtaniumArmory/issues</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4340"/>
-        <source>Armory does not detect internet access, but it does detect running Unobtanium software.  Armory is in offline-mode. &lt;br&gt;&lt;br&gt;If you are intending to run an offline system, you will not need to have the Unobtanium software installed on the offline computer.  It is only needed for the online computer. If you expected to be online and the absence of internet is an error, please restart Armory using the &quot;--skip-online-check&quot; option.  </source>
+        <source>Armory does not detect internet access, but it does detect running Unobtanium software.  Armory is in offline-mode. UNOlt;brUNOgt;UNOlt;brUNOgt;If you are intending to run an offline system, you will not need to have the Unobtanium software installed on the offline computer.  It is only needed for the online computer. If you expected to be online and the absence of internet is an error, please restart Armory using the UNOquot;--skip-online-checkUNOquot; option.  </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4350"/>
-        <source>Armory was started in offline-mode, but detected you are running Unobtanium software.  If you are intending to run an offline system, you will &lt;u&gt;not&lt;/u&gt; need to have the Unobtanium software installed or running on the offline computer.  It is only required for being online. </source>
+        <source>Armory was started in offline-mode, but detected you are running Unobtanium software.  If you are intending to run an offline system, you will UNOlt;uUNOgt;notUNOlt;/uUNOgt; need to have the Unobtanium software installed or running on the offline computer.  It is only required for being online. </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4519"/>
-        <source>Armory is &lt;u&gt;offline&lt;/u&gt;</source>
-        <translation>מערכת ארמורי is &lt;u&gt;מנותקת מהאינטרנט&lt;/u&gt;</translation>
+        <source>Armory is UNOlt;uUNOgt;offlineUNOlt;/uUNOgt;</source>
+        <translation>מערכת ארמורי is UNOlt;uUNOgt;מנותקת מהאינטרנטUNOlt;/uUNOgt;</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4504"/>
@@ -1104,8 +1104,8 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4567"/>
-        <source>Since version 0.88, Armory runs bitcoind in the background.  You can switch back to the old way in the Settings dialog. </source>
-        <translation>החל מגירסה 0.88, תוכנת ארמורי מריצה את bitcoind ברקע.
+        <source>Since version 0.88, Armory runs unobtaniumd in the background.  You can switch back to the old way in the Settings dialog. </source>
+        <translation>החל מגירסה 0.88, תוכנת ארמורי מריצה את unobtaniumd ברקע.
 באפשרותך לחזור לשיטה הישנה בחלון ההגדרות.</translation>
     </message>
     <message>
@@ -1125,7 +1125,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4790"/>
-        <source>&lt;font color=%1&gt;Connected (%2 blocks)&lt;/font&gt; </source>
+        <source>UNOlt;font color=%1UNOgt;Connected (%2 blocks)UNOlt;/fontUNOgt; </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1135,12 +1135,12 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4802"/>
-        <source>&lt;font color=%1&gt;Node offline (%2 blocks)&lt;/font&gt; </source>
+        <source>UNOlt;font color=%1UNOgt;Node offline (%2 blocks)UNOlt;/fontUNOgt; </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4807"/>
-        <source>Disconnected from Unobtanium Node, cannot update history &lt;br&gt;&lt;br&gt;Last known block: %1 &lt;br&gt;Received %2 ago</source>
+        <source>Disconnected from Unobtanium Node, cannot update history UNOlt;brUNOgt;UNOlt;brUNOgt;Last known block: %1 UNOlt;brUNOgt;Received %2 ago</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1170,7 +1170,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4999"/>
-        <source>Connection to Unobtanium Core client lost!  Armory cannot send nor receive bitcoins until connection is re-established.</source>
+        <source>Connection to Unobtanium Core client lost!  Armory cannot send nor receive unobtaniums until connection is re-established.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1205,7 +1205,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5266"/>
-        <source>Amount:  %1 BTC</source>
+        <source>Amount:  %1 UNO</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1225,22 +1225,22 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5219"/>
-        <source>Wallet &quot;%1&quot; (%2)</source>
+        <source>Wallet UNOquot;%1UNOquot; (%2)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5227"/>
-        <source>Lockbox %1-of-%2 &quot;%3&quot; (%4)</source>
+        <source>Lockbox %1-of-%2 UNOquot;%3UNOquot; (%4)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5238"/>
-        <source>Your bitcoins just did a lap!</source>
+        <source>Your unobtaniums just did a lap!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5238"/>
-        <source>%1 just sent some BTC to itself!</source>
+        <source>%1 just sent some UNO to itself!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1250,8 +1250,8 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5263"/>
-        <source>&lt;Multiple Recipients&gt;</source>
-        <translation>&lt;נמענים מרובים&gt;</translation>
+        <source>UNOlt;Multiple RecipientsUNOgt;</source>
+        <translation>UNOlt;נמענים מרוביםUNOgt;</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5267"/>
@@ -1315,37 +1315,37 @@
     </message>
     <message numerus="yes">
         <location filename="ArmoryQt.py" line="4307"/>
-        <source>The software is downloading and processing the latest activity on the network related to your wallet(s).  This should take only a few minutes.  While you wait, you can manage your wallet(s).  &lt;br&gt;&lt;br&gt;Now would be a good time to make paper (or digital) backups of your wallet(s) if you have not done so already!  You are protected &lt;i&gt;forever&lt;/i&gt; from hard-drive loss, or forgetting you password. If you do not have a backup, you could lose all of your Unobtaniums forever!</source>
+        <source>The software is downloading and processing the latest activity on the network related to your wallet(s).  This should take only a few minutes.  While you wait, you can manage your wallet(s).  UNOlt;brUNOgt;UNOlt;brUNOgt;Now would be a good time to make paper (or digital) backups of your wallet(s) if you have not done so already!  You are protected UNOlt;iUNOgt;foreverUNOlt;/iUNOgt; from hard-drive loss, or forgetting you password. If you do not have a backup, you could lose all of your Unobtaniums forever!</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4044"/>
-        <source>The following functionalities are available while scanning in offline mode:&lt;ul&gt;&lt;li&gt;Create new wallets&lt;/li&gt;&lt;li&gt;Generate receiving addresses for your wallets&lt;/li&gt;&lt;li&gt;Create backups of your wallets (printed or digital)&lt;/li&gt;&lt;li&gt;Change wallet encryption settings&lt;/li&gt;&lt;li&gt;Sign transactions created from an online system&lt;/li&gt;&lt;li&gt;Sign messages&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt;  The Unobtanium network &lt;u&gt;will&lt;/u&gt; process transactions to your addresses, even if you are offline.  It is perfectly okay to create and distribute payment addresses while Armory is offline, you just won&apos;t be able to verify those payments until the next time Armory is online.</source>
+        <source>The following functionalities are available while scanning in offline mode:UNOlt;ulUNOgt;UNOlt;liUNOgt;Create new walletsUNOlt;/liUNOgt;UNOlt;liUNOgt;Generate receiving addresses for your walletsUNOlt;/liUNOgt;UNOlt;liUNOgt;Create backups of your wallets (printed or digital)UNOlt;/liUNOgt;UNOlt;liUNOgt;Change wallet encryption settingsUNOlt;/liUNOgt;UNOlt;liUNOgt;Sign transactions created from an online systemUNOlt;/liUNOgt;UNOlt;liUNOgt;Sign messagesUNOlt;/liUNOgt;UNOlt;/ulUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;NOTE:UNOlt;/bUNOgt;  The Unobtanium network UNOlt;uUNOgt;willUNOlt;/uUNOgt; process transactions to your addresses, even if you are offline.  It is perfectly okay to create and distribute payment addresses while Armory is offline, you just wonUNOapos;t be able to verify those payments until the next time Armory is online.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4060"/>
-        <source>The following functionalities are available in offline mode:&lt;ul&gt;&lt;li&gt;Create, import or recover wallets&lt;/li&gt;&lt;li&gt;Generate new receiving addresses for your wallets&lt;/li&gt;&lt;li&gt;Create backups of your wallets (printed or digital)&lt;/li&gt;&lt;li&gt;Import private keys to wallets&lt;/li&gt;&lt;li&gt;Change wallet encryption settings&lt;/li&gt;&lt;li&gt;Sign messages&lt;/li&gt;&lt;li&gt;&lt;b&gt;Sign transactions created from an online system&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt;  The Unobtanium network &lt;u&gt;will&lt;/u&gt; process transactions to your addresses, regardless of whether you are online.  It is perfectly okay to create and distribute payment addresses while Armory is offline, you just won&apos;t be able to verify those payments until the next time Armory is online.</source>
+        <source>The following functionalities are available in offline mode:UNOlt;ulUNOgt;UNOlt;liUNOgt;Create, import or recover walletsUNOlt;/liUNOgt;UNOlt;liUNOgt;Generate new receiving addresses for your walletsUNOlt;/liUNOgt;UNOlt;liUNOgt;Create backups of your wallets (printed or digital)UNOlt;/liUNOgt;UNOlt;liUNOgt;Import private keys to walletsUNOlt;/liUNOgt;UNOlt;liUNOgt;Change wallet encryption settingsUNOlt;/liUNOgt;UNOlt;liUNOgt;Sign messagesUNOlt;/liUNOgt;UNOlt;liUNOgt;UNOlt;bUNOgt;Sign transactions created from an online systemUNOlt;/bUNOgt;UNOlt;/liUNOgt;UNOlt;/ulUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;NOTE:UNOlt;/bUNOgt;  The Unobtanium network UNOlt;uUNOgt;willUNOlt;/uUNOgt; process transactions to your addresses, regardless of whether you are online.  It is perfectly okay to create and distribute payment addresses while Armory is offline, you just wonUNOapos;t be able to verify those payments until the next time Armory is online.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4144"/>
-        <source>Armory is currently online, but you have requested a sweep operation on one or more private keys.  This requires searching the global transaction history for the available balance of the keys to be swept. &lt;br&gt;&lt;br&gt;Press the button to start the blockchain scan, which will also put Armory into offline mode for a few minutes until the scan operation is complete.</source>
+        <source>Armory is currently online, but you have requested a sweep operation on one or more private keys.  This requires searching the global transaction history for the available balance of the keys to be swept. UNOlt;brUNOgt;UNOlt;brUNOgt;Press the button to start the blockchain scan, which will also put Armory into offline mode for a few minutes until the scan operation is complete.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4357"/>
-        <source>The Unobtanium software indicates there is a problem with its databases.  This can occur when Unobtanium Core/bitcoind is upgraded or downgraded, or sometimes just by chance after an unclean shutdown.&lt;br&gt;&lt;br&gt;You can either revert your installed Unobtanium software to the last known working version (but not earlier than version 0.8.1) or delete everything &lt;b&gt;except&lt;/b&gt; &quot;wallet.dat&quot; from your Unobtanium home directory &lt;font face=&quot;courier&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;If you choose to delete the contents of the Unobtanium home directory, you will have to do a fresh download of the blockchain again, which will require a few hours the first time.</source>
+        <source>The Unobtanium software indicates there is a problem with its databases.  This can occur when Unobtanium Core/unobtaniumd is upgraded or downgraded, or sometimes just by chance after an unclean shutdown.UNOlt;brUNOgt;UNOlt;brUNOgt;You can either revert your installed Unobtanium software to the last known working version (but not earlier than version 0.8.1) or delete everything UNOlt;bUNOgt;exceptUNOlt;/bUNOgt; UNOquot;wallet.datUNOquot; from your Unobtanium home directory UNOlt;font face=UNOquot;courierUNOquot;UNOgt;UNOlt;bUNOgt;%1UNOlt;/bUNOgt;UNOlt;/fontUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;If you choose to delete the contents of the Unobtanium home directory, you will have to do a fresh download of the blockchain again, which will require a few hours the first time.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1936"/>
-        <source>It looks like you just clicked a &quot;unobtanium:&quot; link, but that link is malformed.</source>
+        <source>It looks like you just clicked a UNOquot;unobtanium:UNOquot; link, but that link is malformed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1938"/>
-        <source>It looks like you just entered a &quot;unobtanium:&quot; link, but that link is malformed.</source>
+        <source>It looks like you just entered a UNOquot;unobtanium:UNOquot; link, but that link is malformed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1375,42 +1375,42 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="514"/>
-        <source>&amp;Export Transactions...</source>
+        <source>UNOamp;Export Transactions...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="515"/>
-        <source>&amp;Settings...</source>
+        <source>UNOamp;Settings...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="516"/>
-        <source>&amp;Minimize Armory</source>
+        <source>UNOamp;Minimize Armory</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="517"/>
-        <source>Export &amp;Log File...</source>
+        <source>Export UNOamp;Log File...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="518"/>
-        <source>&amp;Quit Armory</source>
+        <source>UNOamp;Quit Armory</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="534"/>
-        <source>&amp;Standard</source>
+        <source>UNOamp;Standard</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="535"/>
-        <source>&amp;Advanced</source>
+        <source>UNOamp;Advanced</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="536"/>
-        <source>&amp;Expert</source>
+        <source>UNOamp;Expert</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1420,7 +1420,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="390"/>
-        <source>Funds that have less than 6 confirmations, and thus should not be considered &lt;i&gt;yours&lt;/i&gt;, yet.</source>
+        <source>Funds that have less than 6 confirmations, and thus should not be considered UNOlt;iUNOgt;yoursUNOlt;/iUNOgt;, yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1440,7 +1440,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="595"/>
-        <source>Import a signature-collector text block for review and signing. It is usually a block of text with &quot;TXSIGCOLLECT&quot; in the first line, or a &lt;i&gt;*.sigcollect.tx&lt;/i&gt; file.</source>
+        <source>Import a signature-collector text block for review and signing. It is usually a block of text with UNOquot;TXSIGCOLLECTUNOquot; in the first line, or a UNOlt;iUNOgt;*.sigcollect.txUNOlt;/iUNOgt; file.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1470,17 +1470,17 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="840"/>
-        <source>Module &quot;%1&quot; is only specified to work up to Armory version %2. You are using Armory version %3.  Please remove the module if you experience any problems with it, or contact the maintainer for a new version. &lt;br&gt;&lt;br&gt; Do you want to continue loading the module?</source>
+        <source>Module UNOquot;%1UNOquot; is only specified to work up to Armory version %2. You are using Armory version %3.  Please remove the module if you experience any problems with it, or contact the maintainer for a new version. UNOlt;brUNOgt;UNOlt;brUNOgt; Do you want to continue loading the module?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="907"/>
-        <source>Armory detected the following module which &lt;font color=&quot;%1&quot;&gt;&lt;b&gt;has not been signed by Armory&lt;/b&gt;&lt;/font&gt; and may be dangerous: &lt;br&gt;&lt;br&gt;   &lt;b&gt;Module Name:&lt;/b&gt; %2&lt;br&gt;   &lt;b&gt;Module Path:&lt;/b&gt; %3&lt;br&gt;&lt;br&gt;&lt;br&gt;Armory will not allow you to run this module.</source>
+        <source>Armory detected the following module which UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt;has not been signed by ArmoryUNOlt;/bUNOgt;UNOlt;/fontUNOgt; and may be dangerous: UNOlt;brUNOgt;UNOlt;brUNOgt;   UNOlt;bUNOgt;Module Name:UNOlt;/bUNOgt; %2UNOlt;brUNOgt;   UNOlt;bUNOgt;Module Path:UNOlt;/bUNOgt; %3UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;Armory will not allow you to run this module.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="935"/>
-        <source>Module %1 is only specified to work up to Armory version %2. You are using Armory version %3.  Please remove the module if you experience any problems with it, or contact the maintainer for a new version.&lt;br&gt;&lt;br&gt;Do you want to continue loading the module?</source>
+        <source>Module %1 is only specified to work up to Armory version %2. You are using Armory version %3.  Please remove the module if you experience any problems with it, or contact the maintainer for a new version.UNOlt;brUNOgt;UNOlt;brUNOgt;Do you want to continue loading the module?</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1490,32 +1490,32 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1004"/>
-        <source>&lt;br&gt;&lt;br&gt;Make sure you also restart Unobtanium Core (or bitcoind) and let it synchronize again before you restart Armory.  Doing so will clear its memory pool as well.</source>
+        <source>UNOlt;brUNOgt;UNOlt;brUNOgt;Make sure you also restart Unobtanium Core (or unobtaniumd) and let it synchronize again before you restart Armory.  Doing so will clear its memory pool as well.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1138"/>
-        <source>The next time you restart Armory, it will rescan the blockchain database, and reconstruct your wallet histories from scratch. The rescan will take 10-60 minutes depending on your system. &lt;br&gt;&lt;br&gt; Do you wish to force a rescan on the next Armory restart?</source>
+        <source>The next time you restart Armory, it will rescan the blockchain database, and reconstruct your wallet histories from scratch. The rescan will take 10-60 minutes depending on your system. UNOlt;brUNOgt;UNOlt;brUNOgt; Do you wish to force a rescan on the next Armory restart?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1150"/>
-        <source>The next time you restart Armory, it will rebuild and rescan the entire blockchain database.  This operation can take between 30 minutes and 4 hours depending on your system speed. &lt;br&gt;&lt;br&gt;Do you wish to force a rebuild on the next Armory restart?</source>
+        <source>The next time you restart Armory, it will rebuild and rescan the entire blockchain database.  This operation can take between 30 minutes and 4 hours depending on your system speed. UNOlt;brUNOgt;UNOlt;brUNOgt;Do you wish to force a rebuild on the next Armory restart?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1162"/>
-        <source>The next time you restart Armory, it will rescan the balance of your wallets. This operation typically takes less than a minute. &lt;br&gt;&lt;br&gt;Do you wish to force a balance rescan on the next Armory restart?</source>
+        <source>The next time you restart Armory, it will rescan the balance of your wallets. This operation typically takes less than a minute. UNOlt;brUNOgt;UNOlt;brUNOgt;Do you wish to force a balance rescan on the next Armory restart?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1477"/>
-        <source>Armory is not set as your default application for handling &quot;unobtanium:&quot; links.  Would you like to use Armory as the default?</source>
+        <source>Armory is not set as your default application for handling UNOquot;unobtanium:UNOquot; links.  Would you like to use Armory as the default?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1530"/>
-        <source>Since Armory version 0.92 the formats for offline transaction operations has changed to accommodate multi-signature transactions.  This format is &lt;u&gt;not&lt;/u&gt; compatible with versions of Armory before 0.92. &lt;br&gt;&lt;br&gt;To continue, the other system will need to be upgraded to to version 0.92 or later.  If you cannot upgrade the other system, you will need to reinstall an older version of Armory on this system.</source>
+        <source>Since Armory version 0.92 the formats for offline transaction operations has changed to accommodate multi-signature transactions.  This format is UNOlt;uUNOgt;notUNOlt;/uUNOgt; compatible with versions of Armory before 0.92. UNOlt;brUNOgt;UNOlt;brUNOgt;To continue, the other system will need to be upgraded to to version 0.92 or later.  If you cannot upgrade the other system, you will need to reinstall an older version of Armory on this system.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1530,7 +1530,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1636"/>
-        <source>Your wallet was successfully backed up to the following location:&lt;br&gt;&lt;br&gt;%1</source>
+        <source>Your wallet was successfully backed up to the following location:UNOlt;brUNOgt;UNOlt;brUNOgt;%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1555,47 +1555,47 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1921"/>
-        <source>You clicked on a &quot;unobtanium:&quot; link, but Armory is in offline mode, and is not capable of creating transactions. Using links will only work if Armory is connected to the Unobtanium network!</source>
+        <source>You clicked on a UNOquot;unobtanium:UNOquot; link, but Armory is in offline mode, and is not capable of creating transactions. Using links will only work if Armory is connected to the Unobtanium network!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1927"/>
-        <source>You entered a &quot;unobtanium:&quot; link, but Armory is in offline mode, and is not capable of creating transactions. Using links will only work if Armory is connected to the Unobtanium network!</source>
+        <source>You entered a UNOquot;unobtanium:UNOquot; link, but Armory is in offline mode, and is not capable of creating transactions. Using links will only work if Armory is connected to the Unobtanium network!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1949"/>
-        <source>The &quot;unobtanium:&quot; link you just clicked does not even contain an address!  There is nothing that Armory can do with this link!</source>
+        <source>The UNOquot;unobtanium:UNOquot; link you just clicked does not even contain an address!  There is nothing that Armory can do with this link!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1953"/>
-        <source>The &quot;unobtanium:&quot; link you just entered does not even contain an address!  There is nothing that Armory can do with this link!</source>
+        <source>The UNOquot;unobtanium:UNOquot; link you just entered does not even contain an address!  There is nothing that Armory can do with this link!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1966"/>
-        <source>The address for the &quot;unobtanium:&quot; link you just clicked is for the wrong network!  You are on the &lt;b&gt;%2&lt;/b&gt; and the address you supplied is for the &lt;b&gt;%3&lt;/b&gt;!</source>
+        <source>The address for the UNOquot;unobtanium:UNOquot; link you just clicked is for the wrong network!  You are on the UNOlt;bUNOgt;%2UNOlt;/bUNOgt; and the address you supplied is for the UNOlt;bUNOgt;%3UNOlt;/bUNOgt;!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1985"/>
-        <source>The &quot;unobtanium:&quot; link you just clicked contains fields that are required but not recognized by Armory.  This may be an older version of Armory, or the link you clicked on uses an exotic, unsupported format. &lt;br&gt;&lt;br&gt;The action cannot be completed.</source>
+        <source>The UNOquot;unobtanium:UNOquot; link you just clicked contains fields that are required but not recognized by Armory.  This may be an older version of Armory, or the link you clicked on uses an exotic, unsupported format. UNOlt;brUNOgt;UNOlt;brUNOgt;The action cannot be completed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1991"/>
-        <source>The &quot;unobtanium:&quot; link you just entered contains fields that are required but not recognized by Armory.  This may be an older version of Armory, or the link you entered on uses an exotic, unsupported format. &lt;br&gt;&lt;br&gt;The action cannot be completed.</source>
+        <source>The UNOquot;unobtanium:UNOquot; link you just entered contains fields that are required but not recognized by Armory.  This may be an older version of Armory, or the link you entered on uses an exotic, unsupported format. UNOlt;brUNOgt;UNOlt;brUNOgt;The action cannot be completed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="2007"/>
-        <source>You just clicked on a &quot;unobtanium:&quot; link, but Armory is offline and cannot send transactions.  Please click the link again when Armory is online.</source>
+        <source>You just clicked on a UNOquot;unobtanium:UNOquot; link, but Armory is offline and cannot send transactions.  Please click the link again when Armory is online.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="2471"/>
-        <source>Blockchain loading is complete. Your balances and transaction history are now available under the &quot;Transactions&quot; tab.  You can also send and receive bitcoins.</source>
+        <source>Blockchain loading is complete. Your balances and transaction history are now available under the UNOquot;TransactionsUNOquot; tab.  You can also send and receive unobtaniums.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1605,7 +1605,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="2941"/>
-        <source>You are already in the process of scanning the blockchain for the purposes of sweeping other addresses.  You cannot initiate sweeping new addresses until the current operation completes. &lt;br&gt;&lt;br&gt;In the future, you may select &quot;Multiple Keys&quot; when entering addresses to sweep.  There is no limit on the number that can be specified, but they must all be entered at once.</source>
+        <source>You are already in the process of scanning the blockchain for the purposes of sweeping other addresses.  You cannot initiate sweeping new addresses until the current operation completes. UNOlt;brUNOgt;UNOlt;brUNOgt;In the future, you may select UNOquot;Multiple KeysUNOquot; when entering addresses to sweep.  There is no limit on the number that can be specified, but they must all be entered at once.</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">
@@ -1615,7 +1615,7 @@
     </message>
     <message numerus="yes">
         <location filename="ArmoryQt.py" line="2971"/>
-        <source>Armory must scan the global transaction history in order to find any bitcoins associated with the keys you supplied. Armory will go into offline mode temporarily while the scan is performed, and you will not have access to balances or be able to create transactions.  The scan may take several minutes.&lt;br&gt;&lt;br&gt;</source>
+        <source>Armory must scan the global transaction history in order to find any unobtaniums associated with the keys you supplied. Armory will go into offline mode temporarily while the scan is performed, and you will not have access to balances or be able to create transactions.  The scan may take several minutes.UNOlt;brUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
@@ -1635,7 +1635,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3108"/>
-        <source>The transaction that you just executed failed with the following error message: &lt;br&gt;&lt;br&gt; &lt;b&gt;%1&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;On time out errors, the transaction may have actually succeeded and this message is displayed prematurely.  To confirm whether the the transaction actually succeeded, you can try this direct link to %2: &lt;br&gt;&lt;br&gt;&lt;a href=&quot;%3&quot;&gt;%4...&lt;/a&gt;&lt;br&gt;&lt;br&gt;If you do not see the transaction on that webpage within one minute, it failed and you should attempt to re-send it. If it &lt;i&gt;does&lt;/i&gt; show up, then you do not need to do anything else -- it will show up in Armory as soon as it receives one confirmation. &lt;br&gt;&lt;br&gt;If the transaction did fail, it is likely because the fee is too low. Try again with a higher fee. If the problem persists, go to &quot;&lt;i&gt;File&lt;/i&gt;&quot; -&gt; &quot;&lt;i&gt;Export Log File&lt;/i&gt;&quot; and then attach it to a support ticket at &lt;a href=&quot;%5&quot;&gt;%5&lt;/a&gt;</source>
+        <source>The transaction that you just executed failed with the following error message: UNOlt;brUNOgt;UNOlt;brUNOgt; UNOlt;bUNOgt;%1UNOlt;/bUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;On time out errors, the transaction may have actually succeeded and this message is displayed prematurely.  To confirm whether the the transaction actually succeeded, you can try this direct link to %2: UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;a href=UNOquot;%3UNOquot;UNOgt;%4...UNOlt;/aUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;If you do not see the transaction on that webpage within one minute, it failed and you should attempt to re-send it. If it UNOlt;iUNOgt;doesUNOlt;/iUNOgt; show up, then you do not need to do anything else -- it will show up in Armory as soon as it receives one confirmation. UNOlt;brUNOgt;UNOlt;brUNOgt;If the transaction did fail, it is likely because the fee is too low. Try again with a higher fee. If the problem persists, go to UNOquot;UNOlt;iUNOgt;FileUNOlt;/iUNOgt;UNOquot; -UNOgt; UNOquot;UNOlt;iUNOgt;Export Log FileUNOlt;/iUNOgt;UNOquot; and then attach it to a support ticket at UNOlt;a href=UNOquot;%5UNOquot;UNOgt;%5UNOlt;/aUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1650,7 +1650,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3197"/>
-        <source>&lt;font color=&quot;red&quot;&gt;&lt;b&gt;WARNING:&lt;/b&gt;&lt;/font&gt; You are about to make an &lt;u&gt;unencrypted&lt;/u&gt; backup of your wallet.  It is highly recommended that you do &lt;u&gt;not&lt;/u&gt; ever save unencrypted wallets to your regular hard drive.  This feature is intended for saving to a USB key or other removable media.</source>
+        <source>UNOlt;font color=UNOquot;redUNOquot;UNOgt;UNOlt;bUNOgt;WARNING:UNOlt;/bUNOgt;UNOlt;/fontUNOgt; You are about to make an UNOlt;uUNOgt;unencryptedUNOlt;/uUNOgt; backup of your wallet.  It is highly recommended that you do UNOlt;uUNOgt;notUNOlt;/uUNOgt; ever save unencrypted wallets to your regular hard drive.  This feature is intended for saving to a USB key or other removable media.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1670,17 +1670,17 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3272"/>
-        <source>The transaction you requested be displayed does not exist in Armory&apos;s database.  This is unusual...</source>
+        <source>The transaction you requested be displayed does not exist in ArmoryUNOapos;s database.  This is unusual...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3306"/>
-        <source>Armory encountered an error opening your web browser.  To view this transaction on blockchain.info, please copy and paste the following URL into your browser: &lt;br&gt;&lt;br&gt;%1</source>
+        <source>Armory encountered an error opening your web browser.  To view this transaction on blockchain.info, please copy and paste the following URL into your browser: UNOlt;brUNOgt;UNOlt;brUNOgt;%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3335"/>
-        <source>Armory is currently running in offline mode, and has no ability to determine balances or create transactions. &lt;br&gt;&lt;br&gt;In order to send coins from this wallet you must use a full copy of this wallet from an online computer, or initiate an &quot;offline transaction&quot; using a watching-only wallet on an online computer.</source>
+        <source>Armory is currently running in offline mode, and has no ability to determine balances or create transactions. UNOlt;brUNOgt;UNOlt;brUNOgt;In order to send coins from this wallet you must use a full copy of this wallet from an online computer, or initiate an UNOquot;offline transactionUNOquot; using a watching-only wallet on an online computer.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1690,42 +1690,42 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3354"/>
-        <source>You cannot send any bitcoins until you create a wallet and receive some coins.  Would you like to create a wallet?</source>
+        <source>You cannot send any unobtaniums until you create a wallet and receive some coins.  Would you like to create a wallet?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3383"/>
-        <source>You just clicked on a &quot;unobtanium:&quot; link requesting bitcoins to be sent to the following address:&lt;br&gt; </source>
+        <source>You just clicked on a UNOquot;unobtanium:UNOquot; link requesting unobtaniums to be sent to the following address:UNOlt;brUNOgt; </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3410"/>
-        <source>&lt;br&gt;&lt;br&gt;There is no amount specified in the link, so you can decide the amount after selecting a wallet to use for this transaction. </source>
+        <source>UNOlt;brUNOgt;UNOlt;brUNOgt;There is no amount specified in the link, so you can decide the amount after selecting a wallet to use for this transaction. </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3414"/>
-        <source>&lt;br&gt;&lt;br&gt;&lt;b&gt;The specified amount &lt;u&gt;can&lt;/u&gt; be changed&lt;/b&gt; on the next screen before hitting the &quot;Send&quot; button. </source>
+        <source>UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;The specified amount UNOlt;uUNOgt;canUNOlt;/uUNOgt; be changedUNOlt;/bUNOgt; on the next screen before hitting the UNOquot;SendUNOquot; button. </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3419"/>
-        <source>You just clicked on a &quot;unobtanium:&quot; link to send money, but you currently have no wallets!  Would you like to create a wallet now?</source>
+        <source>You just clicked on a UNOquot;unobtanium:UNOquot; link to send money, but you currently have no wallets!  Would you like to create a wallet now?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3438"/>
-        <source>You have not created any wallets which means there is nowhere to store you bitcoins!  Would you like to create a wallet now?</source>
+        <source>You have not created any wallets which means there is nowhere to store you unobtaniums!  Would you like to create a wallet now?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3511"/>
-        <source>&lt;b&gt;&lt;u&gt;&lt;font size=3&gt;Wallet Analysis Log Files&lt;/font&gt;&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt; The wallet analysis logs contain no personally-identifiable information, only a record of errors and inconsistencies found in your wallet file.  No private keys or even public keys are included. &lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;&lt;font size=3&gt;Regular Log Files&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;The regular log files do not contain any &lt;u&gt;security&lt;/u&gt;-sensitive information, but some users may consider the information to be &lt;u&gt;privacy&lt;/u&gt;-sensitive.  The log files may identify some addresses and transactions that are related to your wallets.  It is always recommended you include your log files with any request to the Armory team, unless you are uncomfortable with the privacy implications. &lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;&lt;font size=3&gt;Watching-only Wallet&lt;/font&gt;&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;A watching-only wallet is a copy of a regular wallet that does not contain any signing keys.  This allows the holder to see the balance and transaction history of the wallet, but not spend any of the funds. &lt;br&gt;&lt;br&gt; You may be requested to submit a watching-only copy of your wallet to make sure that there is no risk to the security of your funds.  You should not even consider sending your watching-only wallet unless it was specifically requested by an Armory representative.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;UNOlt;font size=3UNOgt;Wallet Analysis Log FilesUNOlt;/fontUNOgt;UNOlt;/uUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt; The wallet analysis logs contain no personally-identifiable information, only a record of errors and inconsistencies found in your wallet file.  No private keys or even public keys are included. UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;UNOlt;font size=3UNOgt;Regular Log FilesUNOlt;/fontUNOgt;UNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;The regular log files do not contain any UNOlt;uUNOgt;securityUNOlt;/uUNOgt;-sensitive information, but some users may consider the information to be UNOlt;uUNOgt;privacyUNOlt;/uUNOgt;-sensitive.  The log files may identify some addresses and transactions that are related to your wallets.  It is always recommended you include your log files with any request to the Armory team, unless you are uncomfortable with the privacy implications. UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;UNOlt;font size=3UNOgt;Watching-only WalletUNOlt;/fontUNOgt;UNOlt;/uUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;A watching-only wallet is a copy of a regular wallet that does not contain any signing keys.  This allows the holder to see the balance and transaction history of the wallet, but not spend any of the funds. UNOlt;brUNOgt;UNOlt;brUNOgt; You may be requested to submit a watching-only copy of your wallet to make sure that there is no risk to the security of your funds.  You should not even consider sending your watching-only wallet unless it was specifically requested by an Armory representative.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3545"/>
-        <source>Armory log files do not contain any &lt;u&gt;security&lt;/u&gt;-sensitive information, but some users may consider the information to be &lt;u&gt;privacy&lt;/u&gt;-sensitive.  The log files may identify some addresses and transactions that are related to your wallets. &lt;br&gt;&lt;br&gt; &lt;b&gt;No signing-key data is ever written to the log file&lt;/b&gt;. Only enough data is there to help the Armory developers track down bugs in the software, but it may still be considered sensitive information to some users. &lt;br&gt;&lt;br&gt;Please do not send the log file to the Armory developers if you are not comfortable with the privacy implications!  However, if you do not send the log file, it may be very difficult or impossible for us to help you with your problem.</source>
+        <source>Armory log files do not contain any UNOlt;uUNOgt;securityUNOlt;/uUNOgt;-sensitive information, but some users may consider the information to be UNOlt;uUNOgt;privacyUNOlt;/uUNOgt;-sensitive.  The log files may identify some addresses and transactions that are related to your wallets. UNOlt;brUNOgt;UNOlt;brUNOgt; UNOlt;bUNOgt;No signing-key data is ever written to the log fileUNOlt;/bUNOgt;. Only enough data is there to help the Armory developers track down bugs in the software, but it may still be considered sensitive information to some users. UNOlt;brUNOgt;UNOlt;brUNOgt;Please do not send the log file to the Armory developers if you are not comfortable with the privacy implications!  However, if you do not send the log file, it may be very difficult or impossible for us to help you with your problem.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1750,37 +1750,37 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3788"/>
-        <source>Change Unobtanium Core/bitcoind management settings or point Armory to a non-standard Unobtanium installation</source>
+        <source>Change Unobtanium Core/unobtaniumd management settings or point Armory to a non-standard Unobtanium installation</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3791"/>
-        <source>Armory has detected a running Unobtanium Core or bitcoind instance and will force it to exit</source>
+        <source>Armory has detected a running Unobtanium Core or unobtaniumd instance and will force it to exit</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3843"/>
-        <source>Attempted to kill the running Unobtanium Core/bitcoind instance, but it was not found.</source>
+        <source>Attempted to kill the running Unobtanium Core/unobtaniumd instance, but it was not found.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4103"/>
-        <source>For more information about Armory, and even Unobtanium itself, you should visit the &lt;a href=&quot;https://bitcointalk.org/index.php?board=97.0&quot;&gt;Armory Forum&lt;/a&gt; and &lt;a href=&quot;http://unobtanium.uno&quot;&gt;Unobtanium.org&lt;/a&gt;.  If you are experiencing problems using this software, please visit the &lt;a href=&quot;https://bitcointalk.org/index.php?board=97.0&quot;&gt;Armory Forum&lt;/a&gt;. Users there will help you with any issues that you have. &lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;IMPORTANT:&lt;/u&gt;&lt;/b&gt; Make a backup of your wallet(s)!  Paper backups protect you &lt;i&gt;forever&lt;/i&gt; against forgotten passwords, hard-drive failure, and make it easy for your family to recover your funds if something terrible happens to you.  &lt;i&gt;Each wallet only needs to be backed up once, ever!&lt;/i&gt;  Without it, you are at risk of losing all of your Unobtaniums! &lt;br&gt;&lt;br&gt;</source>
+        <source>For more information about Armory, and even Unobtanium itself, you should visit the UNOlt;a href=UNOquot;https://bxtcointalk.org/index.php?board=97.0UNOquot;UNOgt;Armory ForumUNOlt;/aUNOgt; and UNOlt;a href=UNOquot;http://unobtanium.unoUNOquot;UNOgt;Unobtanium.orgUNOlt;/aUNOgt;.  If you are experiencing problems using this software, please visit the UNOlt;a href=UNOquot;https://bxtcointalk.org/index.php?board=97.0UNOquot;UNOgt;Armory ForumUNOlt;/aUNOgt;. Users there will help you with any issues that you have. UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;IMPORTANT:UNOlt;/uUNOgt;UNOlt;/bUNOgt; Make a backup of your wallet(s)!  Paper backups protect you UNOlt;iUNOgt;foreverUNOlt;/iUNOgt; against forgotten passwords, hard-drive failure, and make it easy for your family to recover your funds if something terrible happens to you.  UNOlt;iUNOgt;Each wallet only needs to be backed up once, ever!UNOlt;/iUNOgt;  Without it, you are at risk of losing all of your Unobtaniums! UNOlt;brUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4381"/>
-        <source>There was an error starting the underlying Unobtanium engine. This should not normally happen.  Usually it occurs when you have been using Unobtanium Core prior to using Armory, especially if you have upgraded or downgraded Unobtanium Core recently. Output from bitcoind:&lt;br&gt;</source>
+        <source>There was an error starting the underlying Unobtanium engine. This should not normally happen.  Usually it occurs when you have been using Unobtanium Core prior to using Armory, especially if you have upgraded or downgraded Unobtanium Core recently. Output from unobtaniumd:UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4390"/>
-        <source>There was an error starting the underlying Unobtanium engine. This should not normally happen.  Usually it occurs when you have been using Unobtanium Core prior to using Armory, especially if you have upgraded or downgraded Unobtanium Core recently. &lt;br&gt;&lt;br&gt; Unfortunately, this error is so strange, Armory does not recognize it.  Please go to &quot;Export Log File&quot; from the &quot;File&quot; menu and submit an issue at https://github.com/goatpig/UnobtaniumArmory/issues. We apologize for the inconvenience!</source>
+        <source>There was an error starting the underlying Unobtanium engine. This should not normally happen.  Usually it occurs when you have been using Unobtanium Core prior to using Armory, especially if you have upgraded or downgraded Unobtanium Core recently. UNOlt;brUNOgt;UNOlt;brUNOgt; Unfortunately, this error is so strange, Armory does not recognize it.  Please go to UNOquot;Export Log FileUNOquot; from the UNOquot;FileUNOquot; menu and submit an issue at https://github.com/goatpig/UnobtaniumArmory/issues. We apologize for the inconvenience!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5050"/>
-        <source>The DB has returned the following error: &lt;br&gt;&lt;br&gt; &lt;b&gt; %1 &lt;/b&gt; &lt;br&gt;&lt;br&gt; Armory will now shutdown.</source>
+        <source>The DB has returned the following error: UNOlt;brUNOgt;UNOlt;brUNOgt; UNOlt;bUNOgt; %1 UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt; Armory will now shutdown.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1790,32 +1790,32 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5536"/>
-        <source>&lt;b&gt;The following dialogs need closed before you can run the wallet analysis tool:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;The following dialogs need closed before you can run the wallet analysis tool:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5686"/>
-        <source>Armory failed to spawn the DB!&lt;br&gt; Continuing operations in offline mode instead. &lt;br&gt; Refer to the dbLog.txt for more information.</source>
+        <source>Armory failed to spawn the DB!UNOlt;brUNOgt; Continuing operations in offline mode instead. UNOlt;brUNOgt; Refer to the dbLog.txt for more information.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1972"/>
-        <source>The address for the &quot;unobtanium:&quot; link you just entered is for the wrong network!  You are on the &lt;b&gt;%2&lt;/b&gt; and the address you supplied is for the &lt;b&gt;%3&lt;/b&gt;!</source>
+        <source>The address for the UNOquot;unobtanium:UNOquot; link you just entered is for the wrong network!  You are on the UNOlt;bUNOgt;%2UNOlt;/bUNOgt; and the address you supplied is for the UNOlt;bUNOgt;%3UNOlt;/bUNOgt;!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="897"/>
-        <source>Armory detected the following module which is &lt;font color=%1&gt;&lt;b&gt;invalid&lt;/b&gt;&lt;/font&gt;:&lt;br&gt;&lt;br&gt;   &lt;b&gt;Module Name:&lt;/b&gt; %2&lt;br&gt;   &lt;b&gt;Module Path:&lt;/b&gt; %3&lt;br&gt;&lt;br&gt;&lt;br&gt;Armory will only run a module from a zip file that has the required stucture.</source>
+        <source>Armory detected the following module which is UNOlt;font color=%1UNOgt;UNOlt;bUNOgt;invalidUNOlt;/bUNOgt;UNOlt;/fontUNOgt;:UNOlt;brUNOgt;UNOlt;brUNOgt;   UNOlt;bUNOgt;Module Name:UNOlt;/bUNOgt; %2UNOlt;brUNOgt;   UNOlt;bUNOgt;Module Path:UNOlt;/bUNOgt; %3UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;Armory will only run a module from a zip file that has the required stucture.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4287"/>
-        <source>&lt;b&gt;To maximize your security, the Unobtanium engine is downloading and verifying the global transaction ledger.  &lt;u&gt;This will take several hours, but only needs to be done once&lt;/u&gt;!&lt;/b&gt;  It is usually best to leave it running over night for this initialization process.  Subsequent loads will only take a few minutes. &lt;br&gt;&lt;br&gt; &lt;b&gt;Please Note:&lt;/b&gt; Between Armory and the underlying Unobtanium engine, you need to have 120-130 GB of spare disk space available to hold the global transaction history. &lt;br&gt;&lt;br&gt; While you wait, you can manage your wallets.  Make new wallets, make digital or paper backups, create Unobtanium addresses to receive payments, sign messages, and/or import private keys.  You will always receive Unobtanium payments regardless of whether you are online, but you will have to verify that payment through another service until Armory is finished this initialization.</source>
+        <source>UNOlt;bUNOgt;To maximize your security, the Unobtanium engine is downloading and verifying the global transaction ledger.  UNOlt;uUNOgt;This will take several hours, but only needs to be done onceUNOlt;/uUNOgt;!UNOlt;/bUNOgt;  It is usually best to leave it running over night for this initialization process.  Subsequent loads will only take a few minutes. UNOlt;brUNOgt;UNOlt;brUNOgt; UNOlt;bUNOgt;Please Note:UNOlt;/bUNOgt; Between Armory and the underlying Unobtanium engine, you need to have 120-130 GB of spare disk space available to hold the global transaction history. UNOlt;brUNOgt;UNOlt;brUNOgt; While you wait, you can manage your wallets.  Make new wallets, make digital or paper backups, create Unobtanium addresses to receive payments, sign messages, and/or import private keys.  You will always receive Unobtanium payments regardless of whether you are online, but you will have to verify that payment through another service until Armory is finished this initialization.</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">
         <location filename="ArmoryQt.py" line="3023"/>
-        <source>You cannot sweep the funds from the address(es) you specified because the transaction fee would be greater than or equal to the amount swept. &lt;br&gt;&lt;br&gt; &lt;b&gt;Balance of address(es):&lt;/b&gt; %1&lt;br&gt; &lt;b&gt;Fee to sweep address(es):&lt;/b&gt; %2 &lt;br&gt;&lt;br&gt;The sweep operation has been canceled.</source>
+        <source>You cannot sweep the funds from the address(es) you specified because the transaction fee would be greater than or equal to the amount swept. UNOlt;brUNOgt;UNOlt;brUNOgt; UNOlt;bUNOgt;Balance of address(es):UNOlt;/bUNOgt; %1UNOlt;brUNOgt; UNOlt;bUNOgt;Fee to sweep address(es):UNOlt;/bUNOgt; %2 UNOlt;brUNOgt;UNOlt;brUNOgt;The sweep operation has been canceled.</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
@@ -1899,7 +1899,7 @@
     </message>
     <message>
         <location filename="CoinControlUI.py" line="33"/>
-        <source>By default, Armory will pick a subset of the UTXOs you chose explicitly through the coin control feature to best suit the total spend value of the transaction you are constructing. &lt;br&gt;&lt;br&gt;Checking &apos;Use all selected UTXOs&apos; forces the construction of a transaction that will redeem the exact list of UTXOs you picked instead.</source>
+        <source>By default, Armory will pick a subset of the UTXOs you chose explicitly through the coin control feature to best suit the total spend value of the transaction you are constructing. UNOlt;brUNOgt;UNOlt;brUNOgt;Checking UNOapos;Use all selected UTXOsUNOapos; forces the construction of a transaction that will redeem the exact list of UTXOs you picked instead.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1943,12 +1943,12 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="7648"/>
-        <source>&lt;b&gt;Send to Wallet:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Send to Wallet:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="7649"/>
-        <source>&lt;b&gt;Send to Address:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Send to Address:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1958,7 +1958,7 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="7702"/>
-        <source>Sending (Other&apos;s)</source>
+        <source>Sending (OtherUNOapos;s)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1968,7 +1968,7 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="7739"/>
-        <source>Addresses that are in other wallets you own are &lt;b&gt;not showns&lt;/b&gt;.</source>
+        <source>Addresses that are in other wallets you own are UNOlt;bUNOgt;not shownsUNOlt;/bUNOgt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1993,7 +1993,7 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="7765"/>
-        <source>&lt;&lt;&lt; Go Back</source>
+        <source>UNOlt;UNOlt;UNOlt; Go Back</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2053,7 +2053,7 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="7644"/>
-        <source>Browse all receiving addresses in this wallet, and all addresses to which this wallet has sent bitcoins.</source>
+        <source>Browse all receiving addresses in this wallet, and all addresses to which this wallet has sent unobtaniums.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2068,7 +2068,7 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="8106"/>
-        <source>This operation requires a public key, but you selected a P2SH address which does not have a public key (these addresses start with &quot;2&quot; or &quot;3&quot;).  Please select a different address.</source>
+        <source>This operation requires a public key, but you selected a P2SH address which does not have a public key (these addresses start with UNOquot;2UNOquot; or UNOquot;3UNOquot;).  Please select a different address.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2086,7 +2086,7 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="3152"/>
-        <source>&lt;b&gt;Public Key Hash&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Public Key HashUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2096,17 +2096,17 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="3165"/>
-        <source>&lt;b&gt;Wallet:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Wallet:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3170"/>
-        <source>&lt;b&gt;Address:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Address:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3184"/>
-        <source>&lt;b&gt;Address Type:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Address Type:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2126,17 +2126,17 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="3194"/>
-        <source>&lt;b&gt;Index:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Index:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3206"/>
-        <source>&lt;b&gt;Current Balance&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Current BalanceUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3222"/>
-        <source>&lt;b&gt;Comment:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Comment:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2146,12 +2146,12 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="3231"/>
-        <source>&lt;b&gt;Transaction Count:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Transaction Count:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3251"/>
-        <source>&lt;font size=2&gt;Double-click to expand&lt;/font&gt;</source>
+        <source>UNOlt;font size=2UNOgt;Double-click to expandUNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2181,7 +2181,7 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="3353"/>
-        <source>&lt;&lt;&lt; Go Back</source>
+        <source>UNOlt;UNOlt;UNOlt; Go Back</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2191,8 +2191,8 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="3366"/>
-        <source>&lt;i&gt;Copied!&lt;/i&gt;</source>
-        <translation>&lt;i&gt;הועתק!&lt;/i&gt;</translation>
+        <source>UNOlt;iUNOgt;Copied!UNOlt;/iUNOgt;</source>
+        <translation>UNOlt;iUNOgt;הועתק!UNOlt;/iUNOgt;</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3375"/>
@@ -2206,22 +2206,22 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="3175"/>
-        <source>Address type is either &lt;i&gt;Imported&lt;/i&gt; or &lt;i&gt;Permanent&lt;/i&gt;. &lt;i&gt;Permanent&lt;/i&gt; addresses are part of the base wallet, and are protected by printed paper backups, regardless of when the backup was performed. Imported addresses are only protected by digital backups, or manually printing the individual keys list, and only if the wallet was backed up &lt;i&gt;after&lt;/i&gt; the keys were imported.</source>
+        <source>Address type is either UNOlt;iUNOgt;ImportedUNOlt;/iUNOgt; or UNOlt;iUNOgt;PermanentUNOlt;/iUNOgt;. UNOlt;iUNOgt;PermanentUNOlt;/iUNOgt; addresses are part of the base wallet, and are protected by printed paper backups, regardless of when the backup was performed. Imported addresses are only protected by digital backups, or manually printing the individual keys list, and only if the wallet was backed up UNOlt;iUNOgt;afterUNOlt;/iUNOgt; the keys were imported.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3203"/>
-        <source>This is the current &lt;i&gt;spendable&lt;/i&gt; balance of this address, not including zero-confirmation transactions from others.</source>
+        <source>This is the current UNOlt;iUNOgt;spendableUNOlt;/iUNOgt; balance of this address, not including zero-confirmation transactions from others.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3295"/>
-        <source>Unlike the wallet-level ledger, this table shows every transaction &lt;i&gt;input&lt;/i&gt; and &lt;i&gt;output&lt;/i&gt; as a separate entry. Therefore, there may be multiple entries for a single transaction, which will happen if money was sent-to-self (explicitly, or as the change-back-to-self address).</source>
+        <source>Unlike the wallet-level ledger, this table shows every transaction UNOlt;iUNOgt;inputUNOlt;/iUNOgt; and UNOlt;iUNOgt;outputUNOlt;/iUNOgt; as a separate entry. Therefore, there may be multiple entries for a single transaction, which will happen if money was sent-to-self (explicitly, or as the change-back-to-self address).</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3330"/>
-        <source>NOTE:  The ledger shows each transaction &lt;i&gt;&lt;b&gt;input&lt;/b&gt;&lt;/i&gt; and &lt;i&gt;&lt;b&gt;output&lt;/b&gt;&lt;/i&gt; for this address.  There are typically many inputs and outputs for each transaction, therefore the entries represent only partial transactions.  Do not worry if these entries do not look familiar.</source>
+        <source>NOTE:  The ledger shows each transaction UNOlt;iUNOgt;UNOlt;bUNOgt;inputUNOlt;/bUNOgt;UNOlt;/iUNOgt; and UNOlt;iUNOgt;UNOlt;bUNOgt;outputUNOlt;/bUNOgt;UNOlt;/iUNOgt; for this address.  There are typically many inputs and outputs for each transaction, therefore the entries represent only partial transactions.  Do not worry if these entries do not look familiar.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2257,12 +2257,12 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="7097"/>
-        <source>Armory was not able to detect an internet connection, so Armory will operate in &quot;Offline&quot; mode.  In this mode, only wallet -management and unsigned-transaction functionality will be available. &lt;br&gt;&lt;br&gt;If this is an error, please check your internet connection and restart Armory.&lt;br&gt;&lt;br&gt;Would you like to continue in &quot;Offline&quot; mode?</source>
+        <source>Armory was not able to detect an internet connection, so Armory will operate in UNOquot;OfflineUNOquot; mode.  In this mode, only wallet -management and unsigned-transaction functionality will be available. UNOlt;brUNOgt;UNOlt;brUNOgt;If this is an error, please check your internet connection and restart Armory.UNOlt;brUNOgt;UNOlt;brUNOgt;Would you like to continue in UNOquot;OfflineUNOquot; mode?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="7105"/>
-        <source>Armory was not able to detect the presence of Unobtanium Core or bitcoind client software (available at http://unobtanium.uno).  Please make sure that the one of those programs is... &lt;br&gt; &lt;br&gt;&lt;b&gt;(1)&lt;/b&gt; ...open and connected to the network &lt;br&gt;&lt;b&gt;(2)&lt;/b&gt; ...on the same network as Armory (main-network or test-network) &lt;br&gt;&lt;b&gt;(3)&lt;/b&gt; ...synchronized with the blockchain before starting Armory&lt;br&gt;&lt;br&gt;Without the Unobtanium Core or bitcoind open, you will only be able to run Armory in &quot;Offline&quot; mode, which will not have access to new blockchain data, and you will not be able to send outgoing transactions&lt;br&gt;&lt;br&gt;If you do not want to be in &quot;Offline&quot; mode, please restart Armory after one of these programs is open and synchronized with the network</source>
+        <source>Armory was not able to detect the presence of Unobtanium Core or unobtaniumd client software (available at http://unobtanium.uno).  Please make sure that the one of those programs is... UNOlt;brUNOgt; UNOlt;brUNOgt;UNOlt;bUNOgt;(1)UNOlt;/bUNOgt; ...open and connected to the network UNOlt;brUNOgt;UNOlt;bUNOgt;(2)UNOlt;/bUNOgt; ...on the same network as Armory (main-network or test-network) UNOlt;brUNOgt;UNOlt;bUNOgt;(3)UNOlt;/bUNOgt; ...synchronized with the blockchain before starting ArmoryUNOlt;brUNOgt;UNOlt;brUNOgt;Without the Unobtanium Core or unobtaniumd open, you will only be able to run Armory in UNOquot;OfflineUNOquot; mode, which will not have access to new blockchain data, and you will not be able to send outgoing transactionsUNOlt;brUNOgt;UNOlt;brUNOgt;If you do not want to be in UNOquot;OfflineUNOquot; mode, please restart Armory after one of these programs is open and synchronized with the network</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2295,17 +2295,17 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="13615"/>
-        <source>Copy a raw, hex-encoded transaction below to have Armory broadcast it to the Unobtanium network.  This function is provided as a convenience to expert users, and carries no guarantees of usefulness. &lt;br&gt;&lt;br&gt;Specifically, be aware of the following limitations of this broadcast function: &lt;ul&gt;&lt;li&gt;The transaction will be &quot;broadcast&quot; by sending it to the connected Bitcon Core instance which will forward it to the rest of the Unobtanium network. However, if the transaction is non-standard or does not satisfy standard fee rules, Unobtanium Core &lt;u&gt;will&lt;/u&gt; drop it and it will never be seen by the Unobtanium network. &lt;/li&gt;&lt;li&gt;There will be no feedback as to whether the transaction succeeded.  You will have to verify the success of this operation via other means. However, if the transaction sends funds directly to or from an address in one of your wallets, it will still generate a notification and show up in your transaction history for that wallet. &lt;/li&gt;&lt;/ul&gt;</source>
+        <source>Copy a raw, hex-encoded transaction below to have Armory broadcast it to the Unobtanium network.  This function is provided as a convenience to expert users, and carries no guarantees of usefulness. UNOlt;brUNOgt;UNOlt;brUNOgt;Specifically, be aware of the following limitations of this broadcast function: UNOlt;ulUNOgt;UNOlt;liUNOgt;The transaction will be UNOquot;broadcastUNOquot; by sending it to the connected Bitcon Core instance which will forward it to the rest of the Unobtanium network. However, if the transaction is non-standard or does not satisfy standard fee rules, Unobtanium Core UNOlt;uUNOgt;willUNOlt;/uUNOgt; drop it and it will never be seen by the Unobtanium network. UNOlt;/liUNOgt;UNOlt;liUNOgt;There will be no feedback as to whether the transaction succeeded.  You will have to verify the success of this operation via other means. However, if the transaction sends funds directly to or from an address in one of your wallets, it will still generate a notification and show up in your transaction history for that wallet. UNOlt;/liUNOgt;UNOlt;/ulUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13702"/>
-        <source>&lt;font color=&quot;%1&quot;&gt;&lt;b&gt;Raw transaction is invalid!&lt;/font&gt;&lt;/b&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt;Raw transaction is invalid!UNOlt;/fontUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13729"/>
-        <source>Your transaction was successfully sent to the local Unobtanium Core instance, though there is no guarantees that it was forwarded to the rest of the network.   On testnet, just about every valid transaction will successfully propagate.  On the main Unobtanium network, this will fail unless it was a standard transaction type. The transaction had the following hash: &lt;br&gt;&lt;br&gt; %1 &lt;br&gt;&lt;br&gt;You can check whether it was seen by other nodes on the network with the link below: &lt;br&gt;&lt;br&gt;&lt;a href=&quot;%2&quot;&gt;%3&lt;/a&gt;</source>
+        <source>Your transaction was successfully sent to the local Unobtanium Core instance, though there is no guarantees that it was forwarded to the rest of the network.   On testnet, just about every valid transaction will successfully propagate.  On the main Unobtanium network, this will fail unless it was a standard transaction type. The transaction had the following hash: UNOlt;brUNOgt;UNOlt;brUNOgt; %1 UNOlt;brUNOgt;UNOlt;brUNOgt;You can check whether it was seen by other nodes on the network with the link below: UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;a href=UNOquot;%2UNOquot;UNOgt;%3UNOlt;/aUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2313,12 +2313,12 @@
     <name>DlgChangeLabels</name>
     <message>
         <location filename="qtdialogs.py" line="1010"/>
-        <source>Wallet &amp;name:</source>
+        <source>Wallet UNOamp;name:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1016"/>
-        <source>Wallet &amp;description:</source>
+        <source>Wallet UNOamp;description:</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2386,22 +2386,22 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="925"/>
-        <source>&lt;font color=%1&gt;&lt;b&gt;Passphrase is non-ASCII!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=%1UNOgt;UNOlt;bUNOgt;Passphrase is non-ASCII!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="928"/>
-        <source>&lt;font color=%1&gt;&lt;b&gt;Passphrases do not match!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=%1UNOgt;UNOlt;bUNOgt;Passphrases do not match!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="931"/>
-        <source>&lt;font color=%1&gt;&lt;b&gt;Passphrase is too short!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=%1UNOgt;UNOlt;bUNOgt;Passphrase is too short!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="933"/>
-        <source>&lt;font color=%1&gt;&lt;b&gt;Passphrases match!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=%1UNOgt;UNOlt;bUNOgt;Passphrases match!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2438,7 +2438,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="3032"/>
-        <source>wallet, &lt;b&gt;%1&lt;/b&gt; (%2)</source>
+        <source>wallet, UNOlt;bUNOgt;%1UNOlt;/bUNOgt; (%2)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2463,7 +2463,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="3033"/>
-        <source>You are about to import &lt;b&gt;%1&lt;/b&gt; addresses into %2.&lt;br&gt;&lt;br&gt; The following is a list of addresses to be imported:</source>
+        <source>You are about to import UNOlt;bUNOgt;%1UNOlt;/bUNOgt; addresses into %2.UNOlt;brUNOgt;UNOlt;brUNOgt; The following is a list of addresses to be imported:</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2501,17 +2501,17 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="4464"/>
-        <source>To see complete transaction details &lt;a href=&quot;None&quot;&gt;click here&lt;/a&gt;&lt;/font&gt;</source>
+        <source>To see complete transaction details UNOlt;a href=UNOquot;NoneUNOquot;UNOgt;click hereUNOlt;/aUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="4473"/>
-        <source>This transaction will spend &lt;b&gt;%1 BTC&lt;/b&gt; from &lt;font color=&quot;%2&quot;&gt;Wallet &quot;&lt;b&gt;%3&lt;/b&gt;&quot; (%4)&lt;/font&gt; to the following recipients:</source>
+        <source>This transaction will spend UNOlt;bUNOgt;%1 UNOUNOlt;/bUNOgt; from UNOlt;font color=UNOquot;%2UNOquot;UNOgt;Wallet UNOquot;UNOlt;bUNOgt;%3UNOlt;/bUNOgt;UNOquot; (%4)UNOlt;/fontUNOgt; to the following recipients:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="4479"/>
-        <source>&lt;font size=3&gt;* Starred outputs are going to the same wallet from which they came and do not affect the wallet&apos;s final balance. The total balance of the wallet will actually only decrease &lt;b&gt;%1 BTC&lt;/b&gt; as a result of this transaction.  %2&lt;/font&gt;</source>
+        <source>UNOlt;font size=3UNOgt;* Starred outputs are going to the same wallet from which they came and do not affect the walletUNOapos;s final balance. The total balance of the wallet will actually only decrease UNOlt;bUNOgt;%1 UNOUNOlt;/bUNOgt; as a result of this transaction.  %2UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2554,8 +2554,8 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="13315"/>
-        <source>&lt;h2 style=&quot;color: red;&quot;&gt;                                     Consistency check failed! &lt;/h2&gt;</source>
-        <translation>&lt;h2 style=&quot;color: red;&quot;&gt;בדיקת עקביות נכשלה! &lt;/h2&gt;</translation>
+        <source>UNOlt;h2 style=UNOquot;color: red;UNOquot;UNOgt;                                     Consistency check failed! UNOlt;/h2UNOgt;</source>
+        <translation>UNOlt;h2 style=UNOquot;color: red;UNOquot;UNOgt;בדיקת עקביות נכשלה! UNOlt;/h2UNOgt;</translation>
     </message>
     <message numerus="yes">
         <location filename="qtdialogs.py" line="13300"/>
@@ -2564,37 +2564,37 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="13080"/>
-        <source>&lt;font color=&quot;%1&quot; size=5&gt;&lt;b&gt;&lt;u&gt;%2&lt;/u&gt;&lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;br&gt;Armory software now detects and prevents certain kinds of hardware errors that could lead to problems with your wallet. &lt;br&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot; size=5UNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;%2UNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;/fontUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;Armory software now detects and prevents certain kinds of hardware errors that could lead to problems with your wallet. UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13099"/>
-        <source>Armory will perform a consistency check on &lt;b&gt;Wallet &quot;%1&quot; (%2)&lt;/b&gt; and determine if any further action is required to keep your funds protected.  This check is normally performed on startup on all your wallets, but you can click below to force another check.</source>
+        <source>Armory will perform a consistency check on UNOlt;bUNOgt;Wallet UNOquot;%1UNOquot; (%2)UNOlt;/bUNOgt; and determine if any further action is required to keep your funds protected.  This check is normally performed on startup on all your wallets, but you can click below to force another check.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13141"/>
-        <source>&lt;u&gt;Your wallets will be ready to fix once the scan is over&lt;/u&gt;&lt;br&gt; You can hide this window until then&lt;br&gt;</source>
+        <source>UNOlt;uUNOgt;Your wallets will be ready to fix once the scan is overUNOlt;/uUNOgt;UNOlt;brUNOgt; You can hide this window until thenUNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13293"/>
-        <source>&lt;font size=4 color=&quot;%1&quot;&gt;&lt;b&gt;Failed to fix wallets!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font size=4 color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt;Failed to fix wallets!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">
         <location filename="qtdialogs.py" line="13297"/>
-        <source>&lt;font size=4 color=&quot;%1&quot;&gt;&lt;b&gt;Wallet(s) consistent, nothing to fix.&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font size=4 color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt;Wallet(s) consistent, nothing to fix.UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13091"/>
-        <source>Armory has detected that wallet file &lt;b&gt;Wallet &quot;%1&quot; (%2)&lt;/b&gt; is inconsistent and should be further analyzed to ensure that your funds are protected. &lt;br&gt;&lt;br&gt;&lt;font color=&quot;%3&quot;&gt;This error will pop up every time you start Armory until the wallet has been analyzed and fixed!&lt;/font&gt;</source>
+        <source>Armory has detected that wallet file UNOlt;bUNOgt;Wallet UNOquot;%1UNOquot; (%2)UNOlt;/bUNOgt; is inconsistent and should be further analyzed to ensure that your funds are protected. UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;font color=UNOquot;%3UNOquot;UNOgt;This error will pop up every time you start Armory until the wallet has been analyzed and fixed!UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13305"/>
-        <source>&lt;font color=&quot;%1&quot;&gt;&lt;b&gt; &lt;font size=4&gt;&lt;b&gt;&lt;u&gt;There may still be issues with your wallet!&lt;/u&gt;&lt;/b&gt;&lt;/font&gt; &lt;br&gt;It is important that you send us the recovery logs and an email address so the Armory team can check for further risk to your funds!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt; UNOlt;font size=4UNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;There may still be issues with your wallet!UNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;/fontUNOgt; UNOlt;brUNOgt;It is important that you send us the recovery logs and an email address so the Armory team can check for further risk to your funds!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2617,7 +2617,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3166"/>
-        <source>BTC</source>
+        <source>UNO</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2712,17 +2712,17 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3122"/>
-        <source>&lt;font color=&quot;%1&quot; size=4&gt;&lt;b&gt;Create Simulfunding Promissory Note &lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot; size=4UNOgt;UNOlt;bUNOgt;Create Simulfunding Promissory Note UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3127"/>
-        <source>Use this form to create a &quot;promissory note&quot; which can be combined with notes from other parties to fund an address or lockbox simultaneously (&lt;i&gt;&quot;simulfunding&quot;&lt;/i&gt;).  This funding transaction will not be valid until all promissory notes are merged into a single transaction, then all funding parties will review and sign it.&lt;br&gt;&lt;br&gt;If this lockbox is being funded by only one party, using this interface is unnecessary.  Have the funding party send Unobtaniums to the destination address or lockbox in the normal way.</source>
+        <source>Use this form to create a UNOquot;promissory noteUNOquot; which can be combined with notes from other parties to fund an address or lockbox simultaneously (UNOlt;iUNOgt;UNOquot;simulfundingUNOquot;UNOlt;/iUNOgt;).  This funding transaction will not be valid until all promissory notes are merged into a single transaction, then all funding parties will review and sign it.UNOlt;brUNOgt;UNOlt;brUNOgt;If this lockbox is being funded by only one party, using this interface is unnecessary.  Have the funding party send Unobtaniums to the destination address or lockbox in the normal way.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3200"/>
-        <source>This label will be attached to the promissory note to help identify who is committing these funds.  If you do not fill this in, each other party signing will see &lt;i&gt;[[Unknown Signer]]&lt;/i&gt; for the ID.</source>
+        <source>This label will be attached to the promissory note to help identify who is committing these funds.  If you do not fill this in, each other party signing will see UNOlt;iUNOgt;[[Unknown Signer]]UNOlt;/iUNOgt; for the ID.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2742,17 +2742,17 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3333"/>
-        <source>You cannot promise 0 BTC.   &lt;br&gt;Please enter a positive amount.</source>
+        <source>You cannot promise 0 UNO.   UNOlt;brUNOgt;Please enter a positive amount.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3364"/>
-        <source>You have specified a negative amount. &lt;br&gt;Only positive values are allowed!</source>
+        <source>You have specified a negative amount. UNOlt;brUNOgt;Only positive values are allowed!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3369"/>
-        <source>Unobtaniums can only be specified down to 8 decimal places. The smallest value that can be sent is  0.0000 0001 BTC. Please enter a new amount</source>
+        <source>Unobtaniums can only be specified down to 8 decimal places. The smallest value that can be sent is  0.0000 0001 UNO. Please enter a new amount</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2767,22 +2767,22 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3389"/>
-        <source>You specified &lt;b&gt;%1&lt;/b&gt; BTC (amount + fee), but the selected wallet only has &lt;b&gt;%2&lt;/b&gt; BTC spendable.</source>
+        <source>You specified UNOlt;bUNOgt;%1UNOlt;/bUNOgt; UNO (amount + fee), but the selected wallet only has UNOlt;bUNOgt;%2UNOlt;/bUNOgt; UNO spendable.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3399"/>
-        <source>There was an error constructing your transaction, due to a quirk in the way Unobtanium transactions work.  If you see this error more than once, try sending your BTC in two or more separate transactions.</source>
+        <source>There was an error constructing your transaction, due to a quirk in the way Unobtanium transactions work.  If you see this error more than once, try sending your UNO in two or more separate transactions.</source>
         <translation type="unfinished"/>
     </message>
     <message encoding="UTF-8">
         <location filename="MultiSigDialogs.py" line="3431"/>
-        <source>There was an error creating the promissory note -- the selected coins were not found in the blockchain.  Please go to &quot;&lt;i&gt;Help&lt;/i&gt;&quot;→&quot;&lt;i&gt;Submit Bug Report&lt;/i&gt;&quot; from the main window and submit your log files so the Armory team can review this error.</source>
+        <source>There was an error creating the promissory note -- the selected coins were not found in the blockchain.  Please go to UNOquot;UNOlt;iUNOgt;HelpUNOlt;/iUNOgt;UNOquot;→UNOquot;UNOlt;iUNOgt;Submit Bug ReportUNOlt;/iUNOgt;UNOquot; from the main window and submit your log files so the Armory team can review this error.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3140"/>
-        <source>&lt;b&gt;NOTE:&lt;/b&gt; At the moment, simulfunding is restricted to using single-signature wallets/addresses for funding. More complex simulfunding transactions will be possible in a future version of Armory.</source>
+        <source>UNOlt;bUNOgt;NOTE:UNOlt;/bUNOgt; At the moment, simulfunding is restricted to using single-signature wallets/addresses for funding. More complex simulfunding transactions will be possible in a future version of Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2870,7 +2870,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5404"/>
-        <source>&lt;font color=&quot;gray&quot;&gt;[None]&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;grayUNOquot;UNOgt;[None]UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2935,12 +2935,12 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5761"/>
-        <source>&lt;&lt;&lt; Less Info</source>
+        <source>UNOlt;UNOlt;UNOlt; Less Info</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5771"/>
-        <source>Advanced &gt;&gt;&gt;</source>
+        <source>Advanced UNOgt;UNOgt;UNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2955,7 +2955,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5828"/>
-        <source>&lt;i&gt;Copied to Clipboard!&lt;/i&gt;</source>
+        <source>UNOlt;iUNOgt;Copied to Clipboard!UNOlt;/iUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2990,22 +2990,22 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5367"/>
-        <source>&lt;font color=&quot;gray&quot;&gt; [[ Transaction ID cannot be determined without all signatures ]] &lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;grayUNOquot;UNOgt; [[ Transaction ID cannot be determined without all signatures ]] UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5413"/>
-        <source>All transactions are eventually included in a &quot;block.&quot;  The time shown here is the time that the block entered the &quot;blockchain.&quot;</source>
+        <source>All transactions are eventually included in a UNOquot;block.UNOquot;  The time shown here is the time that the block entered the UNOquot;blockchain.UNOquot;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5423"/>
-        <source>This transaction has not yet been included in a block. It usually takes 5-20 minutes for a transaction to get included in a block after the user hits the &quot;Send&quot; button.</source>
+        <source>This transaction has not yet been included in a block. It usually takes 5-20 minutes for a transaction to get included in a block after the user hits the UNOquot;SendUNOquot; button.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5435"/>
-        <source>Every transaction is eventually included in a &quot;block&quot; which is where the transaction is permanently recorded.  A new block is produced approximately every 10 minutes.</source>
+        <source>Every transaction is eventually included in a UNOquot;blockUNOquot; which is where the transaction is permanently recorded.  A new block is produced approximately every 10 minutes.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3020,7 +3020,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5467"/>
-        <source>Most transactions have at least a recipient output and a returned-change output.  You do not have enough information to determine which is which, and so this fields shows the sum of &lt;b&gt;all&lt;/b&gt; outputs.</source>
+        <source>Most transactions have at least a recipient output and a returned-change output.  You do not have enough information to determine which is which, and so this fields shows the sum of UNOlt;bUNOgt;allUNOlt;/bUNOgt; outputs.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3035,7 +3035,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5543"/>
-        <source>All outputs of the transaction &lt;b&gt;excluding&lt;/b&gt; change-back-to-sender outputs.  If this list does not look correct, it is possible that the change-output was detected incorrectly -- please check the complete input/output list below.</source>
+        <source>All outputs of the transaction UNOlt;bUNOgt;excludingUNOlt;/bUNOgt; change-back-to-sender outputs.  If this list does not look correct, it is possible that the change-output was detected incorrectly -- please check the complete input/output list below.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3045,7 +3045,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5680"/>
-        <source>&lt;b&gt;Since the blockchain is not available, not all input information is available&lt;/b&gt;.  You need to view this transaction on a system with an internet connection (and blockchain) if you want to see the complete information.</source>
+        <source>UNOlt;bUNOgt;Since the blockchain is not available, not all input information is availableUNOlt;/bUNOgt;.  You need to view this transaction on a system with an internet connection (and blockchain) if you want to see the complete information.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3055,12 +3055,12 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5691"/>
-        <source>Shows &lt;b&gt;all&lt;/b&gt; outputs, including other recipients of the same transaction, and change-back-to-sender outputs (change outputs are displayed in light gray).</source>
+        <source>Shows UNOlt;bUNOgt;allUNOlt;/bUNOgt; outputs, including other recipients of the same transaction, and change-back-to-sender outputs (change outputs are displayed in light gray).</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5696"/>
-        <source>Some outputs might be &quot;change.&quot;</source>
+        <source>Some outputs might be UNOquot;change.UNOquot;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3083,7 +3083,7 @@ random letters, or 5 or more random words.
     <name>DlgDisplayTxIn</name>
     <message>
         <location filename="qtdialogs.py" line="5922"/>
-        <source>&lt;center&gt;&lt;u&gt;&lt;b&gt;TxIn Information&lt;/b&gt;&lt;/u&gt;&lt;/center&gt;</source>
+        <source>UNOlt;centerUNOgt;UNOlt;uUNOgt;UNOlt;bUNOgt;TxIn InformationUNOlt;/bUNOgt;UNOlt;/uUNOgt;UNOlt;/centerUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3093,97 +3093,97 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5952"/>
-        <source>Wallet &quot;%1&quot; (%2)</source>
+        <source>Wallet UNOquot;%1UNOquot; (%2)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5956"/>
-        <source>Lockbox %1-of-%2 &quot;%3&quot; (%4)</source>
+        <source>Lockbox %1-of-%2 UNOquot;%3UNOquot; (%4)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5961"/>
-        <source>&lt;font size=4&gt;&lt;u&gt;&lt;b&gt;Information on TxIn&lt;/b&gt;&lt;/u&gt;&lt;/font&gt;:</source>
+        <source>UNOlt;font size=4UNOgt;UNOlt;uUNOgt;UNOlt;bUNOgt;Information on TxInUNOlt;/bUNOgt;UNOlt;/uUNOgt;UNOlt;/fontUNOgt;:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5962"/>
-        <source>   &lt;b&gt;TxIn Index:&lt;/b&gt;         %1</source>
+        <source>   UNOlt;bUNOgt;TxIn Index:UNOlt;/bUNOgt;         %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5963"/>
-        <source>   &lt;b&gt;TxIn Spending:&lt;/b&gt;      %1:%2</source>
+        <source>   UNOlt;bUNOgt;TxIn Spending:UNOlt;/bUNOgt;      %1:%2</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5964"/>
-        <source>   &lt;b&gt;TxIn Sequence&lt;/b&gt;:      0x%1</source>
+        <source>   UNOlt;bUNOgt;TxIn SequenceUNOlt;/bUNOgt;:      0x%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5966"/>
-        <source>   &lt;b&gt;TxIn Script Type&lt;/b&gt;:   %1</source>
+        <source>   UNOlt;bUNOgt;TxIn Script TypeUNOlt;/bUNOgt;:   %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5967"/>
-        <source>   &lt;b&gt;TxIn Source&lt;/b&gt;:        %1</source>
+        <source>   UNOlt;bUNOgt;TxIn SourceUNOlt;/bUNOgt;:        %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5969"/>
-        <source>   &lt;b&gt;TxIn Wallet&lt;/b&gt;:        %1</source>
+        <source>   UNOlt;bUNOgt;TxIn WalletUNOlt;/bUNOgt;:        %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5970"/>
-        <source>   &lt;b&gt;TxIn Script&lt;/b&gt;:</source>
+        <source>   UNOlt;bUNOgt;TxIn ScriptUNOlt;/bUNOgt;:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5998"/>
-        <source>&lt;font size=4&gt;&lt;u&gt;&lt;b&gt;Information on TxOut being spent by this TxIn&lt;/b&gt;&lt;/u&gt;&lt;/font&gt;:</source>
+        <source>UNOlt;font size=4UNOgt;UNOlt;uUNOgt;UNOlt;bUNOgt;Information on TxOut being spent by this TxInUNOlt;/bUNOgt;UNOlt;/uUNOgt;UNOlt;/fontUNOgt;:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5999"/>
-        <source>   &lt;b&gt;Tx Hash:&lt;/b&gt;            %1</source>
+        <source>   UNOlt;bUNOgt;Tx Hash:UNOlt;/bUNOgt;            %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6000"/>
-        <source>   &lt;b&gt;Tx Out Index:&lt;/b&gt;       %1</source>
+        <source>   UNOlt;bUNOgt;Tx Out Index:UNOlt;/bUNOgt;       %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6001"/>
-        <source>   &lt;b&gt;Tx in Block#:&lt;/b&gt;       %1</source>
+        <source>   UNOlt;bUNOgt;Tx in Block#:UNOlt;/bUNOgt;       %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6002"/>
-        <source>   &lt;b&gt;TxOut Value:&lt;/b&gt;        %1</source>
+        <source>   UNOlt;bUNOgt;TxOut Value:UNOlt;/bUNOgt;        %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6003"/>
-        <source>   &lt;b&gt;TxOut Script Type:&lt;/b&gt;  %1</source>
+        <source>   UNOlt;bUNOgt;TxOut Script Type:UNOlt;/bUNOgt;  %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6004"/>
-        <source>   &lt;b&gt;TxOut Address:&lt;/b&gt;      %1</source>
+        <source>   UNOlt;bUNOgt;TxOut Address:UNOlt;/bUNOgt;      %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6006"/>
-        <source>   &lt;b&gt;TxOut Wallet:&lt;/b&gt;       %1</source>
+        <source>   UNOlt;bUNOgt;TxOut Wallet:UNOlt;/bUNOgt;       %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6007"/>
-        <source>   &lt;b&gt;TxOUt Script:&lt;/b&gt;</source>
+        <source>   UNOlt;bUNOgt;TxOUt Script:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3196,47 +3196,47 @@ random letters, or 5 or more random words.
     <name>DlgDisplayTxOut</name>
     <message>
         <location filename="qtdialogs.py" line="6032"/>
-        <source>&lt;center&gt;&lt;u&gt;&lt;b&gt;TxOut Information&lt;/b&gt;&lt;/u&gt;&lt;/center&gt;</source>
+        <source>UNOlt;centerUNOgt;UNOlt;uUNOgt;UNOlt;bUNOgt;TxOut InformationUNOlt;/bUNOgt;UNOlt;/uUNOgt;UNOlt;/centerUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6068"/>
-        <source>&lt;font size=4&gt;&lt;u&gt;&lt;b&gt;Information on TxOut&lt;/b&gt;&lt;/u&gt;&lt;/font&gt;:</source>
+        <source>UNOlt;font size=4UNOgt;UNOlt;uUNOgt;UNOlt;bUNOgt;Information on TxOutUNOlt;/bUNOgt;UNOlt;/uUNOgt;UNOlt;/fontUNOgt;:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6069"/>
-        <source>   &lt;b&gt;Tx Out Index:&lt;/b&gt;       %1</source>
+        <source>   UNOlt;bUNOgt;Tx Out Index:UNOlt;/bUNOgt;       %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6070"/>
-        <source>   &lt;b&gt;TxOut Value:&lt;/b&gt;        %1</source>
+        <source>   UNOlt;bUNOgt;TxOut Value:UNOlt;/bUNOgt;        %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6071"/>
-        <source>   &lt;b&gt;TxOut Script Type:&lt;/b&gt;  %1</source>
+        <source>   UNOlt;bUNOgt;TxOut Script Type:UNOlt;/bUNOgt;  %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6072"/>
-        <source>   &lt;b&gt;TxOut Address:&lt;/b&gt;      %1</source>
+        <source>   UNOlt;bUNOgt;TxOut Address:UNOlt;/bUNOgt;      %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6074"/>
-        <source>   &lt;b&gt;TxOut Wallet:&lt;/b&gt;       %1</source>
+        <source>   UNOlt;bUNOgt;TxOut Wallet:UNOlt;/bUNOgt;       %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6076"/>
-        <source>   &lt;b&gt;TxOut Wallet:&lt;/b&gt;       [[Unrelated to any loaded wallets]]</source>
+        <source>   UNOlt;bUNOgt;TxOut Wallet:UNOlt;/bUNOgt;       [[Unrelated to any loaded wallets]]</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6077"/>
-        <source>   &lt;b&gt;TxOut Script:&lt;/b&gt;</source>
+        <source>   UNOlt;bUNOgt;TxOut Script:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3279,7 +3279,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="3078"/>
-        <source>&lt;font color=%1&gt;Duplicate addresses detected!&lt;/font&gt; The following addresses already exist in other Armory wallets:</source>
+        <source>UNOlt;font color=%1UNOgt;Duplicate addresses detected!UNOlt;/fontUNOgt; The following addresses already exist in other Armory wallets:</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -3307,7 +3307,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="7493"/>
-        <source>&lt;&lt;&lt; Go Back</source>
+        <source>UNOlt;UNOlt;UNOlt; Go Back</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3327,22 +3327,22 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="7519"/>
-        <source>Value &quot;%1&quot; is invalid. Make sure the value is specified in hex, big-endian.</source>
+        <source>Value UNOquot;%1UNOquot; is invalid. Make sure the value is specified in hex, big-endian.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="7573"/>
-        <source>The point you specified (&lt;b&gt;B&lt;/b&gt;) is not on the elliptic curve used in Unobtanium (secp256k1).</source>
+        <source>The point you specified (UNOlt;bUNOgt;BUNOlt;/bUNOgt;) is not on the elliptic curve used in Unobtanium (secp256k1).</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="7567"/>
-        <source>The point you specified (&lt;b&gt;A&lt;/b&gt;) is not on the elliptic curve used in Unobtanium (secp256k1).</source>
+        <source>The point you specified (UNOlt;bUNOgt;AUNOlt;/bUNOgt;) is not on the elliptic curve used in Unobtanium (secp256k1).</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="7476"/>
-        <source>Use this form to perform Unobtanium elliptic curve calculations.  All operations are performed on the secp256k1 elliptic curve, which is the one used for Unobtanium. Supply all values as 32-byte, big-endian, hex-encoded integers. &lt;br&gt;&lt;br&gt;The following is the secp256k1 generator point coordinates (G): &lt;br&gt; &lt;b&gt;G&lt;/b&gt;&lt;sub&gt;x&lt;/sub&gt;: %1 &lt;br&gt; &lt;b&gt;G&lt;/b&gt;&lt;sub&gt;y&lt;/sub&gt;: %2</source>
+        <source>Use this form to perform Unobtanium elliptic curve calculations.  All operations are performed on the secp256k1 elliptic curve, which is the one used for Unobtanium. Supply all values as 32-byte, big-endian, hex-encoded integers. UNOlt;brUNOgt;UNOlt;brUNOgt;The following is the secp256k1 generator point coordinates (G): UNOlt;brUNOgt; UNOlt;bUNOgt;GUNOlt;/bUNOgt;UNOlt;subUNOgt;xUNOlt;/subUNOgt;: %1 UNOlt;brUNOgt; UNOlt;bUNOgt;GUNOlt;/bUNOgt;UNOlt;subUNOgt;yUNOlt;/subUNOgt;: %2</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -3370,7 +3370,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="3535"/>
-        <source>&lt;b&gt;Armory Unobtanium Client is licensed in part under the &lt;i&gt;Affero General Public License, Version 3 (AGPLv3)&lt;/i&gt; and in part under the &lt;i&gt;MIT License&lt;/i&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;Additionally, as a condition of receiving this software for free, you accept all risks associated with using it and the developers of Armory will not be held liable for any loss of money or bitcoins due to software defects. &lt;br&gt;&lt;br&gt;&lt;b&gt;Please read the full terms of the license and indicate your agreement with its terms.&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Armory Unobtanium Client is licensed in part under the UNOlt;iUNOgt;Affero General Public License, Version 3 (AGPLv3)UNOlt;/iUNOgt; and in part under the UNOlt;iUNOgt;MIT LicenseUNOlt;/iUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;Additionally, as a condition of receiving this software for free, you accept all risks associated with using it and the developers of Armory will not be held liable for any loss of money or unobtaniums due to software defects. UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;Please read the full terms of the license and indicate your agreement with its terms.UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -3378,8 +3378,8 @@ random letters, or 5 or more random words.
     <name>DlgEnterOneFrag</name>
     <message>
         <location filename="qtdialogs.py" line="12300"/>
-        <source>&lt;b&gt;Backup Type:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;סוג הגיבוי:&lt;/b&gt;</translation>
+        <source>UNOlt;bUNOgt;Backup Type:UNOlt;/bUNOgt;</source>
+        <translation>UNOlt;bUNOgt;סוג הגיבוי:UNOlt;/bUNOgt;</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12347"/>
@@ -3418,17 +3418,17 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="12448"/>
-        <source>There is an error in the data you entered that could not be fixed automatically.  Please double-check that you entered the text exactly as it appears on the wallet-backup page. &lt;br&gt;&lt;br&gt; The error occured on the &quot;%1&quot; line.</source>
+        <source>There is an error in the data you entered that could not be fixed automatically.  Please double-check that you entered the text exactly as it appears on the wallet-backup page. UNOlt;brUNOgt;UNOlt;brUNOgt; The error occured on the UNOquot;%1UNOquot; line.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12467"/>
-        <source>The data you entered is for fragment: &lt;br&gt;&lt;br&gt; &lt;font color=&quot;%1 size=3&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/font&gt;  &lt;br&gt;&lt;br&gt; Does this ID match the &quot;Fragment:&quot; field displayed on your backup? If not, click &quot;No&quot; and re-enter the fragment data.</source>
+        <source>The data you entered is for fragment: UNOlt;brUNOgt;UNOlt;brUNOgt; UNOlt;font color=UNOquot;%1 size=3UNOgt;UNOlt;bUNOgt;%2UNOlt;/bUNOgt;UNOlt;/fontUNOgt;  UNOlt;brUNOgt;UNOlt;brUNOgt; Does this ID match the UNOquot;Fragment:UNOquot; field displayed on your backup? If not, click UNOquot;NoUNOquot; and re-enter the fragment data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12250"/>
-        <source>&lt;b&gt;&lt;u&gt;Enter Another Fragment...&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt; %1 The fragments can be entered in any order, as long as you provide enough of them to restore the wallet.  If any fragments use a SecurePrintu200bu2122 code, please enter it once on the previous window, and it will be applied to all fragments that require it.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Enter Another Fragment...UNOlt;/uUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt; %1 The fragments can be entered in any order, as long as you provide enough of them to restore the wallet.  If any fragments use a SecurePrintu200bu2122 code, please enter it once on the previous window, and it will be applied to all fragments that require it.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3502,8 +3502,8 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="10109"/>
-        <source>&lt;i&gt;Copied!&lt;/i&gt;</source>
-        <translation>&lt;i&gt;הועתק!&lt;/i&gt;</translation>
+        <source>UNOlt;iUNOgt;Copied!UNOlt;/iUNOgt;</source>
+        <translation>UNOlt;iUNOgt;הועתק!UNOlt;/iUNOgt;</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10139"/>
@@ -3512,22 +3512,22 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="10090"/>
-        <source>Watch-Only Root ID:&lt;br&gt;&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;&lt;br&gt;Watch-Only Root Data:</source>
+        <source>Watch-Only Root ID:UNOlt;brUNOgt;UNOlt;bUNOgt;%1UNOlt;/bUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;Watch-Only Root Data:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10114"/>
-        <source>&lt;center&gt;&lt;b&gt;&lt;u&gt;&lt;font size=4 color=&quot;%1&quot;&gt;Export Watch-Only Wallet: %2&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;/center&gt; &lt;br&gt;Use a watching-only wallet on an online computer to distribute payment addresses, verify transactions and monitor balances, but without the ability to move the funds.</source>
+        <source>UNOlt;centerUNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;UNOlt;font size=4 color=UNOquot;%1UNOquot;UNOgt;Export Watch-Only Wallet: %2UNOlt;/fontUNOgt;UNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;/centerUNOgt; UNOlt;brUNOgt;Use a watching-only wallet on an online computer to distribute payment addresses, verify transactions and monitor balances, but without the ability to move the funds.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10122"/>
-        <source>&lt;center&gt;&lt;b&gt;&lt;u&gt;Entire Wallet File&lt;/u&gt;&lt;/b&gt;&lt;/center&gt; &lt;br&gt;&lt;i&gt;&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;(Recommended)&lt;/font&gt;&lt;/b&gt;&lt;/i&gt; An exact copy of your wallet file but without any of the private signing keys. All existing comments and labels will be carried with the file. Use this option if it is easy to transfer files from this system to the target system.</source>
+        <source>UNOlt;centerUNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;Entire Wallet FileUNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;/centerUNOgt; UNOlt;brUNOgt;UNOlt;iUNOgt;UNOlt;bUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;(Recommended)UNOlt;/fontUNOgt;UNOlt;/bUNOgt;UNOlt;/iUNOgt; An exact copy of your wallet file but without any of the private signing keys. All existing comments and labels will be carried with the file. Use this option if it is easy to transfer files from this system to the target system.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10131"/>
-        <source>&lt;center&gt;&lt;b&gt;&lt;u&gt;Only Root Data&lt;/u&gt;&lt;/b&gt;&lt;/center&gt; &lt;br&gt;Same as above, but only five lines of text that are easy to print, email inline, or copy by hand.  Only produces the wallet addresses.   No comments or labels are carried with it.</source>
+        <source>UNOlt;centerUNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;Only Root DataUNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;/centerUNOgt; UNOlt;brUNOgt;Same as above, but only five lines of text that are easy to print, email inline, or copy by hand.  Only produces the wallet addresses.   No comments or labels are carried with it.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -3570,7 +3570,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2376"/>
-        <source>Armory attempted to execute a &quot;mailto:&quot; link which should trigger your email application or web browser to open a compose-email window. This does not work in all environments, and you might have to manually copy and paste the text in the box into an email. </source>
+        <source>Armory attempted to execute a UNOquot;mailto:UNOquot; link which should trigger your email application or web browser to open a compose-email window. This does not work in all environments, and you might have to manually copy and paste the text in the box into an email. </source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -3603,7 +3603,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="9040"/>
-        <source>All Wallets &amp; Lockboxes</source>
+        <source>All Wallets UNOamp; Lockboxes</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3623,7 +3623,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="9063"/>
-        <source>Use any of the following symbols:&lt;br&gt;</source>
+        <source>Use any of the following symbols:UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3793,7 +3793,7 @@ random letters, or 5 or more random words.
     <message>
         <location filename="qtdialogs.py" line="13433"/>
         <source>Factory Reset</source>
-        <translation>איפוס להגדרות &apos;מפעל&apos;</translation>
+        <translation>איפוס להגדרות UNOapos;מפעלUNOapos;</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13492"/>
@@ -3812,12 +3812,12 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="13347"/>
-        <source>&lt;b&gt;&lt;u&gt;Armory Factory Reset&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;It is &lt;i&gt;strongly&lt;/i&gt; recommended that you make backups of your wallets before continuing, though &lt;b&gt;wallet files will never be intentionally deleted!&lt;/b&gt;  All Armory wallet files, and the wallet.dat file used by Unobtanium Core/bitcoind should remain untouched in their current locations.  All Armory wallets will automatically be detected and loaded after the reset. &lt;br&gt;&lt;br&gt;If you are not sure which option to pick, try the &quot;lightest option&quot; first, and see if your problems are resolved before trying the more extreme options.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Armory Factory ResetUNOlt;/uUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;It is UNOlt;iUNOgt;stronglyUNOlt;/iUNOgt; recommended that you make backups of your wallets before continuing, though UNOlt;bUNOgt;wallet files will never be intentionally deleted!UNOlt;/bUNOgt;  All Armory wallet files, and the wallet.dat file used by Unobtanium Core/unobtaniumd should remain untouched in their current locations.  All Armory wallets will automatically be detected and loaded after the reset. UNOlt;brUNOgt;UNOlt;brUNOgt;If you are not sure which option to pick, try the UNOquot;lightest optionUNOquot; first, and see if your problems are resolved before trying the more extreme options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13364"/>
-        <source>&lt;b&gt;Delete settings and rescan (lightest option)&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Delete settings and rescan (lightest option)UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3827,17 +3827,17 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="13371"/>
-        <source>&lt;b&gt;Also delete databases and rebuild&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Also delete databases and rebuildUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13377"/>
-        <source>&lt;b&gt;Also re-download the blockchain (extreme)&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Also re-download the blockchain (extreme)UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13378"/>
-        <source>This will delete settings, network data, Armory&apos;s databases, &lt;b&gt;and&lt;/b&gt; Unobtanium Core&apos;s databases.  Unobtanium Core will have to download the blockchain again. This can take 8-72 hours depending on your system&apos;s speed and connection.  Only use this if you suspect blockchain corruption, such as receiving StdOut/StdErr errors on the dashboard.</source>
+        <source>This will delete settings, network data, ArmoryUNOapos;s databases, UNOlt;bUNOgt;andUNOlt;/bUNOgt; Unobtanium CoreUNOapos;s databases.  Unobtanium Core will have to download the blockchain again. This can take 8-72 hours depending on your systemUNOapos;s speed and connection.  Only use this if you suspect blockchain corruption, such as receiving StdOut/StdErr errors on the dashboard.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3857,7 +3857,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="13505"/>
-        <source>&lt;b&gt;Unobtanium Core (or bitcoind) must be closed to do the reset!&lt;/b&gt; Please close all Unobtanium software, &lt;u&gt;&lt;b&gt;right now&lt;/b&gt;&lt;/u&gt;, before clicking &quot;Continue&quot;. &lt;br&gt;&lt;br&gt;Armory will now close.  Please restart Unobtanium Core/bitcoind first and wait for it to finish synchronizing before restarting Armory.</source>
+        <source>UNOlt;bUNOgt;Unobtanium Core (or unobtaniumd) must be closed to do the reset!UNOlt;/bUNOgt; Please close all Unobtanium software, UNOlt;uUNOgt;UNOlt;bUNOgt;right nowUNOlt;/bUNOgt;UNOlt;/uUNOgt;, before clicking UNOquot;ContinueUNOquot;. UNOlt;brUNOgt;UNOlt;brUNOgt;Armory will now close.  Please restart Unobtanium Core/unobtaniumd first and wait for it to finish synchronizing before restarting Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3872,17 +3872,17 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="13372"/>
-        <source>Will delete settings, network data, and delete Armory&apos;s databases. The databases will be rebuilt and rescanned (45 min to 3 hours)</source>
+        <source>Will delete settings, network data, and delete ArmoryUNOapos;s databases. The databases will be rebuilt and rescanned (45 min to 3 hours)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13484"/>
-        <source>You are about to delete your settings and delete &lt;b&gt;all&lt;/b&gt; blockchain databases on your system.  The Unobtanium software will have to redownload all of the blockchain data over the peer-to-peer network again. This can take from 8 to 72 hours depending on your system&apos;s speed and connection.  &lt;br&gt;&lt;br&gt;&lt;b&gt;Are you absolutely sure you want to do this?&lt;/b&gt;</source>
+        <source>You are about to delete your settings and delete UNOlt;bUNOgt;allUNOlt;/bUNOgt; blockchain databases on your system.  The Unobtanium software will have to redownload all of the blockchain data over the peer-to-peer network again. This can take from 8 to 72 hours depending on your systemUNOapos;s speed and connection.  UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;Are you absolutely sure you want to do this?UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13476"/>
-        <source>You are about to delete &lt;b&gt;all&lt;/b&gt; blockchain databases on your system.  The Unobtanium software will have to redownload all of the blockchain data over the peer-to-peer network again. This can take from 8 to 72 hours depending on your system&apos;s speed and connection.  &lt;br&gt;&lt;br&gt;&lt;b&gt;Are you absolutely sure you want to do this?&lt;/b&gt;</source>
+        <source>You are about to delete UNOlt;bUNOgt;allUNOlt;/bUNOgt; blockchain databases on your system.  The Unobtanium software will have to redownload all of the blockchain data over the peer-to-peer network again. This can take from 8 to 72 hours depending on your systemUNOapos;s speed and connection.  UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;Are you absolutely sure you want to do this?UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -3890,12 +3890,12 @@ random letters, or 5 or more random words.
     <name>DlgForkedImports</name>
     <message>
         <location filename="qtdialogs.py" line="13557"/>
-        <source>&lt;h2 style=&quot;color: red; text-align: center;&quot;&gt;Forked imported addresses have been       detected in your wallets!!!&lt;/h2&gt;</source>
+        <source>UNOlt;h2 style=UNOquot;color: red; text-align: center;UNOquot;UNOgt;Forked imported addresses have been       detected in your wallets!!!UNOlt;/h2UNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13560"/>
-        <source>The following wallets have forked imported addresses: &lt;br&gt;&lt;br&gt;&lt;b&gt;</source>
+        <source>The following wallets have forked imported addresses: UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3910,7 +3910,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="13568"/>
-        <source>&lt;h1 style=&quot;color: orange;&quot;&gt; - Do not accept payments to these wallets anymore&lt;br&gt;      - Do not delete or overwrite these wallets. &lt;br&gt;       - Transfer all funds to a fresh and backed up wallet&lt;/h1&gt;</source>
+        <source>UNOlt;h1 style=UNOquot;color: orange;UNOquot;UNOgt; - Do not accept payments to these wallets anymoreUNOlt;brUNOgt;      - Do not delete or overwrite these wallets. UNOlt;brUNOgt;       - Transfer all funds to a fresh and backed up walletUNOlt;/h1UNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -3923,13 +3923,13 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="10556"/>
-        <source>&lt;u&gt;&lt;b&gt;Required Fragments&lt;/b&gt;&lt;/u&gt; </source>
-        <translation>&lt;u&gt;&lt;b&gt;חלקים נחוצים&lt;/b&gt;&lt;/u&gt; </translation>
+        <source>UNOlt;uUNOgt;UNOlt;bUNOgt;Required FragmentsUNOlt;/bUNOgt;UNOlt;/uUNOgt; </source>
+        <translation>UNOlt;uUNOgt;UNOlt;bUNOgt;חלקים נחוציםUNOlt;/bUNOgt;UNOlt;/uUNOgt; </translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10557"/>
-        <source>&lt;u&gt;&lt;b&gt;Total Fragments&lt;/b&gt;&lt;/u&gt; </source>
-        <translation>&lt;u&gt;&lt;b&gt;סה&apos;&apos;כ חלקים&lt;/b&gt;&lt;/u&gt; </translation>
+        <source>UNOlt;uUNOgt;UNOlt;bUNOgt;Total FragmentsUNOlt;/bUNOgt;UNOlt;/uUNOgt; </source>
+        <translation>UNOlt;uUNOgt;UNOlt;bUNOgt;סהUNOapos;UNOapos;כ חלקיםUNOlt;/bUNOgt;UNOlt;/uUNOgt; </translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10561"/>
@@ -3938,7 +3938,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="10603"/>
-        <source>&lt;b&gt;Fragment ID:&lt;br&gt;%1-%2&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Fragment ID:UNOlt;brUNOgt;%1-%2UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3978,17 +3978,17 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="10427"/>
-        <source>&lt;b&gt;&lt;u&gt;Create M-of-N Fragmented Backup&lt;/u&gt; of &quot;%1&quot; (%2)&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Create M-of-N Fragmented BackupUNOlt;/uUNOgt; of UNOquot;%1UNOquot; (%2)UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10588"/>
-        <source>Any &lt;font color=&quot;%1&quot;&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/font&gt; of these &lt;font color=&quot;%1&quot;&gt;&lt;b&gt;%3&lt;/b&gt;&lt;/font&gt;fragments are sufficient to restore your wallet, and each fragment has the ID, &lt;font color=&quot;%1&quot;&gt;&lt;b&gt;%4&lt;/b&gt;&lt;/font&gt;.  All fragments with the same fragment ID are compatible with each other!</source>
+        <source>Any UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt;%2UNOlt;/bUNOgt;UNOlt;/fontUNOgt; of these UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt;%3UNOlt;/bUNOgt;UNOlt;/fontUNOgt;fragments are sufficient to restore your wallet, and each fragment has the ID, UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt;%4UNOlt;/bUNOgt;UNOlt;/fontUNOgt;.  All fragments with the same fragment ID are compatible with each other!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10741"/>
-        <source>The fragment was successfully saved to the following location: &lt;br&gt;&lt;br&gt; %1 &lt;br&gt;&lt;br&gt;</source>
+        <source>The fragment was successfully saved to the following location: UNOlt;brUNOgt;UNOlt;brUNOgt; %1 UNOlt;brUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3998,22 +3998,22 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="10490"/>
-        <source>SecurePrintu200bu2122 encrypts your backup with a code displayed on the screen, so that no other devices or processes has access to the unencrypted private keys (either network devices when printing, or other applications if you save a fragment to disk or USB device). &lt;u&gt;You must keep the SecurePrintu200bu2122 code with the backup!&lt;/u&gt;</source>
+        <source>SecurePrintu200bu2122 encrypts your backup with a code displayed on the screen, so that no other devices or processes has access to the unencrypted private keys (either network devices when printing, or other applications if you save a fragment to disk or USB device). UNOlt;uUNOgt;You must keep the SecurePrintu200bu2122 code with the backup!UNOlt;/uUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10496"/>
-        <source>&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;&lt;u&gt;IMPORTANT:&lt;/u&gt;  You must keep the SecurePrintu200bu2122 encryption code with your backup! Your SecurePrintu200bu2122 code is &lt;/font&gt; &lt;font color=&quot;%2&quot;&gt;%3&lt;/font&gt;&lt;font color=&quot;%4&quot;&gt;. All fragments for a given wallet use the same code.&lt;/font&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;uUNOgt;IMPORTANT:UNOlt;/uUNOgt;  You must keep the SecurePrintu200bu2122 encryption code with your backup! Your SecurePrintu200bu2122 code is UNOlt;/fontUNOgt; UNOlt;font color=UNOquot;%2UNOquot;UNOgt;%3UNOlt;/fontUNOgt;UNOlt;font color=UNOquot;%4UNOquot;UNOgt;. All fragments for a given wallet use the same code.UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10680"/>
-        <source>You have selected to use SecurePrintu200bu2122 for the printed backups, which can also be applied to fragments saved to file. Doing so will require you store the SecurePrintu200bu2122 code with the backup, but it will prevent unencrypted key data from touching any disks.  &lt;br&gt;&lt;br&gt; Do you want to encrpt the fragment file with the same SecurePrintu200bu2122 code?</source>
+        <source>You have selected to use SecurePrintu200bu2122 for the printed backups, which can also be applied to fragments saved to file. Doing so will require you store the SecurePrintu200bu2122 code with the backup, but it will prevent unencrypted key data from touching any disks.  UNOlt;brUNOgt;UNOlt;brUNOgt; Do you want to encrpt the fragment file with the same SecurePrintu200bu2122 code?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10746"/>
-        <source>&lt;b&gt;&lt;u&gt;&lt;font color=&quot;%1&quot;&gt;Important&lt;/font&lt;/u&gt;&lt;/b&gt;: The fragment was encrypted with the SecurePrintu200bu2122 encryption code.  You must keep this code with the backup in order to use it!  The code &lt;u&gt;is&lt;/u&gt; case-sensitive! &lt;br&gt;&lt;br&gt; &lt;font color=&quot;%2&quot; size=5&gt;&lt;b&gt;%3&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;The above code &lt;u&gt;&lt;b&gt;is&lt;/b&gt;&lt;/u&gt; case-sensitive!</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;ImportantUNOlt;/fontUNOlt;/uUNOgt;UNOlt;/bUNOgt;: The fragment was encrypted with the SecurePrintu200bu2122 encryption code.  You must keep this code with the backup in order to use it!  The code UNOlt;uUNOgt;isUNOlt;/uUNOgt; case-sensitive! UNOlt;brUNOgt;UNOlt;brUNOgt; UNOlt;font color=UNOquot;%2UNOquot; size=5UNOgt;UNOlt;bUNOgt;%3UNOlt;/bUNOgt;UNOlt;/fontUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;The above code UNOlt;uUNOgt;UNOlt;bUNOgt;isUNOlt;/bUNOgt;UNOlt;/uUNOgt; case-sensitive!</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -4082,22 +4082,22 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="8252"/>
-        <source>Copyright &amp;copy; 2011-2015 Armory Technologies, Inc.</source>
+        <source>Copyright UNOamp;copy; 2011-2015 Armory Technologies, Inc.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8253"/>
-        <source>Copyright &amp;copy; 2016 Goatpig</source>
+        <source>Copyright UNOamp;copy; 2016 Goatpig</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8254"/>
-        <source>Licensed to Armory Technologies, Inc. under the &lt;a href=&quot;http://www.gnu.org/licenses/agpl-3.0.html&quot;&gt;Affero General Public License, Version 3&lt;/a&gt; (AGPLv3)</source>
+        <source>Licensed to Armory Technologies, Inc. under the UNOlt;a href=UNOquot;http://www.gnu.org/licenses/agpl-3.0.htmlUNOquot;UNOgt;Affero General Public License, Version 3UNOlt;/aUNOgt; (AGPLv3)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8258"/>
-        <source>Licensed to Goatpig under the &lt;a href=&quot;https://opensource.org/licenses/mit-license.php&quot;&gt;MIT License</source>
+        <source>Licensed to Goatpig under the UNOlt;a href=UNOquot;https://opensource.org/licenses/mit-license.phpUNOquot;UNOgt;MIT License</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4135,7 +4135,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="2636"/>
-        <source>The private key you have entered is actually not valid for the elliptic curve used by Unobtanium (secp256k1). Almost any 64-character hex is a valid private key &lt;b&gt;except&lt;/b&gt; for those greater than: &lt;br&gt;&lt;br&gt;fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141&lt;br&gt;&lt;br&gt;Please try a different private key.</source>
+        <source>The private key you have entered is actually not valid for the elliptic curve used by Unobtanium (secp256k1). Almost any 64-character hex is a valid private key UNOlt;bUNOgt;exceptUNOlt;/bUNOgt; for those greater than: UNOlt;brUNOgt;UNOlt;brUNOgt;fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141UNOlt;brUNOgt;UNOlt;brUNOgt;Please try a different private key.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4170,7 +4170,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="2757"/>
-        <source>The key you entered is already part of another wallet you own:&lt;br&gt;&lt;br&gt;&lt;b&gt;Address&lt;/b&gt;: </source>
+        <source>The key you entered is already part of another wallet you own:UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;AddressUNOlt;/bUNOgt;: </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4180,7 +4180,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="2855"/>
-        <source>You are attempting to sweep %1 addresses, but %2 of them are already part of existing wallets.  That means that some or all of the bitcoins you sweep may already be owned by you. &lt;br&gt;&lt;br&gt;Would you like to continue anyway?</source>
+        <source>You are attempting to sweep %1 addresses, but %2 of them are already part of existing wallets.  That means that some or all of the unobtaniums you sweep may already be owned by you. UNOlt;brUNOgt;UNOlt;brUNOgt;Would you like to continue anyway?</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4210,7 +4210,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="2947"/>
-        <source>Success: %1 private keys were imported into your wallet. &lt;br&gt;&lt;br&gt;The other %2 private keys were skipped, because they were already part of your wallet.</source>
+        <source>Success: %1 private keys were imported into your wallet. UNOlt;brUNOgt;UNOlt;brUNOgt;The other %2 private keys were skipped, because they were already part of your wallet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4220,22 +4220,22 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="2441"/>
-        <source>The key can either be imported into your wallet, or have its available balance &quot;swept&quot; to another address in your wallet.  Only import private key data if you are absolutely sure that no one else has access to it.  Otherwise, sweep it to get the funds out of it.  All standard private-key formats are supported &lt;i&gt;except for private keys created by Unobtanium Core version 0.6.0 and later (compressed)&lt;/i&gt;.</source>
+        <source>The key can either be imported into your wallet, or have its available balance UNOquot;sweptUNOquot; to another address in your wallet.  Only import private key data if you are absolutely sure that no one else has access to it.  Otherwise, sweep it to get the funds out of it.  All standard private-key formats are supported UNOlt;iUNOgt;except for private keys created by Unobtanium Core version 0.6.0 and later (compressed)UNOlt;/iUNOgt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2453"/>
-        <source>Supported formats are any hexadecimal or Base58 representation of a 32-byte private key (with or without checksums), and mini-private-key format used on Casascius physical bitcoins.  Private keys that use &lt;i&gt;compressed&lt;/i&gt; public keys are not yet supported by Armory.</source>
+        <source>Supported formats are any hexadecimal or Base58 representation of a 32-byte private key (with or without checksums), and mini-private-key format used on Casascius physical unobtaniums.  Private keys that use UNOlt;iUNOgt;compressedUNOlt;/iUNOgt; public keys are not yet supported by Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2468"/>
-        <source>Enter a list of private keys to be &quot;swept&quot; or imported. All standard private-key formats are supported.</source>
+        <source>Enter a list of private keys to be UNOquot;sweptUNOquot; or imported. All standard private-key formats are supported.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2473"/>
-        <source>One private key per line, in any standard format. Data may be copied directly from the &quot;Export Key Lists&quot; dialog (all text on a line preceding the key data, separated by a colon, will be ignored).</source>
+        <source>One private key per line, in any standard format. Data may be copied directly from the UNOquot;Export Key ListsUNOquot; dialog (all text on a line preceding the key data, separated by a colon, will be ignored).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4264,12 +4264,12 @@ Select this option if someone else gave you this key</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2535"/>
-        <source>You should never add an untrusted key to your wallet.  By choosing this option, you are only moving the funds into your wallet, but not the key itself.  You should use this option for Casascius physical bitcoins.</source>
+        <source>You should never add an untrusted key to your wallet.  By choosing this option, you are only moving the funds into your wallet, but not the key itself.  You should use this option for Casascius physical unobtaniums.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2540"/>
-        <source>This option will make the key part of your wallet, meaning that it can be used to securely receive future payments.  &lt;b&gt;Never&lt;/b&gt; select this option for private keys that other people may have access to.</source>
+        <source>This option will make the key part of your wallet, meaning that it can be used to securely receive future payments.  UNOlt;bUNOgt;NeverUNOlt;/bUNOgt; select this option for private keys that other people may have access to.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4293,7 +4293,7 @@ Is this the correct address?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2665"/>
-        <source>You entered a key for an address that uses a compressed public key, usually produced in Unobtanium Core/bitcoind wallets created after version 0.6.0.  Armory does not yet support this key type.</source>
+        <source>You entered a key for an address that uses a compressed public key, usually produced in Unobtanium Core/unobtaniumd wallets created after version 0.6.0.  Armory does not yet support this key type.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4328,7 +4328,7 @@ Is this the correct address?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2693"/>
-        <source>It is possible that the key was supplied in a &quot;reversed&quot; form.  When the data you provide is reversed, the following address is obtained:
+        <source>It is possible that the key was supplied in a UNOquot;reversedUNOquot; form.  When the data you provide is reversed, the following address is obtained:
 
  %1
 
@@ -4380,7 +4380,7 @@ Is this the correct address?</source>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2131"/>
-        <source>There was an error reading the ASCII block entered.  Please make sure it was entered/copied correctly, and that you have copied the header and footer lines that start with &quot;=====&quot;.</source>
+        <source>There was an error reading the ASCII block entered.  Please make sure it was entered/copied correctly, and that you have copied the header and footer lines that start with UNOquot;=====UNOquot;.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -4423,7 +4423,7 @@ Is this the correct address?</source>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2395"/>
-        <source>&lt;b&gt;&lt;u&gt;Import Lockbox&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;Copy the lockbox text block from file or email into the box below.  If you have a file with the lockbox in it, you can load it using the &quot;Load Lockbox&quot; button at the bottom.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Import LockboxUNOlt;/uUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;Copy the lockbox text block from file or email into the box below.  If you have a file with the lockbox in it, you can load it using the UNOquot;Load LockboxUNOquot; button at the bottom.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4433,7 +4433,7 @@ Is this the correct address?</source>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2453"/>
-        <source>You just attempted to import a lockbox with ID, %1.  This lockbox is already in your available list of lockboxes. &lt;br&gt;&lt;br&gt;Even with the same ID, the lockbox information may be different.  Would you like to overwrite the lockbox information already stored for %2?</source>
+        <source>You just attempted to import a lockbox with ID, %1.  This lockbox is already in your available list of lockboxes. UNOlt;brUNOgt;UNOlt;brUNOgt;Even with the same ID, the lockbox information may be different.  Would you like to overwrite the lockbox information already stored for %2?</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -4496,12 +4496,12 @@ Is this the correct address?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3702"/>
-        <source>Enter the characters exactly as they are printed on the paper-backup page.  Alternatively, you can scan the QR code from another application, then copy&amp;paste into the entry boxes below.</source>
+        <source>Enter the characters exactly as they are printed on the paper-backup page.  Alternatively, you can scan the QR code from another application, then copyUNOamp;paste into the entry boxes below.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3707"/>
-        <source>The data can be entered &lt;i&gt;with&lt;/i&gt; or &lt;i&gt;without&lt;/i&gt; spaces, and up to one character per line will be corrected automatically.</source>
+        <source>The data can be entered UNOlt;iUNOgt;withUNOlt;/iUNOgt; or UNOlt;iUNOgt;withoutUNOlt;/iUNOgt; spaces, and up to one character per line will be corrected automatically.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4511,7 +4511,7 @@ Is this the correct address?</source>
     </message>
     <message numerus="yes">
         <location filename="qtdialogs.py" line="3780"/>
-        <source>Detected %n error(s) on line(s) %1 in the data you entered.  Armory attempted to fix the error(s) but it is not always right.  Be sure to verify the &quot;Wallet Unique ID&quot; closely on the next window.</source>
+        <source>Detected %n error(s) on line(s) %1 in the data you entered.  Armory attempted to fix the error(s) but it is not always right.  Be sure to verify the UNOquot;Wallet Unique IDUNOquot; closely on the next window.</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
@@ -4530,7 +4530,7 @@ You already own this wallet!
 
  %1
 
-Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup?  If not, click &quot;No&quot; and reenter key and chain-code data again.</source>
+Does this ID match the UNOquot;Wallet Unique IDUNOquot; printed on your paper backup?  If not, click UNOquot;NoUNOquot; and reenter key and chain-code data again.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4548,7 +4548,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="420"/>
-        <source>&lt;font color=&quot;%1&quot; size=4&gt;&lt;b&gt;&lt;u&gt;Important:&lt;/u&gt;  Wallet ConsistencyIssues Detected!&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Armory now detects certain kinds of hardware errors, and oneor more of your walletswas flagged.  The consistency logs need to be analyzed by theArmory team to determine if any further action is required.&lt;br&gt;&lt;br&gt;&lt;b&gt;This warning will pop up every time you start Armory untilthe wallet is fixed&lt;/b&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot; size=4UNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;Important:UNOlt;/uUNOgt;  Wallet ConsistencyIssues Detected!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;Armory now detects certain kinds of hardware errors, and oneor more of your walletswas flagged.  The consistency logs need to be analyzed by theArmory team to determine if any further action is required.UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;This warning will pop up every time you start Armory untilthe wallet is fixedUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4583,7 +4583,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="577"/>
-        <source>The wallet logs were successfully saved to the followinglocation:&lt;br&gt;&lt;br&gt;%1&lt;br&gt;&lt;br&gt;It is still important to complete the rest of this formand submit the data to the Armory team for review!</source>
+        <source>The wallet logs were successfully saved to the followinglocation:UNOlt;brUNOgt;UNOlt;brUNOgt;%1UNOlt;brUNOgt;UNOlt;brUNOgt;It is still important to complete the rest of this formand submit the data to the Armory team for review!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4593,12 +4593,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="448"/>
-        <source>&lt;b&gt;&lt;u&gt;&lt;font color=&quot;%1&quot; size=4&gt;Submit Wallet Analysis Logs for Review&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;br&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;UNOlt;font color=UNOquot;%1UNOquot; size=4UNOgt;Submit Wallet Analysis Logs for ReviewUNOlt;/fontUNOgt;UNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="453"/>
-        <source>Armory has detected that %1 is inconsistent, possibly due to hardware errors out of our control.  It &lt;u&gt;strongly recommended&lt;/u&gt; you submit the wallet logs to the Armory developers for review.  Until you hear back from an Armory developer, it is recommended that you: &lt;ul&gt;&lt;li&gt;&lt;b&gt;Do not delete any data in your Armory home directory&lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;Do not send or receive any funds with the affected wallet(s)&lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;Create a backup of the wallet analysis logs&lt;/b&gt;&lt;/li&gt; &lt;/ul&gt;</source>
+        <source>Armory has detected that %1 is inconsistent, possibly due to hardware errors out of our control.  It UNOlt;uUNOgt;strongly recommendedUNOlt;/uUNOgt; you submit the wallet logs to the Armory developers for review.  Until you hear back from an Armory developer, it is recommended that you: UNOlt;ulUNOgt;UNOlt;liUNOgt;UNOlt;bUNOgt;Do not delete any data in your Armory home directoryUNOlt;/bUNOgt;UNOlt;/liUNOgt; UNOlt;liUNOgt;UNOlt;bUNOgt;Do not send or receive any funds with the affected wallet(s)UNOlt;/bUNOgt;UNOlt;/liUNOgt; UNOlt;liUNOgt;UNOlt;bUNOgt;Create a backup of the wallet analysis logsUNOlt;/bUNOgt;UNOlt;/liUNOgt; UNOlt;/ulUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4616,7 +4616,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     <name>DlgInflatedQR</name>
     <message>
         <location filename="qtdefines.py" line="838"/>
-        <source>&lt;b&gt;Double-click or press ESC to close&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Double-click or press ESC to closeUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -4624,17 +4624,17 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     <name>DlgIntroMessage</name>
     <message>
         <location filename="qtdialogs.py" line="3584"/>
-        <source>&lt;b&gt;Welcome to Armory!&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Welcome to Armory!UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3587"/>
-        <source>&lt;i&gt;The most advanced Unobtanium Client on Earth!&lt;/i&gt;</source>
+        <source>UNOlt;iUNOgt;The most advanced Unobtanium Client on Earth!UNOlt;/iUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3590"/>
-        <source>&lt;b&gt;You are about to use the most secure and feature-rich Unobtanium clientsoftware available!&lt;/b&gt;  But please remember, this softwareis still &lt;i&gt;Beta&lt;/i&gt; - Armory developers will not be held responsiblefor loss of bitcoins resulting from the use of this software!&lt;br&gt;&lt;br&gt;</source>
+        <source>UNOlt;bUNOgt;You are about to use the most secure and feature-rich Unobtanium clientsoftware available!UNOlt;/bUNOgt;  But please remember, this softwareis still UNOlt;iUNOgt;BetaUNOlt;/iUNOgt; - Armory developers will not be held responsiblefor loss of unobtaniums resulting from the use of this software!UNOlt;brUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4672,7 +4672,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     <name>DlgKeypoolSettings</name>
     <message>
         <location filename="qtdialogs.py" line="2094"/>
-        <source>Armory pre-computes a pool of addresses beyond the last address you have used, and keeps them in your wallet to &quot;look-ahead.&quot;  One reason it does this is in case you have restored this wallet from a backup, and Armory does not know how many addresses you have actually used. &lt;br&gt;&lt;br&gt;If this wallet was restored from a backup and was very active after it was backed up, then it is possible Armory did not pre-compute enough addresses to find your entire balance.  &lt;b&gt;This condition is rare&lt;/b&gt;, but it can happen.  You may extend the keypool manually, below.</source>
+        <source>Armory pre-computes a pool of addresses beyond the last address you have used, and keeps them in your wallet to UNOquot;look-ahead.UNOquot;  One reason it does this is in case you have restored this wallet from a backup, and Armory does not know how many addresses you have actually used. UNOlt;brUNOgt;UNOlt;brUNOgt;If this wallet was restored from a backup and was very active after it was backed up, then it is possible Armory did not pre-compute enough addresses to find your entire balance.  UNOlt;bUNOgt;This condition is rareUNOlt;/bUNOgt;, but it can happen.  You may extend the keypool manually, below.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4722,12 +4722,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="2174"/>
-        <source>You have entered that you want to compute %1 more addressesfor this wallet.  This operation will take a very long time, and Armory will become unresponsive until the computation is finished.  Armory estimates it will take about %2 minutes.&lt;br&gt;&lt;br&gt;Do you want to continue?</source>
+        <source>You have entered that you want to compute %1 more addressesfor this wallet.  This operation will take a very long time, and Armory will become unresponsive until the computation is finished.  Armory estimates it will take about %2 minutes.UNOlt;brUNOgt;UNOlt;brUNOgt;Do you want to continue?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2186"/>
-        <source>&lt;font color=&quot;%1&quot;&gt;Calculating...&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot;UNOgt;Calculating...UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4780,12 +4780,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="240"/>
-        <source>&lt;b&gt;Required Signatures (M)&lt;/b&gt; </source>
+        <source>UNOlt;bUNOgt;Required Signatures (M)UNOlt;/bUNOgt; </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="242"/>
-        <source>&lt;b&gt;Total Signers (N)&lt;/b&gt; </source>
+        <source>UNOlt;bUNOgt;Total Signers (N)UNOlt;/bUNOgt; </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4815,37 +4815,37 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="35"/>
-        <source>&lt;b&gt;&lt;u&gt;&lt;font size=5 color=&quot;%1&quot;&gt;Create Multi-signature Lockbox&lt;/font&gt;&lt;/u&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;UNOlt;font size=5 color=UNOquot;%1UNOquot;UNOgt;Create Multi-signature LockboxUNOlt;/fontUNOgt;UNOlt;/uUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="39"/>
-        <source>Create a &quot;lockbox&quot; to hold coins that have signing authority split between multiple devices for personal funds, or split between multiple parties for escrow.</source>
+        <source>Create a UNOquot;lockboxUNOquot; to hold coins that have signing authority split between multiple devices for personal funds, or split between multiple parties for escrow.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="44"/>
-        <source>&lt;b&gt;&lt;u&gt;NOTE:&lt;/u&gt; Multi-sig &quot;lockboxes&quot; require &lt;u&gt;public keys&lt;/u&gt;, not the address strings most Unobtanium users are familiar with.&lt;/b&gt; &lt;a href=&quot;None&quot;&gt;Click for more info&lt;/a&gt;.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;NOTE:UNOlt;/uUNOgt; Multi-sig UNOquot;lockboxesUNOquot; require UNOlt;uUNOgt;public keysUNOlt;/uUNOgt;, not the address strings most Unobtanium users are familiar with.UNOlt;/bUNOgt; UNOlt;a href=UNOquot;NoneUNOquot;UNOgt;Click for more infoUNOlt;/aUNOgt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="50"/>
-        <source>A public key is much longer than an address string, and always starts with &quot;02&quot;, &quot;03&quot; or &quot;04&quot;. Most wallet applications do not provide an easy way to access a public key associated with a given address.  This is easiest if everyone is using Armory. &lt;br&gt;&lt;br&gt;The address book buttons next to each input box below will show you normal address strings, but will enter the correct public key of the address you select.&lt;br&gt;&lt;br&gt;If you are creating this lockbox with other Armory users, they can use the &quot;Select Public Key&quot; button from the Lockbox Manager dashboard to pick a key and enter their contact info.  You can use the &quot;Import&quot; button on each public key line to import the data they send you.</source>
+        <source>A public key is much longer than an address string, and always starts with UNOquot;02UNOquot;, UNOquot;03UNOquot; or UNOquot;04UNOquot;. Most wallet applications do not provide an easy way to access a public key associated with a given address.  This is easiest if everyone is using Armory. UNOlt;brUNOgt;UNOlt;brUNOgt;The address book buttons next to each input box below will show you normal address strings, but will enter the correct public key of the address you select.UNOlt;brUNOgt;UNOlt;brUNOgt;If you are creating this lockbox with other Armory users, they can use the UNOquot;Select Public KeyUNOquot; button from the Lockbox Manager dashboard to pick a key and enter their contact info.  You can use the UNOquot;ImportUNOquot; button on each public key line to import the data they send you.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="112"/>
-        <source>Public Key #&lt;font size=4 color=&quot;%1&quot;&gt;%2&lt;/font&gt;:</source>
+        <source>Public Key #UNOlt;font size=4 color=UNOquot;%1UNOquot;UNOgt;%2UNOlt;/fontUNOgt;:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="236"/>
-        <source>&lt;font color=&quot;%1&quot; size=4&gt;&lt;b&gt;Create Multi-Sig Lockbox&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot; size=4UNOgt;UNOlt;bUNOgt;Create Multi-Sig LockboxUNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="306"/>
-        <source>&lt;center&gt;&lt;b&gt;&lt;u&gt;Import Public Key Block&lt;/u&gt;&lt;/b&gt;&lt;/center&gt;&lt;br&gt;Copy and paste a PUBLICKEY block into the text field below, or load it from file.  PUBLICKEY files usually have the extension &lt;i&gt;*.lockbox.pub&lt;/i&gt;.  If you were given a chunk of hex characters starting with &quot;02&quot;, &quot;03&quot; or &quot;04&quot;, that is a raw public key and can be entered directly into the public key field in the lockbox creation window.</source>
+        <source>UNOlt;centerUNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;Import Public Key BlockUNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;/centerUNOgt;UNOlt;brUNOgt;Copy and paste a PUBLICKEY block into the text field below, or load it from file.  PUBLICKEY files usually have the extension UNOlt;iUNOgt;*.lockbox.pubUNOlt;/iUNOgt;.  If you were given a chunk of hex characters starting with UNOquot;02UNOquot;, UNOquot;03UNOquot; or UNOquot;04UNOquot;, that is a raw public key and can be entered directly into the public key field in the lockbox creation window.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -4973,7 +4973,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="956"/>
-        <source>Send bitcoins from lockbox</source>
+        <source>Send unobtaniums from lockbox</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4988,7 +4988,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="967"/>
-        <source>Collect Sigs &amp;&amp; Broadcast</source>
+        <source>Collect Sigs UNOamp;UNOamp; Broadcast</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5033,7 +5033,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1326"/>
-        <source>The transaction you requested be displayed does not exist in Armory&apos;s database.  This is unusual...</source>
+        <source>The transaction you requested be displayed does not exist in ArmoryUNOapos;s database.  This is unusual...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5068,7 +5068,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1378"/>
-        <source>Armory encountered an error opening your web browser.  To view this transaction on blockchain.info, please copy and paste the following URL into your browser: &lt;br&gt;&lt;br&gt;%1</source>
+        <source>Armory encountered an error opening your web browser.  To view this transaction on blockchain.info, please copy and paste the following URL into your browser: UNOlt;brUNOgt;UNOlt;brUNOgt;%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5123,62 +5123,62 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1595"/>
-        <source>&lt;b&gt;Multisig:&lt;/b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;%1-of-%2</source>
+        <source>UNOlt;bUNOgt;Multisig:UNOlt;/bUNOgt;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;%1-of-%2</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1596"/>
-        <source>&lt;b&gt;Lockbox ID:&lt;/b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;%1</source>
+        <source>UNOlt;bUNOgt;Lockbox ID:UNOlt;/bUNOgt;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1597"/>
-        <source>&lt;b&gt;P2SH Address:&lt;/b&gt;&amp;nbsp;&amp;nbsp;%1</source>
+        <source>UNOlt;bUNOgt;P2SH Address:UNOlt;/bUNOgt;UNOamp;nbsp;UNOamp;nbsp;%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1598"/>
-        <source>&lt;b&gt;Lockbox Name:&lt;/b&gt;&amp;nbsp;&amp;nbsp;%1</source>
+        <source>UNOlt;bUNOgt;Lockbox Name:UNOlt;/bUNOgt;UNOamp;nbsp;UNOamp;nbsp;%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1599"/>
-        <source>&lt;b&gt;Created:&lt;/b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;%1</source>
+        <source>UNOlt;bUNOgt;Created:UNOlt;/bUNOgt;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1600"/>
-        <source>&lt;b&gt;Extended Info:&lt;/b&gt;&lt;hr&gt;&lt;blockquote&gt;%1&lt;/blockquote&gt;&lt;hr&gt;</source>
+        <source>UNOlt;bUNOgt;Extended Info:UNOlt;/bUNOgt;UNOlt;hrUNOgt;UNOlt;blockquoteUNOgt;%1UNOlt;/blockquoteUNOgt;UNOlt;hrUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1601"/>
-        <source>&lt;b&gt;Stored Key Details&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Stored Key DetailsUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1611"/>
-        <source>&amp;nbsp;&amp;nbsp;&lt;b&gt;Key #%1&lt;/b&gt;</source>
+        <source>UNOamp;nbsp;UNOamp;nbsp;UNOlt;bUNOgt;Key #%1UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1612"/>
-        <source>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;Name/ID:&lt;/b&gt;&amp;nbsp;%1</source>
+        <source>UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOlt;bUNOgt;Name/ID:UNOlt;/bUNOgt;UNOamp;nbsp;%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1613"/>
-        <source>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;Address:&lt;/b&gt;&amp;nbsp;%1</source>
+        <source>UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOlt;bUNOgt;Address:UNOlt;/bUNOgt;UNOamp;nbsp;%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1614"/>
-        <source>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;PubKey:&lt;/b&gt;&amp;nbsp;&amp;nbsp;%1</source>
+        <source>UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOamp;nbsp;UNOlt;bUNOgt;PubKey:UNOlt;/bUNOgt;UNOamp;nbsp;UNOamp;nbsp;%1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1616"/>
-        <source>&lt;/font&gt;</source>
+        <source>UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5228,7 +5228,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="957"/>
-        <source>Create a proposed transaction sending bitcoins to an address, wallet or another lockbox. The transaction will not be final until enough signatures have been collected and then broadcast from an online computer.</source>
+        <source>Create a proposed transaction sending unobtaniums to an address, wallet or another lockbox. The transaction will not be final until enough signatures have been collected and then broadcast from an online computer.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5243,72 +5243,72 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="927"/>
-        <source>A &quot;promissory note&quot; provides blockchain information about how your wallet will contribute funds to a simulfunding transaction. A promissory note does &lt;b&gt;not&lt;/b&gt; move any money in your wallet.  The organizer will create a single transaction that includes all promissory notes and you will be able to  review it in its entirety before signing.</source>
+        <source>A UNOquot;promissory noteUNOquot; provides blockchain information about how your wallet will contribute funds to a simulfunding transaction. A promissory note does UNOlt;bUNOgt;notUNOlt;/bUNOgt; move any money in your wallet.  The organizer will create a single transaction that includes all promissory notes and you will be able to  review it in its entirety before signing.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="987"/>
-        <source>If this lockbox will be funded by multiple parties and not all parties are fully trusted, use &quot;simulfunding&quot; to ensure that funds are committed at the same time.  Check the &quot;Simul&quot; box to show simulfunding options in the table.</source>
+        <source>If this lockbox will be funded by multiple parties and not all parties are fully trusted, use UNOquot;simulfundingUNOquot; to ensure that funds are committed at the same time.  Check the UNOquot;SimulUNOquot; box to show simulfunding options in the table.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1188"/>
-        <source>Anyone can send funds to this lockbox using this Unobtanium address: &lt;br&gt;&lt;b&gt;%1&lt;/b&gt;</source>
+        <source>Anyone can send funds to this lockbox using this Unobtanium address: UNOlt;brUNOgt;UNOlt;bUNOgt;%1UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1439"/>
-        <source>Armory encountered an error opening your web browser.  To view this address on %1, please copy and paste the following URL into your browser: &lt;br&gt;&lt;br&gt;&lt;a href=&quot;%2&quot;&gt;%3&lt;/a&gt;</source>
+        <source>Armory encountered an error opening your web browser.  To view this address on %1, please copy and paste the following URL into your browser: UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;a href=UNOquot;%2UNOquot;UNOgt;%3UNOlt;/aUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1454"/>
-        <source>You are about to request payment to a &quot;P2SH&quot; address which is the format used for receiving to multi-signature addresses/lockboxes.  &quot;P2SH&quot; are like regular Unobtanium  addresses but start with %1 instead of %2. &lt;br&gt;&lt;br&gt;Unfortunately, not all software and services support sending to P2SH addresses.  If the sender or service indicates an error sending to this address, you might have to request payment to a regular wallet address and then send the funds from that wallet to the lockbox once it is confirmed.</source>
+        <source>You are about to request payment to a UNOquot;P2SHUNOquot; address which is the format used for receiving to multi-signature addresses/lockboxes.  UNOquot;P2SHUNOquot; are like regular Unobtanium  addresses but start with %1 instead of %2. UNOlt;brUNOgt;UNOlt;brUNOgt;Unfortunately, not all software and services support sending to P2SH addresses.  If the sender or service indicates an error sending to this address, you might have to request payment to a regular wallet address and then send the funds from that wallet to the lockbox once it is confirmed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1478"/>
-        <source>&quot;Removing&quot; a lockbox does not delete any signing keys, so you maintain signing authority for any coins that are sent there. However, it will remove it from the list of lockboxes, and you will have to re-import it later in order to send any funds to or from the lockbox.&lt;br&gt;&lt;br&gt;You are about to remove the following lockbox:&lt;br&gt;&lt;br&gt;&lt;font color=&quot;%1&quot;&gt;%2&lt;/font&gt;</source>
+        <source>UNOquot;RemovingUNOquot; a lockbox does not delete any signing keys, so you maintain signing authority for any coins that are sent there. However, it will remove it from the list of lockboxes, and you will have to re-import it later in order to send any funds to or from the lockbox.UNOlt;brUNOgt;UNOlt;brUNOgt;You are about to remove the following lockbox:UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;%2UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1538"/>
-        <source>&lt;br&gt;&lt;br&gt;&lt;font color=&quot;%1&quot;&gt;&lt;center&gt;&lt;b&gt; Select a lockbox from the table above to view its info&lt;/b&gt;&lt;/center&gt; &lt;/font&gt;</source>
+        <source>UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;centerUNOgt;UNOlt;bUNOgt; Select a lockbox from the table above to view its infoUNOlt;/bUNOgt;UNOlt;/centerUNOgt; UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1593"/>
-        <source>&lt;font color=&quot;%1&quot; size=4&gt;&lt;center&gt;&lt;u&gt;Lockbox Information for &lt;b&gt;%2&lt;/b&gt;&lt;/u&gt;&lt;/center&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot; size=4UNOgt;UNOlt;centerUNOgt;UNOlt;uUNOgt;Lockbox Information for UNOlt;bUNOgt;%2UNOlt;/bUNOgt;UNOlt;/uUNOgt;UNOlt;/centerUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1696"/>
-        <source>Import a &lt;i&gt;Signature Collector&lt;/i&gt; block to review and sign the lockbox-spend or simulfunding transaction.  This text block is produced by the organizer and will contain &quot;=====TXSIGCOLLECT&quot; on the first line.   Or you can import it from a file, which is saved by default with a &lt;i&gt;*.sigcollect.tx&lt;/i&gt; extension.</source>
+        <source>Import a UNOlt;iUNOgt;Signature CollectorUNOlt;/iUNOgt; block to review and sign the lockbox-spend or simulfunding transaction.  This text block is produced by the organizer and will contain UNOquot;=====TXSIGCOLLECTUNOquot; on the first line.   Or you can import it from a file, which is saved by default with a UNOlt;iUNOgt;*.sigcollect.txUNOlt;/iUNOgt; extension.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1717"/>
-        <source>&quot;Removing&quot; a lockbox does not delete any signing keys, so you maintain signing authority for any coins that are sent there. However, Armory will stop tracking its history and balance, and you will have to re-import it later in order to sign any transactions. &lt;br&gt;&lt;br&gt;You are about to remove the following lockbox: &lt;br&gt;&lt;br&gt;&lt;font color=&quot;%1&quot;&gt;%2&lt;/font&gt;</source>
+        <source>UNOquot;RemovingUNOquot; a lockbox does not delete any signing keys, so you maintain signing authority for any coins that are sent there. However, Armory will stop tracking its history and balance, and you will have to re-import it later in order to sign any transactions. UNOlt;brUNOgt;UNOlt;brUNOgt;You are about to remove the following lockbox: UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;%2UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1740"/>
-        <source>&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;WARNING:&lt;/font&gt; &lt;/b&gt; If this lockbox is being used to hold escrow for multiple parties, and requires being funded by multiple participants, you &lt;u&gt;must&lt;/u&gt; use a special funding process to ensure simultaneous funding.  Otherwise, one of the other parties may be able to scam you!&lt;br&gt;&lt;br&gt;It is safe to continue if any of the following conditions are true:&lt;ul&gt;&lt;li&gt;You are the only one expected to fund this lockbox/escrow&lt;/li&gt;&lt;li&gt;All other parties in the lockbox/escrow are fully trusted&lt;/li&gt;&lt;li&gt;This lockbox is being used for personal savings&lt;/li&gt;&lt;/ul&gt;If the above does not apply to you, please press &quot;Cancel&quot; and select the &quot;SimulFund&quot; checkbox on the lockbox dashboard.</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;WARNING:UNOlt;/fontUNOgt; UNOlt;/bUNOgt; If this lockbox is being used to hold escrow for multiple parties, and requires being funded by multiple participants, you UNOlt;uUNOgt;mustUNOlt;/uUNOgt; use a special funding process to ensure simultaneous funding.  Otherwise, one of the other parties may be able to scam you!UNOlt;brUNOgt;UNOlt;brUNOgt;It is safe to continue if any of the following conditions are true:UNOlt;ulUNOgt;UNOlt;liUNOgt;You are the only one expected to fund this lockbox/escrowUNOlt;/liUNOgt;UNOlt;liUNOgt;All other parties in the lockbox/escrow are fully trustedUNOlt;/liUNOgt;UNOlt;liUNOgt;This lockbox is being used for personal savingsUNOlt;/liUNOgt;UNOlt;/ulUNOgt;If the above does not apply to you, please press UNOquot;CancelUNOquot; and select the UNOquot;SimulFundUNOquot; checkbox on the lockbox dashboard.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1786"/>
-        <source>Import a &lt;i&gt;Signature Collector&lt;/i&gt; text block to review and sign the simulfunding transaction.  This text block is produced by the party that collected and merged all the promissory notes. Files containing signature-collecting data usually end with &lt;i&gt;*.sigcollect.tx&lt;/i&gt;.</source>
+        <source>Import a UNOlt;iUNOgt;Signature CollectorUNOlt;/iUNOgt; text block to review and sign the simulfunding transaction.  This text block is produced by the party that collected and merged all the promissory notes. Files containing signature-collecting data usually end with UNOlt;iUNOgt;*.sigcollect.txUNOlt;/iUNOgt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="652"/>
-        <source>&lt;font color=&quot;%1&quot; size=4&gt;&lt;b&gt;Manage Multi-Sig Lockboxes&lt;/b&gt;&lt;/font&gt; &lt;br&gt;Double-click on a lockbox to edit</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot; size=4UNOgt;UNOlt;bUNOgt;Manage Multi-Sig LockboxesUNOlt;/bUNOgt;UNOlt;/fontUNOgt; UNOlt;brUNOgt;Double-click on a lockbox to edit</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="656"/>
-        <source>&lt;font color=&quot;%1&quot; size=4&gt;&lt;b&gt;Manage Multi-Sig Lockboxes&lt;/b&gt;&lt;/font&gt; </source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot; size=4UNOgt;UNOlt;bUNOgt;Manage Multi-Sig LockboxesUNOlt;/bUNOgt;UNOlt;/fontUNOgt; </source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -5336,7 +5336,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3582"/>
-        <source>Create &amp;&amp; Add Promissory Note</source>
+        <source>Create UNOamp;UNOamp; Add Promissory Note</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5391,17 +5391,17 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3500"/>
-        <source>&lt;font color=&quot;%1&quot; size=4&gt;&lt;b&gt;Merge Promissory Notes &lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot; size=4UNOgt;UNOlt;bUNOgt;Merge Promissory Notes UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3505"/>
-        <source>Collect promissory notes from two or more parties to combine them into a single &lt;i&gt;simulfunding&lt;/i&gt; transaction.  Once all notes are collected you will be able to send it to each contributing party for review and signing.</source>
+        <source>Collect promissory notes from two or more parties to combine them into a single UNOlt;iUNOgt;simulfundingUNOlt;/iUNOgt; transaction.  Once all notes are collected you will be able to send it to each contributing party for review and signing.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3559"/>
-        <source>&lt;font size=4&gt;&lt;b&gt;No Promissory Notes Have Been Added&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font size=4UNOgt;UNOlt;bUNOgt;No Promissory Notes Have Been AddedUNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5441,12 +5441,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3772"/>
-        <source>Only one promissory note was entered, so there is nothing to merge.&lt;br&gt;&lt;br&gt;The simulfunding interface is intended to merge promissory notes from multiple parties to ensure simultaneous funding for escrow.  If only person is funding, they can simply send money to the address or lockbox like they would any other transaction, without going through the simulfunding interface. &lt;br&gt;&lt;br&gt;Click &quot;Ok&quot; to continue to the multi-signing interface, but there will only be one input to sign.</source>
+        <source>Only one promissory note was entered, so there is nothing to merge.UNOlt;brUNOgt;UNOlt;brUNOgt;The simulfunding interface is intended to merge promissory notes from multiple parties to ensure simultaneous funding for escrow.  If only person is funding, they can simply send money to the address or lockbox like they would any other transaction, without going through the simulfunding interface. UNOlt;brUNOgt;UNOlt;brUNOgt;Click UNOquot;OkUNOquot; to continue to the multi-signing interface, but there will only be one input to sign.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3819"/>
-        <source>The text block below contains the simulfunding transaction to be signed by all parties funding this lockbox.  Copy the text block into an email to all parties contributing funds.  Each party can review the final simulfunding transaction, add their signature(s), then send back to you to finalize it.&lt;br&gt;&lt;br&gt;When you click &quot;Done&quot;, you will be taken to a window that you can use to merge the TXSIGCOLLECT blocks from all parties and broadcast the final transaction.</source>
+        <source>The text block below contains the simulfunding transaction to be signed by all parties funding this lockbox.  Copy the text block into an email to all parties contributing funds.  Each party can review the final simulfunding transaction, add their signature(s), then send back to you to finalize it.UNOlt;brUNOgt;UNOlt;brUNOgt;When you click UNOquot;DoneUNOquot;, you will be taken to a window that you can use to merge the TXSIGCOLLECT blocks from all parties and broadcast the final transaction.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -5454,7 +5454,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     <name>DlgMultiSpendReview</name>
     <message>
         <location filename="MultiSigDialogs.py" line="2481"/>
-        <source>The following transaction is a proposed spend of funds controlled by multiple parties.  The keyholes next to each input represent required signatures for the tx to be valid.  White means it has not yet been signed, and cannot be signed by you.  Green represents signatures that can be added by one of your wallets. Gray keyholes are already signed. &lt;br&gt;&lt;br&gt;Change outputs have been hidden where it is obvious (such as coins returning to the same lockbox from where it came).  If there is any ambiguity, Armory will display all outputs.</source>
+        <source>The following transaction is a proposed spend of funds controlled by multiple parties.  The keyholes next to each input represent required signatures for the tx to be valid.  White means it has not yet been signed, and cannot be signed by you.  Green represents signatures that can be added by one of your wallets. Gray keyholes are already signed. UNOlt;brUNOgt;UNOlt;brUNOgt;Change outputs have been hidden where it is obvious (such as coins returning to the same lockbox from where it came).  If there is any ambiguity, Armory will display all outputs.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -5462,7 +5462,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     <name>DlgNewAddressDisp</name>
     <message>
         <location filename="qtdialogs.py" line="2245"/>
-        <source>The following address can be used to receive bitcoins:</source>
+        <source>The following address can be used to receive unobtaniums:</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5482,7 +5482,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="2304"/>
-        <source>(Optional) Add a label to this address, which will be shown with any relevant transactions in the &quot;Transactions&quot; tab.</source>
+        <source>(Optional) Add a label to this address, which will be shown with any relevant transactions in the UNOquot;TransactionsUNOquot; tab.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5492,7 +5492,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="2347"/>
-        <source>&lt;b&gt;Scan QR code with phone or other barcode reader&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font size=2&gt;(Double-click to expand)&lt;/font&gt;</source>
+        <source>UNOlt;bUNOgt;Scan QR code with phone or other barcode readerUNOlt;/bUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;font size=2UNOgt;(Double-click to expand)UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5502,12 +5502,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="2413"/>
-        <source>&lt;i&gt;Copied!&lt;/i&gt;</source>
-        <translation>&lt;i&gt;הועתק!&lt;/i&gt;</translation>
+        <source>UNOlt;iUNOgt;Copied!UNOlt;/iUNOgt;</source>
+        <translation>UNOlt;iUNOgt;הועתק!UNOlt;/iUNOgt;</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2267"/>
-        <source>You can securely use this address as many times as you want. However, all people to whom you give this address will be able to see the number and amount of bitcoins &lt;b&gt;ever&lt;/b&gt; sent to it.  Therefore, using a new address for each transaction improves overall privacy, but there is no security issues with reusing any address.</source>
+        <source>You can securely use this address as many times as you want. However, all people to whom you give this address will be able to see the number and amount of unobtaniums UNOlt;bUNOgt;everUNOlt;/bUNOgt; sent to it.  Therefore, using a new address for each transaction improves overall privacy, but there is no security issues with reusing any address.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5520,12 +5520,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     <name>DlgNewWallet</name>
     <message>
         <location filename="qtdialogs.py" line="662"/>
-        <source>Max &amp;memory usage (kB, MB):</source>
+        <source>Max UNOamp;memory usage (kB, MB):</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="685"/>
-        <source>Use wallet &amp;encryption</source>
+        <source>Use wallet UNOamp;encryption</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5590,7 +5590,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="711"/>
-        <source>Advanced Encryption Options&gt;&gt;&gt;</source>
+        <source>Advanced Encryption OptionsUNOgt;UNOgt;UNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5606,7 +5606,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="647"/>
-        <source>This is the &lt;b&gt;maximum&lt;/b&gt; memory that will be used as part of the encryption process.  The actual value used may be lower, depending on your system&apos;s speed.  If a low value is chosen, Armory will compensate by chaining together more calculations to meet the target time.  High memory target will make GPU-acceleration useless for guessing your passphrase.</source>
+        <source>This is the UNOlt;bUNOgt;maximumUNOlt;/bUNOgt; memory that will be used as part of the encryption process.  The actual value used may be lower, depending on your systemUNOapos;s speed.  If a low value is chosen, Armory will compensate by chaining together more calculations to meet the target time.  High memory target will make GPU-acceleration useless for guessing your passphrase.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5616,7 +5616,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="698"/>
-        <source>A paper-backup allows you to recover your wallet/funds even if you lose your original wallet file, any time in the future. Because Armory uses &quot;deterministic wallets,&quot; a single backup when the wallet is first made is sufficient for all future transactions (except ones to imported addresses).
+        <source>A paper-backup allows you to recover your wallet/funds even if you lose your original wallet file, any time in the future. Because Armory uses UNOquot;deterministic wallets,UNOquot; a single backup when the wallet is first made is sufficient for all future transactions (except ones to imported addresses).
 
 Anyone who gets hold of your paper backup will be able to spend the money in your wallet, so please secure it appropriately.</source>
         <translation type="unfinished"/>
@@ -5638,12 +5638,12 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="811"/>
-        <source>Please specify time with units, such as &quot;250 ms&quot; or &quot;2.1 s&quot;.  Specify memory as kB or MB, such as &quot;32 MB&quot; or &quot;256 kB&quot;. </source>
+        <source>Please specify time with units, such as UNOquot;250 msUNOquot; or UNOquot;2.1 sUNOquot;.  Specify memory as kB or MB, such as UNOquot;32 MBUNOquot; or UNOquot;256 kBUNOquot;. </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="604"/>
-        <source>Create a new wallet for managing your funds.&lt;br&gt; The name and description can be changed at any time.</source>
+        <source>Create a new wallet for managing your funds.UNOlt;brUNOgt; The name and description can be changed at any time.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -5676,12 +5676,12 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="4709"/>
-        <source>&lt;&lt;&lt; Go Back</source>
+        <source>UNOlt;UNOlt;UNOlt; Go Back</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="4676"/>
-        <source>In order to execute an offline transaction, three steps must be followed:&lt;ol&gt;&lt;li&gt;&lt;u&gt;On&lt;/u&gt;line Computer:  Create the unsigned transaction&lt;/li&gt; &lt;li&gt;&lt;u&gt;Off&lt;/u&gt;line Computer: Get the transaction signed&lt;/li&gt; &lt;li&gt;&lt;u&gt;On&lt;/u&gt;line Computer:  Broadcast the signed transaction&lt;/li&gt;&lt;/ol&gt; You must create the transaction using a watch-only wallet on an online system, but watch-only wallets cannot sign it.  Only the offline system can create a valid signature.  The easiest way to execute all three steps is to use a USB key to move the data between computers.&lt;br&gt;&lt;br&gt; All the data saved to the removable medium during all three steps are completely safe and do not reveal any private information that would benefit an attacker trying to steal your funds.  However, this transaction data does reveal some addresses in your wallet, and may represent a breach of &lt;i&gt;privacy&lt;/i&gt; if not protected.</source>
+        <source>In order to execute an offline transaction, three steps must be followed:UNOlt;olUNOgt;UNOlt;liUNOgt;UNOlt;uUNOgt;OnUNOlt;/uUNOgt;line Computer:  Create the unsigned transactionUNOlt;/liUNOgt; UNOlt;liUNOgt;UNOlt;uUNOgt;OffUNOlt;/uUNOgt;line Computer: Get the transaction signedUNOlt;/liUNOgt; UNOlt;liUNOgt;UNOlt;uUNOgt;OnUNOlt;/uUNOgt;line Computer:  Broadcast the signed transactionUNOlt;/liUNOgt;UNOlt;/olUNOgt; You must create the transaction using a watch-only wallet on an online system, but watch-only wallets cannot sign it.  Only the offline system can create a valid signature.  The easiest way to execute all three steps is to use a USB key to move the data between computers.UNOlt;brUNOgt;UNOlt;brUNOgt; All the data saved to the removable medium during all three steps are completely safe and do not reveal any private information that would benefit an attacker trying to steal your funds.  However, this transaction data does reveal some addresses in your wallet, and may represent a breach of UNOlt;iUNOgt;privacyUNOlt;/iUNOgt; if not protected.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5732,7 +5732,7 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     <name>DlgPasswd3</name>
     <message>
         <location filename="qtdialogs.py" line="963"/>
-        <source>&lt;font color=&quot;red&quot;&gt;&lt;b&gt;!!! DO NOT FORGET YOUR PASSPHRASE !!!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;redUNOquot;UNOgt;UNOlt;bUNOgt;!!! DO NOT FORGET YOUR PASSPHRASE !!!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5752,7 +5752,7 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="966"/>
-        <source>&lt;b&gt;No one can help you recover you bitcoins if you forget the passphrase and don&apos;t have a paper backup!&lt;/b&gt; Your wallet and any &lt;u&gt;digital&lt;/u&gt; backups are useless if you forget it.  &lt;br&gt;&lt;br&gt;A &lt;u&gt;paper&lt;/u&gt; backup protects your wallet forever, against hard-drive loss and losing your passphrase.  It also protects you from theft, if the wallet was encrypted and the paper backup was not stolen with it.  Please make a paper backup and keep it in a safe place.&lt;br&gt;&lt;br&gt;&lt;b&gt;Please enter your passphrase a third time to indicate that you are aware of the risks of losing your passphrase!&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;No one can help you recover you unobtaniums if you forget the passphrase and donUNOapos;t have a paper backup!UNOlt;/bUNOgt; Your wallet and any UNOlt;uUNOgt;digitalUNOlt;/uUNOgt; backups are useless if you forget it.  UNOlt;brUNOgt;UNOlt;brUNOgt;A UNOlt;uUNOgt;paperUNOlt;/uUNOgt; backup protects your wallet forever, against hard-drive loss and losing your passphrase.  It also protects you from theft, if the wallet was encrypted and the paper backup was not stolen with it.  Please make a paper backup and keep it in a safe place.UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;Please enter your passphrase a third time to indicate that you are aware of the risks of losing your passphrase!UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -5795,7 +5795,7 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="6788"/>
-        <source>&lt;b&gt;%1-&lt;font color=&quot;%2&quot;&gt;#%2&lt;/font&gt;&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;%1-UNOlt;font color=UNOquot;%2UNOquot;UNOgt;#%2UNOlt;/fontUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5805,32 +5805,32 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="6528"/>
-        <source>&lt;b&gt;&lt;u&gt;Print Wallet Backup Fragments&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; When any %1 of these fragments are combined, all &lt;u&gt;previous &lt;b&gt;and&lt;/b&gt; future&lt;/u&gt; addresses generated by this wallet will be restored, giving you complete access to your bitcoins.  The data can be copied by hand if a working printer is not available.  Please make sure that all data lines contain &lt;b&gt;9 columns&lt;/b&gt; of &lt;b&gt;4 characters each&lt;/b&gt; (excluding &quot;ID&quot; lines).</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Print Wallet Backup FragmentsUNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt; When any %1 of these fragments are combined, all UNOlt;uUNOgt;previous UNOlt;bUNOgt;andUNOlt;/bUNOgt; futureUNOlt;/uUNOgt; addresses generated by this wallet will be restored, giving you complete access to your unobtaniums.  The data can be copied by hand if a working printer is not available.  Please make sure that all data lines contain UNOlt;bUNOgt;9 columnsUNOlt;/bUNOgt; of UNOlt;bUNOgt;4 characters eachUNOlt;/bUNOgt; (excluding UNOquot;IDUNOquot; lines).</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6539"/>
-        <source>&lt;b&gt;&lt;u&gt;Print a Forever-Backup&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Printing this sheet protects all &lt;u&gt;previous &lt;b&gt;and&lt;/b&gt; future&lt;/u&gt; addresses generated by this wallet!  You can copy the &quot;Root Key&quot; %1 by hand if a working printer is not available.  Please make sure that all data lines contain &lt;b&gt;9 columns&lt;/b&gt; of &lt;b&gt;4 characters each&lt;/b&gt;.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Print a Forever-BackupUNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt; Printing this sheet protects all UNOlt;uUNOgt;previous UNOlt;bUNOgt;andUNOlt;/bUNOgt; futureUNOlt;/uUNOgt; addresses generated by this wallet!  You can copy the UNOquot;Root KeyUNOquot; %1 by hand if a working printer is not available.  Please make sure that all data lines contain UNOlt;bUNOgt;9 columnsUNOlt;/bUNOgt; of UNOlt;bUNOgt;4 characters eachUNOlt;/bUNOgt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6622"/>
-        <source>This wallet contains &lt;b&gt;%1&lt;/b&gt; imported keys, which will require &lt;b&gt;%2&lt;/b&gt; pages to print.  Not only will this use a lot of paper, it will be a lot of work to manually type in these keys in the event that you need to restore this backup. It is recommended that you do &lt;u&gt;not&lt;/u&gt; print your imported keys and instead make a digital backup, which can be restored instantly if needed. &lt;br&gt;&lt;br&gt; Do you want to print the imported keys, anyway?</source>
+        <source>This wallet contains UNOlt;bUNOgt;%1UNOlt;/bUNOgt; imported keys, which will require UNOlt;bUNOgt;%2UNOlt;/bUNOgt; pages to print.  Not only will this use a lot of paper, it will be a lot of work to manually type in these keys in the event that you need to restore this backup. It is recommended that you do UNOlt;uUNOgt;notUNOlt;/uUNOgt; print your imported keys and instead make a digital backup, which can be restored instantly if needed. UNOlt;brUNOgt;UNOlt;brUNOgt; Do you want to print the imported keys, anyway?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6800"/>
-        <source>Any subset of &lt;font color=&quot;%1&quot;&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/font&gt; fragments with this ID (&lt;font color=&quot;%3&quot;&gt;&lt;b&gt;%4&lt;/b&gt;&lt;/font&gt;) are sufficient to recover all the coins contained in this wallet.  To optimize the physical security of your wallet, please store the fragments in different locations.</source>
+        <source>Any subset of UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt;%2UNOlt;/bUNOgt;UNOlt;/fontUNOgt; fragments with this ID (UNOlt;font color=UNOquot;%3UNOquot;UNOgt;UNOlt;bUNOgt;%4UNOlt;/bUNOgt;UNOlt;/fontUNOgt;) are sufficient to recover all the coins contained in this wallet.  To optimize the physical security of your wallet, please store the fragments in different locations.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6808"/>
-        <source>&lt;font color=&quot;#aa0000&quot;&gt;&lt;b&gt;WARNING:&lt;/b&gt;&lt;/font&gt; Anyone who has access to this page has access to all the bitcoins in %1!  Please keep this page in a safe place.</source>
+        <source>UNOlt;font color=UNOquot;#aa0000UNOquot;UNOgt;UNOlt;bUNOgt;WARNING:UNOlt;/bUNOgt;UNOlt;/fontUNOgt; Anyone who has access to this page has access to all the unobtaniums in %1!  Please keep this page in a safe place.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6826"/>
-        <source>The following %1 lines backup all addresses &lt;i&gt;ever generated&lt;/i&gt; by this wallet (previous and future). This can be used to recover your wallet if you forget your passphrase or suffer hardware failure and lose your wallet files.</source>
+        <source>The following %1 lines backup all addresses UNOlt;iUNOgt;ever generatedUNOlt;/iUNOgt; by this wallet (previous and future). This can be used to recover your wallet if you forget your passphrase or suffer hardware failure and lose your wallet files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5840,7 +5840,7 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="6847"/>
-        <source>The following is fragment &lt;font color=&quot;%1&quot;&gt;&lt;b&gt;#%2&lt;/b&gt;&lt;/font&gt; for this wallet.</source>
+        <source>The following is fragment UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt;#%2UNOlt;/bUNOgt;UNOlt;/fontUNOgt; for this wallet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5850,12 +5850,12 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="6510"/>
-        <source>&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;&lt;u&gt;IMPORTANT:&lt;/u&gt;&lt;/b&gt;  You must write the SecurePrintu200bu2122 encryption code on each printed backup page!  Your SecurePrintu200bu2122 code is &lt;/font&gt; &lt;font color=&quot;%2&quot;&gt;%3&lt;/font&gt;.  &lt;font color=&quot;%4&quot;&gt;Your backup will not work if this code is lost!&lt;/font&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;uUNOgt;IMPORTANT:UNOlt;/uUNOgt;UNOlt;/bUNOgt;  You must write the SecurePrintu200bu2122 encryption code on each printed backup page!  Your SecurePrintu200bu2122 code is UNOlt;/fontUNOgt; UNOlt;font color=UNOquot;%2UNOquot;UNOgt;%3UNOlt;/fontUNOgt;.  UNOlt;font color=UNOquot;%4UNOquot;UNOgt;Your backup will not work if this code is lost!UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="6699"/>
-        <source>&lt;br&gt;&lt;b&gt;You must write your SecurePrintu200bu2122 code on each sheet of paper you just printed!&lt;/b&gt; Write it in the red box in upper-right corner of each printed page. &lt;br&gt;&lt;br&gt;SecurePrintu200bu2122 code: &lt;font color=&quot;%1&quot; size=5&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;br&gt; &lt;b&gt;NOTE: the above code &lt;u&gt;is&lt;/u&gt; case-sensitive!&lt;/b&gt;</source>
+        <source>UNOlt;brUNOgt;UNOlt;bUNOgt;You must write your SecurePrintu200bu2122 code on each sheet of paper you just printed!UNOlt;/bUNOgt; Write it in the red box in upper-right corner of each printed page. UNOlt;brUNOgt;UNOlt;brUNOgt;SecurePrintu200bu2122 code: UNOlt;font color=UNOquot;%1UNOquot; size=5UNOgt;UNOlt;bUNOgt;%2UNOlt;/bUNOgt;UNOlt;/fontUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt; UNOlt;bUNOgt;NOTE: the above code UNOlt;uUNOgt;isUNOlt;/uUNOgt; case-sensitive!UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5865,7 +5865,7 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="6870"/>
-        <source>&lt;b&gt;&lt;font color=&quot;#770000&quot;&gt;CRITICAL:&lt;/font&gt;  This backup will not work without the SecurePrintu200bu2122 code displayed on the screen during printing. Copy it here in ink:</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;#770000UNOquot;UNOgt;CRITICAL:UNOlt;/fontUNOgt;  This backup will not work without the SecurePrintu200bu2122 code displayed on the screen during printing. Copy it here in ink:</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5875,7 +5875,7 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="6502"/>
-        <source>SecurePrintu200bu2122 encrypts your backup with a code displayed on the screen, so that no other devices on your network see the sensitive data when you send it to the printer.  If you turn on SecurePrintu200bu2122 &lt;u&gt;you must write the code on the page after it is done printing!&lt;/u&gt;  There is no point in using this feature if you copy the data by hand.</source>
+        <source>SecurePrintu200bu2122 encrypts your backup with a code displayed on the screen, so that no other devices on your network see the sensitive data when you send it to the printer.  If you turn on SecurePrintu200bu2122 UNOlt;uUNOgt;you must write the code on the page after it is done printing!UNOlt;/uUNOgt;  There is no point in using this feature if you copy the data by hand.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5929,7 +5929,7 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     <name>DlgRemoveAddress</name>
     <message>
         <location filename="qtdialogs.py" line="4193"/>
-        <source>&lt;b&gt;!!! WARNING !!!&lt;/b&gt;
+        <source>UNOlt;bUNOgt;!!! WARNING !!!UNOlt;/bUNOgt;
 
 </source>
         <translation type="unfinished"/>
@@ -5966,7 +5966,7 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="4197"/>
-        <source>&lt;i&gt;You have requested that the following address be deleted from your wallet:&lt;/i&gt;</source>
+        <source>UNOlt;iUNOgt;You have requested that the following address be deleted from your wallet:UNOlt;/iUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5976,7 +5976,7 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="4274"/>
-        <source>Simply deleting an address does not prevent anyone from sending money to it.  If you have given this address to anyone in the past, make sure that they know not to use it again, since any bitcoins sent to it will be inaccessible.
+        <source>Simply deleting an address does not prevent anyone from sending money to it.  If you have given this address to anyone in the past, make sure that they know not to use it again, since any unobtaniums sent to it will be inaccessible.
 
  If you are maintaining an external copy of this address please ignore this warning
 
@@ -5988,7 +5988,7 @@ Are you absolutely sure you want to delete %1 ?</source>
     <name>DlgRemoveWallet</name>
     <message>
         <location filename="qtdialogs.py" line="3908"/>
-        <source>&lt;b&gt;!!! WARNING !!!&lt;/b&gt;
+        <source>UNOlt;bUNOgt;!!! WARNING !!!UNOlt;/bUNOgt;
 
 </source>
         <translation type="unfinished"/>
@@ -6070,17 +6070,17 @@ Are you absolutely sure you want to delete %1 ?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3912"/>
-        <source>&lt;i&gt;You have requested that the following wallet be removed from Armory:&lt;/i&gt;</source>
+        <source>UNOlt;iUNOgt;You have requested that the following wallet be removed from Armory:UNOlt;/iUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3980"/>
-        <source>&lt;b&gt;WALLET IS NOT EMPTY.  Only delete this wallet if you have a backup on paper or saved to a another location outside your settings directory.&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;WALLET IS NOT EMPTY.  Only delete this wallet if you have a backup on paper or saved to a another location outside your settings directory.UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3985"/>
-        <source>&lt;b&gt;WALLET IS PART OF A LOCKBOX.  Only delete this wallet if you have a backup on paper or saved to a another location outside your settings directory.&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;WALLET IS PART OF A LOCKBOX.  Only delete this wallet if you have a backup on paper or saved to a another location outside your settings directory.UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6090,7 +6090,7 @@ Are you absolutely sure you want to delete %1 ?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="4009"/>
-        <source>This will delete the private keys from your wallet, leaving you with a watching-only wallet, which can be used to generate addresses and monitor incoming payments.  This option would be used if you created the wallet on this computer &lt;i&gt;in order to transfer it to a different computer or device and want to remove the private data from this system for security.&lt;/i&gt;</source>
+        <source>This will delete the private keys from your wallet, leaving you with a watching-only wallet, which can be used to generate addresses and monitor incoming payments.  This option would be used if you created the wallet on this computer UNOlt;iUNOgt;in order to transfer it to a different computer or device and want to remove the private data from this system for security.UNOlt;/iUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6120,17 +6120,17 @@ Are you absolutely sure you want to delete %1 ?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="4127"/>
-        <source>&lt;i&gt;This will permanently delete the information you need to spend funds from this wallet!&lt;/i&gt;  You will only be able to receive coins, but not spend them.  Only do this if you have another copy of this wallet elsewhere, such as a paper backup or on an offline computer with the full wallet.</source>
+        <source>UNOlt;iUNOgt;This will permanently delete the information you need to spend funds from this wallet!UNOlt;/iUNOgt;  You will only be able to receive coins, but not spend them.  Only do this if you have another copy of this wallet elsewhere, such as a paper backup or on an offline computer with the full wallet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="4066"/>
-        <source>If this box is checked, you will have the ability to print off an unencrypted version of your wallet before it is deleted.  &lt;b&gt;If printing is unsuccessful, please press *CANCEL* on the print dialog to prevent the delete operation from continuing&lt;/b&gt;</source>
+        <source>If this box is checked, you will have the ability to print off an unencrypted version of your wallet before it is deleted.  UNOlt;bUNOgt;If printing is unsuccessful, please press *CANCEL* on the print dialog to prevent the delete operation from continuingUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="4104"/>
-        <source>You requested a paper backup before deleting the wallet, but clicked &quot;Cancel&quot; on the backup printing window.  So, the delete operation was canceled as well.</source>
+        <source>You requested a paper backup before deleting the wallet, but clicked UNOquot;CancelUNOquot; on the backup printing window.  So, the delete operation was canceled as well.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -6158,7 +6158,7 @@ Are you absolutely sure you want to delete %1 ?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12542"/>
-        <source>&lt;b&gt;You already have this wallet loaded!&lt;/b&gt;&lt;br&gt;You can choose to:&lt;br&gt;- Cancel wallet restore operation&lt;br&gt;- Set new password and fix any errors&lt;br&gt;- Overwrite old wallet (delete comments &amp; labels)&lt;br&gt;</source>
+        <source>UNOlt;bUNOgt;You already have this wallet loaded!UNOlt;/bUNOgt;UNOlt;brUNOgt;You can choose to:UNOlt;brUNOgt;- Cancel wallet restore operationUNOlt;brUNOgt;- Set new password and fix any errorsUNOlt;brUNOgt;- Overwrite old wallet (delete comments UNOamp; labels)UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -6166,7 +6166,7 @@ Are you absolutely sure you want to delete %1 ?</source>
     <name>DlgRequestPayment</name>
     <message>
         <location filename="qtdialogs.py" line="9744"/>
-        <source>Other Options &gt;&gt;&gt;</source>
+        <source>Other Options UNOgt;UNOgt;UNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6191,27 +6191,27 @@ Are you absolutely sure you want to delete %1 ?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9456"/>
-        <source>Create a clickable link that you can copy into email or webpage to request a payment.   If the user is running a Unobtanium program that supports &quot;unobtanium:&quot; links, that program will open with all this information pre-filled after they click the link.</source>
+        <source>Create a clickable link that you can copy into email or webpage to request a payment.   If the user is running a Unobtanium program that supports UNOquot;unobtanium:UNOquot; links, that program will open with all this information pre-filled after they click the link.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9466"/>
-        <source>The following Unobtanium desktop applications &lt;i&gt;try&lt;/i&gt; to register themselves with your computer to handle &quot;unobtanium:&quot; links: Armory, Multibit, Electrum</source>
+        <source>The following Unobtanium desktop applications UNOlt;iUNOgt;tryUNOlt;/iUNOgt; to register themselves with your computer to handle UNOquot;unobtanium:UNOquot; links: Armory, Multibit, Electrum</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9470"/>
-        <source>This is the text to be shown as the clickable link.  It should usually begin with &quot;Click here...&quot; to reaffirm to the user it is is clickable.</source>
+        <source>This is the text to be shown as the clickable link.  It should usually begin with UNOquot;Click here...UNOquot; to reaffirm to the user it is is clickable.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9474"/>
-        <source>All amounts are specifed in BTC</source>
+        <source>All amounts are specifed in UNO</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9476"/>
-        <source>The person clicking the link will be sending bitcoins to this address</source>
+        <source>The person clicking the link will be sending unobtaniums to this address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6226,22 +6226,22 @@ Are you absolutely sure you want to delete %1 ?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9494"/>
-        <source>&lt;b&gt;Link Text:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Link Text:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9499"/>
-        <source>&lt;b&gt;Address (yours):&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Address (yours):UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9504"/>
-        <source>&lt;b&gt;Request (BTC):&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Request (UNO):UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9508"/>
-        <source>&lt;b&gt;Label:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Label:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6256,7 +6256,7 @@ Are you absolutely sure you want to delete %1 ?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9527"/>
-        <source>This QR code contains address &lt;b&gt;and&lt;/b&gt; the other payment information shown to the left.</source>
+        <source>This QR code contains address UNOlt;bUNOgt;andUNOlt;/bUNOgt; the other payment information shown to the left.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6286,7 +6286,7 @@ Are you absolutely sure you want to delete %1 ?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9643"/>
-        <source>&lt;font color=&quot;red&quot;&gt;Invalid %1&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;redUNOquot;UNOgt;Invalid %1UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6296,17 +6296,17 @@ Are you absolutely sure you want to delete %1 ?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9661"/>
-        <source>&lt;b&gt;Pay to&lt;/b&gt;:<byte value="x9"/>%1&lt;br&gt;</source>
+        <source>UNOlt;bUNOgt;Pay toUNOlt;/bUNOgt;:<byte value="x9"/>%1UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9663"/>
-        <source>&lt;b&gt;Amount&lt;/b&gt;:<byte value="x9"/>%1 BTC&lt;br&gt;</source>
+        <source>UNOlt;bUNOgt;AmountUNOlt;/bUNOgt;:<byte value="x9"/>%1 UNOUNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9665"/>
-        <source>&lt;b&gt;Message&lt;/b&gt;:<byte value="x9"/>%1&lt;br&gt;</source>
+        <source>UNOlt;bUNOgt;MessageUNOlt;/bUNOgt;:<byte value="x9"/>%1UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6323,7 +6323,7 @@ Are you absolutely sure you want to delete %1 ?</source>
     <message>
         <location filename="qtdialogs.py" line="9678"/>
         <source>
-Amount:  %1 BTC</source>
+Amount:  %1 UNO</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6334,27 +6334,27 @@ Message: %1</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9684"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt; &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt; p, li { white-space: pre-wrap; } &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;!--StartFragment--&gt;&lt;a href=&quot;%1&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;%2&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;If clicking on the line above does not work, use this payment info:&lt;br /&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Pay to&lt;/span&gt;: %3</source>
+        <source>UNOlt;!DOCTYPE HTML PUBLIC UNOquot;-//W3C//DTD HTML 4.0//ENUNOquot; UNOquot;http://www.w3.org/TR/REC-html40/strict.dtdUNOquot;UNOgt; UNOlt;htmlUNOgt;UNOlt;headUNOgt;UNOlt;meta name=UNOquot;qrichtextUNOquot; content=UNOquot;1UNOquot; /UNOgt;UNOlt;meta http-equiv=UNOquot;Content-TypeUNOquot; content=UNOquot;text/html; charset=utf-8UNOquot; /UNOgt;UNOlt;style type=UNOquot;text/cssUNOquot;UNOgt; p, li { white-space: pre-wrap; } UNOlt;/styleUNOgt;UNOlt;/headUNOgt;UNOlt;bodyUNOgt;UNOlt;p style=UNOquot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;UNOquot;UNOgt;UNOlt;!--StartFragment--UNOgt;UNOlt;a href=UNOquot;%1UNOquot;UNOgt;UNOlt;span style=UNOquot; text-decoration: underline; color:#0000ff;UNOquot;UNOgt;%2UNOlt;/spanUNOgt;UNOlt;/aUNOgt;UNOlt;br /UNOgt;If clicking on the line above does not work, use this payment info:UNOlt;br /UNOgt;UNOlt;span style=UNOquot; font-weight:600;UNOquot;UNOgt;Pay toUNOlt;/spanUNOgt;: %3</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9698"/>
-        <source>&lt;br /&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Amount&lt;/span&gt;: %1</source>
+        <source>UNOlt;br /UNOgt;UNOlt;span style=UNOquot; font-weight:600;UNOquot;UNOgt;AmountUNOlt;/spanUNOgt;: %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9701"/>
-        <source>&lt;br /&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Message&lt;/span&gt;: %1</source>
+        <source>UNOlt;br /UNOgt;UNOlt;span style=UNOquot; font-weight:600;UNOquot;UNOgt;MessageUNOlt;/spanUNOgt;: %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9764"/>
-        <source>&lt;i&gt;Copied!&lt;/i&gt;</source>
-        <translation>&lt;i&gt;הועתק!&lt;/i&gt;</translation>
+        <source>UNOlt;iUNOgt;Copied!UNOlt;/iUNOgt;</source>
+        <translation>UNOlt;iUNOgt;הועתק!UNOlt;/iUNOgt;</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9742"/>
-        <source>Hide Buttons &lt;&lt;&lt;</source>
+        <source>Hide Buttons UNOlt;UNOlt;UNOlt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -6452,22 +6452,22 @@ Message: %1</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11818"/>
-        <source>&lt;b&gt;&lt;u&gt;Wallet Being Restored:&lt;/u&gt;&lt;/b&gt;</source>
-        <translation>&lt;b&gt;&lt;u&gt;ארנק משוחזר:&lt;/u&gt;&lt;/b&gt;</translation>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Wallet Being Restored:UNOlt;/uUNOgt;UNOlt;/bUNOgt;</source>
+        <translation>UNOlt;bUNOgt;UNOlt;uUNOgt;ארנק משוחזר:UNOlt;/uUNOgt;UNOlt;/bUNOgt;</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11820"/>
-        <source>&lt;b&gt;Frags Needed:&lt;/b&gt; %1</source>
+        <source>UNOlt;bUNOgt;Frags Needed:UNOlt;/bUNOgt; %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11821"/>
-        <source>&lt;b&gt;Wallet:&lt;/b&gt; %1</source>
+        <source>UNOlt;bUNOgt;Wallet:UNOlt;/bUNOgt; %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11822"/>
-        <source>&lt;b&gt;Fragments:&lt;/b&gt; %1</source>
+        <source>UNOlt;bUNOgt;Fragments:UNOlt;/bUNOgt; %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6489,7 +6489,7 @@ Message: %1</source>
         <location filename="qtdialogs.py" line="11932"/>
         <source>You entered Target Compute Time incorrectly.
 
-Enter: &lt;Number&gt; (ms, s)</source>
+Enter: UNOlt;NumberUNOgt; (ms, s)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6521,32 +6521,32 @@ Enter: &lt;Number&gt; (ms, s)</source>
         <location filename="qtdialogs.py" line="11936"/>
         <source>You entered Max Memory Usage incorrectly.
 
-Enter: &lt;Number&gt; (kB, MB)</source>
+Enter: UNOlt;NumberUNOgt; (kB, MB)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11545"/>
-        <source>&lt;font color=&quot;blue&quot; size=&quot;4&quot;&gt;Testing a Fragmented Backup&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;blueUNOquot; size=UNOquot;4UNOquot;UNOgt;Testing a Fragmented BackupUNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11559"/>
-        <source>&lt;br&gt;&lt;br&gt;&lt;b&gt;For testing purposes, you may enter more fragments than needed and Armory will test all subsets of the entered fragments to verify that each one still recovers the wallet successfully.&lt;/b&gt;</source>
+        <source>UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;For testing purposes, you may enter more fragments than needed and Armory will test all subsets of the entered fragments to verify that each one still recovers the wallet successfully.UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11751"/>
-        <source>The file you select somehow does not exist...? &lt;br&gt;&lt;br&gt;%1&lt;br&gt;&lt;br&gt; Try a different file</source>
+        <source>The file you select somehow does not exist...? UNOlt;brUNOgt;UNOlt;brUNOgt;%1UNOlt;brUNOgt;UNOlt;brUNOgt; Try a different file</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11785"/>
-        <source>There was an unfixable error in the fragment file: &lt;br&gt;&lt;br&gt; File: %1 &lt;br&gt; Line: %2 &lt;br&gt;</source>
+        <source>There was an unfixable error in the fragment file: UNOlt;brUNOgt;UNOlt;brUNOgt; File: %1 UNOlt;brUNOgt; Line: %2 UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11813"/>
-        <source>&lt;b&gt;Start entering fragments into the table to left...&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Start entering fragments into the table to left...UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6556,7 +6556,7 @@ Enter: &lt;Number&gt; (kB, MB)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11884"/>
-        <source>The fragment you just entered is actually for a different wallet than the previous fragments you entered.  Please double-check that all the fragments you are entering belong to the same wallet and have the &quot;number of needed fragments&quot; (M-value, in M-of-N).</source>
+        <source>The fragment you just entered is actually for a different wallet than the previous fragments you entered.  Please double-check that all the fragments you are entering belong to the same wallet and have the UNOquot;number of needed fragmentsUNOquot; (M-value, in M-of-N).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6566,7 +6566,7 @@ Enter: &lt;Number&gt; (kB, MB)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12007"/>
-        <source>The data you entered corresponds to a wallet with a wallet ID:&lt;blockquote&gt;&lt;b&gt;{}&lt;/b&gt;&lt;/blockquote&gt;Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup? If not, click &quot;No&quot; and reenter key and chain-code data again.</source>
+        <source>The data you entered corresponds to a wallet with a wallet ID:UNOlt;blockquoteUNOgt;UNOlt;bUNOgt;{}UNOlt;/bUNOgt;UNOlt;/blockquoteUNOgt;Does this ID match the UNOquot;Wallet Unique IDUNOquot; printed on your paper backup? If not, click UNOquot;NoUNOquot; and reenter key and chain-code data again.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6576,7 +6576,7 @@ Enter: &lt;Number&gt; (kB, MB)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11550"/>
-        <source>&lt;b&gt;&lt;u&gt;%1&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;Use this form to enter all the fragments to be restored.  Fragments can be stored on a mix of paper printouts, and saved files. If any of the fragments require a SecurePrintu200bu2122 code, you will only have to enter it once, since that code is the same for all fragments of any given wallet.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;%1UNOlt;/uUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;Use this form to enter all the fragments to be restored.  Fragments can be stored on a mix of paper printouts, and saved files. If any of the fragments require a SecurePrintu200bu2122 code, you will only have to enter it once, since that code is the same for all fragments of any given wallet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6589,8 +6589,8 @@ Enter: &lt;Number&gt; (kB, MB)</source>
     <name>DlgRestoreSingle</name>
     <message>
         <location filename="qtdialogs.py" line="10994"/>
-        <source>&lt;b&gt;Backup Type:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;סוג הגיבוי:&lt;/b&gt;</translation>
+        <source>UNOlt;bUNOgt;Backup Type:UNOlt;/bUNOgt;</source>
+        <translation>UNOlt;bUNOgt;סוג הגיבוי:UNOlt;/bUNOgt;</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10996"/>
@@ -6671,7 +6671,7 @@ Enter: &lt;Number&gt; (kB, MB)</source>
         <location filename="qtdialogs.py" line="11146"/>
         <source>You entered Target Compute Time incorrectly.
 
-Enter: &lt;Number&gt; (ms, s)</source>
+Enter: UNOlt;NumberUNOgt; (ms, s)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6708,7 +6708,7 @@ Enter: &lt;Number&gt; (ms, s)</source>
         <location filename="qtdialogs.py" line="11150"/>
         <source>You entered Max Memory Usage incorrectly.
 
-Enter: &lt;Number&gt; (kB, MB)</source>
+Enter: UNOlt;NumberUNOgt; (kB, MB)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6717,27 +6717,27 @@ Enter: &lt;Number&gt; (kB, MB)</source>
 
 %1
 
-Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup?  If not, click &quot;No&quot; and reenter key and chain-code data again.</source>
+Does this ID match the UNOquot;Wallet Unique IDUNOquot; printed on your paper backup?  If not, click UNOquot;NoUNOquot; and reenter key and chain-code data again.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10978"/>
-        <source>&lt;b&gt;&lt;u&gt;&lt;font color=&quot;blue&quot; size=&quot;4&quot;&gt;Test a Paper Backup&lt;/font&gt;&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;Use this window to test a single-sheet paper backup.  If your backup includes imported keys, those will not be covered by this test.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;UNOlt;font color=UNOquot;blueUNOquot; size=UNOquot;4UNOquot;UNOgt;Test a Paper BackupUNOlt;/fontUNOgt;UNOlt;/uUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;Use this window to test a single-sheet paper backup.  If your backup includes imported keys, those will not be covered by this test.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10984"/>
-        <source>&lt;b&gt;&lt;u&gt;Restore a Wallet from Paper Backup&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;Use this window to restore a single-sheet paper backup. If your backup includes extra pages with imported keys, please restore the base wallet first, then double-click the restored wallet and select &quot;Import Private Keys&quot; from the right-hand menu.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Restore a Wallet from Paper BackupUNOlt;/uUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;Use this window to restore a single-sheet paper backup. If your backup includes extra pages with imported keys, please restore the base wallet first, then double-click the restored wallet and select UNOquot;Import Private KeysUNOquot; from the right-hand menu.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11133"/>
-        <source>There is an error in the data you entered that could not be fixed automatically.  Please double-check that you entered the text exactly as it appears on the wallet-backup page.  &lt;br&gt;&lt;br&gt; The error occured on &lt;font color=&quot;red&quot;&gt;line #%1&lt;/font&gt;.</source>
+        <source>There is an error in the data you entered that could not be fixed automatically.  Please double-check that you entered the text exactly as it appears on the wallet-backup page.  UNOlt;brUNOgt;UNOlt;brUNOgt; The error occured on UNOlt;font color=UNOquot;redUNOquot;UNOgt;line #%1UNOlt;/fontUNOgt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11156"/>
-        <source>Detected errors in the data you entered. Armory attempted to fix the errors but it is not always right.  Be sure to verify the &quot;Wallet Unique ID&quot; closely on the next window.</source>
+        <source>Detected errors in the data you entered. Armory attempted to fix the errors but it is not always right.  Be sure to verify the UNOquot;Wallet Unique IDUNOquot; closely on the next window.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6829,7 +6829,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
 
 <byte value="x9"/>%1
 
-Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If not, click &quot;No&quot; and enter the key and chain-code data again.</source>
+Does this ID match the UNOquot;Wallet Unique IDUNOquot; you intend to restore? If not, click UNOquot;NoUNOquot; and enter the key and chain-code data again.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6839,22 +6839,22 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="11306"/>
-        <source>&lt;b&gt;&lt;u&gt;&lt;font color=&quot;blue&quot; size=&quot;4&quot;&gt;Test a Watch-Only Wallet Restore &lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Use this window to test the restoration of a watch-only wallet using the wallet&apos;s data. You can either type the data on a root data printout or import the data from a file.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;UNOlt;font color=UNOquot;blueUNOquot; size=UNOquot;4UNOquot;UNOgt;Test a Watch-Only Wallet Restore UNOlt;/fontUNOgt;UNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;Use this window to test the restoration of a watch-only wallet using the walletUNOapos;s data. You can either type the data on a root data printout or import the data from a file.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11313"/>
-        <source>&lt;b&gt;&lt;u&gt;&lt;font color=&quot;blue&quot; size=&quot;4&quot;&gt;Restore a Watch-Only Wallet &lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Use this window to restore a watch-only wallet using the wallet&apos;s data. You can either type the data on a root data printout or import the data from a file.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;UNOlt;font color=UNOquot;blueUNOquot; size=UNOquot;4UNOquot;UNOgt;Restore a Watch-Only Wallet UNOlt;/fontUNOgt;UNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;Use this window to restore a watch-only wallet using the walletUNOapos;s data. You can either type the data on a root data printout or import the data from a file.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11443"/>
-        <source>There is an error in the root ID you entered that could not be fixed automatically.  Please double-check that you entered the text exactly as it appears on the wallet-backup page.&lt;br&gt;&lt;br&gt;</source>
+        <source>There is an error in the root ID you entered that could not be fixed automatically.  Please double-check that you entered the text exactly as it appears on the wallet-backup page.UNOlt;brUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11473"/>
-        <source>There is an error in the root data you entered that could not be fixed automatically.  Please double-check that you entered the text exactly as it appears on the wallet-backup page.  &lt;br&gt;&lt;br&gt;The error occured on &lt;font color=&quot;red&quot;&gt;line #%1&lt;/font&gt;.</source>
+        <source>There is an error in the root data you entered that could not be fixed automatically.  Please double-check that you entered the text exactly as it appears on the wallet-backup page.  UNOlt;brUNOgt;UNOlt;brUNOgt;The error occured on UNOlt;font color=UNOquot;redUNOquot;UNOgt;line #%1UNOlt;/fontUNOgt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6892,17 +6892,17 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3849"/>
-        <source>&lt;font color=&quot;%1&quot; size=5&gt;&lt;b&gt;Multi-Sig Lockboxes [EXPERIMENTAL]&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot; size=5UNOgt;UNOlt;bUNOgt;Multi-Sig Lockboxes [EXPERIMENTAL]UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3854"/>
-        <source>The buttons below link you to all the functionality needed to create, fund and spend from multi-sig &quot;lockboxes.&quot;  This includes turning multiple wallets into a multi-factor lock-box for your personal coins, or can be used for escrow between multiple parties, using the Unobtanium network itself to hold the escrow.&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;IMPORTANT:&lt;/u&gt;&lt;/b&gt;  If you are using an lockbox that requires being funded by multiple parties simultaneously, you should &lt;b&gt;&lt;u&gt;not&lt;/u&gt; &lt;/b&gt; use regular transactions to do the funding. You should use the third button labeled &quot;Fund a multi-sig lockbox&quot; to collect funding promises into a single transaction, to limit the ability of any party to scam you.  Read more about it by clicking [NO LINK YET]  (if the above doesn&apos;t hold, you can use the regular &quot;Send Unobtaniums&quot; dialog to fund the lockbox).</source>
+        <source>The buttons below link you to all the functionality needed to create, fund and spend from multi-sig UNOquot;lockboxes.UNOquot;  This includes turning multiple wallets into a multi-factor lock-box for your personal coins, or can be used for escrow between multiple parties, using the Unobtanium network itself to hold the escrow.UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;IMPORTANT:UNOlt;/uUNOgt;UNOlt;/bUNOgt;  If you are using an lockbox that requires being funded by multiple parties simultaneously, you should UNOlt;bUNOgt;UNOlt;uUNOgt;notUNOlt;/uUNOgt; UNOlt;/bUNOgt; use regular transactions to do the funding. You should use the third button labeled UNOquot;Fund a multi-sig lockboxUNOquot; to collect funding promises into a single transaction, to limit the ability of any party to scam you.  Read more about it by clicking [NO LINK YET]  (if the above doesnUNOapos;t hold, you can use the regular UNOquot;Send UnobtaniumsUNOquot; dialog to fund the lockbox).</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3872"/>
-        <source>Collect public keys to create an &quot;address&quot; that can be used to send funds to the multi-sig container</source>
+        <source>Collect public keys to create an UNOquot;addressUNOquot; that can be used to send funds to the multi-sig container</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6955,22 +6955,22 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2146"/>
-        <source>&lt;center&gt;&lt;font size=4&gt;&lt;b&gt;&lt;u&gt;Select Public Key for Lockbox Creation&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;/center&gt; &lt;br&gt;Lockbox creation requires &lt;b&gt;public keys&lt;/b&gt; not the regular Unobtanium addresses most users are accustomed to.  A public key is much longer than a regular bitcoin address, usually starting with &quot;02&quot;, &quot;03&quot; or &quot;04&quot;.  Once you have selected a public key, send it to the lockbox organizer (person or device).  The organizer will create the lockbox which then must be imported by all devices that will track the funds and/or sign transactions. &lt;br&gt;&lt;br&gt;It is recommended that you select a &lt;i&gt;new&lt;/i&gt; key from one of your wallets that will not be used for any other purpose. You &lt;u&gt;can&lt;/u&gt; use a public key from a watching-only wallet (for an offline wallet), but you will have to sign the transactions the same way you would a regular offline transaction.  Additionally the offline computer will need to have Armory version 0.92 or later. &lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;BACKUP WARNING&lt;/font&gt;&lt;/b&gt;: It is highly recommended that you select a public key from a wallet for which you have good backups!  If you are creating a lockbox requiring the same number of signatures as there are authorities (such as 2-of-2 or 3-of-3), the loss of the wallet &lt;u&gt;will&lt;/u&gt; lead to loss of lockbox funds!</source>
+        <source>UNOlt;centerUNOgt;UNOlt;font size=4UNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;Select Public Key for Lockbox CreationUNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;/fontUNOgt;UNOlt;/centerUNOgt; UNOlt;brUNOgt;Lockbox creation requires UNOlt;bUNOgt;public keysUNOlt;/bUNOgt; not the regular Unobtanium addresses most users are accustomed to.  A public key is much longer than a regular unobtanium address, usually starting with UNOquot;02UNOquot;, UNOquot;03UNOquot; or UNOquot;04UNOquot;.  Once you have selected a public key, send it to the lockbox organizer (person or device).  The organizer will create the lockbox which then must be imported by all devices that will track the funds and/or sign transactions. UNOlt;brUNOgt;UNOlt;brUNOgt;It is recommended that you select a UNOlt;iUNOgt;newUNOlt;/iUNOgt; key from one of your wallets that will not be used for any other purpose. You UNOlt;uUNOgt;canUNOlt;/uUNOgt; use a public key from a watching-only wallet (for an offline wallet), but you will have to sign the transactions the same way you would a regular offline transaction.  Additionally the offline computer will need to have Armory version 0.92 or later. UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;BACKUP WARNINGUNOlt;/fontUNOgt;UNOlt;/bUNOgt;: It is highly recommended that you select a public key from a wallet for which you have good backups!  If you are creating a lockbox requiring the same number of signatures as there are authorities (such as 2-of-2 or 3-of-3), the loss of the wallet UNOlt;uUNOgt;willUNOlt;/uUNOgt; lead to loss of lockbox funds!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2175"/>
-        <source>If multiple people will be part of this lockbox, you should specify name and contact info in the box below, which will be available to all parties that import the finalized lockbox. &lt;br&gt;&lt;br&gt;If this lockbox will be shared among devices you own (such as for personal savings), specify information that helps you identify which device is associated with this public key.</source>
+        <source>If multiple people will be part of this lockbox, you should specify name and contact info in the box below, which will be available to all parties that import the finalized lockbox. UNOlt;brUNOgt;UNOlt;brUNOgt;If this lockbox will be shared among devices you own (such as for personal savings), specify information that helps you identify which device is associated with this public key.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2253"/>
-        <source>You must enter a public key into the box, &lt;b&gt;not&lt;/b&gt; a regular Unobtanium address that most users are accustomed to.  A public key is much longer than a Unobtanium address, and always starts with &quot;02&quot;, &quot;03&quot; or &quot;04&quot;.</source>
+        <source>You must enter a public key into the box, UNOlt;bUNOgt;notUNOlt;/bUNOgt; a regular Unobtanium address that most users are accustomed to.  A public key is much longer than a Unobtanium address, and always starts with UNOquot;02UNOquot;, UNOquot;03UNOquot; or UNOquot;04UNOquot;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2275"/>
-        <source>The text below includes both the public key and the notes/contact info you entered.  Please send this text to the organizer (person or device) to be used to create the lockbox.  This data is &lt;u&gt;not&lt;/u&gt; sensitive and it is appropriate be sent via email or transferred via USB storage. </source>
+        <source>The text below includes both the public key and the notes/contact info you entered.  Please send this text to the organizer (person or device) to be used to create the lockbox.  This data is UNOlt;uUNOgt;notUNOlt;/uUNOgt; sensitive and it is appropriate be sent via email or transferred via USB storage. </source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -7034,12 +7034,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="338"/>
-        <source>&lt;b&gt;&lt;u&gt;Set Extended Lockbox Details&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;Use this space to store any extended information about this multi-sig lockbox, such as contact information of other parties, references to contracts, etc.  Keep in mind that this field will be included when this lockbox is shared with others, so you should include your own contact information, as well as avoid putting any sensitive data in here</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Set Extended Lockbox DetailsUNOlt;/uUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;Use this space to store any extended information about this multi-sig lockbox, such as contact information of other parties, references to contracts, etc.  Keep in mind that this field will be included when this lockbox is shared with others, so you should include your own contact information, as well as avoid putting any sensitive data in here</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="395"/>
-        <source>Using the &lt;font color=&quot;%1&quot;&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/font&gt; public keys above, a multi-sig lockbox will be created requiring &lt;font color=&quot;%3&quot;&gt;&lt;b&gt;%4&lt;/b&gt;&lt;/font&gt; signatures to spend money.</source>
+        <source>Using the UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt;%2UNOlt;/bUNOgt;UNOlt;/fontUNOgt; public keys above, a multi-sig lockbox will be created requiring UNOlt;font color=UNOquot;%3UNOquot;UNOgt;UNOlt;bUNOgt;%4UNOlt;/bUNOgt;UNOlt;/fontUNOgt; signatures to spend money.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7049,27 +7049,27 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="504"/>
-        <source>You specified less than &lt;b&gt;%1&lt;/b&gt; public keys.  Please enter a public key into every field before continuing.</source>
+        <source>You specified less than UNOlt;bUNOgt;%1UNOlt;/bUNOgt; public keys.  Please enter a public key into every field before continuing.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="519"/>
-        <source>The data specified for public key &lt;b&gt;%1&lt;/b&gt; is not valid. Please double-check the data was entered correctly.</source>
+        <source>The data specified for public key UNOlt;bUNOgt;%1UNOlt;/bUNOgt; is not valid. Please double-check the data was entered correctly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="535"/>
-        <source>You did not specify a comment/label for one or more public keys.  Other devices/parties may not be able to identify them.  If this is a multi-party lockbox, it is recommended you put in contact information for each party, such as name, email and/or phone number. &lt;br&gt;&lt;br&gt;Continue with some fields blank? &lt;br&gt;(click &quot;No&quot; to go back and finish filling in the form)</source>
+        <source>You did not specify a comment/label for one or more public keys.  Other devices/parties may not be able to identify them.  If this is a multi-party lockbox, it is recommended you put in contact information for each party, such as name, email and/or phone number. UNOlt;brUNOgt;UNOlt;brUNOgt;Continue with some fields blank? UNOlt;brUNOgt;(click UNOquot;NoUNOquot; to go back and finish filling in the form)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="564"/>
-        <source>You originally loaded lockbox (%1) but the edits you made have caused it to become a new/different lockbox (%2). Changing the M-value, N-value, or any of the public keys will result in a new lockbox, unrelated to the original. &lt;br&gt;&lt;br&gt;&lt;b&gt;If you click &quot;Ok&quot; a new lockbox will be created&lt;/b&gt; instead of replacing the original.  If you do not need the original, you can go the lockbox browser and manually remove it.</source>
+        <source>You originally loaded lockbox (%1) but the edits you made have caused it to become a new/different lockbox (%2). Changing the M-value, N-value, or any of the public keys will result in a new lockbox, unrelated to the original. UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;If you click UNOquot;OkUNOquot; a new lockbox will be createdUNOlt;/bUNOgt; instead of replacing the original.  If you do not need the original, you can go the lockbox browser and manually remove it.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="579"/>
-        <source>If you are running any Unobtanium Core version earlier than 0.9.3 all spending transactions from this lockbox will be rejected as non-standard.  There will be no problem sending coins &lt;u&gt;to&lt;/u&gt; the lockbox, but subsequent spends &lt;u&gt;from&lt;/u&gt; the lockbox will require you to upgrade Unobtanium Core to at least 0.9.3 or later. &lt;br&gt;&lt;br&gt;Do you wish to continue creating the lockbox, anyway?</source>
+        <source>If you are running any Unobtanium Core version earlier than 0.9.3 all spending transactions from this lockbox will be rejected as non-standard.  There will be no problem sending coins UNOlt;uUNOgt;toUNOlt;/uUNOgt; the lockbox, but subsequent spends UNOlt;uUNOgt;fromUNOlt;/uUNOgt; the lockbox will require you to upgrade Unobtanium Core to at least 0.9.3 or later. UNOlt;brUNOgt;UNOlt;brUNOgt;Do you wish to continue creating the lockbox, anyway?</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -7077,12 +7077,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     <name>DlgSettings</name>
     <message>
         <location filename="qtdialogs.py" line="8299"/>
-        <source>Unobtanium Core/bitcoind management is not available on Mac/OSX</source>
+        <source>Unobtanium Core/unobtaniumd management is not available on Mac/OSX</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8309"/>
-        <source>&lt;b&gt;Unobtanium Software Management&lt;/b&gt;&lt;br&gt;&lt;br&gt;By default, Armory will manage the Unobtanium engine/software in the background.  You can choose to manage it yourself, or tell Armory about non-standard installation configuration.</source>
+        <source>UNOlt;bUNOgt;Unobtanium Software ManagementUNOlt;/bUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt;By default, Armory will manage the Unobtanium engine/software in the background.  You can choose to manage it yourself, or tell Armory about non-standard installation configuration.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7107,7 +7107,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8363"/>
-        <source>&lt;b&gt;Privacy Settings&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Privacy SettingsUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7132,7 +7132,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8456"/>
-        <source>&lt;b&gt;Enable notifications from the system-tray:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Enable notifications from the system-tray:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7147,32 +7147,32 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8459"/>
-        <source>Unobtanium Core/bitcoind disconnected</source>
+        <source>Unobtanium Core/unobtaniumd disconnected</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8460"/>
-        <source>Unobtanium Core/bitcoind reconnected</source>
+        <source>Unobtanium Core/unobtaniumd reconnected</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8464"/>
-        <source>&lt;b&gt;Sorry!  Notifications are not available on your version of OS X.&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Sorry!  Notifications are not available on your version of OS X.UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8489"/>
-        <source>&lt;b&gt;Preferred Date Format&lt;b&gt;:&lt;br&gt;</source>
+        <source>UNOlt;bUNOgt;Preferred Date FormatUNOlt;bUNOgt;:UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8490"/>
-        <source>You can specify how you would like dates to be displayed using percent-codes to represent components of the date.  The mouseover text of the &quot;(?)&quot; icon shows the most commonly used codes/symbols.  The text next to it shows how &quot;%1&quot; would be shown with the specified format.</source>
+        <source>You can specify how you would like dates to be displayed using percent-codes to represent components of the date.  The mouseover text of the UNOquot;(?)UNOquot; icon shows the most commonly used codes/symbols.  The text next to it shows how UNOquot;%1UNOquot; would be shown with the specified format.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8501"/>
-        <source>Use any of the following symbols:&lt;br&gt;</source>
+        <source>Use any of the following symbols:UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7192,12 +7192,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8555"/>
-        <source>&lt;b&gt;Armory user mode:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Armory user mode:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8563"/>
-        <source>&lt;b&gt;Preferred Language&lt;b&gt;:&lt;br&gt;</source>
+        <source>UNOlt;bUNOgt;Preferred LanguageUNOlt;bUNOgt;:UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7217,7 +7217,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8731"/>
-        <source>&lt;b&gt;Fee&lt;br&gt;&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;FeeUNOlt;brUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7242,7 +7242,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8829"/>
-        <source>&lt;b&gt;Change Address Type&lt;br&gt;&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Change Address TypeUNOlt;brUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7277,7 +7277,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8909"/>
-        <source>The path you specified for the Unobtanium software home directory does not exist.  Only specify this directory if you use a non-standard &quot;-datadir=&quot; option when running Unobtanium Core or bitcoind.  If you leave this field blank, the following path will be used: &lt;br&gt;&lt;br&gt; %1</source>
+        <source>The path you specified for the Unobtanium software home directory does not exist.  Only specify this directory if you use a non-standard UNOquot;-datadir=UNOquot; option when running Unobtanium Core or unobtaniumd.  If you leave this field blank, the following path will be used: UNOlt;brUNOgt;UNOlt;brUNOgt; %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7287,22 +7287,22 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8932"/>
-        <source>The default fee specified could not be understood.  Please specify in BTC with no more than 8 decimal places.</source>
+        <source>The default fee specified could not be understood.  Please specify in UNO with no more than 8 decimal places.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8987"/>
-        <source>&quot;Standard&quot; is for users that only need the core set of features to send and receive bitcoins.  This includes maintaining multiple wallets, wallet encryption, and the ability to make backups of your wallets.</source>
+        <source>UNOquot;StandardUNOquot; is for users that only need the core set of features to send and receive unobtaniums.  This includes maintaining multiple wallets, wallet encryption, and the ability to make backups of your wallets.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8993"/>
-        <source>&quot;Advanced&quot; mode provides extra Armory features such as private key importing &amp; sweeping, message signing, and the offline wallet interface.  But, with advanced features come advanced risks...</source>
+        <source>UNOquot;AdvancedUNOquot; mode provides extra Armory features such as private key importing UNOamp; sweeping, message signing, and the offline wallet interface.  But, with advanced features come advanced risks...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8999"/>
-        <source>&quot;Expert&quot; mode is similar to &quot;Advanced&quot; but includes access to lower-level info about transactions, scripts, keys and network protocol.  Most extra functionality is geared towards Unobtanium software developers.</source>
+        <source>UNOquot;ExpertUNOquot; mode is similar to UNOquot;AdvancedUNOquot; but includes access to lower-level info about transactions, scripts, keys and network protocol.  Most extra functionality is geared towards Unobtanium software developers.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7347,7 +7347,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8833"/>
-        <source>Change address type will match the address type of recipient addresses. &lt;br&gt;Favors P2SH when recipients are heterogenous. &lt;br&gt;Will create nested SegWit change if inputs are SegWit and recipient are P2SH. &lt;br&gt;&lt;br&gt;&lt;b&gt;Pre 0.96 Armory cannot spend from P2SH address types&lt;/b&gt;</source>
+        <source>Change address type will match the address type of recipient addresses. UNOlt;brUNOgt;Favors P2SH when recipients are heterogenous. UNOlt;brUNOgt;Will create nested SegWit change if inputs are SegWit and recipient are P2SH. UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;Pre 0.96 Armory cannot spend from P2SH address typesUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7357,7 +7357,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8288"/>
-        <source>Let Armory run Unobtanium Core/bitcoind in the background</source>
+        <source>Let Armory run Unobtanium Core/unobtaniumd in the background</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7372,12 +7372,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8380"/>
-        <source>&lt;b&gt;Set Armory as default URL handler&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Set Armory as default URL handlerUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8381"/>
-        <source>Set Armory to be the default when you click on &quot;unobtanium:&quot; links in your browser or in emails. You can test if your operating system is supported by clicking on a &quot;unobtanium:&quot; link right after clicking this button.</source>
+        <source>Set Armory to be the default when you click on UNOquot;unobtanium:UNOquot; links in your browser or in emails. You can test if your operating system is supported by clicking on a UNOquot;unobtanium:UNOquot; link right after clicking this button.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7387,17 +7387,17 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8396"/>
-        <source>Armory just attempted to register itself to handle &quot;unobtanium:&quot; links, but this does not work on all operating systems.</source>
+        <source>Armory just attempted to register itself to handle UNOquot;unobtanium:UNOquot; links, but this does not work on all operating systems.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8403"/>
-        <source>&lt;b&gt;Default fee to include with transactions:&lt;/b&gt;&lt;br&gt;</source>
+        <source>UNOlt;bUNOgt;Default fee to include with transactions:UNOlt;/bUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8405"/>
-        <source>Fees go to users that contribute computing power to keep the Unobtanium network secure.  It also increases the priority of your transactions so they confirm faster (%1 BTC is standard).</source>
+        <source>Fees go to users that contribute computing power to keep the Unobtanium network secure.  It also increases the priority of your transactions so they confirm faster (%1 UNO is standard).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7407,7 +7407,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8425"/>
-        <source>&lt;b&gt;Minimize to System Tray&lt;/b&gt; &lt;br&gt;You can have Armory automatically minimize itself to your system tray on open or close.  Armory will stay open but run in the background, and you will still receive notifications.  Access Armory through the icon on your system tray. &lt;br&gt;&lt;br&gt;If you select &quot;Minimize on close&quot;, the &apos;x&apos; on the top window bar will minimize Armory instead of exiting the application.  You can always use &lt;i&gt;&quot;File&quot;&lt;/i&gt; -&gt; &lt;i&gt;&quot;Quit Armory&quot;&lt;/i&gt; to actually close it.</source>
+        <source>UNOlt;bUNOgt;Minimize to System TrayUNOlt;/bUNOgt; UNOlt;brUNOgt;You can have Armory automatically minimize itself to your system tray on open or close.  Armory will stay open but run in the background, and you will still receive notifications.  Access Armory through the icon on your system tray. UNOlt;brUNOgt;UNOlt;brUNOgt;If you select UNOquot;Minimize on closeUNOquot;, the UNOapos;xUNOapos; on the top window bar will minimize Armory instead of exiting the application.  You can always use UNOlt;iUNOgt;UNOquot;FileUNOquot;UNOlt;/iUNOgt; -UNOgt; UNOlt;iUNOgt;UNOquot;Quit ArmoryUNOquot;UNOlt;/iUNOgt; to actually close it.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7422,12 +7422,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8763"/>
-        <source>Values in BTC</source>
+        <source>Values in UNO</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8767"/>
-        <source>Auto-adjust fee may increase your total fee using the selected fee/byte rate as its basis in an attempt to align the amount of digits after the decimal point between your spend values and change value.&lt;br&gt;&lt;br&gt;The purpose of this obfuscation technique is to make the change output less obvious. &lt;br&gt;&lt;br&gt;The auto-adjust fee feature only applies to fee/byte options and does not inflate your fee by more that 10% of its original value.</source>
+        <source>Auto-adjust fee may increase your total fee using the selected fee/byte rate as its basis in an attempt to align the amount of digits after the decimal point between your spend values and change value.UNOlt;brUNOgt;UNOlt;brUNOgt;The purpose of this obfuscation technique is to make the change output less obvious. UNOlt;brUNOgt;UNOlt;brUNOgt;The auto-adjust fee feature only applies to fee/byte options and does not inflate your fee by more that 10% of its original value.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -7490,7 +7490,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="4919"/>
-        <source>&lt;&lt;&lt; Go Back</source>
+        <source>UNOlt;UNOlt;UNOlt; Go Back</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7525,22 +7525,22 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="5084"/>
-        <source>&lt;i&gt;Copied!&lt;/i&gt;</source>
-        <translation>&lt;i&gt;הועתק!&lt;/i&gt;</translation>
+        <source>UNOlt;iUNOgt;Copied!UNOlt;/iUNOgt;</source>
+        <translation>UNOlt;iUNOgt;הועתק!UNOlt;/iUNOgt;</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="4818"/>
-        <source>The textbox below shows all keys that are part of this wallet, which includes both permanent keys and imported keys.  If you simply want to backup your wallet and you have no imported keys then all data below is reproducible from a plain paper backup. &lt;br&gt;&lt;br&gt; If you have imported addresses to backup, and/or you would like to export your private keys to another wallet service or application, then you can save this data to disk, or copy&amp;paste it into the other application.</source>
+        <source>The textbox below shows all keys that are part of this wallet, which includes both permanent keys and imported keys.  If you simply want to backup your wallet and you have no imported keys then all data below is reproducible from a plain paper backup. UNOlt;brUNOgt;UNOlt;brUNOgt; If you have imported addresses to backup, and/or you would like to export your private keys to another wallet service or application, then you can save this data to disk, or copyUNOamp;paste it into the other application.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="4828"/>
-        <source>&lt;br&gt;&lt;br&gt;&lt;font color=&quot;red&quot;&gt;Warning:&lt;/font&gt; The text box below contains the plaintext (unencrypted) private keys for each of the addresses in this wallet.  This information can be used to spend the money associated with those addresses, so please protect it like you protect the rest of your wallet. </source>
+        <source>UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;font color=UNOquot;redUNOquot;UNOgt;Warning:UNOlt;/fontUNOgt; The text box below contains the plaintext (unencrypted) private keys for each of the addresses in this wallet.  This information can be used to spend the money associated with those addresses, so please protect it like you protect the rest of your wallet. </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="5059"/>
-        <source>&lt;font color=&quot;red&quot;&gt;&lt;b&gt;REMEMBER:&lt;/b&gt;&lt;/font&gt; The data you are about to save contains private keys.  Please make sure that only trusted persons will have access to this file. &lt;br&gt;&lt;br&gt;Are you sure you want to continue?</source>
+        <source>UNOlt;font color=UNOquot;redUNOquot;UNOgt;UNOlt;bUNOgt;REMEMBER:UNOlt;/bUNOgt;UNOlt;/fontUNOgt; The data you are about to save contains private keys.  Please make sure that only trusted persons will have access to this file. UNOlt;brUNOgt;UNOlt;brUNOgt;Are you sure you want to continue?</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -7548,7 +7548,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     <name>DlgShowKeys</name>
     <message>
         <location filename="qtdialogs.py" line="3421"/>
-        <source>Key Data for address: &lt;b&gt;%1&lt;/b&gt;</source>
+        <source>Key Data for address: UNOlt;bUNOgt;%1UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7558,12 +7558,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="3432"/>
-        <source>&lt;i&gt;[[ No Private Key in Watching-Only Wallet ]]&lt;/i&gt;</source>
+        <source>UNOlt;iUNOgt;[[ No Private Key in Watching-Only Wallet ]]UNOlt;/iUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3436"/>
-        <source>&lt;i&gt;[[ ENCRYPTED ]]&lt;/i&gt;</source>
+        <source>UNOlt;iUNOgt;[[ ENCRYPTED ]]UNOlt;/iUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7603,7 +7603,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="3403"/>
-        <source>&lt;font color=%1&gt;&lt;b&gt;Warning:&lt;/b&gt; the unencrypted private keys for this address are shown below.  They are &quot;private&quot; because anyone who obtains them can spend the money held by this address.  Please protect this information the same as you protect your wallet.&lt;/font&gt;</source>
+        <source>UNOlt;font color=%1UNOgt;UNOlt;bUNOgt;Warning:UNOlt;/bUNOgt; the unencrypted private keys for this address are shown below.  They are UNOquot;privateUNOquot; because anyone who obtains them can spend the money held by this address.  Please protect this information the same as you protect your wallet.UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7651,12 +7651,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="12146"/>
-        <source>The wallet ID is computed from the first address in your wallet based on the root key data (and the &quot;chain code&quot;).  Therefore, a matching wallet ID proves that the wallet will produce identical addresses.</source>
+        <source>The wallet ID is computed from the first address in your wallet based on the root key data (and the UNOquot;chain codeUNOquot;).  Therefore, a matching wallet ID proves that the wallet will produce identical addresses.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12159"/>
-        <source>Fragments &lt;b&gt;%1&lt;/b&gt; and &lt;b&gt;%2&lt;/b&gt; produce a wallet with ID &quot;&lt;b&gt;%3&lt;/b&gt;&quot;</source>
+        <source>Fragments UNOlt;bUNOgt;%1UNOlt;/bUNOgt; and UNOlt;bUNOgt;%2UNOlt;/bUNOgt; produce a wallet with ID UNOquot;UNOlt;bUNOgt;%3UNOlt;/bUNOgt;UNOquot;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -7707,17 +7707,17 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="9975"/>
-        <source>&lt;b&gt;Protect Your Unobtaniums -- Make a Wallet Backup!&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Protect Your Unobtaniums -- Make a Wallet Backup!UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9978"/>
-        <source>A failed hard-drive or forgotten passphrase will lead to &lt;u&gt;permanent loss of bitcoins&lt;/u&gt;!  Luckily, Armory wallets only need to be backed up &lt;u&gt;one time&lt;/u&gt;, and protect you in both of these events.   If you&apos;ve ever forgotten a password or had a hardware failure, make a backup!</source>
+        <source>A failed hard-drive or forgotten passphrase will lead to UNOlt;uUNOgt;permanent loss of unobtaniumsUNOlt;/uUNOgt;!  Luckily, Armory wallets only need to be backed up UNOlt;uUNOgt;one timeUNOlt;/uUNOgt;, and protect you in both of these events.   If youUNOapos;ve ever forgotten a password or had a hardware failure, make a backup!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9986"/>
-        <source>Use a printer or pen-and-paper to write down your wallet &quot;seed.&quot;</source>
+        <source>Use a printer or pen-and-paper to write down your wallet UNOquot;seed.UNOquot;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7750,12 +7750,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1988"/>
-        <source>&lt;font color=&quot;%1&quot; size=4&gt;&lt;b&gt;Simultaneous Lockbox Funding&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot; size=4UNOgt;UNOlt;bUNOgt;Simultaneous Lockbox FundingUNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1992"/>
-        <source>To have multiple parties simultaneously fund a lockbox, each party will need to create a &quot;promissory note,&quot; and any other party will collect all of them to create a single simulfunding transaction. This transaction will be signed by all parties after reviewing that it meets their expectations.  This process guarantees that either all parties commit funds simultaneously, or no one does.  The signature that you provide using this interface is only valid if all the other funding commitments are also signed.&lt;br&gt;&lt;br&gt;If you are both creating a promissory note and merging all the notes together, you should first create the promissory note and save it to disk or copy it to your clipboard.  Once all other funding commitments have been received, open this dialog again and load all of them at once.  Sign for your contribution and send the result to all the other parties. &lt;br&gt;&lt;br&gt;You are currently handling a simulfunding operation for lockbox: &lt;br&gt;%1.</source>
+        <source>To have multiple parties simultaneously fund a lockbox, each party will need to create a UNOquot;promissory note,UNOquot; and any other party will collect all of them to create a single simulfunding transaction. This transaction will be signed by all parties after reviewing that it meets their expectations.  This process guarantees that either all parties commit funds simultaneously, or no one does.  The signature that you provide using this interface is only valid if all the other funding commitments are also signed.UNOlt;brUNOgt;UNOlt;brUNOgt;If you are both creating a promissory note and merging all the notes together, you should first create the promissory note and save it to disk or copy it to your clipboard.  Once all other funding commitments have been received, open this dialog again and load all of them at once.  Sign for your contribution and send the result to all the other parties. UNOlt;brUNOgt;UNOlt;brUNOgt;You are currently handling a simulfunding operation for lockbox: UNOlt;brUNOgt;%1.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7856,12 +7856,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="10842"/>
-        <source>&lt;b&gt;&lt;u&gt;Restore Wallet from Backup&lt;/u&gt;&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Restore Wallet from BackupUNOlt;/uUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10843"/>
-        <source>You can restore any kind of backup ever created by Armory using one of the options below.  If you have a list of private keys you should open the target wallet and select &quot;Import/Sweep Private Keys.&quot;</source>
+        <source>You can restore any kind of backup ever created by Armory using one of the options below.  If you have a list of private keys you should open the target wallet and select UNOquot;Import/Sweep Private Keys.UNOquot;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -7909,13 +7909,13 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="161"/>
-        <source>Show Keyboard &gt;&gt;&gt;</source>
-        <translation>הצג מקלדת &gt;&gt;&gt;</translation>
+        <source>Show Keyboard UNOgt;UNOgt;UNOgt;</source>
+        <translation>הצג מקלדת UNOgt;UNOgt;UNOgt;</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="159"/>
-        <source>Hide Keyboard &lt;&lt;&lt;</source>
-        <translation>הסתר מקלדת &lt;&lt;&lt;</translation>
+        <source>Hide Keyboard UNOlt;UNOlt;UNOlt;</source>
+        <translation>הסתר מקלדת UNOlt;UNOlt;UNOlt;</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="176"/>
@@ -7952,7 +7952,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     <name>DlgUriCopyAndPaste</name>
     <message>
         <location filename="qtdialogs.py" line="9772"/>
-        <source>Copy and paste a raw bitcoin URL string here.  A valid string starts with &quot;unobtanium:&quot; followed by a bitcoin address.&lt;br&gt;&lt;br&gt;You should use this feature if there is a &quot;unobtanium:&quot; link in a webpage or email that does not load Armory when you click on it.  Instead, right-click on the link and select &quot;Copy Link Location&quot; then paste it into the box below. </source>
+        <source>Copy and paste a raw unobtanium URL string here.  A valid string starts with UNOquot;unobtanium:UNOquot; followed by a unobtanium address.UNOlt;brUNOgt;UNOlt;brUNOgt;You should use this feature if there is a UNOquot;unobtanium:UNOquot; link in a webpage or email that does not load Armory when you click on it.  Instead, right-click on the link and select UNOquot;Copy Link LocationUNOquot; then paste it into the box below. </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7985,7 +7985,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="2992"/>
-        <source>      Total &lt;b&gt;%1&lt;/b&gt; BTC %2</source>
+        <source>      Total UNOlt;bUNOgt;%1UNOlt;/bUNOgt; UNO %2</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8000,7 +8000,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="2978"/>
-        <source>You are about to &lt;i&gt;sweep&lt;/i&gt; all funds from the specified address to your wallet.  Please confirm the action:</source>
+        <source>You are about to UNOlt;iUNOgt;sweepUNOlt;/iUNOgt; all funds from the specified address to your wallet.  Please confirm the action:</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -8008,12 +8008,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     <name>DlgWODataPrintBackup</name>
     <message>
         <location filename="qtdialogs.py" line="10326"/>
-        <source>&lt;b&gt;&lt;font size=4&gt;&lt;font color=&quot;#aa0000&quot;&gt;WARNING:&lt;/font&gt;  &lt;u&gt;This is not a wallet backup!&lt;/u&gt;&lt;/font&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;Please make a regular digital or paper backup of your wallet to keep it protected!  This data simply lets you monitor the funds in this wallet but gives you no ability to move any funds.</source>
+        <source>UNOlt;bUNOgt;UNOlt;font size=4UNOgt;UNOlt;font color=UNOquot;#aa0000UNOquot;UNOgt;WARNING:UNOlt;/fontUNOgt;  UNOlt;uUNOgt;This is not a wallet backup!UNOlt;/uUNOgt;UNOlt;/fontUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;Please make a regular digital or paper backup of your wallet to keep it protected!  This data simply lets you monitor the funds in this wallet but gives you no ability to move any funds.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10242"/>
-        <source>&lt;b&gt;&lt;u&gt;Print Watch-Only Wallet Root&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; The lines below are sufficient to calculate public keys for every private key ever produced by the full wallet. Importing this data to an online computer is sufficient to receive and verify transactions, and monitor balances, but without the ability to spend the funds.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Print Watch-Only Wallet RootUNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;brUNOgt;UNOlt;brUNOgt; The lines below are sufficient to calculate public keys for every private key ever produced by the full wallet. Importing this data to an online computer is sufficient to receive and verify transactions, and monitor balances, but without the ability to spend the funds.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8071,7 +8071,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1108"/>
-        <source>&lt;b&gt;Backup This Wallet&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Backup This WalletUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8081,7 +8081,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1224"/>
-        <source>Funds that can be spent &lt;i&gt;right now&lt;/i&gt;</source>
+        <source>Funds that can be spent UNOlt;iUNOgt;right nowUNOlt;/iUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8091,12 +8091,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1253"/>
-        <source>&lt;b&gt;Addresses in Wallet:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Addresses in Wallet:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1255"/>
-        <source>&lt;&lt;&lt; Go Back</source>
+        <source>UNOlt;UNOlt;UNOlt; Go Back</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8111,27 +8111,27 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1287"/>
-        <source>&lt;b&gt;&lt;font color=&quot;red&quot; size=4&gt;Please backup your wallet!&lt;/font&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;Making a paper backup will guarantee you can recover your coins at &lt;a&gt;any time in the future&lt;/a&gt;, even if your hard drive dies or you forget your passphrase.  Without it, you could permanently lose your coins!  The backup buttons are to the right of the address list.&lt;br&gt;&lt;br&gt;A paper backup is recommended, and it can be copied by hand if you do not have a working printer. A digital backup only works if you remember the passphrase used at the time it was created.  If you have ever forgotten a password before, only rely on a digital backup if you store the password with it!&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://bitcointalk.org/index.php?topic=152151.0&quot;&gt;Read more about Armory backups&lt;/a&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;redUNOquot; size=4UNOgt;Please backup your wallet!UNOlt;/fontUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;Making a paper backup will guarantee you can recover your coins at UNOlt;aUNOgt;any time in the futureUNOlt;/aUNOgt;, even if your hard drive dies or you forget your passphrase.  Without it, you could permanently lose your coins!  The backup buttons are to the right of the address list.UNOlt;brUNOgt;UNOlt;brUNOgt;A paper backup is recommended, and it can be copied by hand if you do not have a working printer. A digital backup only works if you remember the passphrase used at the time it was created.  If you have ever forgotten a password before, only rely on a digital backup if you store the password with it!UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;a href=UNOquot;https://bxtcointalk.org/index.php?topic=152151.0UNOquot;UNOgt;Read more about Armory backupsUNOlt;/aUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1318"/>
-        <source>&lt;font color=&quot;%1&quot;&gt;&lt;b&gt;Backup This Wallet&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot;UNOgt;UNOlt;bUNOgt;Backup This WalletUNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1337"/>
-        <source>&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;Maximum Funds:&lt;/font&gt;&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;Maximum Funds:UNOlt;/fontUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1338"/>
-        <source>&lt;b&gt;Spendable Funds:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Spendable Funds:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1339"/>
-        <source>&lt;b&gt;Unconfirmed:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Unconfirmed:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8321,7 +8321,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1951"/>
-        <source>&lt;i&gt;Offline&lt;/i&gt;</source>
+        <source>UNOlt;iUNOgt;OfflineUNOlt;/iUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8331,7 +8331,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1961"/>
-        <source>&lt;i&gt;Watching-Only&lt;/i&gt;</source>
+        <source>UNOlt;iUNOgt;Watching-OnlyUNOlt;/iUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8351,12 +8351,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1418"/>
-        <source>Armory encountered an error opening your web browser.  To view this address on blockchain.info, please copy and paste the following URL into your browser: &lt;br&gt;&lt;br&gt;&lt;a href=&quot;%1&quot;&gt;%2&lt;/a&gt;</source>
+        <source>Armory encountered an error opening your web browser.  To view this address on blockchain.info, please copy and paste the following URL into your browser: UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;a href=UNOquot;%1UNOquot;UNOgt;%2UNOlt;/aUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1553"/>
-        <source>Armory is currently running in offline mode, and has no ability to determine balances or create transactions. &lt;br&gt;&lt;br&gt; In order to send coins from this wallet you must use a full copy of this wallet from an online computer, or initiate an &quot;offline transaction&quot; using a watching-only wallet on an online computer.</source>
+        <source>Armory is currently running in offline mode, and has no ability to determine balances or create transactions. UNOlt;brUNOgt;UNOlt;brUNOgt; In order to send coins from this wallet you must use a full copy of this wallet from an online computer, or initiate an UNOquot;offline transactionUNOquot; using a watching-only wallet on an online computer.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8366,12 +8366,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1659"/>
-        <source>Armory supports importing of external private keys into your wallet but imported addresses are &lt;u&gt;not&lt;/u&gt; automatically protected by your backups.  If you do not plan to use the address again, it is recommended that you &quot;Sweep&quot; the private key instead of importing it. &lt;br&gt;&lt;br&gt; Individual private keys, including imported ones, can be backed up using the &quot;Export Key Lists&quot; option in the wallet backup window.</source>
+        <source>Armory supports importing of external private keys into your wallet but imported addresses are UNOlt;uUNOgt;notUNOlt;/uUNOgt; automatically protected by your backups.  If you do not plan to use the address again, it is recommended that you UNOquot;SweepUNOquot; the private key instead of importing it. UNOlt;brUNOgt;UNOlt;brUNOgt; Individual private keys, including imported ones, can be backed up using the UNOquot;Export Key ListsUNOquot; option in the wallet backup window.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1126"/>
-        <source>Send bitcoins to other users, or transfer between wallets</source>
+        <source>Send unobtaniums to other users, or transfer between wallets</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8381,12 +8381,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1130"/>
-        <source>Get a new address from this wallet for receiving bitcoins.  Right click on the address list below to copy an existing address.</source>
+        <source>Get a new address from this wallet for receiving unobtaniums.  Right click on the address list below to copy an existing address.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1133"/>
-        <source>Import or &quot;Sweep&quot; an address which is not part of your wallet.  Useful for VanityGen addresses and redeeming Casascius physical bitcoins.</source>
+        <source>Import or UNOquot;SweepUNOquot; an address which is not part of your wallet.  Useful for VanityGen addresses and redeeming Casascius physical unobtaniums.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8431,12 +8431,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1716"/>
-        <source>This is the name stored with the wallet file.  Click on the &quot;Change Labels&quot; button on the right side of this window to change this field</source>
+        <source>This is the name stored with the wallet file.  Click on the UNOquot;Change LabelsUNOquot; button on the right side of this window to change this field</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1721"/>
-        <source>This is the description of the wallet stored in the wallet file. Press the &quot;Change Labels&quot; button on the right side of this window to change this field</source>
+        <source>This is the description of the wallet stored in the wallet file. Press the UNOquot;Change LabelsUNOquot; button on the right side of this window to change this field</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8451,7 +8451,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1738"/>
-        <source>Offline:  This is a &quot;Watching-Only&quot; wallet that you have identified belongs to you, but you cannot spend any of the wallet funds using this wallet.  This kind of wallet is usually stored on an internet-connected computer, to manage incoming transactions, but the private keys needed to spend the money are stored on an offline computer.</source>
+        <source>Offline:  This is a UNOquot;Watching-OnlyUNOquot; wallet that you have identified belongs to you, but you cannot spend any of the wallet funds using this wallet.  This kind of wallet is usually stored on an internet-connected computer, to manage incoming transactions, but the private keys needed to spend the money are stored on an offline computer.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8461,17 +8461,17 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1750"/>
-        <source>No Encryption: This wallet contains private keys, and does not require a passphrase to spend funds available to this wallet.  If someone else obtains a copy of this wallet, they can also spend your funds! (You can click the &quot;Change Encryption&quot; button on the right side of this window to enabled encryption)</source>
+        <source>No Encryption: This wallet contains private keys, and does not require a passphrase to spend funds available to this wallet.  If someone else obtains a copy of this wallet, they can also spend your funds! (You can click the UNOquot;Change EncryptionUNOquot; button on the right side of this window to enabled encryption)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1757"/>
-        <source>This wallet contains the private keys needed to spend this wallet&apos;s funds, but they are encrypted on your harddrive.  The wallet must be &quot;unlocked&quot; with the correct passphrase before you can spend any of the funds.  You can still generate new addresses and monitor incoming transactions, even with a locked wallet.</source>
+        <source>This wallet contains the private keys needed to spend this walletUNOapos;s funds, but they are encrypted on your harddrive.  The wallet must be UNOquot;unlockedUNOquot; with the correct passphrase before you can spend any of the funds.  You can still generate new addresses and monitor incoming transactions, even with a locked wallet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1764"/>
-        <source>Declare who owns this wallet.  If you click on the field and select &quot;This wallet is mine&quot;, it&apos;s balance will be included in your total Armory Balance in the main window</source>
+        <source>Declare who owns this wallet.  If you click on the field and select UNOquot;This wallet is mineUNOquot;, itUNOapos;s balance will be included in your total Armory Balance in the main window</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8537,22 +8537,22 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="12675"/>
-        <source>&lt;b&gt;Stripped Recovery&lt;/b&gt;&lt;br&gt;Only attempts to                             recover the wallet&apos;s rootkey and chaincode</source>
+        <source>UNOlt;bUNOgt;Stripped RecoveryUNOlt;/bUNOgt;UNOlt;brUNOgt;Only attempts to                             recover the walletUNOapos;s rootkey and chaincode</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12682"/>
-        <source>&lt;b&gt;Bare Recovery&lt;/b&gt;&lt;br&gt;Attempts to recover all private key related data</source>
+        <source>UNOlt;bUNOgt;Bare RecoveryUNOlt;/bUNOgt;UNOlt;brUNOgt;Attempts to recover all private key related data</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12689"/>
-        <source>&lt;b&gt;Full Recovery&lt;/b&gt;&lt;br&gt;Attempts to recover as much data as possible</source>
+        <source>UNOlt;bUNOgt;Full RecoveryUNOlt;/bUNOgt;UNOlt;brUNOgt;Attempts to recover as much data as possible</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12695"/>
-        <source>&lt;b&gt;Consistency Check&lt;/b&gt;&lt;br&gt;Checks wallet consistency. Works with both full and watch only&lt;br&gt; wallets. Unlocking of encrypted wallets is not mandatory</source>
+        <source>UNOlt;bUNOgt;Consistency CheckUNOlt;/bUNOgt;UNOlt;brUNOgt;Checks wallet consistency. Works with both full and watch onlyUNOlt;brUNOgt; wallets. Unlocking of encrypted wallets is not mandatory</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8587,7 +8587,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="12628"/>
-        <source>&lt;b&gt;Wallet Recovery Tool: &lt;/b&gt;&lt;br&gt;This tool will recover data from damaged or inconsistent wallets.  Specify a wallet file and Armory will analyze the wallet and fix any errors with it. &lt;br&gt;&lt;br&gt;&lt;font color=&quot;%1&quot;&gt;If any problems are found with the specified wallet, Armory will provide explanation and instructions to transition to a new wallet.</source>
+        <source>UNOlt;bUNOgt;Wallet Recovery Tool: UNOlt;/bUNOgt;UNOlt;brUNOgt;This tool will recover data from damaged or inconsistent wallets.  Specify a wallet file and Armory will analyze the wallet and fix any errors with it. UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;If any problems are found with the specified wallet, Armory will provide explanation and instructions to transition to a new wallet.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -8595,7 +8595,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     <name>FeeSelectionDialog</name>
     <message>
         <location filename="FeeSelectUI.py" line="56"/>
-        <source>Flat Fee (BTC)</source>
+        <source>Flat Fee (UNO)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8640,7 +8640,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
         <location filename="armorymodels.py" line="263"/>
         <source>
 
-This is a &quot;generation&quot; transaction from
+This is a UNOquot;generationUNOquot; transaction from
 Unobtanium mining.  These transactions take
 120 confirmations (approximately one day)
 before they are available to be spent.</source>
@@ -8675,7 +8675,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="armorymodels.py" line="304"/>
-        <source>The net effect on the balance of this wallet &lt;b&gt;not including transaction fees.&lt;/b&gt;  You can change this behavior in the Armory preferences window.</source>
+        <source>The net effect on the balance of this wallet UNOlt;bUNOgt;not including transaction fees.UNOlt;/bUNOgt;  You can change this behavior in the Armory preferences window.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8741,12 +8741,12 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="armorymodels.py" line="268"/>
-        <source>This transaction has been RBF flagged (Replaceable By Fee)&lt;br&gt;&lt;br&gt;It means the network will accept and broadcast a double spend of the underlying outputs as long as the double spend pays a higher fee.&lt;br&gt;&lt;br&gt;Do not consider a RBF transaction as a valid payment until it receives at least 1 confirmation.</source>
+        <source>This transaction has been RBF flagged (Replaceable By Fee)UNOlt;brUNOgt;UNOlt;brUNOgt;It means the network will accept and broadcast a double spend of the underlying outputs as long as the double spend pays a higher fee.UNOlt;brUNOgt;UNOlt;brUNOgt;Do not consider a RBF transaction as a valid payment until it receives at least 1 confirmation.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="armorymodels.py" line="274"/>
-        <source>This transaction spends ZC (zero confirmation) outputs&lt;br&gt;&lt;br&gt;Transactions built on top of yet to confirm transactions are at risk of being invalidated for as long as the parent transaction remains unconfirmed.&lt;br&gt;&lt;br&gt;It is recommended to wait for at least 1 confirmation before accepting these as valid payment.</source>
+        <source>This transaction spends ZC (zero confirmation) outputsUNOlt;brUNOgt;UNOlt;brUNOgt;Transactions built on top of yet to confirm transactions are at risk of being invalidated for as long as the parent transaction remains unconfirmed.UNOlt;brUNOgt;UNOlt;brUNOgt;It is recommended to wait for at least 1 confirmation before accepting these as valid payment.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -8800,7 +8800,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="WalletFrames.py" line="42"/>
-        <source>Spendable BTC:</source>
+        <source>Spendable UNO:</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8810,7 +8810,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="WalletFrames.py" line="34"/>
-        <source>&lt;font color=&quot;%1&quot; size=4&gt;&lt;b&gt;&lt;u&gt;Lockbox %2 (%3-of-%4)&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot; size=4UNOgt;UNOlt;bUNOgt;UNOlt;uUNOgt;Lockbox %2 (%3-of-%4)UNOlt;/uUNOgt;UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -8939,7 +8939,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="WalletMirrorDialog.py" line="119"/>
-        <source>Starting v0.96, Armory needs to mirror Python wallets into C++ wallets in order to operate. Mirrored C++ wallets are watching only (they do not hold any private keys).&lt;br&gt;&lt;br&gt; Mirrored wallets are used to interface with the database and perform operations that aren&apos;t available to the legacy Python wallets, such support for compressed public keys and Segregated Witness transactions. &lt;br&gt;&lt;br&gt;Mirroring only needs to happen once per wallet. Synchronization will happen every time the Python wallet address chain is ahead of the mirrored Cpp wallet address chain (this typically rarely happens).&lt;br&gt;&lt;br&gt;This process can take up to a few minutes per wallet.&lt;br&gt;&lt;br&gt;</source>
+        <source>Starting v0.96, Armory needs to mirror Python wallets into C++ wallets in order to operate. Mirrored C++ wallets are watching only (they do not hold any private keys).UNOlt;brUNOgt;UNOlt;brUNOgt; Mirrored wallets are used to interface with the database and perform operations that arenUNOapos;t available to the legacy Python wallets, such support for compressed public keys and Segregated Witness transactions. UNOlt;brUNOgt;UNOlt;brUNOgt;Mirroring only needs to happen once per wallet. Synchronization will happen every time the Python wallet address chain is ahead of the mirrored Cpp wallet address chain (this typically rarely happens).UNOlt;brUNOgt;UNOlt;brUNOgt;This process can take up to a few minutes per wallet.UNOlt;brUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -8947,17 +8947,17 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     <name>NewWalletFrame</name>
     <message>
         <location filename="WalletFrames.py" line="411"/>
-        <source>Wallet &amp;name:</source>
+        <source>Wallet UNOamp;name:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="418"/>
-        <source>Wallet &amp;description:</source>
+        <source>Wallet UNOamp;description:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="423"/>
-        <source>Add Manual &amp;Entropy</source>
+        <source>Add Manual UNOamp;Entropy</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9060,27 +9060,27 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2674"/>
-        <source>&lt;b&gt;&lt;u&gt;Spending:&lt;/u&gt; &lt;font color=&quot;%1&quot;&gt;%2&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Spending:UNOlt;/uUNOgt; UNOlt;font color=UNOquot;%1UNOquot;UNOgt;%2UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2678"/>
-        <source>&lt;b&gt;&lt;u&gt;Contributor:&lt;/u&gt; &lt;font color=&quot;%1&quot;&gt;%2&lt;/b&gt;%3&lt;/font&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Contributor:UNOlt;/uUNOgt; UNOlt;font color=UNOquot;%1UNOquot;UNOgt;%2UNOlt;/bUNOgt;%3UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2806"/>
-        <source>&lt;b&gt;&lt;u&gt;Receiving:&lt;/u&gt;  &lt;font color=&quot;%1&quot;&gt;%2&lt;/font&gt;&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Receiving:UNOlt;/uUNOgt;  UNOlt;font color=UNOquot;%1UNOquot;UNOgt;%2UNOlt;/fontUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3023"/>
-        <source>&lt;font color=&quot;%1&quot;&gt;This transaction is incomplete.  You can add signatures then export and give to other parties or devices to sign.&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot;UNOgt;This transaction is incomplete.  You can add signatures then export and give to other parties or devices to sign.UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3039"/>
-        <source>The text below includes all data about this multi-sig transaction, including all the signatures already made to it.  It contains everything needed to securely review and sign it, including offline devices/wallets.&lt;br&gt;&lt;br&gt;If this transaction requires signatures from multiple parties, it is safe to send this data via email or USB key.  No data is included that would compromise the security of any of the signing devices.</source>
+        <source>The text below includes all data about this multi-sig transaction, including all the signatures already made to it.  It contains everything needed to securely review and sign it, including offline devices/wallets.UNOlt;brUNOgt;UNOlt;brUNOgt;If this transaction requires signatures from multiple parties, it is safe to send this data via email or USB key.  No data is included that would compromise the security of any of the signing devices.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9090,17 +9090,17 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3088"/>
-        <source>Somehow not all inputs have valid sigantures!  You can choose to attempt to broadcast anyway, in case you think Armory is not evaluating the transaction state correctly. &lt;br&gt;&lt;br&gt;Otherwise, please confirm that you have created signatures from the correct wallets.  Perhaps try collecting signatures again...?</source>
+        <source>Somehow not all inputs have valid sigantures!  You can choose to attempt to broadcast anyway, in case you think Armory is not evaluating the transaction state correctly. UNOlt;brUNOgt;UNOlt;brUNOgt;Otherwise, please confirm that you have created signatures from the correct wallets.  Perhaps try collecting signatures again...?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3010"/>
-        <source>&lt;font color=&quot;%1&quot;&gt;This transaction has enough signatures and can be broadcast from any online computer (you are currently offline)&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot;UNOgt;This transaction has enough signatures and can be broadcast from any online computer (you are currently offline)UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3014"/>
-        <source>&lt;font color=&quot;%1&quot;&gt;This transaction has enough signatures and can be broadcast&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;%1UNOquot;UNOgt;This transaction has enough signatures and can be broadcastUNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -9192,22 +9192,22 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="1236"/>
-        <source>&lt;b&gt;Instructions for completing this transaction:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Instructions for completing this transaction:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1294"/>
-        <source>&lt;b&gt;Transaction Data&lt;/b&gt; <byte value="x9"/> (Unsigned ID: %1)</source>
+        <source>UNOlt;bUNOgt;Transaction DataUNOlt;/bUNOgt; <byte value="x9"/> (Unsigned ID: %1)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1301"/>
-        <source>The block of data shown below is the complete transaction you just requested, but is invalid because it does not contain any signatures.  You must take this data to the computer with the full wallet to get it signed, then bring it back here to be broadcast to the Unobtanium network. &lt;br&gt;&lt;br&gt;Use &quot;Save as file...&quot; to save an &lt;i&gt;*.unsigned.tx&lt;/i&gt; file to USB drive or other removable media. On the offline computer, click &quot;Offline Transactions&quot; on the main window.  Load the transaction, &lt;b&gt;review it&lt;/b&gt;, then sign it (the filename now end with &lt;i&gt;*.signed.tx&lt;/i&gt;).  Click &quot;Continue&quot; below when you have the signed transaction on this computer. &lt;br&gt;&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt; The USB drive only ever holds public transaction data that will be broadcast to the network.  This data may be considered privacy-sensitive, but does &lt;u&gt;not&lt;/u&gt; compromise the security of your wallet.</source>
+        <source>The block of data shown below is the complete transaction you just requested, but is invalid because it does not contain any signatures.  You must take this data to the computer with the full wallet to get it signed, then bring it back here to be broadcast to the Unobtanium network. UNOlt;brUNOgt;UNOlt;brUNOgt;Use UNOquot;Save as file...UNOquot; to save an UNOlt;iUNOgt;*.unsigned.txUNOlt;/iUNOgt; file to USB drive or other removable media. On the offline computer, click UNOquot;Offline TransactionsUNOquot; on the main window.  Load the transaction, UNOlt;bUNOgt;review itUNOlt;/bUNOgt;, then sign it (the filename now end with UNOlt;iUNOgt;*.signed.txUNOlt;/iUNOgt;).  Click UNOquot;ContinueUNOquot; below when you have the signed transaction on this computer. UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;NOTE:UNOlt;/bUNOgt; The USB drive only ever holds public transaction data that will be broadcast to the network.  This data may be considered privacy-sensitive, but does UNOlt;uUNOgt;notUNOlt;/uUNOgt; compromise the security of your wallet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1320"/>
-        <source>You have chosen to create the previous transaction but not sign it or broadcast it, yet.  You can save the unsigned transaction to file, or copy&amp;paste from the text box. You can use the following window (after clicking &quot;Continue&quot;) to sign and broadcast the transaction when you are ready</source>
+        <source>You have chosen to create the previous transaction but not sign it or broadcast it, yet.  You can save the unsigned transaction to file, or copyUNOamp;paste from the text box. You can use the following window (after clicking UNOquot;ContinueUNOquot;) to sign and broadcast the transaction when you are ready</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -9253,7 +9253,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="WalletFrames.py" line="165"/>
-        <source>Spendable BTC:</source>
+        <source>Spendable UNO:</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9351,7 +9351,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="96"/>
-        <source>You can specify any valid Unobtanium address for the change.  &lt;b&gt;NOTE:&lt;/b&gt; If the address you specify is not in this wallet, Armory will not be able to distinguish the outputs when it shows up in your ledger.  The change will look like a second recipient, and the total debit to your wallet will be equal to the amount you sent to the recipient &lt;b&gt;plus&lt;/b&gt; the change.</source>
+        <source>You can specify any valid Unobtanium address for the change.  UNOlt;bUNOgt;NOTE:UNOlt;/bUNOgt; If the address you specify is not in this wallet, Armory will not be able to distinguish the outputs when it shows up in your ledger.  The change will look like a second recipient, and the total debit to your wallet will be equal to the amount you sent to the recipient UNOlt;bUNOgt;plusUNOlt;/bUNOgt; the change.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9376,12 +9376,12 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="163"/>
-        <source>Manually Enter &quot;unobtanium:&quot; Link</source>
+        <source>Manually Enter UNOquot;unobtanium:UNOquot; Link</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="229"/>
-        <source>&lt;b&gt;Sending from Wallet:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Sending from Wallet:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9401,7 +9401,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="294"/>
-        <source>Click to send bitcoins!</source>
+        <source>Click to send unobtaniums!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9421,7 +9421,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="567"/>
-        <source>You cannot send 0 BTC to any recipients.  &lt;br&gt;Please enter a positive amount for recipient %1.</source>
+        <source>You cannot send 0 UNO to any recipients.  UNOlt;brUNOgt;Please enter a positive amount for recipient %1.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9431,7 +9431,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="573"/>
-        <source>You have specified a negative amount for recipient %1. &lt;br&gt;Only positive values are allowed!.</source>
+        <source>You have specified a negative amount for recipient %1. UNOlt;brUNOgt;Only positive values are allowed!.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9441,7 +9441,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="578"/>
-        <source>Unobtaniums can only be specified down to 8 decimal places. The smallest value that can be sent is  0.0000 0001 BTC. Please enter a new amount for recipient %1.</source>
+        <source>Unobtaniums can only be specified down to 8 decimal places. The smallest value that can be sent is  0.0000 0001 UNO. Please enter a new amount for recipient %1.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9541,32 +9541,32 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="862"/>
-        <source>Armory is set to force the change address type to %1.&lt;br&gt;All the recipients in this transaction are of the %2 type.&lt;br&gt;&lt;br&gt;If sent as such, this transaction will damage your privacy. It is recommended you let Armory define the change script type automatically. You can do this by going to File -&gt; Settings and picking &lt;u&gt;&apos;Auto change&apos;&lt;/u&gt; in the Fee &amp; Change settings tab.&lt;br&gt;&lt;br&gt;&lt;b&gt;Note&lt;/b&gt;: When paying a P2SH script with the auto change setting on, the change script type will be set to P2SH. Only Armory 0.96 and later can spend from these scripts.&lt;br&gt;If you use an offline signing setup, make sure your signer is up to date.</source>
+        <source>Armory is set to force the change address type to %1.UNOlt;brUNOgt;All the recipients in this transaction are of the %2 type.UNOlt;brUNOgt;UNOlt;brUNOgt;If sent as such, this transaction will damage your privacy. It is recommended you let Armory define the change script type automatically. You can do this by going to File -UNOgt; Settings and picking UNOlt;uUNOgt;UNOapos;Auto changeUNOapos;UNOlt;/uUNOgt; in the Fee UNOamp; Change settings tab.UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;NoteUNOlt;/bUNOgt;: When paying a P2SH script with the auto change setting on, the change script type will be set to P2SH. Only Armory 0.96 and later can spend from these scripts.UNOlt;brUNOgt;If you use an offline signing setup, make sure your signer is up to date.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="164"/>
-        <source>Armory does not always succeed at registering itself to handle URL links from webpages and email. Click this button to copy a &quot;unobtanium:&quot; link directly into Armory.</source>
+        <source>Armory does not always succeed at registering itself to handle URL links from webpages and email. Click this button to copy a UNOquot;unobtanium:UNOquot; link directly into Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="551"/>
-        <source>Address %1 is for the wrong network!  You are on the &lt;b&gt;%2&lt;/b&gt; and the address you supplied is for the the &lt;b&gt;%3&lt;/b&gt;!</source>
+        <source>Address %1 is for the wrong network!  You are on the UNOlt;bUNOgt;%2UNOlt;/bUNOgt; and the address you supplied is for the the UNOlt;bUNOgt;%3UNOlt;/bUNOgt;!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="608"/>
-        <source>Your transaction comes with a fee rate of &lt;b&gt;%1 satoshis per byte&lt;/b&gt;. &lt;/br&gt;&lt;/br&gt; This is much higher than the median fee rate of &lt;b&gt;%2 satoshi/Byte&lt;/b&gt;. &lt;br&gt;&lt;br&gt;Are you &lt;i&gt;absolutely sure&lt;/i&gt; that you want to send with this fee? If you do not want to proceed with this fee rate, click &quot;No&quot;.</source>
+        <source>Your transaction comes with a fee rate of UNOlt;bUNOgt;%1 satoshis per byteUNOlt;/bUNOgt;. UNOlt;/brUNOgt;UNOlt;/brUNOgt; This is much higher than the median fee rate of UNOlt;bUNOgt;%2 satoshi/ByteUNOlt;/bUNOgt;. UNOlt;brUNOgt;UNOlt;brUNOgt;Are you UNOlt;iUNOgt;absolutely sureUNOlt;/iUNOgt; that you want to send with this fee? If you do not want to proceed with this fee rate, click UNOquot;NoUNOquot;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="621"/>
-        <source>Your transaction comes with a fee rate of &lt;b&gt;%1 satoshi/Byte&lt;/b&gt;. &lt;/br&gt;&lt;br&gt; This is much lower than the median fee rate of &lt;b&gt;%2 satoshi/Byte&lt;/b&gt;. &lt;br&gt;&lt;br&gt;Are you &lt;i&gt;absolutely sure&lt;/i&gt; that you want to send with this fee? If you do not want to proceed with this fee rate, click &quot;No&quot;.</source>
+        <source>Your transaction comes with a fee rate of UNOlt;bUNOgt;%1 satoshi/ByteUNOlt;/bUNOgt;. UNOlt;/brUNOgt;UNOlt;brUNOgt; This is much lower than the median fee rate of UNOlt;bUNOgt;%2 satoshi/ByteUNOlt;/bUNOgt;. UNOlt;brUNOgt;UNOlt;brUNOgt;Are you UNOlt;iUNOgt;absolutely sureUNOlt;/iUNOgt; that you want to send with this fee? If you do not want to proceed with this fee rate, click UNOquot;NoUNOquot;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="635"/>
-        <source>There was an error constructing your transaction, due to a quirk in the way Unobtanium transactions work.  If you see this error more than once, try sending your BTC in two or more separate transactions.</source>
+        <source>There was an error constructing your transaction, due to a quirk in the way Unobtanium transactions work.  If you see this error more than once, try sending your UNO in two or more separate transactions.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9581,7 +9581,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="109"/>
-        <source>RBF flagged inputs allow to respend the underlying outpoint for a higher fee as long as the original spending transaction remains unconfirmed. &lt;br&gt;&lt;br&gt;Checking this box will RBF flag all inputs in this transaction</source>
+        <source>RBF flagged inputs allow to respend the underlying outpoint for a higher fee as long as the original spending transaction remains unconfirmed. UNOlt;brUNOgt;UNOlt;brUNOgt;Checking this box will RBF flag all inputs in this transaction</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -9631,22 +9631,22 @@ random letters, or 6 or more random words.
     </message>
     <message>
         <location filename="WalletFrames.py" line="666"/>
-        <source>&lt;font color=%1&gt;&lt;b&gt;Passphrase is non-ASCII!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=%1UNOgt;UNOlt;bUNOgt;Passphrase is non-ASCII!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="670"/>
-        <source>&lt;font color=%1&gt;&lt;b&gt;Passphrases do not match!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=%1UNOgt;UNOlt;bUNOgt;Passphrases do not match!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="674"/>
-        <source>&lt;font color=%1&gt;&lt;b&gt;Passphrase is too short!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=%1UNOgt;UNOlt;bUNOgt;Passphrase is too short!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="678"/>
-        <source>&lt;font color=%1&gt;&lt;b&gt;Passphrases match!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=%1UNOgt;UNOlt;bUNOgt;Passphrases match!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -9689,7 +9689,7 @@ random letters, or 6 or more random words.
     </message>
     <message>
         <location filename="TxFrames.py" line="1416"/>
-        <source>This is wallet from which the offline transaction spends bitcoins</source>
+        <source>This is wallet from which the offline transaction spends unobtaniums</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9699,27 +9699,27 @@ random letters, or 6 or more random words.
     </message>
     <message>
         <location filename="TxFrames.py" line="1424"/>
-        <source>&lt;b&gt;Wallet Label:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Wallet Label:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1434"/>
-        <source>&lt;b&gt;Pre-Broadcast ID:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Pre-Broadcast ID:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1439"/>
-        <source>Net effect on this wallet&apos;s balance</source>
+        <source>Net effect on this walletUNOapos;s balance</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1441"/>
-        <source>&lt;b&gt;Transaction Amount:&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Transaction Amount:UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1444"/>
-        <source>Click here for more&lt;br&gt; information about &lt;br&gt;this transaction</source>
+        <source>Click here for moreUNOlt;brUNOgt; information about UNOlt;brUNOgt;this transaction</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9749,7 +9749,7 @@ random letters, or 6 or more random words.
     </message>
     <message>
         <location filename="TxFrames.py" line="1548"/>
-        <source>&lt;b&gt;&lt;font color=&quot;red&quot;&gt;Unrecognized!&lt;/font&gt;&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;redUNOquot;UNOgt;Unrecognized!UNOlt;/fontUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9759,22 +9759,22 @@ random letters, or 6 or more random words.
     </message>
     <message>
         <location filename="TxFrames.py" line="1558"/>
-        <source>&lt;b&gt;Please review your transaction carefully before signing and broadcasting it!&lt;/b&gt;  The extra security of using offline wallets is lost if you do not confirm the transaction is correct!</source>
+        <source>UNOlt;bUNOgt;Please review your transaction carefully before signing and broadcasting it!UNOlt;/bUNOgt;  The extra security of using offline wallets is lost if you do not confirm the transaction is correct!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1564"/>
-        <source>&lt;b&gt;&lt;font color=&quot;red&quot;&gt;Unsigned&lt;/font&gt;&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;redUNOquot;UNOgt;UnsignedUNOlt;/fontUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1568"/>
-        <source>&lt;b&gt;&lt;font color=&quot;red&quot;&gt;Bad Signature!&lt;/font&gt;&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;redUNOquot;UNOgt;Bad Signature!UNOlt;/fontUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1572"/>
-        <source>&lt;b&gt;&lt;font color=&quot;green&quot;&gt;All Signatures Valid!&lt;/font&gt;&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;greenUNOquot;UNOgt;All Signatures Valid!UNOlt;/fontUNOgt;UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9899,7 +9899,7 @@ random letters, or 6 or more random words.
     </message>
     <message>
         <location filename="TxFrames.py" line="1830"/>
-        <source>The file could not be deleted.  If you want to delete it, please do so manually.  The file was loaded from: &lt;br&gt;&lt;br&gt;%1: </source>
+        <source>The file could not be deleted.  If you want to delete it, please do so manually.  The file was loaded from: UNOlt;brUNOgt;UNOlt;brUNOgt;%1: </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9933,8 +9933,8 @@ It can now be broadcast from any computer running Armory in online mode.</source
     </message>
     <message>
         <location filename="TxFrames.py" line="1921"/>
-        <source>&lt;i&gt;Copied!&lt;/i&gt;</source>
-        <translation>&lt;i&gt;הועתק!&lt;/i&gt;</translation>
+        <source>UNOlt;iUNOgt;Copied!UNOlt;/iUNOgt;</source>
+        <translation>UNOlt;iUNOgt;הועתק!UNOlt;/iUNOgt;</translation>
     </message>
     <message>
         <location filename="TxFrames.py" line="1366"/>
@@ -9943,17 +9943,17 @@ It can now be broadcast from any computer running Armory in online mode.</source
     </message>
     <message>
         <location filename="TxFrames.py" line="1429"/>
-        <source>A unique string that identifies an &lt;i&gt;unsigned&lt;/i&gt; transaction.  This is different than the ID that the transaction will have when it is finally broadcast, because the broadcast ID cannot be calculated without all the signatures</source>
+        <source>A unique string that identifies an UNOlt;iUNOgt;unsignedUNOlt;/iUNOgt; transaction.  This is different than the ID that the transaction will have when it is finally broadcast, because the broadcast ID cannot be calculated without all the signatures</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1782"/>
-        <source>Armory lost its connection to Unobtanium Core, and cannot broadcast any transactions until it is reconnected. Please verify that Unobtanium Core (or bitcoind) is open and synchronized with the network.</source>
+        <source>Armory lost its connection to Unobtanium Core, and cannot broadcast any transactions until it is reconnected. Please verify that Unobtanium Core (or unobtaniumd) is open and synchronized with the network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="TxFrames.py" line="1736"/>
-        <source>This transaction has %1 recipients, and none of them are addresses in this wallet (for receiving change). This can happen if you specified a custom change address for this transaction, or sometimes happens solely by chance with a multi-recipient transaction.  It could also be the result of someone tampering with the transaction. &lt;br&gt;&lt;br&gt;The transaction is valid and ready to be signed. Please verify the recipient and amounts carefully before confirming the transaction on the next screen.</source>
+        <source>This transaction has %1 recipients, and none of them are addresses in this wallet (for receiving change). This can happen if you specified a custom change address for this transaction, or sometimes happens solely by chance with a multi-recipient transaction.  It could also be the result of someone tampering with the transaction. UNOlt;brUNOgt;UNOlt;brUNOgt;The transaction is valid and ready to be signed. Please verify the recipient and amounts carefully before confirming the transaction on the next screen.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10004,22 +10004,22 @@ It can now be broadcast from any computer running Armory in online mode.</source
     </message>
     <message>
         <location filename="toolsDialogs.py" line="255"/>
-        <source>The supplied signature &lt;b&gt;is not valid&lt;/b&gt;!</source>
+        <source>The supplied signature UNOlt;bUNOgt;is not validUNOlt;/bUNOgt;!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="toolsDialogs.py" line="257"/>
-        <source>&lt;font color=&quot;red&quot;&gt;Invalid Signature!&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;redUNOquot;UNOgt;Invalid Signature!UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="toolsDialogs.py" line="222"/>
-        <source>The owner of the following Unobtanium address...&lt;br&gt;&lt;blockquote&gt;&lt;font face=&quot;Courier&quot; size=4 color=&quot;#000060&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/font&gt;&lt;/blockquote&gt;&lt;br&gt;... has produced a &lt;b&gt;&lt;u&gt;valid&lt;/u&gt;&lt;/b&gt; signature for the following message:&lt;br&gt;</source>
+        <source>The owner of the following Unobtanium address...UNOlt;brUNOgt;UNOlt;blockquoteUNOgt;UNOlt;font face=UNOquot;CourierUNOquot; size=4 color=UNOquot;#000060UNOquot;UNOgt;UNOlt;bUNOgt;%1UNOlt;/bUNOgt;UNOlt;/fontUNOgt;UNOlt;/blockquoteUNOgt;UNOlt;brUNOgt;... has produced a UNOlt;bUNOgt;UNOlt;uUNOgt;validUNOlt;/uUNOgt;UNOlt;/bUNOgt; signature for the following message:UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="toolsDialogs.py" line="238"/>
-        <source>%`&lt;hr&gt;&lt;blockquote&gt;&lt;font face=&quot;Courier&quot; color=&quot;#000060&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/font&gt;&lt;/blockquote&gt;&lt;hr&gt;&lt;br&gt;&lt;b&gt;Please&lt;/b&gt; make sure that the address above (%2...) matches the exact address you were expecting.  A valid signature is meaningless unless it is made from a recognized address!</source>
+        <source>%`UNOlt;hrUNOgt;UNOlt;blockquoteUNOgt;UNOlt;font face=UNOquot;CourierUNOquot; color=UNOquot;#000060UNOquot;UNOgt;UNOlt;bUNOgt;%1UNOlt;/bUNOgt;UNOlt;/fontUNOgt;UNOlt;/blockquoteUNOgt;UNOlt;hrUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;PleaseUNOlt;/bUNOgt; make sure that the address above (%2...) matches the exact address you were expecting.  A valid signature is meaningless unless it is made from a recognized address!</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -10134,12 +10134,12 @@ It can now be broadcast from any computer running Armory in online mode.</source
     <name>VerifyPassphraseFrame</name>
     <message>
         <location filename="WalletFrames.py" line="693"/>
-        <source>&lt;font color=&quot;red&quot;&gt;&lt;b&gt;!!! DO NOT FORGET YOUR PASSPHRASE !!!&lt;/b&gt;&lt;/font&gt;</source>
+        <source>UNOlt;font color=UNOquot;redUNOquot;UNOgt;UNOlt;bUNOgt;!!! DO NOT FORGET YOUR PASSPHRASE !!!UNOlt;/bUNOgt;UNOlt;/fontUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="696"/>
-        <source>&lt;b&gt;No one can help you recover you bitcoins if you forget the passphrase and don&apos;t have a paper backup!&lt;/b&gt; Your wallet and any &lt;u&gt;digital&lt;/u&gt; backups are useless if you forget it.  &lt;br&gt;&lt;br&gt;A &lt;u&gt;paper&lt;/u&gt; backup protects your wallet forever, against hard-drive loss and losing your passphrase.  It also protects you from theft, if the wallet was encrypted and the paper backup was not stolen with it.  Please make a paper backup and keep it in a safe place.&lt;br&gt;&lt;br&gt;Please enter your passphrase a third time to indicate that you are aware of the risks of losing your passphrase!&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;No one can help you recover you unobtaniums if you forget the passphrase and donUNOapos;t have a paper backup!UNOlt;/bUNOgt; Your wallet and any UNOlt;uUNOgt;digitalUNOlt;/uUNOgt; backups are useless if you forget it.  UNOlt;brUNOgt;UNOlt;brUNOgt;A UNOlt;uUNOgt;paperUNOlt;/uUNOgt; backup protects your wallet forever, against hard-drive loss and losing your passphrase.  It also protects you from theft, if the wallet was encrypted and the paper backup was not stolen with it.  Please make a paper backup and keep it in a safe place.UNOlt;brUNOgt;UNOlt;brUNOgt;Please enter your passphrase a third time to indicate that you are aware of the risks of losing your passphrase!UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -10180,12 +10180,12 @@ It can now be broadcast from any computer running Armory in online mode.</source
     </message>
     <message>
         <location filename="armorymodels.py" line="1041"/>
-        <source>&lt;u&gt;&lt;/u&gt;This is an imported address. Imported addresses are not protected by regular paper backups.  You must use the &quot;Backup Individual Keys&quot; option to protect it.</source>
+        <source>UNOlt;uUNOgt;UNOlt;/uUNOgt;This is an imported address. Imported addresses are not protected by regular paper backups.  You must use the UNOquot;Backup Individual KeysUNOquot; option to protect it.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="armorymodels.py" line="1046"/>
-        <source>&lt;u&gt;&lt;/u&gt;The order that this address was generated in this wallet</source>
+        <source>UNOlt;uUNOgt;UNOlt;/uUNOgt;The order that this address was generated in this wallet</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10198,7 +10198,7 @@ It can now be broadcast from any computer running Armory in online mode.</source
     <name>WalletBackupFrame</name>
     <message>
         <location filename="WalletFrames.py" line="738"/>
-        <source>&lt;b&gt;Backup Options&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Backup OptionsUNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10313,27 +10313,27 @@ It can now be broadcast from any computer running Armory in online mode.</source
     </message>
     <message>
         <location filename="WalletFrames.py" line="739"/>
-        <source>Armory wallets only need to be backed up &lt;u&gt;one time, ever.&lt;/u&gt; The backup is good no matter how many addresses you use. </source>
+        <source>Armory wallets only need to be backed up UNOlt;uUNOgt;one time, ever.UNOlt;/uUNOgt; The backup is good no matter how many addresses you use. </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="826"/>
-        <source>Every time you click &quot;Receive Unobtaniums,&quot; a new address is generated. All of these addresses are generated from a single seed value, which is included in all backups.   Therefore, all addresses that you have generated so far &lt;b&gt;and&lt;/b&gt; will ever be generated with this wallet, are protected by this backup! </source>
+        <source>Every time you click UNOquot;Receive Unobtaniums,UNOquot; a new address is generated. All of these addresses are generated from a single seed value, which is included in all backups.   Therefore, all addresses that you have generated so far UNOlt;bUNOgt;andUNOlt;/bUNOgt; will ever be generated with this wallet, are protected by this backup! </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="833"/>
-        <source>&lt;i&gt;This wallet &lt;u&gt;does not&lt;/u&gt; currently have any imported addresses, so you can safely ignore this feature!&lt;/i&gt; When imported addresses are present, backups only protects those imported before the backup was made.  You must replace that backup if you import more addresses! </source>
+        <source>UNOlt;iUNOgt;This wallet UNOlt;uUNOgt;does notUNOlt;/uUNOgt; currently have any imported addresses, so you can safely ignore this feature!UNOlt;/iUNOgt; When imported addresses are present, backups only protects those imported before the backup was made.  You must replace that backup if you import more addresses! </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="840"/>
-        <source>Lost/forgotten passphrases are, &lt;b&gt;by far&lt;/b&gt;, the most common reason for users losing bitcoins.  It is critical you have at least one backup that works if you forget your wallet passphrase. </source>
+        <source>Lost/forgotten passphrases are, UNOlt;bUNOgt;by farUNOlt;/bUNOgt;, the most common reason for users losing unobtaniums.  It is critical you have at least one backup that works if you forget your wallet passphrase. </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="846"/>
-        <source>USB drives and CD/DVD disks are not intended for long-term storage. They will &lt;i&gt;probably&lt;/i&gt; last many years, but not guaranteed even for 3-5 years.   On the other hand, printed text on paper will last many decades, and useful even when thoroughly faded. </source>
+        <source>USB drives and CD/DVD disks are not intended for long-term storage. They will UNOlt;iUNOgt;probablyUNOlt;/iUNOgt; last many years, but not guaranteed even for 3-5 years.   On the other hand, printed text on paper will last many decades, and useful even when thoroughly faded. </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10343,37 +10343,37 @@ It can now be broadcast from any computer running Armory in online mode.</source
     </message>
     <message>
         <location filename="WalletFrames.py" line="859"/>
-        <source>If multiple pieces/fragments are required to restore this wallet. For instance, encrypted backups require the backup &lt;b&gt;and&lt;/b&gt; the passphrase.  This feature is only needed for those concerned about physical security, not just online security.</source>
+        <source>If multiple pieces/fragments are required to restore this wallet. For instance, encrypted backups require the backup UNOlt;bUNOgt;andUNOlt;/bUNOgt; the passphrase.  This feature is only needed for those concerned about physical security, not just online security.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="935"/>
-        <source>When imported addresses are present, backups only protects those imported before the backup was made!  You must replace that backup if you import more addresses! &lt;i&gt;Your wallet &lt;u&gt;does&lt;/u&gt; contain imported addresses&lt;/i&gt;.</source>
+        <source>When imported addresses are present, backups only protects those imported before the backup was made!  You must replace that backup if you import more addresses! UNOlt;iUNOgt;Your wallet UNOlt;uUNOgt;doesUNOlt;/uUNOgt; contain imported addressesUNOlt;/iUNOgt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="943"/>
-        <source>&lt;b&gt;Backup Options for Wallet &quot;%1&quot; (%2)&lt;/b&gt;</source>
+        <source>UNOlt;bUNOgt;Backup Options for Wallet UNOquot;%1UNOquot; (%2)UNOlt;/bUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="966"/>
-        <source>Digital backups can be saved to an external hard-drive or USB removable media.  It is recommended you make a few copies to protect against &quot;bit rot&quot; (degradation). &lt;br&gt;&lt;br&gt;</source>
+        <source>Digital backups can be saved to an external hard-drive or USB removable media.  It is recommended you make a few copies to protect against UNOquot;bit rotUNOquot; (degradation). UNOlt;brUNOgt;UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="970"/>
-        <source>&lt;b&gt;&lt;u&gt;IMPORTANT:&lt;/u&gt; Do not save an unencrypted digital backup to your primary hard drive!&lt;/b&gt; Please save it &lt;i&gt;directly&lt;/i&gt; to the backup device. Deleting the file does not guarantee the data is actually gone!</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;IMPORTANT:UNOlt;/uUNOgt; Do not save an unencrypted digital backup to your primary hard drive!UNOlt;/bUNOgt; Please save it UNOlt;iUNOgt;directlyUNOlt;/iUNOgt; to the backup device. Deleting the file does not guarantee the data is actually gone!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="976"/>
-        <source>&lt;b&gt;&lt;u&gt;IMPORTANT:&lt;/u&gt; It is critical that you have at least one unencrypted backup!&lt;/b&gt;  Without it, your bitcoins will be lost forever if you forget your passphrase!  This is &lt;b&gt; by far&lt;/b&gt; the most common reason users lose coins!  Having at least one paper backup is recommended.</source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;IMPORTANT:UNOlt;/uUNOgt; It is critical that you have at least one unencrypted backup!UNOlt;/bUNOgt;  Without it, your unobtaniums will be lost forever if you forget your passphrase!  This is UNOlt;bUNOgt; by farUNOlt;/bUNOgt; the most common reason users lose coins!  Having at least one paper backup is recommended.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="WalletFrames.py" line="982"/>
-        <source>View and export invidivual addresses strings, public keys and/or private keys contained in your wallet. This is useful for exporting your private keys to be imported into another wallet app or service. &lt;br&gt;&lt;br&gt;You can view/backup imported keys, as well as unused keys in your keypool (pregenerated addresses protected by your backup that have not yet been used).</source>
+        <source>View and export invidivual addresses strings, public keys and/or private keys contained in your wallet. This is useful for exporting your private keys to be imported into another wallet app or service. UNOlt;brUNOgt;UNOlt;brUNOgt;You can view/backup imported keys, as well as unused keys in your keypool (pregenerated addresses protected by your backup that have not yet been used).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10383,7 +10383,7 @@ It can now be broadcast from any computer running Armory in online mode.</source
     </message>
     <message>
         <location filename="WalletFrames.py" line="955"/>
-        <source>Paper backups protect every address ever generated by your wallet. It is unencrypted, which means it needs to be stored in a secure place, but it will help you recover your wallet if you forget your encryption passphrase! &lt;br&gt;&lt;br&gt;&lt;b&gt;You don&apos;t need a printer to make a paper backup! The data can be copied by hand with pen and paper.&lt;/b&gt; Paper backups are preferred to digital backups, because you know the paper backup will work no matter how many years (or decades) it sits in storage.</source>
+        <source>Paper backups protect every address ever generated by your wallet. It is unencrypted, which means it needs to be stored in a secure place, but it will help you recover your wallet if you forget your encryption passphrase! UNOlt;brUNOgt;UNOlt;brUNOgt;UNOlt;bUNOgt;You donUNOapos;t need a printer to make a paper backup! The data can be copied by hand with pen and paper.UNOlt;/bUNOgt; Paper backups are preferred to digital backups, because you know the paper backup will work no matter how many years (or decades) it sits in storage.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10403,7 +10403,7 @@ It can now be broadcast from any computer running Armory in online mode.</source
         <location filename="Wizards.py" line="245"/>
         <source>You entered Target Compute Time incorrectly.
 
-Enter: &lt;Number&gt; (ms, s)</source>
+Enter: UNOlt;NumberUNOgt; (ms, s)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10415,7 +10415,7 @@ Enter: &lt;Number&gt; (ms, s)</source>
         <location filename="Wizards.py" line="249"/>
         <source>You entered Max Memory Usag incorrectly.
 
-nter: &lt;Number&gt; (kb, mb)</source>
+nter: UNOlt;NumberUNOgt; (kb, mb)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -10438,7 +10438,7 @@ nter: &lt;Number&gt; (kb, mb)</source>
     </message>
     <message>
         <location filename="Wizards.py" line="148"/>
-        <source>&lt;qt&gt;You have not made a backup for your new wallet.  You only have to make a backup of your wallet &lt;u&gt;one time&lt;/u&gt; to protect all the funds held by this wallet &lt;i&gt;any time in the future&lt;/i&gt; (it is a backup of the signing keys, not the coins themselves).&lt;br&gt;&lt;br&gt;If you do not make a backup, you will &lt;u&gt;permanently&lt;/u&gt; lose the money in this wallet if you ever forget your password, or suffer from hardware failure.&lt;br&gt;&lt;br&gt;Are you sure that you want to leave this wizard without backing up your wallet?&lt;/qt&gt;</source>
+        <source>UNOlt;qtUNOgt;You have not made a backup for your new wallet.  You only have to make a backup of your wallet UNOlt;uUNOgt;one timeUNOlt;/uUNOgt; to protect all the funds held by this wallet UNOlt;iUNOgt;any time in the futureUNOlt;/iUNOgt; (it is a backup of the signing keys, not the coins themselves).UNOlt;brUNOgt;UNOlt;brUNOgt;If you do not make a backup, you will UNOlt;uUNOgt;permanentlyUNOlt;/uUNOgt; lose the money in this wallet if you ever forget your password, or suffer from hardware failure.UNOlt;brUNOgt;UNOlt;brUNOgt;Are you sure that you want to leave this wizard without backing up your wallet?UNOlt;/qtUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -10446,7 +10446,7 @@ nter: &lt;Number&gt; (kb, mb)</source>
     <name>WizardCreateWatchingOnlyWalletFrame</name>
     <message>
         <location filename="WalletFrames.py" line="1149"/>
-        <source>Your wallet has been created and is ready to be used.  It will appear in the &quot;&lt;i&gt;Available Wallets&lt;/i&gt;&quot; list in the main window. You may click &quot;&lt;i&gt;Finish&lt;/i&gt;&quot; if you do not plan to use this wallet on any other computer.&lt;br&gt;&lt;br&gt;A &lt;b&gt;watching-only wallet&lt;/b&gt; behaves exactly like a a regular wallet, but does not contain any signing keys.  You can generate addresses and confirm receipt of payments, but not spend or move the funds in the wallet.  To move the funds, use the &quot;&lt;i&gt;Offline Transactions&lt;/i&gt;&quot; button on the main window for directions (which involves bringing the transaction to this computer for a signature).  Or you can give the watching-only wallet to someone who needs to monitor the wallet but should not be able to move the money. &lt;br&gt;&lt;br&gt;Click the button to save a watching-only copy of this wallet. Use the &quot;&lt;i&gt;Import or Restore Wallet&lt;/i&gt;&quot; button in the upper-right corner</source>
+        <source>Your wallet has been created and is ready to be used.  It will appear in the UNOquot;UNOlt;iUNOgt;Available WalletsUNOlt;/iUNOgt;UNOquot; list in the main window. You may click UNOquot;UNOlt;iUNOgt;FinishUNOlt;/iUNOgt;UNOquot; if you do not plan to use this wallet on any other computer.UNOlt;brUNOgt;UNOlt;brUNOgt;A UNOlt;bUNOgt;watching-only walletUNOlt;/bUNOgt; behaves exactly like a a regular wallet, but does not contain any signing keys.  You can generate addresses and confirm receipt of payments, but not spend or move the funds in the wallet.  To move the funds, use the UNOquot;UNOlt;iUNOgt;Offline TransactionsUNOlt;/iUNOgt;UNOquot; button on the main window for directions (which involves bringing the transaction to this computer for a signature).  Or you can give the watching-only wallet to someone who needs to monitor the wallet but should not be able to move the money. UNOlt;brUNOgt;UNOlt;brUNOgt;Click the button to save a watching-only copy of this wallet. Use the UNOquot;UNOlt;iUNOgt;Import or Restore WalletUNOlt;/iUNOgt;UNOquot; button in the upper-right corner</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -10459,7 +10459,7 @@ nter: &lt;Number&gt; (kb, mb)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="10950"/>
-        <source>You didn&apos;t enter a full SecurePrintu200bu2122 code.  This code is needed to decrypt your backup file.</source>
+        <source>You didnUNOapos;t enter a full SecurePrintu200bu2122 code.  This code is needed to decrypt your backup file.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10497,14 +10497,14 @@ nter: &lt;Number&gt; (kb, mb)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1977"/>
-        <source>The funds in this wallet are currently identified as belonging to &lt;b&gt;&lt;i&gt;you&lt;/i&gt;&lt;/b&gt;.  As such, any funds available to this wallet will be included in the total balance displayed on the main screen.
+        <source>The funds in this wallet are currently identified as belonging to UNOlt;bUNOgt;UNOlt;iUNOgt;youUNOlt;/iUNOgt;UNOlt;/bUNOgt;.  As such, any funds available to this wallet will be included in the total balance displayed on the main screen.
 
  If you do not actually own this wallet, or do not wish for its funds to be considered part of your balance, uncheck the box below.  Optionally, you can include the name of the person or organization that does own it.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1997"/>
-        <source>The funds in this wallet are currently identified as belonging to &lt;i&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/i&gt;.  If these funds are actually yours, and you would like the funds included in your balance in the main window, please check the box below.
+        <source>The funds in this wallet are currently identified as belonging to UNOlt;iUNOgt;UNOlt;bUNOgt;%1UNOlt;/bUNOgt;UNOlt;/iUNOgt;.  If these funds are actually yours, and you would like the funds included in your balance in the main window, please check the box below.
 
 </source>
         <translation type="unfinished"/>
@@ -10519,22 +10519,22 @@ nter: &lt;Number&gt; (kb, mb)</source>
     <name>dlgWarn</name>
     <message>
         <location filename="qtdefines.py" line="443"/>
-        <source>&amp;Yes</source>
+        <source>UNOamp;Yes</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdefines.py" line="444"/>
-        <source>&amp;No</source>
+        <source>UNOamp;No</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdefines.py" line="452"/>
-        <source>&amp;Cancel</source>
+        <source>UNOamp;Cancel</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdefines.py" line="454"/>
-        <source>&amp;OK</source>
+        <source>UNOamp;OK</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10562,7 +10562,7 @@ nter: &lt;Number&gt; (kb, mb)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2032"/>
-        <source>Armory is not online yet, and will eventually need to be online to access any funds sent to your wallet.  Please &lt;u&gt;&lt;b&gt;do not&lt;/b&gt;&lt;/u&gt; receive Unobtaniums to your Armory wallets until you have successfully gotten online &lt;i&gt;at least one time&lt;/i&gt;. &lt;br&gt;&lt;br&gt; Armory is still beta software, and some users report difficulty ever getting online. &lt;br&gt;&lt;br&gt; Do you wish to continue? </source>
+        <source>Armory is not online yet, and will eventually need to be online to access any funds sent to your wallet.  Please UNOlt;uUNOgt;UNOlt;bUNOgt;do notUNOlt;/bUNOgt;UNOlt;/uUNOgt; receive Unobtaniums to your Armory wallets until you have successfully gotten online UNOlt;iUNOgt;at least one timeUNOlt;/iUNOgt;. UNOlt;brUNOgt;UNOlt;brUNOgt; Armory is still beta software, and some users report difficulty ever getting online. UNOlt;brUNOgt;UNOlt;brUNOgt; Do you wish to continue? </source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -10595,7 +10595,7 @@ nter: &lt;Number&gt; (kb, mb)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2065"/>
-        <source>You are getting an address for a wallet that you have specified belongs to you, but you cannot actually spend the funds from this computer.  This is usually the case when you keep the full wallet on a separate computer for security purposes.&lt;br&gt;&lt;br&gt;If this does not sound right, then please do not use the following address.  Instead, change the wallet properties &quot;Belongs To&quot; field to specify that this wallet is not actually yours.</source>
+        <source>You are getting an address for a wallet that you have specified belongs to you, but you cannot actually spend the funds from this computer.  This is usually the case when you keep the full wallet on a separate computer for security purposes.UNOlt;brUNOgt;UNOlt;brUNOgt;If this does not sound right, then please do not use the following address.  Instead, change the wallet properties UNOquot;Belongs ToUNOquot; field to specify that this wallet is not actually yours.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10675,12 +10675,12 @@ nter: &lt;Number&gt; (kb, mb)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12524"/>
-        <source>Your backup works! &lt;br&gt;&lt;br&gt; The wallet ID computed from the data you entered matches the expected ID.  This confirms that the backup produces the same sequence of private keys as the original wallet! &lt;br&gt;&lt;br&gt; Computed wallet ID: %1 &lt;br&gt; Expected wallet ID: %2 &lt;br&gt; &lt;br&gt;</source>
+        <source>Your backup works! UNOlt;brUNOgt;UNOlt;brUNOgt; The wallet ID computed from the data you entered matches the expected ID.  This confirms that the backup produces the same sequence of private keys as the original wallet! UNOlt;brUNOgt;UNOlt;brUNOgt; Computed wallet ID: %1 UNOlt;brUNOgt; Expected wallet ID: %2 UNOlt;brUNOgt; UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2051"/>
-        <source>You are getting an address for a wallet that does not appear to belong to you.  Any money sent to this address will not appear in your total balance, and cannot be spent from this computer. &lt;br&gt;&lt;br&gt; If this is actually your wallet (perhaps you maintain the full wallet on a separate computer), then please change the &quot;Belongs To&quot; field in the wallet-properties for this wallet.</source>
+        <source>You are getting an address for a wallet that does not appear to belong to you.  Any money sent to this address will not appear in your total balance, and cannot be spent from this computer. UNOlt;brUNOgt;UNOlt;brUNOgt; If this is actually your wallet (perhaps you maintain the full wallet on a separate computer), then please change the UNOquot;Belongs ToUNOquot; field in the wallet-properties for this wallet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10700,37 +10700,37 @@ nter: &lt;Number&gt; (kb, mb)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="7057"/>
-        <source>&lt;b&gt;&lt;u&gt;Verify your backup!&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;If you just made a backup, make sure that it is correct! The following steps are recommended to verify its integrity: &lt;br&gt;&lt;ul&gt;&lt;li&gt;Verify each line of the backup data contains &lt;b&gt;9 columns&lt;/b&gt; of &lt;b&gt;4 letters each&lt;/b&gt; (excluding any &quot;ID&quot; lines).&lt;/li&gt; &lt;li&gt;%1&lt;/li&gt;&lt;li&gt;Use Armory&apos;s backup tester to test the backup before you physiclly secure it.&lt;/li&gt; &lt;/ul&gt;&lt;br&gt;Armory has a backup tester that uses the exact same process as restoring your wallet, but stops before it writes any data to disk.  Would you like to test your backup now? </source>
+        <source>UNOlt;bUNOgt;UNOlt;uUNOgt;Verify your backup!UNOlt;/uUNOgt;UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;If you just made a backup, make sure that it is correct! The following steps are recommended to verify its integrity: UNOlt;brUNOgt;UNOlt;ulUNOgt;UNOlt;liUNOgt;Verify each line of the backup data contains UNOlt;bUNOgt;9 columnsUNOlt;/bUNOgt; of UNOlt;bUNOgt;4 letters eachUNOlt;/bUNOgt; (excluding any UNOquot;IDUNOquot; lines).UNOlt;/liUNOgt; UNOlt;liUNOgt;%1UNOlt;/liUNOgt;UNOlt;liUNOgt;Use ArmoryUNOapos;s backup tester to test the backup before you physiclly secure it.UNOlt;/liUNOgt; UNOlt;/ulUNOgt;UNOlt;brUNOgt;Armory has a backup tester that uses the exact same process as restoring your wallet, but stops before it writes any data to disk.  Would you like to test your backup now? </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12483"/>
-        <source>From the data you entered, Armory calculated the following wallet ID: &lt;font color=&quot;blue&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;br&gt;Does this match the wallet ID on the backup you are testing?</source>
+        <source>From the data you entered, Armory calculated the following wallet ID: UNOlt;font color=UNOquot;blueUNOquot;UNOgt;UNOlt;bUNOgt;%1UNOlt;/bUNOgt;UNOlt;/fontUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;Does this match the wallet ID on the backup you are testing?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12491"/>
-        <source>If this is your only backup and you are sure that you entered the data correctly, then it is &lt;b&gt;highly recommended you stop using this wallet!&lt;/b&gt;  If this wallet currently holds any funds, you should move the funds to a wallet that &lt;u&gt;does&lt;/u&gt; have a working backup. &lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;Wallet ID of the data you entered: %1 &lt;br&gt;</source>
+        <source>If this is your only backup and you are sure that you entered the data correctly, then it is UNOlt;bUNOgt;highly recommended you stop using this wallet!UNOlt;/bUNOgt;  If this wallet currently holds any funds, you should move the funds to a wallet that UNOlt;uUNOgt;doesUNOlt;/uUNOgt; have a working backup. UNOlt;brUNOgt;UNOlt;brUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;Wallet ID of the data you entered: %1 UNOlt;brUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12501"/>
-        <source>&lt;b&gt;Your backup works!&lt;/b&gt; &lt;br&gt;&lt;br&gt;The wallet ID is computed from a combination of the root private key, the &quot;chaincode&quot; and the first address derived from those two pieces of data.  A matching wallet ID guarantees it will produce the same chain of addresses as the original.</source>
+        <source>UNOlt;bUNOgt;Your backup works!UNOlt;/bUNOgt; UNOlt;brUNOgt;UNOlt;brUNOgt;The wallet ID is computed from a combination of the root private key, the UNOquot;chaincodeUNOquot; and the first address derived from those two pieces of data.  A matching wallet ID guarantees it will produce the same chain of addresses as the original.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="12511"/>
-        <source>If you are sure that you entered the backup information correctly, then it is &lt;b&gt;highly recommended you stop using this wallet!&lt;/b&gt;  If this wallet currently holds any funds, you should move the funds to a wallet that &lt;u&gt;does&lt;/u&gt; have a working backup.&lt;br&gt;&lt;br&gt;Computed wallet ID: %1 &lt;br&gt;Expected wallet ID: %2 &lt;br&gt;&lt;br&gt;Is it possible that you loaded a different backup than the one you just made?</source>
+        <source>If you are sure that you entered the backup information correctly, then it is UNOlt;bUNOgt;highly recommended you stop using this wallet!UNOlt;/bUNOgt;  If this wallet currently holds any funds, you should move the funds to a wallet that UNOlt;uUNOgt;doesUNOlt;/uUNOgt; have a working backup.UNOlt;brUNOgt;UNOlt;brUNOgt;Computed wallet ID: %1 UNOlt;brUNOgt;Expected wallet ID: %2 UNOlt;brUNOgt;UNOlt;brUNOgt;Is it possible that you loaded a different backup than the one you just made?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="616"/>
-        <source>&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;IMPORTANT:&lt;/font&gt; All labels and descriptions you have entered for this lockbox are included in this text block below!&lt;/b&gt;  &lt;br&gt;&lt;br&gt;Before you send this to any other parties, &lt;em&gt;please&lt;/em&gt; confirm that you have not entered any sensitive or embarassing information into any of the lockbox fields.  Each lockbox has a name and extended information, as well as a comment for each public key. &lt;br&gt;&lt;br&gt;All parties or devices that have [partial] signing authority over this lockbox need to import this data into their local lockbox manager in order to use it.</source>
+        <source>UNOlt;bUNOgt;UNOlt;font color=UNOquot;%1UNOquot;UNOgt;IMPORTANT:UNOlt;/fontUNOgt; All labels and descriptions you have entered for this lockbox are included in this text block below!UNOlt;/bUNOgt;  UNOlt;brUNOgt;UNOlt;brUNOgt;Before you send this to any other parties, UNOlt;emUNOgt;pleaseUNOlt;/emUNOgt; confirm that you have not entered any sensitive or embarassing information into any of the lockbox fields.  Each lockbox has a name and extended information, as well as a comment for each public key. UNOlt;brUNOgt;UNOlt;brUNOgt;All parties or devices that have [partial] signing authority over this lockbox need to import this data into their local lockbox manager in order to use it.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="7044"/>
-        <source>If the backup was printed with SecurePrintu200bu2122, please make sure you wrote the SecurePrintu200bu2122 code on the printed sheet of paper. Note that the code &lt;b&gt;&lt;u&gt;is&lt;/u&gt;&lt;/b&gt; case-sensitive!</source>
+        <source>If the backup was printed with SecurePrintu200bu2122, please make sure you wrote the SecurePrintu200bu2122 code on the printed sheet of paper. Note that the code UNOlt;bUNOgt;UNOlt;uUNOgt;isUNOlt;/uUNOgt;UNOlt;/bUNOgt; case-sensitive!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10743,17 +10743,17 @@ nter: &lt;Number&gt; (kb, mb)</source>
     <name>self.main</name>
     <message>
         <location filename="armorymodels.py" line="508"/>
-        <source>&lt;a href=edtBlock&gt;Block:&lt;/a&gt;</source>
+        <source>UNOlt;a href=edtBlockUNOgt;Block:UNOlt;/aUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="armorymodels.py" line="514"/>
-        <source>&lt;a href=edtDate&gt;Date:&lt;/a&gt;</source>
+        <source>UNOlt;a href=edtDateUNOgt;Date:UNOlt;/aUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="armorymodels.py" line="520"/>
-        <source>&lt;a href=goToTop&gt;Top&lt;/a&gt;</source>
+        <source>UNOlt;a href=goToTopUNOgt;TopUNOlt;/aUNOgt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10763,7 +10763,7 @@ nter: &lt;Number&gt; (kb, mb)</source>
     </message>
     <message>
         <location filename="AddressTypeSelectDialog.py" line="142"/>
-        <source>&lt;u&gt;&lt;font color=&apos;blue&apos;&gt;%1&lt;/font&gt;&lt;/u&gt;</source>
+        <source>UNOlt;uUNOgt;UNOlt;font color=UNOapos;blueUNOapos;UNOgt;%1UNOlt;/fontUNOgt;UNOlt;/uUNOgt;</source>
         <translation type="unfinished"/>
     </message>
 </context>

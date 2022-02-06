@@ -8,7 +8,7 @@
 #
 # Project:    Armory
 # Author:     Andy Ofiesh
-# Website:    www.bitcoinarmory.com
+# Website:    www.bxtcoinarmory.com
 # Orig Date:  2 January, 2014
 #
 ################################################################################

@@ -10,7 +10,7 @@
 
 Multi-signature transactions are accommodated under-the-hood about 80%, and will be completed and integrated into the UI soon.
 
-**Armory has no independent networking components built in.** Instead, it relies on on the Satoshi client to securely connect to peers, validate blockchain data, and broadcast transactions for us.  Although it was initially planned to cut the umbilical cord to the Satoshi client and implement independent networking, it has turned out to be an inconvenience worth having. Reimplementing all the networking code would be fraught with bugs, security holes, and possible blockchain forking.  The reliance on Bitcoin Core right now is actually making Armory more secure!
+**Armory has no independent networking components built in.** Instead, it relies on on the Satoshi client to securely connect to peers, validate blockchain data, and broadcast transactions for us.  Although it was initially planned to cut the umbilical cord to the Satoshi client and implement independent networking, it has turned out to be an inconvenience worth having. Reimplementing all the networking code would be fraught with bugs, security holes, and possible blockchain forking.  The reliance on Unobtanium Core right now is actually making Armory more secure!
 
 ## Development
 
@@ -50,7 +50,7 @@ Unlike most open source projects, development takes place in the dev branch and 
 
 * PyQt 4 (for Python 2.X)  
  Linux:   Install packages `libqtcore4`, `libqt4-dev`, `python-qt4`, and `pyqt4-dev-tools`  
- Windows: [Download](https://riverbankcomputing.com/software/pyqt/download) 
+ Windows: [Download](https://riverbankcomputing.com/software/pyqt/download)
 
 * qt4reactor.py -- combined eventloop for PyQt and Twisted  
  All OS:  [Download](https://launchpad.net/qt4reactor)  
