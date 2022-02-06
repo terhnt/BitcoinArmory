@@ -288,7 +288,7 @@ USE_REGTEST = CLI_OPTIONS.regtest
 
 # Set default port for inter-process communication
 if CLI_OPTIONS.interport < 0:
-   CLI_OPTIONS.interport = 8223 + (1 if USE_TESTNET else 0) + (1 if USE_REGTEST else 0)
+   CLI_OPTIONS.interport = 65223 + (1 if USE_TESTNET else 0) + (1 if USE_REGTEST else 0)
 
 
 # Pass this bool to all getSpendable* methods, and it will consider
@@ -343,7 +343,7 @@ if OS_WINDOWS:
    USER_HOME_DIR = unicode(buffer.value)
 
    if BTC_HOME_DIR == '':
-      BTC_HOME_DIR = os.path.join(USER_HOME_DIR, 'Bitcoin')
+      BTC_HOME_DIR = os.path.join(USER_HOME_DIR, 'Unobtanium')
    if SUBDIR != '':
       BTC_HOME_DIR = os.path.join(BTC_HOME_DIR, SUBDIR)
    
@@ -356,7 +356,7 @@ elif OS_LINUX:
    USER_HOME_DIR   = os.getenv('HOME')
    
    if BTC_HOME_DIR == '':
-      BTC_HOME_DIR = os.path.join(USER_HOME_DIR, '.bitcoin')
+      BTC_HOME_DIR = os.path.join(USER_HOME_DIR, '.unobtanium')
    if SUBDIR != '':
       BTC_HOME_DIR = os.path.join(BTC_HOME_DIR, SUBDIR)
    
@@ -370,7 +370,7 @@ elif OS_MACOSX:
    USER_HOME_DIR   = os.path.expanduser('~/Library/Application Support')
     
    if BTC_HOME_DIR == '':
-      BTC_HOME_DIR = os.path.join(USER_HOME_DIR, 'Bitcoin')
+      BTC_HOME_DIR = os.path.join(USER_HOME_DIR, 'Unobtanium')
    if SUBDIR != '':
       BTC_HOME_DIR = os.path.join(BTC_HOME_DIR, SUBDIR)   
    
@@ -382,17 +382,17 @@ else:
    print '***Cannot determine default directory locations'
 
 BLOCKCHAINS = {}
-BLOCKCHAINS['\xf9\xbe\xb4\xd9'] = "Main Network"
-BLOCKCHAINS['\xfa\xbf\xb5\xda'] = "Regression Test Network"
-BLOCKCHAINS['\x0b\x11\x09\x07'] = "Test Network (testnet3)"
+BLOCKCHAINS['\x03\xd5\xb5\x03'] = "Main Network"
+BLOCKCHAINS['\x04\x03\x02\x01'] = "Regression Test Network"
+BLOCKCHAINS['\x01\x02\x03\x04'] = "Test Network (testnet3)"
 
 NETWORKS = {}
-NETWORKS['\x00'] = "Main Network"
-NETWORKS['\x05'] = "Main Network"
-NETWORKS['\x6f'] = "Test Network"
-NETWORKS['\xc4'] = "Test Network"
-NETWORKS['\x6f'] = "Regtest Network"
-NETWORKS['\xc4'] = "Regtest Network"
+NETWORKS['\x82'] = "Main Network"
+NETWORKS['\x1E'] = "Main Network"
+NETWORKS['\x44'] = "Test Network"
+NETWORKS['\x1E'] = "Test Network"
+NETWORKS['\x00'] = "Regtest Network"
+NETWORKS['\x05'] = "Regtest Network"
 NETWORKS['\x34'] = "Namecoin Network"
 
 # We disable wallet checks on ARM for the sake of resources (unless forced)
@@ -516,53 +516,53 @@ BECH32_PREFIX = "tb" #default to testnet
 
 if not USE_TESTNET and not USE_REGTEST:
    # TODO:  The testnet genesis tx hash can't be the same...?
-   BITCOIN_PORT = 8333
-   BITCOIN_RPC_PORT = 8332
-   ARMORY_RPC_PORT = 8225
+   BITCOIN_PORT = 65534
+   BITCOIN_RPC_PORT = 65535
+   ARMORY_RPC_PORT = 65225
    MAGIC_BYTES = '\xf9\xbe\xb4\xd9'
-   GENESIS_BLOCK_HASH_HEX  = '6fe28c0ab6f1b372c1a6a246ae63f74f931e8365e15a089c68d6190000000000'
-   GENESIS_BLOCK_HASH      = 'o\xe2\x8c\n\xb6\xf1\xb3r\xc1\xa6\xa2F\xaec\xf7O\x93\x1e\x83e\xe1Z\x08\x9ch\xd6\x19\x00\x00\x00\x00\x00'
-   GENESIS_TX_HASH_HEX     = '3ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa4b1e5e4a'
-   GENESIS_TX_HASH         = ';\xa3\xed\xfdz{\x12\xb2z\xc7,>gv\x8fa\x7f\xc8\x1b\xc3\x88\x8aQ2:\x9f\xb8\xaaK\x1e^J'
-   ADDRBYTE = '\x00'
-   P2SHBYTE = '\x05'
-   PRIVKEYBYTE = '\x80'
-   BECH32_PREFIX = "bc"
+   GENESIS_BLOCK_HASH_HEX  = '000004c2fc5fffb810dccc197d603690099a68305232e552d96ccbe8e2c52b75'
+   GENESIS_BLOCK_HASH      = '\x00\x00\x04\xc2\xfc_\xff\xb8\x10\xdc\xcc\x19}`6\x90\t\x9ah0R2\xe5R\xd9l\xcb\xe8\xe2\xc5+u'
+   GENESIS_TX_HASH_HEX     = '36a192e90f70131a884fe541a1e8a5643a28ba4cb24cbb2924bd0ee483f7f484'
+   GENESIS_TX_HASH         = '6\xa1\x92\xe9\x0fp\x13\x1a\x88O\xe5A\xa1\xe8\xa5d:(\xbaL\xb2L\xbb)$\xbd\x0e\xe4\x83\xf7\xf4\x84'
+   ADDRBYTE = '\x82'
+   P2SHBYTE = '\x1E'
+   PRIVKEYBYTE = '\xE0'
+   BECH32_PREFIX = "un"
 
    # This will usually just be used in the GUI to make links for the user
-   BLOCKEXPLORE_NAME     = 'blockstream.info'
-   BLOCKEXPLORE_URL_TX   = 'https://blockstream.info/tx/%s'
-   BLOCKEXPLORE_URL_ADDR = 'https://blockstream.info/address/%s'
+   BLOCKEXPLORE_NAME     = 'chainz.cryptoid.info'
+   BLOCKEXPLORE_URL_TX   = 'https://chainz.cryptoid.info/uno/api.dws?q=txinfo&t=%s'
+   BLOCKEXPLORE_URL_ADDR = 'https://chainz.cryptoid.info/uno/api.dws?q=txinfo&a=%s'
 else:
    #set static members of BDMconfig for address generation on C++ side
    bdmConfig.selectNetwork("Test")
    
-   BITCOIN_PORT = 18444 if USE_REGTEST else 18333
-   BITCOIN_RPC_PORT = 18443 if USE_REGTEST else 18332
-   ARMORY_RPC_PORT     = 18225
+   BITCOIN_PORT = 18444 if USE_REGTEST else 65522
+   BITCOIN_RPC_PORT = 18443 if USE_REGTEST else 65531
+   ARMORY_RPC_PORT     = 55225
    if USE_TESTNET:
-      MAGIC_BYTES  = '\x0b\x11\x09\x07'
-      GENESIS_BLOCK_HASH_HEX  = '43497fd7f826957108f4a30fd9cec3aeba79972084e90ead01ea330900000000'
-      GENESIS_BLOCK_HASH      = 'CI\x7f\xd7\xf8&\x95q\x08\xf4\xa3\x0f\xd9\xce\xc3\xae\xbay\x97 \x84\xe9\x0e\xad\x01\xea3\t\x00\x00\x00\x00'
-      GENESIS_TX_HASH_HEX     = '3ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa4b1e5e4a'
-      GENESIS_TX_HASH         = ';\xa3\xed\xfdz{\x12\xb2z\xc7,>gv\x8fa\x7f\xc8\x1b\xc3\x88\x8aQ2:\x9f\xb8\xaaK\x1e^J'
-      ARMORYDB_DEFAULT_PORT = "19001"
+      MAGIC_BYTES  = '\x01\x02\x03\x04'
+      GENESIS_BLOCK_HASH_HEX  = '000007b02afb00ae826d948d88f4973c00073425f965917f6298b6d280bde021'
+      GENESIS_BLOCK_HASH      = '\x00\x00\x07\xb0*\xfb\x00\xae\x82m\x94\x8d\x88\xf4\x97<\x00\x074%\xf9e\x91\x7fb\x98\xb6\xd2\x80\xbd\xe0!'
+      GENESIS_TX_HASH_HEX     = '36a192e90f70131a884fe541a1e8a5643a28ba4cb24cbb2924bd0ee483f7f484'
+      GENESIS_TX_HASH         = '6\xa1\x92\xe9\x0fp\x13\x1a\x88O\xe5A\xa1\xe8\xa5d:(\xbaL\xb2L\xbb)$\xbd\x0e\xe4\x83\xf7\xf4\x84'
+      ARMORYDB_DEFAULT_PORT = "59001"
 
       if usesDefaultDbPort:
-         ARMORYDB_PORT = "19001"
+         ARMORYDB_PORT = "59001"
    else:
-      MAGIC_BYTES  = '\xfa\xbf\xb5\xda'
-      GENESIS_BLOCK_HASH_HEX  = '06226e46111a0b59caaf126043eb5bbf28c34f3a5e332a1fc7b2b73cf188910f'
-      GENESIS_BLOCK_HASH      = '\x06\x22\x6e\x46\x11\x1a\x0b\x59\xca\xaf\x12\x60\x43\xeb\x5b\xbf\x28\xc3\x4f\x3a\x5e\x33\x2a\x1f\xc7\xb2\xb7\x3c\xf1\x88\x91\x0f'
+      MAGIC_BYTES  = '\x04\x03\x02\x01'
+      GENESIS_BLOCK_HASH_HEX  = '3868bcc735f32cdd9b42971cdee7bc620c50fada5e3ac5fdfd35630aaf2eb64e'
+      GENESIS_BLOCK_HASH      = '8h\xbc\xc75\xf3,\xdd\x9bB\x97\x1c\xde\xe7\xbcb\x0cP\xfa\xda^:\xc5\xfd\xfd5c\n\xaf.\xb6N'
       GENESIS_TX_HASH_HEX     = '3ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa4b1e5e4a'
-      GENESIS_TX_HASH         = ';\xa3\xed\xfdz{\x12\xb2z\xc7,>gv\x8fa\x7f\xc8\x1b\xc3\x88\x8aQ2:\x9f\xb8\xaaK\x1e^J'
-      ARMORYDB_DEFAULT_PORT = "19002"
+      GENESIS_TX_HASH         = '6\xa1\x92\xe9\x0fp\x13\x1a\x88O\xe5A\xa1\xe8\xa5d:(\xbaL\xb2L\xbb)$\xbd\x0e\xe4\x83\xf7\xf4\x84'
+      ARMORYDB_DEFAULT_PORT = "59002"
 
       if usesDefaultDbPort:
-         ARMORYDB_PORT = "19002"
+         ARMORYDB_PORT = "59002"
 
-   ADDRBYTE = '\x6f'
-   P2SHBYTE = '\xc4'
+   ADDRBYTE = '\x44'
+   P2SHBYTE = '\x1e'
    PRIVKEYBYTE = '\xef'
 
    #
@@ -572,8 +572,8 @@ else:
 
 # These are the same regardless of network
 # They are the way data is stored in the database which is network agnostic
-SCRADDR_P2PKH_BYTE    = '\x00'
-SCRADDR_P2SH_BYTE     = '\x05'
+SCRADDR_P2PKH_BYTE    = '\x82'
+SCRADDR_P2SH_BYTE     = '\x1E'
 SCRADDR_MULTISIG_BYTE = '\xfe'
 SCRADDR_NONSTD_BYTE   = '\xff'
 SCRADDR_P2WPKH_BYTE   = '\x90'
@@ -648,14 +648,14 @@ if not CLI_OPTIONS.satoshiPort == DEFAULT:
    try:
       BITCOIN_PORT = int(CLI_OPTIONS.satoshiPort)
    except:
-      raise TypeError('Invalid port for Bitcoin Core, using ' + str(BITCOIN_PORT))
+      raise TypeError('Invalid port for Unobtanium Core, using ' + str(BITCOIN_PORT))
 
 ################################################################################
 if not CLI_OPTIONS.satoshiRpcport == DEFAULT:
    try:
       BITCOIN_RPC_PORT = int(CLI_OPTIONS.satoshiRpcport)
    except:
-      raise TypeError('Invalid rpc port for Bitcoin Core, using ' + str(BITCOIN_RPC_PORT))
+      raise TypeError('Invalid rpc port for Unobtanium Core, using ' + str(BITCOIN_RPC_PORT))
 
 ################################################################################
 if not CLI_OPTIONS.rpcport == DEFAULT:
@@ -1073,7 +1073,7 @@ if os.path.exists(fileDelSettings):
 ################################################################################
 def deleteBitcoindDBs():
    if not os.path.exists(BTC_HOME_DIR):
-      LOGERROR('Could not find Bitcoin Core/bitcoind home dir to remove blk data')
+      LOGERROR('Could not find Unobtanium Core/unobtaniumd home dir to remove blk data')
       LOGERROR('  Does not exist: %s' % BTC_HOME_DIR)
    else:
       LOGINFO('Found bitcoin home dir, removing blocks and databases')
@@ -1838,10 +1838,10 @@ if CLI_OPTIONS.logDisable:
 # be valid entities for tracking in a wallet.  Until then, all of our python
 # utilities all use just hash160 values, and we manually add the prefix
 # before talking to the BDM.
-HASH160PREFIX     = '\x00'
-HASH160_TESTNET   = '\x6f'
-P2SHPREFIX        = '\x05'
-P2SH_TESTNET      = '\xc4'
+HASH160PREFIX     = '\x82'
+HASH160_TESTNET   = '\x44'
+P2SHPREFIX        = '\x1E'
+P2SH_TESTNET      = '\x1E'
 MSIGPREFIX        = '\xfe'
 NONSTDPREFIX      = '\xff'
 def CheckHash160(scrAddr):
