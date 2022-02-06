@@ -48,7 +48,7 @@ In Ubuntu, you are required to install some packages before attempting to build 
 Now, you need to clone Armory's git repository and initialize the submodules:
 
 ~~~bash
-$ git clone https://github.com/goatpig/BitcoinArmory.git
+$ git clone -b unobtanium https://github.com/terhnt/BitcoinArmory.git
 $ cd BitcoinArmory
 $ git submodule init
 $ git submodule update
