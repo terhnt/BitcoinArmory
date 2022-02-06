@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Armory
-Upstream-Contact: https://github.com/goatpig/BitcoinArmory/issues
-Source: https://github.com/goatpig/BitcoinArmory
+Upstream-Contact: https://github.com/goatpig/BxtcoinArmory/issues
+Source: https://github.com/goatpig/BxtcoinArmory
 
 Files: *
 Copyright: 2016, goatpig

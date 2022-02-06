@@ -177,11 +177,11 @@ class SendBitcoinsFrame(ArmoryFrame):
       txFrm = makeHorizFrame([self.feeLblButton, feetip], STYLE_RAISED, condenseMargins=True)
       metaFrm = makeHorizFrame(metaButtonList, STYLE_RAISED, condenseMargins=True)
       buttonFrame = makeHorizFrame(buttonList, condenseMargins=True)
-      btnEnterURI = QPushButton(self.tr('Manually Enter "bitcoin:" Link'))
+      btnEnterURI = QPushButton(self.tr('Manually Enter "unobtanium:" Link'))
       ttipEnterURI = self.main.createToolTipWidget( self.tr(
          'Armory does not always succeed at registering itself to handle '
          'URL links from webpages and email. '
-         'Click this button to copy a "bitcoin:" link directly into Armory.'))
+         'Click this button to copy a "unobtanium:" link directly into Armory.'))
       self.connect(btnEnterURI, SIGNAL("clicked()"), self.clickEnterURI)
       fromFrameList = [self.frmSelectedWlt]
 

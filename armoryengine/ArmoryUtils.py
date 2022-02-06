@@ -58,8 +58,8 @@ try:
    from ArmoryBuild import BTCARMORY_BUILD
 except:
    BTCARMORY_BUILD = None
-   
-#pass sys.argv to the cpp config file parser, get the fleshed out verison 
+
+#pass sys.argv to the cpp config file parser, get the fleshed out verison
 #in return
 sys.argv = ConfigFile_fleshOutArgs("armoryqt.conf", sys.argv)
 
@@ -90,10 +90,10 @@ ARMORYDB_DEFAULT_PORT = "9001"
 parser = optparse.OptionParser(usage="%prog [options]\n")
 parser.add_option("--settings",        dest="settingsPath",default=DEFAULT, type="str",          help="load Armory with a specific settings file")
 parser.add_option("--datadir",         dest="datadir",     default=DEFAULT, type="str",          help="Change the directory that Armory calls home")
-parser.add_option("--satoshi-datadir", dest="satoshiHome", default=DEFAULT, type='str',          help="The Bitcoin Core/bitcoind home directory")
+parser.add_option("--satoshi-datadir", dest="satoshiHome", default=DEFAULT, type='str',          help="The Bitcoin Core/unobtaniumd home directory")
 parser.add_option("--satoshi-port",    dest="satoshiPort", default=DEFAULT, type="str",          help="For Bitcoin Core instances operating on a non-standard port")
 parser.add_option("--satoshi-rpcport", dest="satoshiRpcport",default=DEFAULT,type="str",         help="RPC port Bitcoin Core instances operating on a non-standard port")
-#parser.add_option("--bitcoind-path",   dest="bitcoindPath",default='DEFAULT', type="str",         help="Path to the location of bitcoind on your system")
+#parser.add_option("--unobtaniumd-path",   dest="unobtaniumdPath",default='DEFAULT', type="str",         help="Path to the location of unobtaniumd on your system")
 parser.add_option("--dbdir",           dest="armoryDBDir",  default=DEFAULT, type='str',          help="Location to store blocks database (defaults to --datadir)")
 parser.add_option("--rpcport",         dest="rpcport",     default=DEFAULT, type="str",          help="RPC port for running armoryd.py")
 parser.add_option("--rpcbindaddr",     dest="rpcBindAddr", default="127.0.0.1", type="str",      help="IP Address to bind to for RPC.")
@@ -110,7 +110,7 @@ parser.add_option("--mtdebug",         dest="mtdebug",     default=False,     ac
 parser.add_option("--skip-online-check",dest="forceOnline", default=False,   action="store_true", help="Go into online mode, even if internet connection isn't detected")
 parser.add_option("--tor",             dest="useTorSettings", default=False, action="store_true", help="Enable common settings for when Armory connects through Tor")
 parser.add_option("--keypool",         dest="keypool",     default=100, type="int",                help="Default number of addresses to lookahead in Armory wallets")
-parser.add_option("--redownload",      dest="redownload",  default=False,     action="store_true", help="Delete Bitcoin Core/bitcoind databases; redownload")
+parser.add_option("--redownload",      dest="redownload",  default=False,     action="store_true", help="Delete Bitcoin Core/unobtaniumd databases; redownload")
 parser.add_option("--rebuild",         dest="rebuild",     default=False,     action="store_true", help="Rebuild blockchain database and rescan")
 parser.add_option("--rescan",          dest="rescan",      default=False,     action="store_true", help="Rescan existing blockchain DB")
 parser.add_option("--rescanBalance",   dest="rescanBalance", default=False,     action="store_true", help="Rescan balance")
@@ -129,7 +129,7 @@ parser.add_option("--force-fcgi", dest="force_fcgi", default=False, action="stor
 parser.add_option("--ram-usage", dest="ram_usage", default=-1, type="int", help="Set maximum ram during scans, as 128MB increments. Defaults to 4")
 parser.add_option("--thread-count", dest="thread_count", default=-1, type="int", help="Set max thread count during builds and scans. Defaults to CPU total thread count")
 parser.add_option("--db-type", dest="db_type", default="DB_FULL", type="str", help="Set db mode, defaults to DB_FULL")
-parser.add_option("--language", dest="language", default="en", type="str", help="""Set the language for the client to display in. Use the ISO 639-1 language code to choose a language. 
+parser.add_option("--language", dest="language", default="en", type="str", help="""Set the language for the client to display in. Use the ISO 639-1 language code to choose a language.
                                                                                  Options are da, de, en, es, el, fr, he, hr, id, ru, sv. Default is en. """)
 parser.add_option("--force-enable-segwit", dest="force_segwit", default=False, action="store_true", help="Allow SegWit address generation in offline mode")
 
@@ -166,7 +166,7 @@ MIN_TX_FEE    = 20000
 MIN_RELAY_TX_FEE = 20000
 MIN_FEE_BYTE = 200
 MT_WAIT_TIMEOUT_SEC = 20;
-DEFAULT_FEE_TYPE = "Auto" 
+DEFAULT_FEE_TYPE = "Auto"
 DEFAULT_CHANGE_TYPE = 'P2PKH'
 DEFAULT_RECEIVE_TYPE = 'P2PKH'
 
@@ -319,7 +319,7 @@ ENABLE_DETSIGN = CLI_OPTIONS.enableDetSign
 # Figure out the default directories for Satoshi client, and BicoinArmory
 OS_NAME          = ''
 OS_VARIANT       = ''
-USER_HOME_DIR    = ''   
+USER_HOME_DIR    = ''
 BTC_HOME_DIR     = ''
 ARMORY_HOME_DIR  = ''
 ARMORY_DB_DIR    = ''
@@ -346,7 +346,7 @@ if OS_WINDOWS:
       BTC_HOME_DIR = os.path.join(USER_HOME_DIR, 'Unobtanium')
    if SUBDIR != '':
       BTC_HOME_DIR = os.path.join(BTC_HOME_DIR, SUBDIR)
-   
+
    ARMORY_HOME_DIR = os.path.join(USER_HOME_DIR, 'Armory', SUBDIR)
    BLKFILE_DIR     = os.path.join(BTC_HOME_DIR, 'blocks')
    BLKFILE_1stFILE = os.path.join(BLKFILE_DIR, 'blk00000.dat')
@@ -354,12 +354,12 @@ elif OS_LINUX:
    OS_NAME         = 'Linux'
    OS_VARIANT      = platform.linux_distribution()
    USER_HOME_DIR   = os.getenv('HOME')
-   
+
    if BTC_HOME_DIR == '':
       BTC_HOME_DIR = os.path.join(USER_HOME_DIR, '.unobtanium')
    if SUBDIR != '':
       BTC_HOME_DIR = os.path.join(BTC_HOME_DIR, SUBDIR)
-   
+
    ARMORY_HOME_DIR = os.path.join(USER_HOME_DIR, '.armory', SUBDIR)
    BLKFILE_DIR     = os.path.join(BTC_HOME_DIR, 'blocks')
    BLKFILE_1stFILE = os.path.join(BLKFILE_DIR, 'blk00000.dat')
@@ -368,12 +368,12 @@ elif OS_MACOSX:
    OS_NAME         = 'MacOSX'
    OS_VARIANT      = platform.mac_ver()
    USER_HOME_DIR   = os.path.expanduser('~/Library/Application Support')
-    
+
    if BTC_HOME_DIR == '':
       BTC_HOME_DIR = os.path.join(USER_HOME_DIR, 'Unobtanium')
    if SUBDIR != '':
-      BTC_HOME_DIR = os.path.join(BTC_HOME_DIR, SUBDIR)   
-   
+      BTC_HOME_DIR = os.path.join(BTC_HOME_DIR, SUBDIR)
+
    ARMORY_HOME_DIR = os.path.join(USER_HOME_DIR, 'Armory', SUBDIR)
    BLKFILE_DIR     = os.path.join(BTC_HOME_DIR, 'blocks')
    BLKFILE_1stFILE = os.path.join(BLKFILE_DIR, 'blk00000.dat')
@@ -536,7 +536,7 @@ if not USE_TESTNET and not USE_REGTEST:
 else:
    #set static members of BDMconfig for address generation on C++ side
    bdmConfig.selectNetwork("Test")
-   
+
    BITCOIN_PORT = 18444 if USE_REGTEST else 65522
    BITCOIN_RPC_PORT = 18443 if USE_REGTEST else 65531
    ARMORY_RPC_PORT     = 55225
@@ -995,7 +995,7 @@ def logexcept_override(_type, value, tback):
       logging.error(''.join([s for s in strList]))
    except:
       pass
-   
+
    # then call the default handler
    sys.__excepthook__(_type, value, tback)
 
@@ -2811,7 +2811,7 @@ def checkAddrBinValid(addrBin, validPrefixes=None):
 
    if not isinstance(validPrefixes, list):
       validPrefixes = [validPrefixes]
-      
+
    prefix = checkAddrType(addrBin)
    return (prefix in validPrefixes)
 
@@ -2935,7 +2935,7 @@ URI_VERSION_STR = '1.0'
 
 
 ################################################################################
-# Take in a "bitcoin:" URI string and parse the data out into a dictionary. If
+# Take in a "unobtanium:" URI string and parse the data out into a dictionary. If
 # the URI isn't a Bitcoin URI, return an empty dictionary.
 def parseBitcoinURI(uriStr):
    """ Takes a URI string, returns normalized dicitonary with pieces """
@@ -2998,7 +2998,7 @@ def uriPercentToReserved(theStr):
 
 ################################################################################
 def createBitcoinURI(addr, amt=None, msg=None):
-   uriStr = 'bitcoin:%s' % addr
+   uriStr = 'unobtanium:%s' % addr
    if amt or msg:
       uriStr += '?'
 
@@ -3746,4 +3746,3 @@ def touchFile(fname):
       f.flush()
       os.fsync(f.fileno())
       f.close()
-

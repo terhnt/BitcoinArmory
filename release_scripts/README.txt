@@ -57,7 +57,7 @@ can be copied to a USB key to be taken to the offline computer.
       
    Script Output:
 
-      <outputDir>/BitcoinArmory       (clone of repo)
+      <outputDir>/BxtcoinArmory       (clone of repo)
       <outputDir>/release_scripts     (copy of release_scripts dir from repo)
       <outputDir>/installers          (all non-offline-bundle packages)
       <outputDir>/unsignedannounce    (all unsigned announcement files)
@@ -91,7 +91,7 @@ of Armory for any non-generic-python operations.
       
    Script Output:
 
-      <outputDir>/BitcoinArmory       (same repo but with signed tag v0.91.1)
+      <outputDir>/BxtcoinArmory       (same repo but with signed tag v0.91.1)
       <outputDir>/release_scripts     (same copy, unmodified)
       <outputDir>/installers          (signed, now includes offline bundles)
       <outputDir>/announceFiles       (all txt signed, added announce.txt)
@@ -131,8 +131,8 @@ It will do the following:
       
    Script Output:
 
-         -- Upload all installers and offline bundles to BitcoinArmory-releases 
-         -- Upload all announce files to BitcoinArmory-media bucket
+         -- Upload all installers and offline bundles to BxtcoinArmory-releases 
+         -- Upload all announce files to BxtcoinArmory-media bucket
          -- Ask if you'd like to push the latest git tag (if this is a testing
             version, you may not want to push the tag)
 
@@ -194,7 +194,7 @@ def getMasterPackageList():
    
    pkg = 'MacOSX (All)'
    m[pkg] = {}
-   m[pkg]['FetchFrom']  = ['scp', 'joeschmoe', '192.168.1.22', 22, '~/BitcoinArmory/osxbuild/armory_%s_osx.tar.gz']
+   m[pkg]['FetchFrom']  = ['scp', 'joeschmoe', '192.168.1.22', 22, '~/BxtcoinArmory/osxbuild/armory_%s_osx.tar.gz']
    m[pkg]['FileSuffix'] = 'osx.tar.gz'
    m[pkg]['OSNameDisp'] = 'MacOSX'
    m[pkg]['OSVarDisp']  = '10.7+'

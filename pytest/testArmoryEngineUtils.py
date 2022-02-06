@@ -256,14 +256,14 @@ class ArmoryEngineTest(unittest.TestCase):
    #############################################################################
    def testBitcoinUriParser(self):
       ##### Test BIP 0021 parser functions.
-      uri1 = "bitcoin:1BTCorgHwCg6u2YSAWKgS17qUad6kHmtQW?amount=0.1&label=Foo%20bar&r=https://example.com/foo/bar/"
-      uri2 = "bitcoin:mq7se9wy2egettFxPbmn99cK8v5AFq55Lx?amount=0.11&r=https://merchant.com/pay.php?h%3D2a8628fc2fbe"
-      uri3 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W"
-      uri4 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?label=Luke-Jr"
-      uri5 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=20.3&label=Luke-Jr"
-      uri6 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-Jr&message=Donation%20for%20project%20xyz"
-      uri7 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?req-somethingyoudontunderstand=50&req-somethingelseyoudontget=999"
-      uri8 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?somethingyoudontunderstand=50&somethingelseyoudontget=999"
+      uri1 = "unobtanium:1BTCorgHwCg6u2YSAWKgS17qUad6kHmtQW?amount=0.1&label=Foo%20bar&r=https://example.com/foo/bar/"
+      uri2 = "unobtanium:mq7se9wy2egettFxPbmn99cK8v5AFq55Lx?amount=0.11&r=https://merchant.com/pay.php?h%3D2a8628fc2fbe"
+      uri3 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W"
+      uri4 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?label=Luke-Jr"
+      uri5 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=20.3&label=Luke-Jr"
+      uri6 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-Jr&message=Donation%20for%20project%20xyz"
+      uri7 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?req-somethingyoudontunderstand=50&req-somethingelseyoudontget=999"
+      uri8 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?somethingyoudontunderstand=50&somethingelseyoudontget=999"
 
       expectedOut1 = {
          "address": "1BTCorgHwCg6u2YSAWKgS17qUad6kHmtQW",

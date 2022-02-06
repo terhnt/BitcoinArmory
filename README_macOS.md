@@ -29,7 +29,7 @@ Official Armory builds are signed by goatpig, the lead maintainer. However, goat
 
         gpg --recv-keys --keyserver keyserver.ubuntu.com 4922589A
 
-4. Download the appropriate macOS build [from the release page](https://github.com/goatpig/BitcoinArmory/releases/) (e.g., *armory\_2.4.1.99\_osx.tar.gz*), along with *sha256sum.txt.asc*, which will contain a GPG-signed list of SHA-256 hashes of the code posted by goatpig. If a macOS-specific *shasum* file is unavailable, try *sha256sum.txt.asc* instead.
+4. Download the appropriate macOS build [from the release page](https://github.com/goatpig/BxtcoinArmory/releases/) (e.g., *armory\_2.4.1.99\_osx.tar.gz*), along with *sha256sum.txt.asc*, which will contain a GPG-signed list of SHA-256 hashes of the code posted by goatpig. If a macOS-specific *shasum* file is unavailable, try *sha256sum.txt.asc* instead.
 
 5. Verify the SHA-256 hash of the macOS build.
 

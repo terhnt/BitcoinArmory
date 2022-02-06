@@ -189,17 +189,17 @@
     <name>ArmoryDialog</name>
     <message>
         <location filename="qtdefines.py" line="719"/>
-        <source>Armory - Bitcoin Wallet Management [TESTNET] </source>
+        <source>Armory - Unobtanium Wallet Management [TESTNET] </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdefines.py" line="722"/>
-        <source>Armory - Bitcoin Wallet Management [REGTEST] </source>
+        <source>Armory - Unobtanium Wallet Management [REGTEST] </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdefines.py" line="725"/>
-        <source>Armory - Bitcoin Wallet Management</source>
+        <source>Armory - Unobtanium Wallet Management</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -252,12 +252,12 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1287"/>
-        <source>Send Bitcoins</source>
+        <source>Send Unobtaniums</source>
         <translation>Отправить биткоины</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1288"/>
-        <source>Receive Bitcoins</source>
+        <source>Receive Unobtaniums</source>
         <translation>Запросить биткоины</translation>
     </message>
     <message>
@@ -442,8 +442,8 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="721"/>
-        <source>Bitcoin Directory</source>
-        <translation>Папка Bitcoin</translation>
+        <source>Unobtanium Directory</source>
+        <translation>Папка Unobtanium</translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="728"/>
@@ -889,12 +889,12 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3742"/>
-        <source>Close Bitcoin Process</source>
+        <source>Close Unobtanium Process</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3743"/>
-        <source>Open https://bitcoin.org</source>
+        <source>Open http://unobtanium.uno</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -909,17 +909,17 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3776"/>
-        <source>Stop existing Bitcoin processes so that Armory can open its own</source>
+        <source>Stop existing Unobtanium processes so that Armory can open its own</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3778"/>
-        <source>Open browser to Bitcoin webpage to download and install Bitcoin software</source>
+        <source>Open browser to Unobtanium webpage to download and install Unobtanium software</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3780"/>
-        <source>Open Armory settings window to change Bitcoin software management</source>
+        <source>Open Armory settings window to change Unobtanium software management</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -979,17 +979,17 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4077"/>
-        <source>&lt;ul&gt;&lt;li&gt;Create, import or recover Armory wallets&lt;/li&gt;&lt;li&gt;Generate new addresses to receive coins&lt;/li&gt;&lt;li&gt;Send bitcoins to other people&lt;/li&gt;&lt;li&gt;Create one-time backups of your wallets (in printed or digital form)&lt;/li&gt;&lt;li&gt;Click on &quot;bitcoin:&quot; links in your web browser (not supported on all operating systems)&lt;/li&gt;&lt;li&gt;Import private keys to wallets&lt;/li&gt;&lt;li&gt;Monitor payments to watching-only wallets and create unsigned transactions&lt;/li&gt;&lt;li&gt;Sign messages&lt;/li&gt;&lt;li&gt;&lt;b&gt;Create transactions with watching-only wallets, to be signed by an offline wallets&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;</source>
+        <source>&lt;ul&gt;&lt;li&gt;Create, import or recover Armory wallets&lt;/li&gt;&lt;li&gt;Generate new addresses to receive coins&lt;/li&gt;&lt;li&gt;Send bitcoins to other people&lt;/li&gt;&lt;li&gt;Create one-time backups of your wallets (in printed or digital form)&lt;/li&gt;&lt;li&gt;Click on &quot;unobtanium:&quot; links in your web browser (not supported on all operating systems)&lt;/li&gt;&lt;li&gt;Import private keys to wallets&lt;/li&gt;&lt;li&gt;Monitor payments to watching-only wallets and create unsigned transactions&lt;/li&gt;&lt;li&gt;Sign messages&lt;/li&gt;&lt;li&gt;&lt;b&gt;Create transactions with watching-only wallets, to be signed by an offline wallets&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4119"/>
-        <source>&lt;p&gt;&lt;b&gt;You now have access to all the features Armory has to offer!&lt;/b&gt;&lt;br&gt;To see your balances and transaction history, please click on the &quot;Transactions&quot; tab above this text.  &lt;br&gt;Here&apos;s some things you can do with Armory Bitcoin Client:&lt;br&gt;</source>
+        <source>&lt;p&gt;&lt;b&gt;You now have access to all the features Armory has to offer!&lt;/b&gt;&lt;br&gt;To see your balances and transaction history, please click on the &quot;Transactions&quot; tab above this text.  &lt;br&gt;Here&apos;s some things you can do with Armory Unobtanium Client:&lt;br&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4126"/>
-        <source>If you experience any performance issues with Armory, please confirm that Bitcoin Core is running and &lt;i&gt;fully synchronized with the Bitcoin network&lt;/i&gt;.  You will see a green checkmark in the bottom right corner of the Bitcoin Core window if it is synchronized.  If not, it is recommended you close Armory and restart it only when you see that checkmark.&lt;br&gt;&lt;br&gt;</source>
+        <source>If you experience any performance issues with Armory, please confirm that Unobtanium Core is running and &lt;i&gt;fully synchronized with the Unobtanium network&lt;/i&gt;.  You will see a green checkmark in the bottom right corner of the Unobtanium Core window if it is synchronized.  If not, it is recommended you close Armory and restart it only when you see that checkmark.&lt;br&gt;&lt;br&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1004,32 +1004,32 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4166"/>
-        <source>There is no connection to the internet, and there is no other Bitcoin software running.  Most likely you are here because this is a system dedicated to manage offline wallets! &lt;br&gt;&lt;br&gt;&lt;b&gt;If you expected Armory to be in online mode&lt;/b&gt;, please verify your internet connection is active, then restart Armory.  If you think the lack of internet connection is in error (such as if you are using Tor), then you can restart Armory with the &quot;--skip-online-check&quot; option, or change it in the Armory settings.&lt;br&gt;&lt;br&gt;If you do not have Bitcoin Core installed, you can download it from &lt;a href=&quot;https://bitcoin.org&quot;&gt;https://bitcoin.org&lt;/a&gt;.</source>
+        <source>There is no connection to the internet, and there is no other Unobtanium software running.  Most likely you are here because this is a system dedicated to manage offline wallets! &lt;br&gt;&lt;br&gt;&lt;b&gt;If you expected Armory to be in online mode&lt;/b&gt;, please verify your internet connection is active, then restart Armory.  If you think the lack of internet connection is in error (such as if you are using Tor), then you can restart Armory with the &quot;--skip-online-check&quot; option, or change it in the Armory settings.&lt;br&gt;&lt;br&gt;If you do not have Unobtanium Core installed, you can download it from &lt;a href=&quot;http://unobtanium.uno&quot;&gt;http://unobtanium.uno&lt;/a&gt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4189"/>
-        <source>You are currently in offline mode, but can switch to online mode by pressing the button above.  However, it is not recommended that you switch until Bitcoin Core/bitcoind is fully synchronized with the bitcoin network.  You will see a green checkmark in the bottom-right corner of the Bitcoin Core window when it is finished.&lt;br&gt;&lt;br&gt;Switching to online mode will give you access to more Armory functionality, including sending and receiving bitcoins and viewing the balances and transaction histories of each of your wallets.&lt;br&gt;&lt;br&gt;</source>
+        <source>You are currently in offline mode, but can switch to online mode by pressing the button above.  However, it is not recommended that you switch until Unobtanium Core/bitcoind is fully synchronized with the bitcoin network.  You will see a green checkmark in the bottom-right corner of the Unobtanium Core window when it is finished.&lt;br&gt;&lt;br&gt;Switching to online mode will give you access to more Armory functionality, including sending and receiving bitcoins and viewing the balances and transaction histories of each of your wallets.&lt;br&gt;&lt;br&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4203"/>
-        <source>You are currently in offline mode because Bitcoin Core is not running.  To switch to online mode, start Bitcoin Core and let it synchronize with the network -- you will see a green checkmark in the bottom-right corner when it is complete.  If Bitcoin Core is already running and you believe the lack of connection is an error (especially if using proxies), please see &lt;a href=&quot;https://bitcointalk.org/index.php?topic=155717.msg1719077#msg1719077&quot;&gt;this link&lt;/a&gt; for options.&lt;br&gt;&lt;br&gt;&lt;b&gt;If you prefer to have Armory do this for you&lt;/b&gt;, then please check &quot;Let Armory run Bitcoin Core in the background&quot; under &quot;File&quot;-&gt;&quot;Settings.&quot;&lt;br&gt;&lt;br&gt;If you already know what you&apos;re doing and simply need to fetch the latest version of Bitcoin Core, you can download it from &lt;a href=&quot;https://bitcoin.org&quot;&gt;https://bitcoin.org&lt;/a&gt;.</source>
+        <source>You are currently in offline mode because Unobtanium Core is not running.  To switch to online mode, start Unobtanium Core and let it synchronize with the network -- you will see a green checkmark in the bottom-right corner when it is complete.  If Unobtanium Core is already running and you believe the lack of connection is an error (especially if using proxies), please see &lt;a href=&quot;https://bitcointalk.org/index.php?topic=155717.msg1719077#msg1719077&quot;&gt;this link&lt;/a&gt; for options.&lt;br&gt;&lt;br&gt;&lt;b&gt;If you prefer to have Armory do this for you&lt;/b&gt;, then please check &quot;Let Armory run Unobtanium Core in the background&quot; under &quot;File&quot;-&gt;&quot;Settings.&quot;&lt;br&gt;&lt;br&gt;If you already know what you&apos;re doing and simply need to fetch the latest version of Unobtanium Core, you can download it from &lt;a href=&quot;http://unobtanium.uno&quot;&gt;http://unobtanium.uno&lt;/a&gt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4222"/>
-        <source>You are currently in offline mode because Armory could not detect an internet connection.  If you think this is in error, then restart Armory using the &quot; --skip-online-check&quot; option, or adjust the Armory settings.  Then restart Armory.&lt;br&gt;&lt;br&gt;If this is intended to be an offline computer, note that it is not necessary to have Bitcoin Core or bitcoind running.</source>
+        <source>You are currently in offline mode because Armory could not detect an internet connection.  If you think this is in error, then restart Armory using the &quot; --skip-online-check&quot; option, or adjust the Armory settings.  Then restart Armory.&lt;br&gt;&lt;br&gt;If this is intended to be an offline computer, note that it is not necessary to have Unobtanium Core or bitcoind running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4233"/>
-        <source>You are currently in offline mode because Armory could not find the blockchain files produced by Bitcoin Core.  Do you run Bitcoin Core (or bitcoind) from a non-standard directory?   Armory expects to find the blkXXXX.dat files in &lt;br&gt;&lt;br&gt;%1&lt;br&gt;&lt;br&gt; If you know where they are located, please restart Armory using the &quot; --satoshi-datadir=[path]&quot; to notify Armory where to find them.</source>
+        <source>You are currently in offline mode because Armory could not find the blockchain files produced by Unobtanium Core.  Do you run Unobtanium Core (or bitcoind) from a non-standard directory?   Armory expects to find the blkXXXX.dat files in &lt;br&gt;&lt;br&gt;%1&lt;br&gt;&lt;br&gt; If you know where they are located, please restart Armory using the &quot; --satoshi-datadir=[path]&quot; to notify Armory where to find them.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4243"/>
-        <source>Armory was previously online, but the connection to Bitcoin Core/bitcoind was interrupted.  You will not be able to send bitcoins or confirm receipt of bitcoins until the connection is reestablished.  &lt;br&gt;&lt;br&gt;Please check that Bitcoin Core is open and synchronized with the network.  Armory will &lt;i&gt;try to reconnect&lt;/i&gt; automatically when the connection is available again.  If Bitcoin Core is available again, and reconnection does not happen, please restart Armory.&lt;br&gt;&lt;br&gt;</source>
+        <source>Armory was previously online, but the connection to Unobtanium Core/bitcoind was interrupted.  You will not be able to send bitcoins or confirm receipt of bitcoins until the connection is reestablished.  &lt;br&gt;&lt;br&gt;Please check that Unobtanium Core is open and synchronized with the network.  Armory will &lt;i&gt;try to reconnect&lt;/i&gt; automatically when the connection is available again.  If Unobtanium Core is available again, and reconnection does not happen, please restart Armory.&lt;br&gt;&lt;br&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1044,32 +1044,32 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4270"/>
-        <source>It appears you are already running Bitcoin software (Bitcoin Core or bitcoind). Unlike previous versions of Armory, you should &lt;u&gt;not&lt;/u&gt; run this software yourself --  Armory will run it in the background for you.  Either close the Bitcoin application or adjust your settings.  If you change your settings, then please restart Armory.</source>
+        <source>It appears you are already running Unobtanium software (Unobtanium Core or bitcoind). Unlike previous versions of Armory, you should &lt;u&gt;not&lt;/u&gt; run this software yourself --  Armory will run it in the background for you.  Either close the Unobtanium application or adjust your settings.  If you change your settings, then please restart Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4279"/>
-        <source>&lt;b&gt;Only one more step to getting online with Armory!&lt;/b&gt;   You must install the Bitcoin software from https://bitcoin.org in order for Armory to communicate with the Bitcoin network.  If the Bitcoin software is already installed and/or you would prefer to manage it yourself, please adjust your settings and restart Armory.</source>
+        <source>&lt;b&gt;Only one more step to getting online with Armory!&lt;/b&gt;   You must install the Unobtanium software from http://unobtanium.uno in order for Armory to communicate with the Unobtanium network.  If the Unobtanium software is already installed and/or you would prefer to manage it yourself, please adjust your settings and restart Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4320"/>
-        <source>Armory&apos;s communication with the Bitcoin network was interrupted. This usually does not happen unless you closed the process that Armory was using to communicate with the network. Armory requires %1 to be running in the background, and this error pops up if it disappears.&lt;br&gt;&lt;br&gt;You may continue in offline mode, or you can close all Bitcoin processes and restart Armory.</source>
+        <source>Armory&apos;s communication with the Unobtanium network was interrupted. This usually does not happen unless you closed the process that Armory was using to communicate with the network. Armory requires %1 to be running in the background, and this error pops up if it disappears.&lt;br&gt;&lt;br&gt;You may continue in offline mode, or you can close all Unobtanium processes and restart Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4329"/>
-        <source>Armory has experienced an issue trying to communicate with the Bitcoin software.  The software is running in the background, but Armory cannot communicate with it through RPC as it expects to be able to.  If you changed any settings in the Bitcoin home directory, please make sure that RPC is enabled and that it is accepting connections from localhost.  &lt;br&gt;&lt;br&gt;If you have not changed anything, please export the log file (from the &quot;File&quot; menu) and open an issue at https://github.com/goatpig/BitcoinArmory/issues</source>
+        <source>Armory has experienced an issue trying to communicate with the Unobtanium software.  The software is running in the background, but Armory cannot communicate with it through RPC as it expects to be able to.  If you changed any settings in the Unobtanium home directory, please make sure that RPC is enabled and that it is accepting connections from localhost.  &lt;br&gt;&lt;br&gt;If you have not changed anything, please export the log file (from the &quot;File&quot; menu) and open an issue at https://github.com/goatpig/UnobtaniumArmory/issues</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4340"/>
-        <source>Armory does not detect internet access, but it does detect running Bitcoin software.  Armory is in offline-mode. &lt;br&gt;&lt;br&gt;If you are intending to run an offline system, you will not need to have the Bitcoin software installed on the offline computer.  It is only needed for the online computer. If you expected to be online and the absence of internet is an error, please restart Armory using the &quot;--skip-online-check&quot; option.  </source>
+        <source>Armory does not detect internet access, but it does detect running Unobtanium software.  Armory is in offline-mode. &lt;br&gt;&lt;br&gt;If you are intending to run an offline system, you will not need to have the Unobtanium software installed on the offline computer.  It is only needed for the online computer. If you expected to be online and the absence of internet is an error, please restart Armory using the &quot;--skip-online-check&quot; option.  </source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4350"/>
-        <source>Armory was started in offline-mode, but detected you are running Bitcoin software.  If you are intending to run an offline system, you will &lt;u&gt;not&lt;/u&gt; need to have the Bitcoin software installed or running on the offline computer.  It is only required for being online. </source>
+        <source>Armory was started in offline-mode, but detected you are running Unobtanium software.  If you are intending to run an offline system, you will &lt;u&gt;not&lt;/u&gt; need to have the Unobtanium software installed or running on the offline computer.  It is only required for being online. </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1084,7 +1084,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4523"/>
-        <source>Cannot find Bitcoin Home Directory</source>
+        <source>Cannot find Unobtanium Home Directory</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1094,7 +1094,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4553"/>
-        <source>Initializing Bitcoin Engine</source>
+        <source>Initializing Unobtanium Engine</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1139,7 +1139,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4807"/>
-        <source>Disconnected from Bitcoin Node, cannot update history &lt;br&gt;&lt;br&gt;Last known block: %1 &lt;br&gt;Received %2 ago</source>
+        <source>Disconnected from Unobtanium Node, cannot update history &lt;br&gt;&lt;br&gt;Last known block: %1 &lt;br&gt;Received %2 ago</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1169,7 +1169,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4999"/>
-        <source>Connection to Bitcoin Core client lost!  Armory cannot send nor receive bitcoins until connection is re-established.</source>
+        <source>Connection to Unobtanium Core client lost!  Armory cannot send nor receive bitcoins until connection is re-established.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1179,7 +1179,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5005"/>
-        <source>Connection to Bitcoin Core re-established</source>
+        <source>Connection to Unobtanium Core re-established</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1199,7 +1199,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5247"/>
-        <source>Bitcoins Received!</source>
+        <source>Unobtaniums Received!</source>
         <translation>Получены биткоины!</translation>
     </message>
     <message>
@@ -1214,7 +1214,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="5265"/>
-        <source>Bitcoins Sent!</source>
+        <source>Unobtaniums Sent!</source>
         <translation>Биткоины отправлены!</translation>
     </message>
     <message>
@@ -1314,17 +1314,17 @@
     </message>
     <message numerus="yes">
         <location filename="ArmoryQt.py" line="4307"/>
-        <source>The software is downloading and processing the latest activity on the network related to your wallet(s).  This should take only a few minutes.  While you wait, you can manage your wallet(s).  &lt;br&gt;&lt;br&gt;Now would be a good time to make paper (or digital) backups of your wallet(s) if you have not done so already!  You are protected &lt;i&gt;forever&lt;/i&gt; from hard-drive loss, or forgetting you password. If you do not have a backup, you could lose all of your Bitcoins forever!</source>
+        <source>The software is downloading and processing the latest activity on the network related to your wallet(s).  This should take only a few minutes.  While you wait, you can manage your wallet(s).  &lt;br&gt;&lt;br&gt;Now would be a good time to make paper (or digital) backups of your wallet(s) if you have not done so already!  You are protected &lt;i&gt;forever&lt;/i&gt; from hard-drive loss, or forgetting you password. If you do not have a backup, you could lose all of your Unobtaniums forever!</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4044"/>
-        <source>The following functionalities are available while scanning in offline mode:&lt;ul&gt;&lt;li&gt;Create new wallets&lt;/li&gt;&lt;li&gt;Generate receiving addresses for your wallets&lt;/li&gt;&lt;li&gt;Create backups of your wallets (printed or digital)&lt;/li&gt;&lt;li&gt;Change wallet encryption settings&lt;/li&gt;&lt;li&gt;Sign transactions created from an online system&lt;/li&gt;&lt;li&gt;Sign messages&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt;  The Bitcoin network &lt;u&gt;will&lt;/u&gt; process transactions to your addresses, even if you are offline.  It is perfectly okay to create and distribute payment addresses while Armory is offline, you just won&apos;t be able to verify those payments until the next time Armory is online.</source>
+        <source>The following functionalities are available while scanning in offline mode:&lt;ul&gt;&lt;li&gt;Create new wallets&lt;/li&gt;&lt;li&gt;Generate receiving addresses for your wallets&lt;/li&gt;&lt;li&gt;Create backups of your wallets (printed or digital)&lt;/li&gt;&lt;li&gt;Change wallet encryption settings&lt;/li&gt;&lt;li&gt;Sign transactions created from an online system&lt;/li&gt;&lt;li&gt;Sign messages&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt;  The Unobtanium network &lt;u&gt;will&lt;/u&gt; process transactions to your addresses, even if you are offline.  It is perfectly okay to create and distribute payment addresses while Armory is offline, you just won&apos;t be able to verify those payments until the next time Armory is online.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4060"/>
-        <source>The following functionalities are available in offline mode:&lt;ul&gt;&lt;li&gt;Create, import or recover wallets&lt;/li&gt;&lt;li&gt;Generate new receiving addresses for your wallets&lt;/li&gt;&lt;li&gt;Create backups of your wallets (printed or digital)&lt;/li&gt;&lt;li&gt;Import private keys to wallets&lt;/li&gt;&lt;li&gt;Change wallet encryption settings&lt;/li&gt;&lt;li&gt;Sign messages&lt;/li&gt;&lt;li&gt;&lt;b&gt;Sign transactions created from an online system&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt;  The Bitcoin network &lt;u&gt;will&lt;/u&gt; process transactions to your addresses, regardless of whether you are online.  It is perfectly okay to create and distribute payment addresses while Armory is offline, you just won&apos;t be able to verify those payments until the next time Armory is online.</source>
+        <source>The following functionalities are available in offline mode:&lt;ul&gt;&lt;li&gt;Create, import or recover wallets&lt;/li&gt;&lt;li&gt;Generate new receiving addresses for your wallets&lt;/li&gt;&lt;li&gt;Create backups of your wallets (printed or digital)&lt;/li&gt;&lt;li&gt;Import private keys to wallets&lt;/li&gt;&lt;li&gt;Change wallet encryption settings&lt;/li&gt;&lt;li&gt;Sign messages&lt;/li&gt;&lt;li&gt;&lt;b&gt;Sign transactions created from an online system&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt;  The Unobtanium network &lt;u&gt;will&lt;/u&gt; process transactions to your addresses, regardless of whether you are online.  It is perfectly okay to create and distribute payment addresses while Armory is offline, you just won&apos;t be able to verify those payments until the next time Armory is online.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1334,17 +1334,17 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4357"/>
-        <source>The Bitcoin software indicates there is a problem with its databases.  This can occur when Bitcoin Core/bitcoind is upgraded or downgraded, or sometimes just by chance after an unclean shutdown.&lt;br&gt;&lt;br&gt;You can either revert your installed Bitcoin software to the last known working version (but not earlier than version 0.8.1) or delete everything &lt;b&gt;except&lt;/b&gt; &quot;wallet.dat&quot; from your Bitcoin home directory &lt;font face=&quot;courier&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;If you choose to delete the contents of the Bitcoin home directory, you will have to do a fresh download of the blockchain again, which will require a few hours the first time.</source>
+        <source>The Unobtanium software indicates there is a problem with its databases.  This can occur when Unobtanium Core/bitcoind is upgraded or downgraded, or sometimes just by chance after an unclean shutdown.&lt;br&gt;&lt;br&gt;You can either revert your installed Unobtanium software to the last known working version (but not earlier than version 0.8.1) or delete everything &lt;b&gt;except&lt;/b&gt; &quot;wallet.dat&quot; from your Unobtanium home directory &lt;font face=&quot;courier&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;If you choose to delete the contents of the Unobtanium home directory, you will have to do a fresh download of the blockchain again, which will require a few hours the first time.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1936"/>
-        <source>It looks like you just clicked a &quot;bitcoin:&quot; link, but that link is malformed.</source>
+        <source>It looks like you just clicked a &quot;unobtanium:&quot; link, but that link is malformed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1938"/>
-        <source>It looks like you just entered a &quot;bitcoin:&quot; link, but that link is malformed.</source>
+        <source>It looks like you just entered a &quot;unobtanium:&quot; link, but that link is malformed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1429,7 +1429,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="565"/>
-        <source>Bitcoin Core is not available, so Armory will not be able to broadcast any transactions for you.</source>
+        <source>Unobtanium Core is not available, so Armory will not be able to broadcast any transactions for you.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1454,7 +1454,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="721"/>
-        <source>Armory is using the default Bitcoin directory because the Bitcoin directory specified in the command line could not be found.</source>
+        <source>Armory is using the default Unobtanium directory because the Unobtanium directory specified in the command line could not be found.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1489,7 +1489,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1004"/>
-        <source>&lt;br&gt;&lt;br&gt;Make sure you also restart Bitcoin Core (or bitcoind) and let it synchronize again before you restart Armory.  Doing so will clear its memory pool as well.</source>
+        <source>&lt;br&gt;&lt;br&gt;Make sure you also restart Unobtanium Core (or bitcoind) and let it synchronize again before you restart Armory.  Doing so will clear its memory pool as well.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1509,7 +1509,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1477"/>
-        <source>Armory is not set as your default application for handling &quot;bitcoin:&quot; links.  Would you like to use Armory as the default?</source>
+        <source>Armory is not set as your default application for handling &quot;unobtanium:&quot; links.  Would you like to use Armory as the default?</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1554,42 +1554,42 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1921"/>
-        <source>You clicked on a &quot;bitcoin:&quot; link, but Armory is in offline mode, and is not capable of creating transactions. Using links will only work if Armory is connected to the Bitcoin network!</source>
+        <source>You clicked on a &quot;unobtanium:&quot; link, but Armory is in offline mode, and is not capable of creating transactions. Using links will only work if Armory is connected to the Unobtanium network!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1927"/>
-        <source>You entered a &quot;bitcoin:&quot; link, but Armory is in offline mode, and is not capable of creating transactions. Using links will only work if Armory is connected to the Bitcoin network!</source>
+        <source>You entered a &quot;unobtanium:&quot; link, but Armory is in offline mode, and is not capable of creating transactions. Using links will only work if Armory is connected to the Unobtanium network!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1949"/>
-        <source>The &quot;bitcoin:&quot; link you just clicked does not even contain an address!  There is nothing that Armory can do with this link!</source>
+        <source>The &quot;unobtanium:&quot; link you just clicked does not even contain an address!  There is nothing that Armory can do with this link!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1953"/>
-        <source>The &quot;bitcoin:&quot; link you just entered does not even contain an address!  There is nothing that Armory can do with this link!</source>
+        <source>The &quot;unobtanium:&quot; link you just entered does not even contain an address!  There is nothing that Armory can do with this link!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1966"/>
-        <source>The address for the &quot;bitcoin:&quot; link you just clicked is for the wrong network!  You are on the &lt;b&gt;%2&lt;/b&gt; and the address you supplied is for the &lt;b&gt;%3&lt;/b&gt;!</source>
+        <source>The address for the &quot;unobtanium:&quot; link you just clicked is for the wrong network!  You are on the &lt;b&gt;%2&lt;/b&gt; and the address you supplied is for the &lt;b&gt;%3&lt;/b&gt;!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1985"/>
-        <source>The &quot;bitcoin:&quot; link you just clicked contains fields that are required but not recognized by Armory.  This may be an older version of Armory, or the link you clicked on uses an exotic, unsupported format. &lt;br&gt;&lt;br&gt;The action cannot be completed.</source>
+        <source>The &quot;unobtanium:&quot; link you just clicked contains fields that are required but not recognized by Armory.  This may be an older version of Armory, or the link you clicked on uses an exotic, unsupported format. &lt;br&gt;&lt;br&gt;The action cannot be completed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1991"/>
-        <source>The &quot;bitcoin:&quot; link you just entered contains fields that are required but not recognized by Armory.  This may be an older version of Armory, or the link you entered on uses an exotic, unsupported format. &lt;br&gt;&lt;br&gt;The action cannot be completed.</source>
+        <source>The &quot;unobtanium:&quot; link you just entered contains fields that are required but not recognized by Armory.  This may be an older version of Armory, or the link you entered on uses an exotic, unsupported format. &lt;br&gt;&lt;br&gt;The action cannot be completed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="2007"/>
-        <source>You just clicked on a &quot;bitcoin:&quot; link, but Armory is offline and cannot send transactions.  Please click the link again when Armory is online.</source>
+        <source>You just clicked on a &quot;unobtanium:&quot; link, but Armory is offline and cannot send transactions.  Please click the link again when Armory is online.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1694,7 +1694,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3383"/>
-        <source>You just clicked on a &quot;bitcoin:&quot; link requesting bitcoins to be sent to the following address:&lt;br&gt; </source>
+        <source>You just clicked on a &quot;unobtanium:&quot; link requesting bitcoins to be sent to the following address:&lt;br&gt; </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1709,7 +1709,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3419"/>
-        <source>You just clicked on a &quot;bitcoin:&quot; link to send money, but you currently have no wallets!  Would you like to create a wallet now?</source>
+        <source>You just clicked on a &quot;unobtanium:&quot; link to send money, but you currently have no wallets!  Would you like to create a wallet now?</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1729,52 +1729,52 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3613"/>
-        <source>The Bitcoin software appears to be installed now, but it needs to be closed for Armory to work.  Would you like Armory to close it for you?</source>
+        <source>The Unobtanium software appears to be installed now, but it needs to be closed for Armory to work.  Would you like Armory to close it for you?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3621"/>
-        <source>The Bitcoin software still appears to be missing.  If you just installed it, then please adjust your settings to point to the installation directory.</source>
+        <source>The Unobtanium software still appears to be missing.  If you just installed it, then please adjust your settings to point to the installation directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3628"/>
-        <source>Bitcoin Core is still running.  Armory cannot start until it is closed.  Do you want Armory to close it for you?</source>
+        <source>Unobtanium Core is still running.  Armory cannot start until it is closed.  Do you want Armory to close it for you?</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3784"/>
-        <source>Will open your default browser to https://bitcoin.org where you can download the latest version of Bitcoin Core, and get other information and links about Bitcoin, in general.</source>
+        <source>Will open your default browser to http://unobtanium.uno where you can download the latest version of Unobtanium Core, and get other information and links about Unobtanium, in general.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3788"/>
-        <source>Change Bitcoin Core/bitcoind management settings or point Armory to a non-standard Bitcoin installation</source>
+        <source>Change Unobtanium Core/bitcoind management settings or point Armory to a non-standard Unobtanium installation</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3791"/>
-        <source>Armory has detected a running Bitcoin Core or bitcoind instance and will force it to exit</source>
+        <source>Armory has detected a running Unobtanium Core or bitcoind instance and will force it to exit</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="3843"/>
-        <source>Attempted to kill the running Bitcoin Core/bitcoind instance, but it was not found.</source>
+        <source>Attempted to kill the running Unobtanium Core/bitcoind instance, but it was not found.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4103"/>
-        <source>For more information about Armory, and even Bitcoin itself, you should visit the &lt;a href=&quot;https://bitcointalk.org/index.php?board=97.0&quot;&gt;Armory Forum&lt;/a&gt; and &lt;a href=&quot;https://bitcoin.org&quot;&gt;Bitcoin.org&lt;/a&gt;.  If you are experiencing problems using this software, please visit the &lt;a href=&quot;https://bitcointalk.org/index.php?board=97.0&quot;&gt;Armory Forum&lt;/a&gt;. Users there will help you with any issues that you have. &lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;IMPORTANT:&lt;/u&gt;&lt;/b&gt; Make a backup of your wallet(s)!  Paper backups protect you &lt;i&gt;forever&lt;/i&gt; against forgotten passwords, hard-drive failure, and make it easy for your family to recover your funds if something terrible happens to you.  &lt;i&gt;Each wallet only needs to be backed up once, ever!&lt;/i&gt;  Without it, you are at risk of losing all of your Bitcoins! &lt;br&gt;&lt;br&gt;</source>
+        <source>For more information about Armory, and even Unobtanium itself, you should visit the &lt;a href=&quot;https://bitcointalk.org/index.php?board=97.0&quot;&gt;Armory Forum&lt;/a&gt; and &lt;a href=&quot;http://unobtanium.uno&quot;&gt;Unobtanium.org&lt;/a&gt;.  If you are experiencing problems using this software, please visit the &lt;a href=&quot;https://bitcointalk.org/index.php?board=97.0&quot;&gt;Armory Forum&lt;/a&gt;. Users there will help you with any issues that you have. &lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;IMPORTANT:&lt;/u&gt;&lt;/b&gt; Make a backup of your wallet(s)!  Paper backups protect you &lt;i&gt;forever&lt;/i&gt; against forgotten passwords, hard-drive failure, and make it easy for your family to recover your funds if something terrible happens to you.  &lt;i&gt;Each wallet only needs to be backed up once, ever!&lt;/i&gt;  Without it, you are at risk of losing all of your Unobtaniums! &lt;br&gt;&lt;br&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4381"/>
-        <source>There was an error starting the underlying Bitcoin engine. This should not normally happen.  Usually it occurs when you have been using Bitcoin Core prior to using Armory, especially if you have upgraded or downgraded Bitcoin Core recently. Output from bitcoind:&lt;br&gt;</source>
+        <source>There was an error starting the underlying Unobtanium engine. This should not normally happen.  Usually it occurs when you have been using Unobtanium Core prior to using Armory, especially if you have upgraded or downgraded Unobtanium Core recently. Output from bitcoind:&lt;br&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4390"/>
-        <source>There was an error starting the underlying Bitcoin engine. This should not normally happen.  Usually it occurs when you have been using Bitcoin Core prior to using Armory, especially if you have upgraded or downgraded Bitcoin Core recently. &lt;br&gt;&lt;br&gt; Unfortunately, this error is so strange, Armory does not recognize it.  Please go to &quot;Export Log File&quot; from the &quot;File&quot; menu and submit an issue at https://github.com/goatpig/BitcoinArmory/issues. We apologize for the inconvenience!</source>
+        <source>There was an error starting the underlying Unobtanium engine. This should not normally happen.  Usually it occurs when you have been using Unobtanium Core prior to using Armory, especially if you have upgraded or downgraded Unobtanium Core recently. &lt;br&gt;&lt;br&gt; Unfortunately, this error is so strange, Armory does not recognize it.  Please go to &quot;Export Log File&quot; from the &quot;File&quot; menu and submit an issue at https://github.com/goatpig/UnobtaniumArmory/issues. We apologize for the inconvenience!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1799,7 +1799,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="1972"/>
-        <source>The address for the &quot;bitcoin:&quot; link you just entered is for the wrong network!  You are on the &lt;b&gt;%2&lt;/b&gt; and the address you supplied is for the &lt;b&gt;%3&lt;/b&gt;!</source>
+        <source>The address for the &quot;unobtanium:&quot; link you just entered is for the wrong network!  You are on the &lt;b&gt;%2&lt;/b&gt; and the address you supplied is for the &lt;b&gt;%3&lt;/b&gt;!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1809,7 +1809,7 @@
     </message>
     <message>
         <location filename="ArmoryQt.py" line="4287"/>
-        <source>&lt;b&gt;To maximize your security, the Bitcoin engine is downloading and verifying the global transaction ledger.  &lt;u&gt;This will take several hours, but only needs to be done once&lt;/u&gt;!&lt;/b&gt;  It is usually best to leave it running over night for this initialization process.  Subsequent loads will only take a few minutes. &lt;br&gt;&lt;br&gt; &lt;b&gt;Please Note:&lt;/b&gt; Between Armory and the underlying Bitcoin engine, you need to have 120-130 GB of spare disk space available to hold the global transaction history. &lt;br&gt;&lt;br&gt; While you wait, you can manage your wallets.  Make new wallets, make digital or paper backups, create Bitcoin addresses to receive payments, sign messages, and/or import private keys.  You will always receive Bitcoin payments regardless of whether you are online, but you will have to verify that payment through another service until Armory is finished this initialization.</source>
+        <source>&lt;b&gt;To maximize your security, the Unobtanium engine is downloading and verifying the global transaction ledger.  &lt;u&gt;This will take several hours, but only needs to be done once&lt;/u&gt;!&lt;/b&gt;  It is usually best to leave it running over night for this initialization process.  Subsequent loads will only take a few minutes. &lt;br&gt;&lt;br&gt; &lt;b&gt;Please Note:&lt;/b&gt; Between Armory and the underlying Unobtanium engine, you need to have 120-130 GB of spare disk space available to hold the global transaction history. &lt;br&gt;&lt;br&gt; While you wait, you can manage your wallets.  Make new wallets, make digital or paper backups, create Unobtanium addresses to receive payments, sign messages, and/or import private keys.  You will always receive Unobtanium payments regardless of whether you are online, but you will have to verify that payment through another service until Armory is finished this initialization.</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">
@@ -2062,7 +2062,7 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="8054"/>
-        <source>Bare multi-sig is not available for M-of-N lockboxes on the main Bitcoin network with N higher than 3.</source>
+        <source>Bare multi-sig is not available for M-of-N lockboxes on the main Unobtanium network with N higher than 3.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2261,7 +2261,7 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="7105"/>
-        <source>Armory was not able to detect the presence of Bitcoin Core or bitcoind client software (available at https://bitcoin.org).  Please make sure that the one of those programs is... &lt;br&gt; &lt;br&gt;&lt;b&gt;(1)&lt;/b&gt; ...open and connected to the network &lt;br&gt;&lt;b&gt;(2)&lt;/b&gt; ...on the same network as Armory (main-network or test-network) &lt;br&gt;&lt;b&gt;(3)&lt;/b&gt; ...synchronized with the blockchain before starting Armory&lt;br&gt;&lt;br&gt;Without the Bitcoin Core or bitcoind open, you will only be able to run Armory in &quot;Offline&quot; mode, which will not have access to new blockchain data, and you will not be able to send outgoing transactions&lt;br&gt;&lt;br&gt;If you do not want to be in &quot;Offline&quot; mode, please restart Armory after one of these programs is open and synchronized with the network</source>
+        <source>Armory was not able to detect the presence of Unobtanium Core or bitcoind client software (available at http://unobtanium.uno).  Please make sure that the one of those programs is... &lt;br&gt; &lt;br&gt;&lt;b&gt;(1)&lt;/b&gt; ...open and connected to the network &lt;br&gt;&lt;b&gt;(2)&lt;/b&gt; ...on the same network as Armory (main-network or test-network) &lt;br&gt;&lt;b&gt;(3)&lt;/b&gt; ...synchronized with the blockchain before starting Armory&lt;br&gt;&lt;br&gt;Without the Unobtanium Core or bitcoind open, you will only be able to run Armory in &quot;Offline&quot; mode, which will not have access to new blockchain data, and you will not be able to send outgoing transactions&lt;br&gt;&lt;br&gt;If you do not want to be in &quot;Offline&quot; mode, please restart Armory after one of these programs is open and synchronized with the network</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2294,7 +2294,7 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="13615"/>
-        <source>Copy a raw, hex-encoded transaction below to have Armory broadcast it to the Bitcoin network.  This function is provided as a convenience to expert users, and carries no guarantees of usefulness. &lt;br&gt;&lt;br&gt;Specifically, be aware of the following limitations of this broadcast function: &lt;ul&gt;&lt;li&gt;The transaction will be &quot;broadcast&quot; by sending it to the connected Bitcon Core instance which will forward it to the rest of the Bitcoin network. However, if the transaction is non-standard or does not satisfy standard fee rules, Bitcoin Core &lt;u&gt;will&lt;/u&gt; drop it and it will never be seen by the Bitcoin network. &lt;/li&gt;&lt;li&gt;There will be no feedback as to whether the transaction succeeded.  You will have to verify the success of this operation via other means. However, if the transaction sends funds directly to or from an address in one of your wallets, it will still generate a notification and show up in your transaction history for that wallet. &lt;/li&gt;&lt;/ul&gt;</source>
+        <source>Copy a raw, hex-encoded transaction below to have Armory broadcast it to the Unobtanium network.  This function is provided as a convenience to expert users, and carries no guarantees of usefulness. &lt;br&gt;&lt;br&gt;Specifically, be aware of the following limitations of this broadcast function: &lt;ul&gt;&lt;li&gt;The transaction will be &quot;broadcast&quot; by sending it to the connected Bitcon Core instance which will forward it to the rest of the Unobtanium network. However, if the transaction is non-standard or does not satisfy standard fee rules, Unobtanium Core &lt;u&gt;will&lt;/u&gt; drop it and it will never be seen by the Unobtanium network. &lt;/li&gt;&lt;li&gt;There will be no feedback as to whether the transaction succeeded.  You will have to verify the success of this operation via other means. However, if the transaction sends funds directly to or from an address in one of your wallets, it will still generate a notification and show up in your transaction history for that wallet. &lt;/li&gt;&lt;/ul&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2304,7 +2304,7 @@
     </message>
     <message>
         <location filename="qtdialogs.py" line="13729"/>
-        <source>Your transaction was successfully sent to the local Bitcoin Core instance, though there is no guarantees that it was forwarded to the rest of the network.   On testnet, just about every valid transaction will successfully propagate.  On the main Bitcoin network, this will fail unless it was a standard transaction type. The transaction had the following hash: &lt;br&gt;&lt;br&gt; %1 &lt;br&gt;&lt;br&gt;You can check whether it was seen by other nodes on the network with the link below: &lt;br&gt;&lt;br&gt;&lt;a href=&quot;%2&quot;&gt;%3&lt;/a&gt;</source>
+        <source>Your transaction was successfully sent to the local Unobtanium Core instance, though there is no guarantees that it was forwarded to the rest of the network.   On testnet, just about every valid transaction will successfully propagate.  On the main Unobtanium network, this will fail unless it was a standard transaction type. The transaction had the following hash: &lt;br&gt;&lt;br&gt; %1 &lt;br&gt;&lt;br&gt;You can check whether it was seen by other nodes on the network with the link below: &lt;br&gt;&lt;br&gt;&lt;a href=&quot;%2&quot;&gt;%3&lt;/a&gt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2716,7 +2716,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3127"/>
-        <source>Use this form to create a &quot;promissory note&quot; which can be combined with notes from other parties to fund an address or lockbox simultaneously (&lt;i&gt;&quot;simulfunding&quot;&lt;/i&gt;).  This funding transaction will not be valid until all promissory notes are merged into a single transaction, then all funding parties will review and sign it.&lt;br&gt;&lt;br&gt;If this lockbox is being funded by only one party, using this interface is unnecessary.  Have the funding party send Bitcoins to the destination address or lockbox in the normal way.</source>
+        <source>Use this form to create a &quot;promissory note&quot; which can be combined with notes from other parties to fund an address or lockbox simultaneously (&lt;i&gt;&quot;simulfunding&quot;&lt;/i&gt;).  This funding transaction will not be valid until all promissory notes are merged into a single transaction, then all funding parties will review and sign it.&lt;br&gt;&lt;br&gt;If this lockbox is being funded by only one party, using this interface is unnecessary.  Have the funding party send Unobtaniums to the destination address or lockbox in the normal way.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2751,7 +2751,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3369"/>
-        <source>Bitcoins can only be specified down to 8 decimal places. The smallest value that can be sent is  0.0000 0001 BTC. Please enter a new amount</source>
+        <source>Unobtaniums can only be specified down to 8 decimal places. The smallest value that can be sent is  0.0000 0001 BTC. Please enter a new amount</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2771,7 +2771,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3399"/>
-        <source>There was an error constructing your transaction, due to a quirk in the way Bitcoin transactions work.  If you see this error more than once, try sending your BTC in two or more separate transactions.</source>
+        <source>There was an error constructing your transaction, due to a quirk in the way Unobtanium transactions work.  If you see this error more than once, try sending your BTC in two or more separate transactions.</source>
         <translation type="unfinished"/>
     </message>
     <message encoding="UTF-8">
@@ -2829,7 +2829,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5381"/>
-        <source>Bitcoin Protocol Version Number</source>
+        <source>Unobtanium Protocol Version Number</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2894,7 +2894,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5476"/>
-        <source>Bitcoins were either sent or received, or sent-to-self</source>
+        <source>Unobtaniums were either sent or received, or sent-to-self</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3029,7 +3029,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="5505"/>
-        <source>Transaction fees go to users supplying the Bitcoin network with computing power for processing transactions and maintaining security.</source>
+        <source>Transaction fees go to users supplying the Unobtanium network with computing power for processing transactions and maintaining security.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3331,17 +3331,17 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="7573"/>
-        <source>The point you specified (&lt;b&gt;B&lt;/b&gt;) is not on the elliptic curve used in Bitcoin (secp256k1).</source>
+        <source>The point you specified (&lt;b&gt;B&lt;/b&gt;) is not on the elliptic curve used in Unobtanium (secp256k1).</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="7567"/>
-        <source>The point you specified (&lt;b&gt;A&lt;/b&gt;) is not on the elliptic curve used in Bitcoin (secp256k1).</source>
+        <source>The point you specified (&lt;b&gt;A&lt;/b&gt;) is not on the elliptic curve used in Unobtanium (secp256k1).</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="7476"/>
-        <source>Use this form to perform Bitcoin elliptic curve calculations.  All operations are performed on the secp256k1 elliptic curve, which is the one used for Bitcoin. Supply all values as 32-byte, big-endian, hex-encoded integers. &lt;br&gt;&lt;br&gt;The following is the secp256k1 generator point coordinates (G): &lt;br&gt; &lt;b&gt;G&lt;/b&gt;&lt;sub&gt;x&lt;/sub&gt;: %1 &lt;br&gt; &lt;b&gt;G&lt;/b&gt;&lt;sub&gt;y&lt;/sub&gt;: %2</source>
+        <source>Use this form to perform Unobtanium elliptic curve calculations.  All operations are performed on the secp256k1 elliptic curve, which is the one used for Unobtanium. Supply all values as 32-byte, big-endian, hex-encoded integers. &lt;br&gt;&lt;br&gt;The following is the secp256k1 generator point coordinates (G): &lt;br&gt; &lt;b&gt;G&lt;/b&gt;&lt;sub&gt;x&lt;/sub&gt;: %1 &lt;br&gt; &lt;b&gt;G&lt;/b&gt;&lt;sub&gt;y&lt;/sub&gt;: %2</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -3369,7 +3369,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="3535"/>
-        <source>&lt;b&gt;Armory Bitcoin Client is licensed in part under the &lt;i&gt;Affero General Public License, Version 3 (AGPLv3)&lt;/i&gt; and in part under the &lt;i&gt;MIT License&lt;/i&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;Additionally, as a condition of receiving this software for free, you accept all risks associated with using it and the developers of Armory will not be held liable for any loss of money or bitcoins due to software defects. &lt;br&gt;&lt;br&gt;&lt;b&gt;Please read the full terms of the license and indicate your agreement with its terms.&lt;/b&gt;</source>
+        <source>&lt;b&gt;Armory Unobtanium Client is licensed in part under the &lt;i&gt;Affero General Public License, Version 3 (AGPLv3)&lt;/i&gt; and in part under the &lt;i&gt;MIT License&lt;/i&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;Additionally, as a condition of receiving this software for free, you accept all risks associated with using it and the developers of Armory will not be held liable for any loss of money or bitcoins due to software defects. &lt;br&gt;&lt;br&gt;&lt;b&gt;Please read the full terms of the license and indicate your agreement with its terms.&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -3811,7 +3811,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="13347"/>
-        <source>&lt;b&gt;&lt;u&gt;Armory Factory Reset&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;It is &lt;i&gt;strongly&lt;/i&gt; recommended that you make backups of your wallets before continuing, though &lt;b&gt;wallet files will never be intentionally deleted!&lt;/b&gt;  All Armory wallet files, and the wallet.dat file used by Bitcoin Core/bitcoind should remain untouched in their current locations.  All Armory wallets will automatically be detected and loaded after the reset. &lt;br&gt;&lt;br&gt;If you are not sure which option to pick, try the &quot;lightest option&quot; first, and see if your problems are resolved before trying the more extreme options.</source>
+        <source>&lt;b&gt;&lt;u&gt;Armory Factory Reset&lt;/u&gt;&lt;/b&gt; &lt;br&gt;&lt;br&gt;It is &lt;i&gt;strongly&lt;/i&gt; recommended that you make backups of your wallets before continuing, though &lt;b&gt;wallet files will never be intentionally deleted!&lt;/b&gt;  All Armory wallet files, and the wallet.dat file used by Unobtanium Core/bitcoind should remain untouched in their current locations.  All Armory wallets will automatically be detected and loaded after the reset. &lt;br&gt;&lt;br&gt;If you are not sure which option to pick, try the &quot;lightest option&quot; first, and see if your problems are resolved before trying the more extreme options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3836,7 +3836,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="13378"/>
-        <source>This will delete settings, network data, Armory&apos;s databases, &lt;b&gt;and&lt;/b&gt; Bitcoin Core&apos;s databases.  Bitcoin Core will have to download the blockchain again. This can take 8-72 hours depending on your system&apos;s speed and connection.  Only use this if you suspect blockchain corruption, such as receiving StdOut/StdErr errors on the dashboard.</source>
+        <source>This will delete settings, network data, Armory&apos;s databases, &lt;b&gt;and&lt;/b&gt; Unobtanium Core&apos;s databases.  Unobtanium Core will have to download the blockchain again. This can take 8-72 hours depending on your system&apos;s speed and connection.  Only use this if you suspect blockchain corruption, such as receiving StdOut/StdErr errors on the dashboard.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3856,7 +3856,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="13505"/>
-        <source>&lt;b&gt;Bitcoin Core (or bitcoind) must be closed to do the reset!&lt;/b&gt; Please close all Bitcoin software, &lt;u&gt;&lt;b&gt;right now&lt;/b&gt;&lt;/u&gt;, before clicking &quot;Continue&quot;. &lt;br&gt;&lt;br&gt;Armory will now close.  Please restart Bitcoin Core/bitcoind first and wait for it to finish synchronizing before restarting Armory.</source>
+        <source>&lt;b&gt;Unobtanium Core (or bitcoind) must be closed to do the reset!&lt;/b&gt; Please close all Unobtanium software, &lt;u&gt;&lt;b&gt;right now&lt;/b&gt;&lt;/u&gt;, before clicking &quot;Continue&quot;. &lt;br&gt;&lt;br&gt;Armory will now close.  Please restart Unobtanium Core/bitcoind first and wait for it to finish synchronizing before restarting Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3876,12 +3876,12 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="13484"/>
-        <source>You are about to delete your settings and delete &lt;b&gt;all&lt;/b&gt; blockchain databases on your system.  The Bitcoin software will have to redownload all of the blockchain data over the peer-to-peer network again. This can take from 8 to 72 hours depending on your system&apos;s speed and connection.  &lt;br&gt;&lt;br&gt;&lt;b&gt;Are you absolutely sure you want to do this?&lt;/b&gt;</source>
+        <source>You are about to delete your settings and delete &lt;b&gt;all&lt;/b&gt; blockchain databases on your system.  The Unobtanium software will have to redownload all of the blockchain data over the peer-to-peer network again. This can take from 8 to 72 hours depending on your system&apos;s speed and connection.  &lt;br&gt;&lt;br&gt;&lt;b&gt;Are you absolutely sure you want to do this?&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="13476"/>
-        <source>You are about to delete &lt;b&gt;all&lt;/b&gt; blockchain databases on your system.  The Bitcoin software will have to redownload all of the blockchain data over the peer-to-peer network again. This can take from 8 to 72 hours depending on your system&apos;s speed and connection.  &lt;br&gt;&lt;br&gt;&lt;b&gt;Are you absolutely sure you want to do this?&lt;/b&gt;</source>
+        <source>You are about to delete &lt;b&gt;all&lt;/b&gt; blockchain databases on your system.  The Unobtanium software will have to redownload all of the blockchain data over the peer-to-peer network again. This can take from 8 to 72 hours depending on your system&apos;s speed and connection.  &lt;br&gt;&lt;br&gt;&lt;b&gt;Are you absolutely sure you want to do this?&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -4076,7 +4076,7 @@ random letters, or 5 or more random words.
     <name>DlgHelpAbout</name>
     <message>
         <location filename="qtdialogs.py" line="8249"/>
-        <source>Armory Bitcoin Wallet : Version %1-beta-%2</source>
+        <source>Armory Unobtanium Wallet : Version %1-beta-%2</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4134,7 +4134,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="2636"/>
-        <source>The private key you have entered is actually not valid for the elliptic curve used by Bitcoin (secp256k1). Almost any 64-character hex is a valid private key &lt;b&gt;except&lt;/b&gt; for those greater than: &lt;br&gt;&lt;br&gt;fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141&lt;br&gt;&lt;br&gt;Please try a different private key.</source>
+        <source>The private key you have entered is actually not valid for the elliptic curve used by Unobtanium (secp256k1). Almost any 64-character hex is a valid private key &lt;b&gt;except&lt;/b&gt; for those greater than: &lt;br&gt;&lt;br&gt;fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141&lt;br&gt;&lt;br&gt;Please try a different private key.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4219,7 +4219,7 @@ random letters, or 5 or more random words.
     </message>
     <message>
         <location filename="qtdialogs.py" line="2441"/>
-        <source>The key can either be imported into your wallet, or have its available balance &quot;swept&quot; to another address in your wallet.  Only import private key data if you are absolutely sure that no one else has access to it.  Otherwise, sweep it to get the funds out of it.  All standard private-key formats are supported &lt;i&gt;except for private keys created by Bitcoin Core version 0.6.0 and later (compressed)&lt;/i&gt;.</source>
+        <source>The key can either be imported into your wallet, or have its available balance &quot;swept&quot; to another address in your wallet.  Only import private key data if you are absolutely sure that no one else has access to it.  Otherwise, sweep it to get the funds out of it.  All standard private-key formats are supported &lt;i&gt;except for private keys created by Unobtanium Core version 0.6.0 and later (compressed)&lt;/i&gt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4273,9 +4273,9 @@ Select this option if someone else gave you this key</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2681"/>
-        <source>The key data you entered appears to correspond to the following Bitcoin address:
+        <source>The key data you entered appears to correspond to the following Unobtanium address:
 
- %1 
+ %1
 
 Is this the correct address?</source>
         <translation type="unfinished"/>
@@ -4292,7 +4292,7 @@ Is this the correct address?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2665"/>
-        <source>You entered a key for an address that uses a compressed public key, usually produced in Bitcoin Core/bitcoind wallets created after version 0.6.0.  Armory does not yet support this key type.</source>
+        <source>You entered a key for an address that uses a compressed public key, usually produced in Unobtanium Core/bitcoind wallets created after version 0.6.0.  Armory does not yet support this key type.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4329,7 +4329,7 @@ Is this the correct address?</source>
         <location filename="qtdialogs.py" line="2693"/>
         <source>It is possible that the key was supplied in a &quot;reversed&quot; form.  When the data you provide is reversed, the following address is obtained:
 
- %1 
+ %1
 
 Is this the correct address?</source>
         <translation type="unfinished"/>
@@ -4515,19 +4515,19 @@ Is this the correct address?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3797"/>
-        <source>The data you entered is for a wallet with a ID: 
+        <source>The data you entered is for a wallet with a ID:
 
- %1 
+ %1
 
-You already own this wallet! 
+You already own this wallet!
   Nothing to do...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3806"/>
-        <source>The data you entered corresponds to a wallet with a wallet ID: 
+        <source>The data you entered corresponds to a wallet with a wallet ID:
 
- %1 
+ %1
 
 Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup?  If not, click &quot;No&quot; and reenter key and chain-code data again.</source>
         <translation type="unfinished"/>
@@ -4628,12 +4628,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="3587"/>
-        <source>&lt;i&gt;The most advanced Bitcoin Client on Earth!&lt;/i&gt;</source>
+        <source>&lt;i&gt;The most advanced Unobtanium Client on Earth!&lt;/i&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="3590"/>
-        <source>&lt;b&gt;You are about to use the most secure and feature-rich Bitcoin clientsoftware available!&lt;/b&gt;  But please remember, this softwareis still &lt;i&gt;Beta&lt;/i&gt; - Armory developers will not be held responsiblefor loss of bitcoins resulting from the use of this software!&lt;br&gt;&lt;br&gt;</source>
+        <source>&lt;b&gt;You are about to use the most secure and feature-rich Unobtanium clientsoftware available!&lt;/b&gt;  But please remember, this softwareis still &lt;i&gt;Beta&lt;/i&gt; - Armory developers will not be held responsiblefor loss of bitcoins resulting from the use of this software!&lt;br&gt;&lt;br&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4824,7 +4824,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="44"/>
-        <source>&lt;b&gt;&lt;u&gt;NOTE:&lt;/u&gt; Multi-sig &quot;lockboxes&quot; require &lt;u&gt;public keys&lt;/u&gt;, not the address strings most Bitcoin users are familiar with.&lt;/b&gt; &lt;a href=&quot;None&quot;&gt;Click for more info&lt;/a&gt;.</source>
+        <source>&lt;b&gt;&lt;u&gt;NOTE:&lt;/u&gt; Multi-sig &quot;lockboxes&quot; require &lt;u&gt;public keys&lt;/u&gt;, not the address strings most Unobtanium users are familiar with.&lt;/b&gt; &lt;a href=&quot;None&quot;&gt;Click for more info&lt;/a&gt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5252,7 +5252,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1188"/>
-        <source>Anyone can send funds to this lockbox using this Bitcoin address: &lt;br&gt;&lt;b&gt;%1&lt;/b&gt;</source>
+        <source>Anyone can send funds to this lockbox using this Unobtanium address: &lt;br&gt;&lt;b&gt;%1&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5262,7 +5262,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="1454"/>
-        <source>You are about to request payment to a &quot;P2SH&quot; address which is the format used for receiving to multi-signature addresses/lockboxes.  &quot;P2SH&quot; are like regular Bitcoin  addresses but start with %1 instead of %2. &lt;br&gt;&lt;br&gt;Unfortunately, not all software and services support sending to P2SH addresses.  If the sender or service indicates an error sending to this address, you might have to request payment to a regular wallet address and then send the funds from that wallet to the lockbox once it is confirmed.</source>
+        <source>You are about to request payment to a &quot;P2SH&quot; address which is the format used for receiving to multi-signature addresses/lockboxes.  &quot;P2SH&quot; are like regular Unobtanium  addresses but start with %1 instead of %2. &lt;br&gt;&lt;br&gt;Unfortunately, not all software and services support sending to P2SH addresses.  If the sender or service indicates an error sending to this address, you might have to request payment to a regular wallet address and then send the funds from that wallet to the lockbox once it is confirmed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5511,7 +5511,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="2321"/>
-        <source>Bitcoins sent to this address will appear in the wallet:</source>
+        <source>Unobtaniums sent to this address will appear in the wallet:</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -5695,7 +5695,7 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     </message>
     <message>
         <location filename="qtdialogs.py" line="4728"/>
-        <source>Send a pre-signed transaction to the Bitcoin network to finalize it</source>
+        <source>Send a pre-signed transaction to the Unobtanium network to finalize it</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -5920,7 +5920,7 @@ Anyone who gets hold of your paper backup will be able to spend the money in you
     <name>DlgRegAndTest</name>
     <message>
         <location filename="qtdialogs.py" line="13778"/>
-        <source>Error: You cannot run the Regression Test network and Bitcoin Test Network at the same time.</source>
+        <source>Error: You cannot run the Regression Test network and Unobtanium Test Network at the same time.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -6190,12 +6190,12 @@ Are you absolutely sure you want to delete %1 ?</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9456"/>
-        <source>Create a clickable link that you can copy into email or webpage to request a payment.   If the user is running a Bitcoin program that supports &quot;bitcoin:&quot; links, that program will open with all this information pre-filled after they click the link.</source>
+        <source>Create a clickable link that you can copy into email or webpage to request a payment.   If the user is running a Unobtanium program that supports &quot;unobtanium:&quot; links, that program will open with all this information pre-filled after they click the link.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="9466"/>
-        <source>The following Bitcoin desktop applications &lt;i&gt;try&lt;/i&gt; to register themselves with your computer to handle &quot;bitcoin:&quot; links: Armory, Multibit, Electrum</source>
+        <source>The following Unobtanium desktop applications &lt;i&gt;try&lt;/i&gt; to register themselves with your computer to handle &quot;unobtanium:&quot; links: Armory, Multibit, Electrum</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6712,7 +6712,7 @@ Enter: &lt;Number&gt; (kB, MB)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="11211"/>
-        <source>The data you entered corresponds to a wallet with a wallet ID: 
+        <source>The data you entered corresponds to a wallet with a wallet ID:
 
 %1
 
@@ -6824,7 +6824,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; printed on your paper backup
     </message>
     <message>
         <location filename="qtdialogs.py" line="11513"/>
-        <source>The data you entered corresponds to a wallet with a wallet ID: 
+        <source>The data you entered corresponds to a wallet with a wallet ID:
 
 <byte value="x9"/>%1
 
@@ -6896,7 +6896,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="3854"/>
-        <source>The buttons below link you to all the functionality needed to create, fund and spend from multi-sig &quot;lockboxes.&quot;  This includes turning multiple wallets into a multi-factor lock-box for your personal coins, or can be used for escrow between multiple parties, using the Bitcoin network itself to hold the escrow.&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;IMPORTANT:&lt;/u&gt;&lt;/b&gt;  If you are using an lockbox that requires being funded by multiple parties simultaneously, you should &lt;b&gt;&lt;u&gt;not&lt;/u&gt; &lt;/b&gt; use regular transactions to do the funding. You should use the third button labeled &quot;Fund a multi-sig lockbox&quot; to collect funding promises into a single transaction, to limit the ability of any party to scam you.  Read more about it by clicking [NO LINK YET]  (if the above doesn&apos;t hold, you can use the regular &quot;Send Bitcoins&quot; dialog to fund the lockbox).</source>
+        <source>The buttons below link you to all the functionality needed to create, fund and spend from multi-sig &quot;lockboxes.&quot;  This includes turning multiple wallets into a multi-factor lock-box for your personal coins, or can be used for escrow between multiple parties, using the Unobtanium network itself to hold the escrow.&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;IMPORTANT:&lt;/u&gt;&lt;/b&gt;  If you are using an lockbox that requires being funded by multiple parties simultaneously, you should &lt;b&gt;&lt;u&gt;not&lt;/u&gt; &lt;/b&gt; use regular transactions to do the funding. You should use the third button labeled &quot;Fund a multi-sig lockbox&quot; to collect funding promises into a single transaction, to limit the ability of any party to scam you.  Read more about it by clicking [NO LINK YET]  (if the above doesn&apos;t hold, you can use the regular &quot;Send Unobtaniums&quot; dialog to fund the lockbox).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6954,7 +6954,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2146"/>
-        <source>&lt;center&gt;&lt;font size=4&gt;&lt;b&gt;&lt;u&gt;Select Public Key for Lockbox Creation&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;/center&gt; &lt;br&gt;Lockbox creation requires &lt;b&gt;public keys&lt;/b&gt; not the regular Bitcoin addresses most users are accustomed to.  A public key is much longer than a regular bitcoin address, usually starting with &quot;02&quot;, &quot;03&quot; or &quot;04&quot;.  Once you have selected a public key, send it to the lockbox organizer (person or device).  The organizer will create the lockbox which then must be imported by all devices that will track the funds and/or sign transactions. &lt;br&gt;&lt;br&gt;It is recommended that you select a &lt;i&gt;new&lt;/i&gt; key from one of your wallets that will not be used for any other purpose. You &lt;u&gt;can&lt;/u&gt; use a public key from a watching-only wallet (for an offline wallet), but you will have to sign the transactions the same way you would a regular offline transaction.  Additionally the offline computer will need to have Armory version 0.92 or later. &lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;BACKUP WARNING&lt;/font&gt;&lt;/b&gt;: It is highly recommended that you select a public key from a wallet for which you have good backups!  If you are creating a lockbox requiring the same number of signatures as there are authorities (such as 2-of-2 or 3-of-3), the loss of the wallet &lt;u&gt;will&lt;/u&gt; lead to loss of lockbox funds!</source>
+        <source>&lt;center&gt;&lt;font size=4&gt;&lt;b&gt;&lt;u&gt;Select Public Key for Lockbox Creation&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;/center&gt; &lt;br&gt;Lockbox creation requires &lt;b&gt;public keys&lt;/b&gt; not the regular Unobtanium addresses most users are accustomed to.  A public key is much longer than a regular bitcoin address, usually starting with &quot;02&quot;, &quot;03&quot; or &quot;04&quot;.  Once you have selected a public key, send it to the lockbox organizer (person or device).  The organizer will create the lockbox which then must be imported by all devices that will track the funds and/or sign transactions. &lt;br&gt;&lt;br&gt;It is recommended that you select a &lt;i&gt;new&lt;/i&gt; key from one of your wallets that will not be used for any other purpose. You &lt;u&gt;can&lt;/u&gt; use a public key from a watching-only wallet (for an offline wallet), but you will have to sign the transactions the same way you would a regular offline transaction.  Additionally the offline computer will need to have Armory version 0.92 or later. &lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;BACKUP WARNING&lt;/font&gt;&lt;/b&gt;: It is highly recommended that you select a public key from a wallet for which you have good backups!  If you are creating a lockbox requiring the same number of signatures as there are authorities (such as 2-of-2 or 3-of-3), the loss of the wallet &lt;u&gt;will&lt;/u&gt; lead to loss of lockbox funds!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6964,7 +6964,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="2253"/>
-        <source>You must enter a public key into the box, &lt;b&gt;not&lt;/b&gt; a regular Bitcoin address that most users are accustomed to.  A public key is much longer than a Bitcoin address, and always starts with &quot;02&quot;, &quot;03&quot; or &quot;04&quot;.</source>
+        <source>You must enter a public key into the box, &lt;b&gt;not&lt;/b&gt; a regular Unobtanium address that most users are accustomed to.  A public key is much longer than a Unobtanium address, and always starts with &quot;02&quot;, &quot;03&quot; or &quot;04&quot;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6974,10 +6974,10 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
 </context>
 <context>
-    <name>DlgSendBitcoins</name>
+    <name>DlgSendUnobtaniums</name>
     <message>
         <location filename="qtdialogs.py" line="4570"/>
-        <source>Send Bitcoins</source>
+        <source>Send Unobtaniums</source>
         <translation>Отправить биткоины</translation>
     </message>
 </context>
@@ -7068,7 +7068,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="MultiSigDialogs.py" line="579"/>
-        <source>If you are running any Bitcoin Core version earlier than 0.9.3 all spending transactions from this lockbox will be rejected as non-standard.  There will be no problem sending coins &lt;u&gt;to&lt;/u&gt; the lockbox, but subsequent spends &lt;u&gt;from&lt;/u&gt; the lockbox will require you to upgrade Bitcoin Core to at least 0.9.3 or later. &lt;br&gt;&lt;br&gt;Do you wish to continue creating the lockbox, anyway?</source>
+        <source>If you are running any Unobtanium Core version earlier than 0.9.3 all spending transactions from this lockbox will be rejected as non-standard.  There will be no problem sending coins &lt;u&gt;to&lt;/u&gt; the lockbox, but subsequent spends &lt;u&gt;from&lt;/u&gt; the lockbox will require you to upgrade Unobtanium Core to at least 0.9.3 or later. &lt;br&gt;&lt;br&gt;Do you wish to continue creating the lockbox, anyway?</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -7076,22 +7076,22 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     <name>DlgSettings</name>
     <message>
         <location filename="qtdialogs.py" line="8299"/>
-        <source>Bitcoin Core/bitcoind management is not available on Mac/OSX</source>
+        <source>Unobtanium Core/bitcoind management is not available on Mac/OSX</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8309"/>
-        <source>&lt;b&gt;Bitcoin Software Management&lt;/b&gt;&lt;br&gt;&lt;br&gt;By default, Armory will manage the Bitcoin engine/software in the background.  You can choose to manage it yourself, or tell Armory about non-standard installation configuration.</source>
+        <source>&lt;b&gt;Unobtanium Software Management&lt;/b&gt;&lt;br&gt;&lt;br&gt;By default, Armory will manage the Unobtanium engine/software in the background.  You can choose to manage it yourself, or tell Armory about non-standard installation configuration.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8322"/>
-        <source>Bitcoin Install Dir:</source>
+        <source>Unobtanium Install Dir:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8323"/>
-        <source>Bitcoin Home Dir:</source>
+        <source>Unobtanium Home Dir:</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7136,22 +7136,22 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8457"/>
-        <source>Bitcoins Received</source>
+        <source>Unobtaniums Received</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8458"/>
-        <source>Bitcoins Sent</source>
+        <source>Unobtaniums Sent</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8459"/>
-        <source>Bitcoin Core/bitcoind disconnected</source>
+        <source>Unobtanium Core/bitcoind disconnected</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8460"/>
-        <source>Bitcoin Core/bitcoind reconnected</source>
+        <source>Unobtanium Core/bitcoind reconnected</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7271,12 +7271,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8892"/>
-        <source>The path you specified for the Bitcoin software installation does not exist.  Please select the directory that contains %1 or leave it blank to have Armory search the default location for your operating system</source>
+        <source>The path you specified for the Unobtanium software installation does not exist.  Please select the directory that contains %1 or leave it blank to have Armory search the default location for your operating system</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="qtdialogs.py" line="8909"/>
-        <source>The path you specified for the Bitcoin software home directory does not exist.  Only specify this directory if you use a non-standard &quot;-datadir=&quot; option when running Bitcoin Core or bitcoind.  If you leave this field blank, the following path will be used: &lt;br&gt;&lt;br&gt; %1</source>
+        <source>The path you specified for the Unobtanium software home directory does not exist.  Only specify this directory if you use a non-standard &quot;-datadir=&quot; option when running Unobtanium Core or bitcoind.  If you leave this field blank, the following path will be used: &lt;br&gt;&lt;br&gt; %1</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7301,7 +7301,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8999"/>
-        <source>&quot;Expert&quot; mode is similar to &quot;Advanced&quot; but includes access to lower-level info about transactions, scripts, keys and network protocol.  Most extra functionality is geared towards Bitcoin software developers.</source>
+        <source>&quot;Expert&quot; mode is similar to &quot;Advanced&quot; but includes access to lower-level info about transactions, scripts, keys and network protocol.  Most extra functionality is geared towards Unobtanium software developers.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7356,7 +7356,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8288"/>
-        <source>Let Armory run Bitcoin Core/bitcoind in the background</source>
+        <source>Let Armory run Unobtanium Core/bitcoind in the background</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7366,7 +7366,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8364"/>
-        <source>If you are going to use Armory and Bitcoin Core with a proxy (such as Tor), you should disable all Armory communications that might operate outside the proxy.</source>
+        <source>If you are going to use Armory and Unobtanium Core with a proxy (such as Tor), you should disable all Armory communications that might operate outside the proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7376,7 +7376,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8381"/>
-        <source>Set Armory to be the default when you click on &quot;bitcoin:&quot; links in your browser or in emails. You can test if your operating system is supported by clicking on a &quot;bitcoin:&quot; link right after clicking this button.</source>
+        <source>Set Armory to be the default when you click on &quot;unobtanium:&quot; links in your browser or in emails. You can test if your operating system is supported by clicking on a &quot;unobtanium:&quot; link right after clicking this button.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7386,7 +7386,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8396"/>
-        <source>Armory just attempted to register itself to handle &quot;bitcoin:&quot; links, but this does not work on all operating systems.</source>
+        <source>Armory just attempted to register itself to handle &quot;unobtanium:&quot; links, but this does not work on all operating systems.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7396,7 +7396,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8405"/>
-        <source>Fees go to users that contribute computing power to keep the Bitcoin network secure.  It also increases the priority of your transactions so they confirm faster (%1 BTC is standard).</source>
+        <source>Fees go to users that contribute computing power to keep the Unobtanium network secure.  It also increases the priority of your transactions so they confirm faster (%1 BTC is standard).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7411,7 +7411,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="8751"/>
-        <source>Fetch fee/byte from local Bitcoin node. Defaults to manual fee/byte on failure.</source>
+        <source>Fetch fee/byte from local Unobtanium node. Defaults to manual fee/byte on failure.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7706,7 +7706,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="9975"/>
-        <source>&lt;b&gt;Protect Your Bitcoins -- Make a Wallet Backup!&lt;/b&gt;</source>
+        <source>&lt;b&gt;Protect Your Unobtaniums -- Make a Wallet Backup!&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -7951,7 +7951,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     <name>DlgUriCopyAndPaste</name>
     <message>
         <location filename="qtdialogs.py" line="9772"/>
-        <source>Copy and paste a raw bitcoin URL string here.  A valid string starts with &quot;bitcoin:&quot; followed by a bitcoin address.&lt;br&gt;&lt;br&gt;You should use this feature if there is a &quot;bitcoin:&quot; link in a webpage or email that does not load Armory when you click on it.  Instead, right-click on the link and select &quot;Copy Link Location&quot; then paste it into the box below. </source>
+        <source>Copy and paste a raw bitcoin URL string here.  A valid string starts with &quot;unobtanium:&quot; followed by a bitcoin address.&lt;br&gt;&lt;br&gt;You should use this feature if there is a &quot;unobtanium:&quot; link in a webpage or email that does not load Armory when you click on it.  Instead, right-click on the link and select &quot;Copy Link Location&quot; then paste it into the box below. </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8045,12 +8045,12 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
     </message>
     <message>
         <location filename="qtdialogs.py" line="1102"/>
-        <source>Send Bitcoins</source>
+        <source>Send Unobtaniums</source>
         <translation>Отправить биткоины</translation>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1103"/>
-        <source>Receive Bitcoins</source>
+        <source>Receive Unobtaniums</source>
         <translation>Запросить биткоины</translation>
     </message>
     <message>
@@ -8640,7 +8640,7 @@ Does this ID match the &quot;Wallet Unique ID&quot; you intend to restore? If no
         <source>
 
 This is a &quot;generation&quot; transaction from
-Bitcoin mining.  These transactions take
+Unobtanium mining.  These transactions take
 120 confirmations (approximately one day)
 before they are available to be spent.</source>
         <translation type="unfinished"/>
@@ -8654,22 +8654,22 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="armorymodels.py" line="292"/>
-        <source>Bitcoins sent and received by the same wallet</source>
+        <source>Unobtaniums sent and received by the same wallet</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="armorymodels.py" line="297"/>
-        <source>You mined these Bitcoins!</source>
+        <source>You mined these Unobtaniums!</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="armorymodels.py" line="299"/>
-        <source>Bitcoins sent</source>
+        <source>Unobtaniums sent</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="armorymodels.py" line="301"/>
-        <source>Bitcoins received</source>
+        <source>Unobtaniums received</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -8855,7 +8855,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="toolsDialogs.py" line="82"/>
-        <source>Bare Signature (Bitcoin Core Compatible)</source>
+        <source>Bare Signature (Unobtanium Core Compatible)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9201,7 +9201,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="1301"/>
-        <source>The block of data shown below is the complete transaction you just requested, but is invalid because it does not contain any signatures.  You must take this data to the computer with the full wallet to get it signed, then bring it back here to be broadcast to the Bitcoin network. &lt;br&gt;&lt;br&gt;Use &quot;Save as file...&quot; to save an &lt;i&gt;*.unsigned.tx&lt;/i&gt; file to USB drive or other removable media. On the offline computer, click &quot;Offline Transactions&quot; on the main window.  Load the transaction, &lt;b&gt;review it&lt;/b&gt;, then sign it (the filename now end with &lt;i&gt;*.signed.tx&lt;/i&gt;).  Click &quot;Continue&quot; below when you have the signed transaction on this computer. &lt;br&gt;&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt; The USB drive only ever holds public transaction data that will be broadcast to the network.  This data may be considered privacy-sensitive, but does &lt;u&gt;not&lt;/u&gt; compromise the security of your wallet.</source>
+        <source>The block of data shown below is the complete transaction you just requested, but is invalid because it does not contain any signatures.  You must take this data to the computer with the full wallet to get it signed, then bring it back here to be broadcast to the Unobtanium network. &lt;br&gt;&lt;br&gt;Use &quot;Save as file...&quot; to save an &lt;i&gt;*.unsigned.tx&lt;/i&gt; file to USB drive or other removable media. On the offline computer, click &quot;Offline Transactions&quot; on the main window.  Load the transaction, &lt;b&gt;review it&lt;/b&gt;, then sign it (the filename now end with &lt;i&gt;*.signed.tx&lt;/i&gt;).  Click &quot;Continue&quot; below when you have the signed transaction on this computer. &lt;br&gt;&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt; The USB drive only ever holds public transaction data that will be broadcast to the network.  This data may be considered privacy-sensitive, but does &lt;u&gt;not&lt;/u&gt; compromise the security of your wallet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9312,7 +9312,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
 </context>
 <context>
-    <name>SendBitcoinsFrame</name>
+    <name>SendUnobtaniumsFrame</name>
     <message>
         <location filename="TxFrames.py" line="72"/>
         <source>Use an existing address for change</source>
@@ -9350,7 +9350,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="96"/>
-        <source>You can specify any valid Bitcoin address for the change.  &lt;b&gt;NOTE:&lt;/b&gt; If the address you specify is not in this wallet, Armory will not be able to distinguish the outputs when it shows up in your ledger.  The change will look like a second recipient, and the total debit to your wallet will be equal to the amount you sent to the recipient &lt;b&gt;plus&lt;/b&gt; the change.</source>
+        <source>You can specify any valid Unobtanium address for the change.  &lt;b&gt;NOTE:&lt;/b&gt; If the address you specify is not in this wallet, Armory will not be able to distinguish the outputs when it shows up in your ledger.  The change will look like a second recipient, and the total debit to your wallet will be equal to the amount you sent to the recipient &lt;b&gt;plus&lt;/b&gt; the change.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9375,7 +9375,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="163"/>
-        <source>Manually Enter &quot;bitcoin:&quot; Link</source>
+        <source>Manually Enter &quot;unobtanium:&quot; Link</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9385,7 +9385,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="244"/>
-        <source>Send Bitcoins</source>
+        <source>Send Unobtaniums</source>
         <translation>Отправить биткоины</translation>
     </message>
     <message>
@@ -9440,7 +9440,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="578"/>
-        <source>Bitcoins can only be specified down to 8 decimal places. The smallest value that can be sent is  0.0000 0001 BTC. Please enter a new amount for recipient %1.</source>
+        <source>Unobtaniums can only be specified down to 8 decimal places. The smallest value that can be sent is  0.0000 0001 BTC. Please enter a new amount for recipient %1.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9525,7 +9525,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="56"/>
-        <source>Transaction fees go to users who contribute computing power to keep the Bitcoin network secure, and in return they get your transaction included in the blockchain faster.</source>
+        <source>Transaction fees go to users who contribute computing power to keep the Unobtanium network secure, and in return they get your transaction included in the blockchain faster.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9545,7 +9545,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="164"/>
-        <source>Armory does not always succeed at registering itself to handle URL links from webpages and email. Click this button to copy a &quot;bitcoin:&quot; link directly into Armory.</source>
+        <source>Armory does not always succeed at registering itself to handle URL links from webpages and email. Click this button to copy a &quot;unobtanium:&quot; link directly into Armory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9565,7 +9565,7 @@ For small transactions, 2 or 3 confirmations is usually acceptable. For larger t
     </message>
     <message>
         <location filename="TxFrames.py" line="635"/>
-        <source>There was an error constructing your transaction, due to a quirk in the way Bitcoin transactions work.  If you see this error more than once, try sending your BTC in two or more separate transactions.</source>
+        <source>There was an error constructing your transaction, due to a quirk in the way Unobtanium transactions work.  If you see this error more than once, try sending your BTC in two or more separate transactions.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9743,7 +9743,7 @@ random letters, or 6 or more random words.
     </message>
     <message>
         <location filename="TxFrames.py" line="1537"/>
-        <source>No connection to Bitcoin network!</source>
+        <source>No connection to Unobtanium network!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9878,7 +9878,7 @@ random letters, or 6 or more random words.
     </message>
     <message>
         <location filename="TxFrames.py" line="1789"/>
-        <source>You do not currently have a connection to the Bitcoin network. If this does not seem correct, verify that  is open and synchronized with the network.</source>
+        <source>You do not currently have a connection to the Unobtanium network. If this does not seem correct, verify that  is open and synchronized with the network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9937,7 +9937,7 @@ It can now be broadcast from any computer running Armory in online mode.</source
     </message>
     <message>
         <location filename="TxFrames.py" line="1366"/>
-        <source>Copy or load a transaction from file into the text box below.  If the transaction is unsigned and you have the correct wallet, you will have the opportunity to sign it.  If it is already signed you will have the opportunity to broadcast it to the Bitcoin network to make it final.</source>
+        <source>Copy or load a transaction from file into the text box below.  If the transaction is unsigned and you have the correct wallet, you will have the opportunity to sign it.  If it is already signed you will have the opportunity to broadcast it to the Unobtanium network to make it final.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -9947,7 +9947,7 @@ It can now be broadcast from any computer running Armory in online mode.</source
     </message>
     <message>
         <location filename="TxFrames.py" line="1782"/>
-        <source>Armory lost its connection to Bitcoin Core, and cannot broadcast any transactions until it is reconnected. Please verify that Bitcoin Core (or bitcoind) is open and synchronized with the network.</source>
+        <source>Armory lost its connection to Unobtanium Core, and cannot broadcast any transactions until it is reconnected. Please verify that Unobtanium Core (or bitcoind) is open and synchronized with the network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10013,7 +10013,7 @@ It can now be broadcast from any computer running Armory in online mode.</source
     </message>
     <message>
         <location filename="toolsDialogs.py" line="222"/>
-        <source>The owner of the following Bitcoin address...&lt;br&gt;&lt;blockquote&gt;&lt;font face=&quot;Courier&quot; size=4 color=&quot;#000060&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/font&gt;&lt;/blockquote&gt;&lt;br&gt;... has produced a &lt;b&gt;&lt;u&gt;valid&lt;/u&gt;&lt;/b&gt; signature for the following message:&lt;br&gt;</source>
+        <source>The owner of the following Unobtanium address...&lt;br&gt;&lt;blockquote&gt;&lt;font face=&quot;Courier&quot; size=4 color=&quot;#000060&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/font&gt;&lt;/blockquote&gt;&lt;br&gt;... has produced a &lt;b&gt;&lt;u&gt;valid&lt;/u&gt;&lt;/b&gt; signature for the following message:&lt;br&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10317,7 +10317,7 @@ It can now be broadcast from any computer running Armory in online mode.</source
     </message>
     <message>
         <location filename="WalletFrames.py" line="826"/>
-        <source>Every time you click &quot;Receive Bitcoins,&quot; a new address is generated. All of these addresses are generated from a single seed value, which is included in all backups.   Therefore, all addresses that you have generated so far &lt;b&gt;and&lt;/b&gt; will ever be generated with this wallet, are protected by this backup! </source>
+        <source>Every time you click &quot;Receive Unobtaniums,&quot; a new address is generated. All of these addresses are generated from a single seed value, which is included in all backups.   Therefore, all addresses that you have generated so far &lt;b&gt;and&lt;/b&gt; will ever be generated with this wallet, are protected by this backup! </source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -10496,7 +10496,7 @@ nter: &lt;Number&gt; (kb, mb)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="1977"/>
-        <source>The funds in this wallet are currently identified as belonging to &lt;b&gt;&lt;i&gt;you&lt;/i&gt;&lt;/b&gt;.  As such, any funds available to this wallet will be included in the total balance displayed on the main screen.  
+        <source>The funds in this wallet are currently identified as belonging to &lt;b&gt;&lt;i&gt;you&lt;/i&gt;&lt;/b&gt;.  As such, any funds available to this wallet will be included in the total balance displayed on the main screen.
 
  If you do not actually own this wallet, or do not wish for its funds to be considered part of your balance, uncheck the box below.  Optionally, you can include the name of the person or organization that does own it.</source>
         <translation type="unfinished"/>
@@ -10561,7 +10561,7 @@ nter: &lt;Number&gt; (kb, mb)</source>
     </message>
     <message>
         <location filename="qtdialogs.py" line="2032"/>
-        <source>Armory is not online yet, and will eventually need to be online to access any funds sent to your wallet.  Please &lt;u&gt;&lt;b&gt;do not&lt;/b&gt;&lt;/u&gt; receive Bitcoins to your Armory wallets until you have successfully gotten online &lt;i&gt;at least one time&lt;/i&gt;. &lt;br&gt;&lt;br&gt; Armory is still beta software, and some users report difficulty ever getting online. &lt;br&gt;&lt;br&gt; Do you wish to continue? </source>
+        <source>Armory is not online yet, and will eventually need to be online to access any funds sent to your wallet.  Please &lt;u&gt;&lt;b&gt;do not&lt;/b&gt;&lt;/u&gt; receive Unobtaniums to your Armory wallets until you have successfully gotten online &lt;i&gt;at least one time&lt;/i&gt;. &lt;br&gt;&lt;br&gt; Armory is still beta software, and some users report difficulty ever getting online. &lt;br&gt;&lt;br&gt; Do you wish to continue? </source>
         <translation type="unfinished"/>
     </message>
 </context>

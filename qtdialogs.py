@@ -688,7 +688,7 @@ class DlgNewWallet(ArmoryDialog):
       self.chkUseCrypto.setChecked(True)
       usecryptoTooltip = self.main.createToolTipWidget(self.tr(
                   'Encryption prevents anyone who accesses your computer '
-                  'or wallet file from being able to spend your money, as ' 
+                  'or wallet file from being able to spend your money, as '
                   'long as they do not have the passphrase. '
                   'You can choose to encrypt your wallet at a later time '
                   'through the wallet properties dialog by double clicking '
@@ -700,7 +700,7 @@ class DlgNewWallet(ArmoryDialog):
       paperBackupTooltip = self.main.createToolTipWidget(self.tr(
                   'A paper-backup allows you to recover your wallet/funds even '
                   'if you lose your original wallet file, any time in the future. '
-                  'Because Armory uses "deterministic wallets," ' 
+                  'Because Armory uses "deterministic wallets," '
                   'a single backup when the wallet is first made is sufficient '
                   'for all future transactions (except ones to imported '
                   'addresses).\n\n'
@@ -1075,7 +1075,7 @@ class DlgWalletDetails(ArmoryDialog):
       viewWidth, viewHeight = w, 10 * h
 
 
-      # Address view    
+      # Address view
       self.wltAddrTreeModel = AddressTreeModel(self, wlt)
       self.wltAddrView = QTreeView()
       self.wltAddrView.setModel(self.wltAddrTreeModel)
@@ -1083,7 +1083,7 @@ class DlgWalletDetails(ArmoryDialog):
       self.wltAddrView.setMinimumHeight(150)
       self.connect(self.wltAddrView, SIGNAL('doubleClicked(QModelIndex)'), \
                    self.dblClickAddressView)
-      
+
       # Now add all the options buttons, dependent on the type of wallet.
 
       lbtnChangeLabels = QLabelButton(self.tr('Change Wallet Labels'));
@@ -1099,8 +1099,8 @@ class DlgWalletDetails(ArmoryDialog):
          self.connect(lbtnChangeCrypto, SIGNAL(CLICKED), self.changeEncryption)
 
       exportStr = 'Data' if self.wlt.watchingOnly else 'Copy'
-      lbtnSendBtc = QLabelButton(self.tr('Send Bitcoins'))
-      lbtnGenAddr = QLabelButton(self.tr('Receive Bitcoins'))
+      lbtnSendBtc = QLabelButton(self.tr('Send Unobtaniums'))
+      lbtnGenAddr = QLabelButton(self.tr('Receive Unobtaniums'))
       lbtnImportA = QLabelButton(self.tr('Import/Sweep Private Keys'))
       lbtnDeleteA = QLabelButton(self.tr('Remove Imported Address'))
       # lbtnSweepA  = QLabelButton('Sweep Wallet/Address')
@@ -1447,22 +1447,22 @@ class DlgWalletDetails(ArmoryDialog):
    #############################################################################
    def dblClickAddressView(self, index):
       from ui.TreeViewGUI import COL_TREE, COL_COMMENT
-      
+
       nodeItem = self.wltAddrTreeModel.getNodeItem(index)
       try:
          if not nodeItem.treeNode.canDoubleClick():
             return
       except:
          return
-            
+
       cppAddrObj = nodeItem.treeNode.getAddrObj()
-      
+
       if index.column() == COL_COMMENT:
          # Update the address's comment. We apparently need to reset the model
          # to get an immediate comment update on OS X, unlike Linux or Windows.
          currComment = cppAddrObj.getComment()
-         
-         
+
+
          if not currComment:
             dialog = DlgSetComment(self, self.main, currComment, self.tr('Add Address Comment'))
          else:
@@ -1472,7 +1472,7 @@ class DlgWalletDetails(ArmoryDialog):
             addr160 = cppAddrObj.getAddrHash()
             self.wlt.setComment(addr160[1:], newComment)
             cppAddrObj.setComment(newComment)
-            
+
             if OS_MACOSX:
                self.wltAddrView.reset()
 
@@ -1519,7 +1519,7 @@ class DlgWalletDetails(ArmoryDialog):
 
 
          if self.disableEncryption:
-            unlockProgress = DlgProgress(self, self.main, HBar=1, 
+            unlockProgress = DlgProgress(self, self.main, HBar=1,
                                          Title=self.tr("Changing Encryption"))
             unlockProgress.exec_(self.wlt.changeWalletEncryption)
             # self.accept()
@@ -1530,7 +1530,7 @@ class DlgWalletDetails(ArmoryDialog):
             if not self.wlt.useEncryption:
                kdfParams = self.wlt.computeSystemSpecificKdfParams(0.2)
                self.wlt.changeKdfParams(*kdfParams)
-            unlockProgress = DlgProgress(self, self.main, HBar=2, 
+            unlockProgress = DlgProgress(self, self.main, HBar=2,
                                          Title=self.tr("Changing Encryption"))
             unlockProgress.exec_(self.wlt.changeWalletEncryption,
                                  securePassphrase=newPassphrase)
@@ -1642,7 +1642,7 @@ class DlgWalletDetails(ArmoryDialog):
       if atype==P2SHBYTE:
          LOGWARN('Deleting P2SH address: %s' % addrStr)
 
-      
+
       if self.wlt.cppWallet.getAssetIndexForAddr(addr160) < 0:
          dlg = DlgRemoveAddress(self.wlt, addr160, self, self.main)
          dlg.exec_()
@@ -2032,7 +2032,7 @@ def showRecvCoinsWarningIfNecessary(wlt, parent, main):
       result = QMessageBox.warning(main, main.tr('Careful!'), main.tr(
          'Armory is not online yet, and will eventually need to be online to '
          'access any funds sent to your wallet.  Please <u><b>do not</b></u> '
-         'receive Bitcoins to your Armory wallets until you have successfully '
+         'receive Unobtaniums to your Armory wallets until you have successfully '
          'gotten online <i>at least one time</i>. '
          '<br><br> '
          'Armory is still beta software, and some users report difficulty '
@@ -2188,7 +2188,7 @@ class DlgKeypoolSettings(ArmoryDialog):
       def doit():
          currPool = self.wlt.lastComputedChainIndex - \
                     self.wlt.highestUsedChainIndex
-         fillAddressPoolProgress = DlgProgress(self, self.main, HBar=1, 
+         fillAddressPoolProgress = DlgProgress(self, self.main, HBar=1,
                                                Title=self.tr('Computing New Addresses'))
          fillAddressPoolProgress.exec_( \
                self.wlt.fillAddressPool, currPool + naddr,
@@ -2247,7 +2247,7 @@ class DlgNewAddressDisp(ArmoryDialog):
       self.lblIsCopied = QLabel(self.tr(' or '))
       self.lblIsCopied.setTextFormat(Qt.RichText)
       self.connect(btnClipboard, SIGNAL(CLICKED), self.setClipboard)
-      
+
       def openPaymentRequest():
          msgTxt = str(self.edtComm.toPlainText())
          msgTxt = msgTxt.split('\n')[0][:128]
@@ -2295,7 +2295,7 @@ class DlgNewAddressDisp(ArmoryDialog):
 
       frmNewAddrLayout.addWidget(frmCopy, 2, 0, 1, 2)
       frmNewAddr.setLayout(frmNewAddrLayout)
-            
+
       lblCommDescr = QLabel(self.tr(
             '(Optional) Add a label to this address, which will '
             'be shown with any relevant transactions in the '
@@ -2313,7 +2313,7 @@ class DlgNewAddressDisp(ArmoryDialog):
       frmComment.setLayout(frmCommentLayout)
 
 
-      lblRecvWlt = QRichLabel(self.tr('Bitcoins sent to this address will '
+      lblRecvWlt = QRichLabel(self.tr('Unobtaniums sent to this address will '
             'appear in the wallet:'), doWrap=False)
 
       lblRecvWlt.setWordWrap(True)
@@ -2358,12 +2358,12 @@ class DlgNewAddressDisp(ArmoryDialog):
             self.addrStr = self.wlt.getNestedSWAddrForIndex(self.addr.chainIndex)
          elif typeStr == 'P2SH-P2PK':
             self.addrStr = self.wlt.getNestedP2PKAddrForIndex(self.addr.chainIndex)
-            
-         self.edtNewAddr.setText(self.addrStr) 
-         self.smLabel.setText('<font size=2>%s</font>' % self.addrStr)  
+
+         self.edtNewAddr.setText(self.addrStr)
+         self.smLabel.setText('<font size=2>%s</font>' % self.addrStr)
          self.qrcode.setAsciiData(self.addrStr)
-         self.qrcode.repaint()       
-  
+         self.qrcode.repaint()
+
       #addr type selection frame
       from ui.AddressTypeSelectDialog import AddressLabelFrame
       self.addrTypeFrame = AddressLabelFrame(main, setAddressType)
@@ -2396,7 +2396,7 @@ class DlgNewAddressDisp(ArmoryDialog):
       comm = str(self.edtComm.toPlainText())
       if len(comm) > 0:
          self.wlt.setComment(self.addr.getAddr160(), comm)
-      
+
    def accept(self):
       self.acceptNewAddr()
       super(DlgNewAddressDisp, self).accept()
@@ -2444,7 +2444,7 @@ class DlgImportAddress(ArmoryDialog):
                      'has access to it.  Otherwise, sweep it to get '
                      'the funds out of it.  All standard private-key formats '
                      'are supported <i>except for private keys created by '
-                     'Bitcoin Core version 0.6.0 and later (compressed)</i>.'))
+                     'Unobtanium Core version 0.6.0 and later (compressed)</i>.'))
 
       lblPrivOne = QRichLabel('Private Key')
       self.edtPrivData = QLineEdit()
@@ -2633,7 +2633,7 @@ class DlgImportAddress(ArmoryDialog):
          if binary_to_int(binKeyData, BIGENDIAN) >= SECP256K1_ORDER:
             QMessageBox.critical(self, self.tr('Invalid Private Key'), self.tr(
                'The private key you have entered is actually not valid '
-               'for the elliptic curve used by Bitcoin (secp256k1). '
+               'for the elliptic curve used by Unobtanium (secp256k1). '
                'Almost any 64-character hex is a valid private key '
                '<b>except</b> for those greater than: '
                '<br><br>'
@@ -2662,7 +2662,7 @@ class DlgImportAddress(ArmoryDialog):
       except CompressedKeyError, e:
          QMessageBox.critical(self, self.tr('Unsupported key type'), self.tr('You entered a key '
             'for an address that uses a compressed public key, usually produced '
-            'in Bitcoin Core/bitcoind wallets created after version 0.6.0.  Armory '
+            'in Unobtanium Core/unobtaniumd wallets created after version 0.6.0.  Armory '
             'does not yet support this key type.'))
          LOGERROR('Compressed key data recognized but not supported')
          return
@@ -2678,7 +2678,7 @@ class DlgImportAddress(ArmoryDialog):
       if not 'mini' in keyType.lower():
          reply = QMessageBox.question(self, self.tr('Verify Address'), self.tr(
                'The key data you entered appears to correspond to '
-               'the following Bitcoin address:\n\n %1 '
+               'the following Unobtanium address:\n\n %1 '
                '\n\nIs this the correct address?').arg(addrStr),
                QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel)
          if reply == QMessageBox.Cancel:
@@ -2963,7 +2963,7 @@ class DlgImportAddress(ArmoryDialog):
 
       self.accept()
       self.main.loadCppWallets()
-      
+
 
 #############################################################################
 class DlgVerifySweep(ArmoryDialog):
@@ -3390,9 +3390,9 @@ class DlgShowKeys(ArmoryDialog):
 
       self.addr = addr
       self.wlt = wlt
-      
+
       self.scrAddr = \
-         self.wlt.cppWallet.getAddrObjByIndex(self.addr.chainIndex).getScrAddr() 
+         self.wlt.cppWallet.getAddrObjByIndex(self.addr.chainIndex).getScrAddr()
 
 
       lblWarn = QRichLabel('')
@@ -3532,7 +3532,7 @@ class DlgEULA(ArmoryDialog):
 
 
       lblPleaseAgree = QRichLabel(self.tr(
-         '<b>Armory Bitcoin Client is licensed in part under the '
+         '<b>Armory Unobtanium Client is licensed in part under the '
          '<i>Affero General Public License, Version 3 (AGPLv3)</i> '
          'and in part under the <i>MIT License</i></b> '
          '<br><br>'
@@ -3583,11 +3583,11 @@ class DlgIntroMessage(ArmoryDialog):
       lblWelcome = QRichLabel(self.tr('<b>Welcome to Armory!</b>'))
       lblWelcome.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
       lblWelcome.setFont(GETFONT('Var', 14))
-      lblSlogan = QRichLabel(self.tr('<i>The most advanced Bitcoin Client on Earth!</i>'))
+      lblSlogan = QRichLabel(self.tr('<i>The most advanced Unobtanium Client on Earth!</i>'))
       lblSlogan.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
 
       lblDescr = QRichLabel(self.tr(
-         '<b>You are about to use the most secure and feature-rich Bitcoin client '
+         '<b>You are about to use the most secure and feature-rich Unobtanium client '
          'software available!</b>  But please remember, this software '
          'is still <i>Beta</i> - Armory developers will not be held responsible '
          'for loss of bitcoins resulting from the use of this software!'
@@ -4175,12 +4175,12 @@ class DlgRemoveAddress(ArmoryDialog):
 
       addrIndex = wlt.cppWallet.getAssetIndexForAddr(addr160)
       self.cppAddrObj = wlt.cppWallet.getAddrObjByIndex(addrIndex)
-      
+
       if addrIndex >= 0:
          raise WalletAddressError('Cannot delete regular chained addresses! '
                                    'Can only delete imported addresses.')
 
-         
+
       importIndex = wlt.cppWallet.convertToImportIndex(addrIndex)
 
       self.wlt = wlt
@@ -4533,11 +4533,11 @@ class DlgConfirmSend(ArmoryDialog):
       buttonBox = QDialogButtonBox()
       buttonBox.addButton(self.btnAccept, QDialogButtonBox.AcceptRole)
       buttonBox.addButton(self.btnCancel, QDialogButtonBox.RejectRole)
-      
+
       self.signerType = SIGNER_DEFAULT
       def setSignerType(_type):
          self.signerType = _type
-      
+
       isSigned = False
       if isinstance(pytxOrUstx, PyTx):
          ustx = UnsignedTransaction()
@@ -4545,11 +4545,11 @@ class DlgConfirmSend(ArmoryDialog):
          isSigned = pytxOrUstx.verifySigsAllInputs()
       else:
          isSigned = pytxOrUstx.verifySigsAllInputs(pytxOrUstx.signerType)
-         
+
       if self.main.usermode == USERMODE.Expert and isSigned == False:
          self.signerSelect = SignerLabelFrame(self.main, pytxOrUstx, setSignerType)
          self.signerSelectFrame = self.signerSelect.getFrame()
-      
+
          frmBtnSelect = makeHorizFrame([STRETCH, self.signerSelectFrame, buttonBox])
       else:
          frmBtnSelect = buttonBox
@@ -4571,15 +4571,15 @@ class DlgConfirmSend(ArmoryDialog):
       self.setLayout(layout)
       self.setMinimumWidth(350)
       self.setWindowTitle(self.tr('Confirm Transaction'))
-   
-   #############################################################################   
+
+   #############################################################################
    def getSignerType(self):
       return self.signerType
 
 
 ################################################################################
 class DlgSendBitcoins(ArmoryDialog):
-   def __init__(self, wlt, parent=None, main=None, 
+   def __init__(self, wlt, parent=None, main=None,
                               wltIDList=None, onlyOfflineWallets=False,
                               spendFromLockboxID=None):
       super(DlgSendBitcoins, self).__init__(parent, main)
@@ -4587,7 +4587,7 @@ class DlgSendBitcoins(ArmoryDialog):
 
       self.spendFromLockboxID = spendFromLockboxID
 
-      self.frame = SendBitcoinsFrame(self, main, self.tr('Send Bitcoins'),
+      self.frame = SendBitcoinsFrame(self, main, self.tr('Send Unobtaniums'),
                    wlt, wltIDList, onlyOfflineWallets=onlyOfflineWallets,
                    sendCallback=self.createTxAndBroadcast,
                    createUnsignedTxCallback=self.createUnsignedTxAndDisplay,
@@ -4746,7 +4746,7 @@ class DlgOfflineSelect(ArmoryDialog):
          'the private keys needed for it '))
 
       lblBroadc = QRichLabel(self.tr(
-         'Send a pre-signed transaction to the Bitcoin network to finalize it'))
+         'Send a pre-signed transaction to the Unobtanium network to finalize it'))
 
       lblBroadc.setMinimumWidth(tightSizeNChar(lblBroadc, 45)[0])
 
@@ -5034,7 +5034,7 @@ class DlgShowKeyList(ArmoryDialog):
          except:
             addrIndex = self.wlt.cppWallet.getAssetIndexForAddr(addr.getAddr160())
             cppAddrObj = self.wlt.cppWallet.getAddrObjByIndex(addrIndex)
-            
+
          # Address pool
          if self.chkWithAddrPool.isChecked():
             if addr.chainIndex > topChain:
@@ -5310,13 +5310,13 @@ class DlgDispTxInfo(ArmoryDialog):
       txdir = None
       changeIndex = None
       svPairDisp = None
-      
+
       if haveBDM and haveWallet and self.data[FIELDS.SumOut] and self.data[FIELDS.SumIn]:
          fee = self.data[FIELDS.SumOut] - self.data[FIELDS.SumIn]
          try:
             le = wlt.getLedgerEntryForTxHash(txHash)
             txAmt = le.getValue()
-   
+
             if le.isSentToSelf():
                txdir = self.tr('Sent-to-Self')
                svPairDisp = []
@@ -5344,7 +5344,7 @@ class DlgDispTxInfo(ArmoryDialog):
                   indicesMakeGray.extend(indicesSelf)
          except:
             pass
-      
+
 
       # If this is a USTX, the above calculation probably didn't do its job
       # It is possible, but it's also possible that this Tx has nothing to
@@ -5405,7 +5405,7 @@ class DlgDispTxInfo(ArmoryDialog):
       if self.mode in (USERMODE.Expert,):
          # Add protocol version and locktime to the display
          lbls.append([])
-         lbls[-1].append(self.main.createToolTipWidget(self.tr('Bitcoin Protocol Version Number')))
+         lbls[-1].append(self.main.createToolTipWidget(self.tr('Unobtanium Protocol Version Number')))
          lbls[-1].append(QLabel(self.tr('Tx Version:')))
          lbls[-1].append(QLabel(str(self.pytx.version)))
 
@@ -5513,7 +5513,7 @@ class DlgDispTxInfo(ArmoryDialog):
       else:
          lbls.append([])
          lbls[-1].append(self.main.createToolTipWidget(
-               self.tr('Bitcoins were either sent or received, or sent-to-self')))
+               self.tr('Unobtaniums were either sent or received, or sent-to-self')))
          lbls[-1].append(QLabel('Transaction Direction:'))
          lbls[-1].append(QRichLabel(txdir))
 
@@ -5542,15 +5542,15 @@ class DlgDispTxInfo(ArmoryDialog):
          fee = self.data[FIELDS.SumIn] - self.data[FIELDS.SumOut]
          lbls.append([])
          lbls[-1].append(self.main.createToolTipWidget(
-            self.tr('Transaction fees go to users supplying the Bitcoin network with '
+            self.tr('Transaction fees go to users supplying the Unobtanium network with '
             'computing power for processing transactions and maintaining security.')))
          lbls[-1].append(QLabel('Tx Fee Paid:'))
-         
+
          fee_str = coin2str(fee, maxZeros=0).strip() + '  BTC'
          if not self.data[FIELDS.TxWeight] == None:
             fee_byte = float(fee) / float(self.data[FIELDS.TxWeight])
-            fee_str += ' (%d sat/B)' % fee_byte 
-         
+            fee_str += ' (%d sat/B)' % fee_byte
+
          lbls[-1].append(QLabel(fee_str))
 
 
@@ -6052,7 +6052,7 @@ class DlgDisplayTxIn(ArmoryDialog):
          else:
             line_to_str = unicode(dline)
          u_string = u_string + u"<br>" + line_to_str.replace(u' ', u'&nbsp;')
-         
+
       edtBrowse.setHtml(u_string)
       btnDone = QPushButton(self.tr("Ok"))
       self.connect(btnDone, SIGNAL('clicked()'), self.accept)
@@ -6127,7 +6127,7 @@ class DlgDisplayTxOut(ArmoryDialog):
          else:
             line_to_str = unicode(dline)
          u_string = u_string + u"<br>" + line_to_str.replace(u' ', u'&nbsp;')
-         
+
       edtBrowse.setHtml(u_string)
       btnDone = QPushButton(self.tr("Ok"))
       self.connect(btnDone, SIGNAL('clicked()'), self.accept)
@@ -7147,13 +7147,13 @@ class DlgBadConnection(ArmoryDialog):
             'restart Armory.<br><br>Would you like to continue in "Offline" mode?'))
       elif haveInternet and not haveSatoshi:
          lblDescr = QRichLabel(self.tr(
-            'Armory was not able to detect the presence of Bitcoin Core or bitcoind '
-            'client software (available at https://bitcoin.org).  Please make sure that '
+            'Armory was not able to detect the presence of Unobtanium Core or unobtaniumd '
+            'client software (available at http://unobtanium.uno).  Please make sure that '
             'the one of those programs is... <br> '
             '<br><b>(1)</b> ...open and connected to the network '
             '<br><b>(2)</b> ...on the same network as Armory (main-network or test-network) '
             '<br><b>(3)</b> ...synchronized with the blockchain before '
-            'starting Armory<br><br>Without the Bitcoin Core or bitcoind open, you will only '
+            'starting Armory<br><br>Without the Unobtanium Core or unobtaniumd open, you will only '
             'be able to run Armory in "Offline" mode, which will not have access '
             'to new blockchain data, and you will not be able to send outgoing '
             'transactions<br><br>If you do not want to be in "Offline" mode, please '
@@ -7513,9 +7513,9 @@ class DlgECDSACalc(ArmoryDialog):
       gystr = '483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8'
 
       lblDescr = QRichLabel(self.tr(
-         'Use this form to perform Bitcoin elliptic curve calculations.  All '
+         'Use this form to perform Unobtanium elliptic curve calculations.  All '
          'operations are performed on the secp256k1 elliptic curve, which is '
-         'the one used for Bitcoin. '
+         'the one used for Unobtanium. '
          'Supply all values as 32-byte, big-endian, hex-encoded integers. '
          '<br><br>'
          'The following is the secp256k1 generator point coordinates (G): <br> '
@@ -7582,7 +7582,7 @@ class DlgECDSACalc(ArmoryDialog):
       if not CryptoECDSA().ECVerifyPoint(binBx, binBy):
          QMessageBox.critical(self, self.tr('Invalid EC Point'), \
             self.tr('The point you specified (<b>B</b>) is not on the '
-            'elliptic curve used in Bitcoin (secp256k1).'), QMessageBox.Ok)
+            'elliptic curve used in Unobtanium (secp256k1).'), QMessageBox.Ok)
          return
 
       C = CryptoECDSA().ECMultiplyPoint(binA, binBx, binBy)
@@ -7604,13 +7604,13 @@ class DlgECDSACalc(ArmoryDialog):
       if not CryptoECDSA().ECVerifyPoint(binAx, binAy):
          QMessageBox.critical(self, self.tr('Invalid EC Point'), \
             self.tr('The point you specified (<b>A</b>) is not on the '
-            'elliptic curve used in Bitcoin (secp256k1).'), QMessageBox.Ok)
+            'elliptic curve used in Unobtanium (secp256k1).'), QMessageBox.Ok)
          return
 
       if not CryptoECDSA().ECVerifyPoint(binBx, binBy):
          QMessageBox.critical(self, self.tr('Invalid EC Point'), \
             self.tr('The point you specified (<b>B</b>) is not on the '
-            'elliptic curve used in Bitcoin (secp256k1).'), QMessageBox.Ok)
+            'elliptic curve used in Unobtanium (secp256k1).'), QMessageBox.Ok)
          return
 
       C = CryptoECDSA().ECAddPoints(binAx, binAy, binBx, binBy)
@@ -7705,11 +7705,11 @@ class DlgAddressBook(ArmoryDialog):
       self.connect(self.wltDispView.selectionModel(), \
                    SIGNAL('currentChanged(const QModelIndex &, const QModelIndex &)'), \
                    self.wltTableClicked)
-      
+
       def toggleAddrType(addrtype):
          self.addrType = addrtype
          self.wltTableClicked(self.wltDispView.selectionModel().currentIndex())
-         
+
       from ui.AddressTypeSelectDialog import AddressLabelFrame
       self.addrTypeSelectFrame = AddressLabelFrame(self, toggleAddrType)
       self.addrType = self.main.getSettingOrSetDefault(\
@@ -7971,20 +7971,20 @@ class DlgAddressBook(ArmoryDialog):
    #############################################################################
    def getAddrStr(self, wlt, addrObj):
       addrStr = ""
-      
+
       cppwlt = wlt
       if isinstance(wlt, PyBtcWallet):
          cppwlt = wlt.cppWallet
-         
+
       if self.addrType == 'P2PKH':
          addrStr = cppwlt.getP2PKHAddrForIndex(addrObj.chainIndex)
       elif self.addrType == 'P2SH-P2PK':
          addrStr = cppwlt.getNestedP2PKAddrForIndex(addrObj.chainIndex)
       elif self.addrType == 'P2SH-P2WPKH':
          addrStr = cppwlt.getNestedSWAddrForIndex(addrObj.chainIndex)
-            
-      return addrStr      
-      
+
+      return addrStr
+
    #############################################################################
    def wltTableClicked(self, currIndex, prevIndex=None):
       if prevIndex == currIndex:
@@ -8090,7 +8090,7 @@ class DlgAddressBook(ArmoryDialog):
             self.useBareMultiSigCheckBox.setChecked(False)
             self.useBareMultiSigCheckBox.setToolTip(self.tr(
                'Bare multi-sig is not available for M-of-N lockboxes on the '
-               'main Bitcoin network with N higher than 3.'))
+               'main Unobtanium network with N higher than 3.'))
          else:
             self.useBareMultiSigCheckBox.setEnabled(True)
 
@@ -8284,9 +8284,9 @@ class DlgHelpAbout(ArmoryDialog):
       imgLogo.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
 
       if BTCARMORY_BUILD != None:
-         lblHead = QRichLabel(self.tr('Armory Bitcoin Wallet : Version %1-beta-%2').arg(getVersionString(BTCARMORY_VERSION), BTCARMORY_BUILD), doWrap=False)
+         lblHead = QRichLabel(self.tr('Armory Unobtanium Wallet : Version %1-beta-%2').arg(getVersionString(BTCARMORY_VERSION), BTCARMORY_BUILD), doWrap=False)
       else:
-         lblHead = QRichLabel(self.tr('Armory Bitcoin Wallet : Version %1-beta').arg(getVersionString(BTCARMORY_VERSION)), doWrap=False)
+         lblHead = QRichLabel(self.tr('Armory Unobtanium Wallet : Version %1-beta').arg(getVersionString(BTCARMORY_VERSION)), doWrap=False)
 
       lblOldCopyright = QRichLabel(self.tr( u'Copyright &copy; 2011-2015 Armory Technologies, Inc.'))
       lblCopyright = QRichLabel(self.tr( u'Copyright &copy; 2016 Goatpig'))
@@ -8322,9 +8322,9 @@ class DlgSettings(ArmoryDialog):
 
 
       ##########################################################################
-      # bitcoind-management settings
+      # unobtaniumd-management settings
       self.chkManageSatoshi = QCheckBox(self.tr(
-         'Let Armory run Bitcoin Core/bitcoind in the background'))
+         'Let Armory run Unobtanium Core/unobtaniumd in the background'))
       self.edtSatoshiExePath = QLineEdit()
       self.edtSatoshiHomePath = QLineEdit()
       self.edtArmoryDbdir = QLineEdit()
@@ -8337,7 +8337,7 @@ class DlgSettings(ArmoryDialog):
       if OS_MACOSX:
          self.chkManageSatoshi.setEnabled(False)
          lblManageSatoshi = QRichLabel(\
-            self.tr('Bitcoin Core/bitcoind management is not available on Mac/OSX'))
+            self.tr('Unobtanium Core/unobtaniumd management is not available on Mac/OSX'))
       else:
          if self.main.settings.hasSetting('SatoshiExe'):
             satexe = self.main.settings.get('SatoshiExe')
@@ -8347,9 +8347,9 @@ class DlgSettings(ArmoryDialog):
             sathome = self.main.settings.get('SatoshiDatadir')
 
          lblManageSatoshi = QRichLabel(
-            self.tr('<b>Bitcoin Software Management</b>'
+            self.tr('<b>Unobtanium Software Management</b>'
             '<br><br>'
-            'By default, Armory will manage the Bitcoin engine/software in the '
+            'By default, Armory will manage the Unobtanium engine/software in the '
             'background.  You can choose to manage it yourself, or tell Armory '
             'about non-standard installation configuration.'))
       if self.main.settings.hasSetting('SatoshiExe'):
@@ -8363,7 +8363,7 @@ class DlgSettings(ArmoryDialog):
          self.edtArmoryDbdir.home(False)
 
 
-      lblDescrExe = QRichLabel(self.tr('Bitcoin Install Dir:'))
+      lblDescrExe = QRichLabel(self.tr('Unobtanium Install Dir:'))
       lblDefaultExe = QRichLabel(self.tr('Leave blank to have Armory search default '
                                   'locations for your OS'), size=2)
 
@@ -8390,7 +8390,7 @@ class DlgSettings(ArmoryDialog):
          'data and Armory\'s database.'
          ))
 
-      lblDescrHome = QRichLabel(self.tr('Bitcoin Home Dir:'))
+      lblDescrHome = QRichLabel(self.tr('Unobtanium Home Dir:'))
       lblDefaultHome = QRichLabel(self.tr('Leave blank to use default datadir '
                                   '(%1)').arg(BTC_HOME_DIR), size=2)
       lblDescrDbdir = QRichLabel(self.tr('Armory Database Dir:'))
@@ -8419,10 +8419,10 @@ class DlgSettings(ArmoryDialog):
       ##########################################################################
       lblDefaultUriTitle = QRichLabel(self.tr('<b>Set Armory as default URL handler</b>'))
       lblDefaultURI = QRichLabel(self.tr(
-         'Set Armory to be the default when you click on "bitcoin:" '
+         'Set Armory to be the default when you click on "unobtanium:" '
          'links in your browser or in emails. '
          'You can test if your operating system is supported by clicking '
-         'on a "bitcoin:" link right after clicking this button.'))
+         'on a "unobtanium:" link right after clicking this button.'))
       btnDefaultURI = QPushButton(self.tr('Set Armory as Default'))
       frmBtnDefaultURI = makeHorizFrame([btnDefaultURI, 'Stretch'])
 
@@ -8434,7 +8434,7 @@ class DlgSettings(ArmoryDialog):
       def clickRegURI():
          self.main.setupUriRegistration(justDoIt=True)
          QMessageBox.information(self, self.tr('Registered'), self.tr(
-            'Armory just attempted to register itself to handle "bitcoin:" '
+            'Armory just attempted to register itself to handle "unobtanium:" '
             'links, but this does not work on all operating systems.'), QMessageBox.Ok)
 
       self.connect(btnDefaultURI, SIGNAL(CLICKED), clickRegURI)
@@ -8473,10 +8473,10 @@ class DlgSettings(ArmoryDialog):
          osxMinorVer = OS_VARIANT[0].split(".")[1]
 
       lblNotify = QRichLabel(self.tr('<b>Enable notifications from the system-tray:</b>'))
-      self.chkBtcIn = QCheckBox(self.tr('Bitcoins Received'))
-      self.chkBtcOut = QCheckBox(self.tr('Bitcoins Sent'))
-      self.chkDiscon = QCheckBox(self.tr('Bitcoin Core/bitcoind disconnected'))
-      self.chkReconn = QCheckBox(self.tr('Bitcoin Core/bitcoind reconnected'))
+      self.chkBtcIn = QCheckBox(self.tr('Unobtaniums Received'))
+      self.chkBtcOut = QCheckBox(self.tr('Unobtaniums Sent'))
+      self.chkDiscon = QCheckBox(self.tr('Unobtanium Core/unobtaniumd disconnected'))
+      self.chkReconn = QCheckBox(self.tr('Unobtanium Core/unobtaniumd reconnected'))
 
       # FYI:If we're not on OS X, the if condition will never be hit.
       if (OS_MACOSX) and (int(osxMinorVer) < 7):
@@ -8614,7 +8614,7 @@ class DlgSettings(ArmoryDialog):
       frmLayout.addWidget(frmBtnDefaultURI, i, 0, 1, 3)
       i += 1
       frmLayout.addWidget(self.chkAskURIAtStartup, i, 0, 1, 3)
-      
+
       i += 1
       frmLayout.addWidget(HLINE(), i, 0, 1, 3)
 
@@ -8679,17 +8679,17 @@ class DlgSettings(ArmoryDialog):
 
       frmOptions = QFrame()
       frmOptions.setLayout(frmLayout)
-      
+
       self.settingsTab = QTabWidget()
       self.settingsTab.addTab(frmOptions, self.tr("General"))
-      
+
       #FeeChange tab
-      self.setupExtraTabs()      
+      self.setupExtraTabs()
       frmFeeChange = makeVertFrame([\
          self.frmFee, self.frmChange, self.frmAddrType, 'Stretch'])
-      
+
       self.settingsTab.addTab(frmFeeChange, self.tr("Fee and Address Types"))
-      
+
       self.scrollOptions = QScrollArea()
       self.scrollOptions.setWidget(self.settingsTab)
 
@@ -8708,23 +8708,23 @@ class DlgSettings(ArmoryDialog):
    def setupExtraTabs(self):
       ##########
       #fee
-      
+
       feeByte = self.main.getSettingOrSetDefault('Default_FeeByte', MIN_FEE_BYTE)
       txFee = self.main.getSettingOrSetDefault('Default_Fee', MIN_TX_FEE)
       adjustFee = self.main.getSettingOrSetDefault('AdjustFee', True)
       feeOpt = self.main.getSettingOrSetDefault('FeeOption', DEFAULT_FEE_TYPE)
       blocksToConfirm = self.main.getSettingOrSetDefault(\
          "Default_FeeByte_BlocksToConfirm", NBLOCKS_TO_CONFIRM)
-      
+
       def feeRadio(strArg):
          self.radioAutoFee.setChecked(False)
-         
+
          self.radioFeeByte.setChecked(False)
          self.leFeeByte.setEnabled(False)
-         
+
          self.radioFlatFee.setChecked(False)
          self.leFlatFee.setEnabled(False)
-         
+
          if strArg == 'Auto':
             self.radioAutoFee.setChecked(True)
          elif strArg == 'FeeByte':
@@ -8733,16 +8733,16 @@ class DlgSettings(ArmoryDialog):
          elif strArg == 'FlatFee':
             self.radioFlatFee.setChecked(True)
             self.leFlatFee.setEnabled(True)
-            
+
          self.feeOpt = strArg
-            
+
       def getCallbck(strArg):
          def callbck():
             return feeRadio(strArg)
          return callbck
-      
+
       labelFee = QRichLabel(self.tr("<b>Fee<br></b>"))
-      
+
       self.radioAutoFee = QRadioButton(self.tr("Auto fee/byte"))
       self.connect(self.radioAutoFee, SIGNAL('clicked()'), getCallbck('Auto'))
       self.sliderAutoFee = QSlider(Qt.Horizontal, self)
@@ -8750,31 +8750,31 @@ class DlgSettings(ArmoryDialog):
       self.sliderAutoFee.setMaximum(6)
       self.sliderAutoFee.setValue(blocksToConfirm)
       self.lblSlider = QLabel()
-      
+
       def getLblSliderText():
          blocksToConfirm = unicode(self.sliderAutoFee.value())
          return self.tr("Blocks to confirm: %1").arg(blocksToConfirm)
-      
+
       def setLblSliderText():
          self.lblSlider.setText(getLblSliderText())
-      
+
       setLblSliderText()
       self.sliderAutoFee.valueChanged.connect(setLblSliderText)
-      
+
       toolTipAutoFee = self.main.createToolTipWidget(self.tr(
-      'Fetch fee/byte from local Bitcoin node. '
+      'Fetch fee/byte from local Unobtanium node. '
       'Defaults to manual fee/byte on failure.'))
-      
+
       self.radioFeeByte = QRadioButton(self.tr("Manual fee/byte"))
       self.connect(self.radioFeeByte, SIGNAL('clicked()'), getCallbck('FeeByte'))
       self.leFeeByte = QLineEdit(str(feeByte))
       toolTipFeeByte = self.main.createToolTipWidget(self.tr('Values in satoshis/byte'))
-      
+
       self.radioFlatFee = QRadioButton(self.tr("Flat fee"))
       self.connect(self.radioFlatFee, SIGNAL('clicked()'), getCallbck('FlatFee'))
       self.leFlatFee = QLineEdit(coin2str(txFee, maxZeros=0))
       toolTipFlatFee = self.main.createToolTipWidget(self.tr('Values in BTC'))
-      
+
       self.checkAdjust = QCheckBox(self.tr("Auto-adjust fee/byte for better privacy"))
       self.checkAdjust.setChecked(adjustFee)
       feeToolTip = self.main.createToolTipWidget(self.tr(
@@ -8787,46 +8787,46 @@ class DlgSettings(ArmoryDialog):
       '<br><br>'
       'The auto-adjust fee feature only applies to fee/byte options '
       'and does not inflate your fee by more that 10% of its original value.'))
-      
+
       frmFeeLayout = QGridLayout()
       frmFeeLayout.addWidget(labelFee, 0, 0, 1, 1)
-      
+
       frmAutoFee = makeHorizFrame([self.radioAutoFee, self.lblSlider, toolTipAutoFee])
       frmFeeLayout.addWidget(frmAutoFee, 1, 0, 1, 1)
       frmFeeLayout.addWidget(self.sliderAutoFee, 2, 0, 1, 2)
-      
+
       frmFeeByte = makeHorizFrame([self.radioFeeByte, self.leFeeByte, \
                                    toolTipFeeByte, STRETCH, STRETCH])
       frmFeeLayout.addWidget(frmFeeByte, 3, 0, 1, 1)
-      
+
       frmFlatFee = makeHorizFrame([self.radioFlatFee, self.leFlatFee, \
                                    toolTipFlatFee, STRETCH, STRETCH])
-      frmFeeLayout.addWidget(frmFlatFee, 4, 0, 1, 1)     
-      
+      frmFeeLayout.addWidget(frmFlatFee, 4, 0, 1, 1)
+
       frmCheckAdjust = makeHorizFrame([self.checkAdjust, feeToolTip, STRETCH])
       frmFeeLayout.addWidget(frmCheckAdjust, 5, 0, 1, 2)
-      
+
       feeRadio(feeOpt)
 
       self.frmFee = QFrame()
       self.frmFee.setFrameStyle(STYLE_RAISED)
       self.frmFee.setLayout(frmFeeLayout)
-      
+
       #########
       #change
 
       def setChangeType(changeType):
          self.changeType = changeType
-               
+
       from ui.AddressTypeSelectDialog import AddressLabelFrame
       changeType = self.main.getSettingOrSetDefault('Default_ChangeType', DEFAULT_CHANGE_TYPE)
       self.changeTypeFrame = AddressLabelFrame(self.main, setChangeType)
-      
+
       def changeRadio(strArg):
          self.radioAutoChange.setChecked(False)
          self.radioForce.setChecked(False)
          self.changeTypeFrame.getFrame().setEnabled(False)
-         
+
          if strArg == 'Auto':
             self.radioAutoChange.setChecked(True)
             self.changeType = 'Auto'
@@ -8839,13 +8839,13 @@ class DlgSettings(ArmoryDialog):
             self.radioForce.setChecked(True)
             self.changeTypeFrame.getFrame().setEnabled(True)
             self.changeType = self.changeTypeFrame.getType()
-         
+
       def changeCallbck(strArg):
          def callbck():
             return changeRadio(strArg)
          return callbck
-      
-      
+
+
       labelChange = QRichLabel(self.tr("<b>Change Address Type<br></b>"))
 
       self.radioAutoChange = QRadioButton(self.tr("Auto change"))
@@ -8853,53 +8853,53 @@ class DlgSettings(ArmoryDialog):
       toolTipAutoChange = self.main.createToolTipWidget(self.tr(
       "Change address type will match the address type of recipient "
       "addresses. <br>"
-      
+
       "Favors P2SH when recipients are heterogenous. <br>"
-      
-      "Will create nested SegWit change if inputs are SegWit and " 
+
+      "Will create nested SegWit change if inputs are SegWit and "
       "recipient are P2SH. <br><br>"
-      
+
       "<b>Pre 0.96 Armory cannot spend from P2SH address types</b>"
       ))
-      
+
       self.radioForce = QRadioButton(self.tr("Force a script type:"))
       self.connect(self.radioForce, SIGNAL('clicked()'), changeCallbck('Force'))
 
       changeRadio(changeType)
-      
+
       frmChangeLayout = QGridLayout()
       frmChangeLayout.addWidget(labelChange, 0, 0, 1, 1)
-      
+
       frmAutoChange = makeHorizFrame([self.radioAutoChange, \
                                       toolTipAutoChange, STRETCH])
       frmChangeLayout.addWidget(frmAutoChange, 1, 0, 1, 1)
-      
+
       frmForce = makeHorizFrame([self.radioForce, self.changeTypeFrame.getFrame()])
       frmChangeLayout.addWidget(frmForce, 2, 0, 1, 1)
-            
-      self.frmChange = QFrame()    
+
+      self.frmChange = QFrame()
       self.frmChange.setFrameStyle(STYLE_RAISED)
       self.frmChange.setLayout(frmChangeLayout)
-      
+
       #########
       #receive addr type
-      
+
       labelAddrType = QRichLabel(self.tr("<b>Preferred Receive Address Type</b>"))
-      
+
       def setAddrType(addrType):
          self.addrType = addrType
 
       self.addrType = self.main.getSettingOrSetDefault('Default_ReceiveType', DEFAULT_RECEIVE_TYPE)
       self.addrTypeFrame = AddressLabelFrame(self.main, setAddrType)
       self.addrTypeFrame.setType(self.addrType)
-      
+
       frmAddrLayout = QGridLayout()
       frmAddrLayout.addWidget(labelAddrType, 0, 0, 1, 1)
-      
+
       frmAddrTypeSelect = makeHorizFrame([self.addrTypeFrame.getFrame()])
-      
+
       frmAddrLayout.addWidget(frmAddrTypeSelect, 2, 0, 1, 1)
-      
+
       self.frmAddrType = QFrame()
       self.frmAddrType.setFrameStyle(STYLE_RAISED)
       self.frmAddrType.setLayout(frmAddrLayout)
@@ -8914,7 +8914,7 @@ class DlgSettings(ArmoryDialog):
             if not os.path.exists(pathExe):
                exeName = 'bitcoin-qt.exe' if OS_WINDOWS else 'bitcoin-qt'
                QMessageBox.warning(self, self.tr('Invalid Path'),self.tr(
-                  'The path you specified for the Bitcoin software installation '
+                  'The path you specified for the Unobtanium software installation '
                   'does not exist.  Please select the directory that contains %1 '
                   'or leave it blank to have Armory search the default location '
                   'for your operating system').arg(exeName), QMessageBox.Ok)
@@ -8925,15 +8925,15 @@ class DlgSettings(ArmoryDialog):
          else:
             self.main.settings.delete('SatoshiExe')
 
-      # Check path is supplied for bitcoind home directory
+      # Check path is supplied for unobtaniumd home directory
       pathHome = unicode(self.edtSatoshiHomePath.text()).strip()
       if len(pathHome) > 0:
          if not os.path.exists(pathHome):
             QMessageBox.warning(self, self.tr('Invalid Path'), self.tr(
-                  'The path you specified for the Bitcoin software home directory '
+                  'The path you specified for the Unobtanium software home directory '
                   'does not exist.  Only specify this directory if you use a '
-                  'non-standard "-datadir=" option when running Bitcoin Core or '
-                  'bitcoind.  If you leave this field blank, the following '
+                  'non-standard "-datadir=" option when running Unobtanium Core or '
+                  'unobtaniumd.  If you leave this field blank, the following '
                   'path will be used: <br><br> %1').arg(BTC_HOME_DIR), QMessageBox.Ok)
             return
          self.main.writeSetting('SatoshiDatadir', pathHome)
@@ -8983,18 +8983,18 @@ class DlgSettings(ArmoryDialog):
       self.main.writeSetting('NotifyBtcOut', self.chkBtcOut.isChecked())
       self.main.writeSetting('NotifyDiscon', self.chkDiscon.isChecked())
       self.main.writeSetting('NotifyReconn', self.chkReconn.isChecked())
-      
-      
+
+
       #fee
       self.main.writeSetting('FeeOption', self.feeOpt)
       self.main.writeSetting('Default_FeeByte', str(self.leFeeByte.text()))
       self.main.writeSetting('Default_Fee', str2coin(str(self.leFlatFee.text())))
       self.main.writeSetting('AdjustFee', self.checkAdjust.isChecked())
-      self.main.writeSetting('Default_FeeByte_BlocksToConfirm', 
+      self.main.writeSetting('Default_FeeByte_BlocksToConfirm',
                              self.sliderAutoFee.value())
-      
+
       #change
-      self.main.writeSetting('Default_ChangeType', self.changeType)      
+      self.main.writeSetting('Default_ChangeType', self.changeType)
 
       #addr type
       self.main.writeSetting('Default_ReceiveType', self.addrType)
@@ -9028,7 +9028,7 @@ class DlgSettings(ArmoryDialog):
             self.tr('"Expert" mode is similar to "Advanced" but includes '
              'access to lower-level info about transactions, scripts, keys '
              'and network protocol.  Most extra functionality is geared '
-             'towards Bitcoin software developers.')
+             'towards Unobtanium software developers.')
       self.lblUsermodeDescr.setText(strDescr)
 
 
@@ -9313,7 +9313,7 @@ class DlgExportTxHistory(ArmoryDialog):
             else:
                #if SentToSelf, balance and total rolling balance should only take fee in account
                rawAmt, fee_byte = getFeeForTx(hex_to_binary(row[COL.TxHash]))
-               rawAmt = -1 * rawAmt 
+               rawAmt = -1 * rawAmt
 
             if order == "ascending":
                wltBalances[row[COL.WltID]] += rawAmt
@@ -9482,8 +9482,8 @@ class DlgRequestPayment(ArmoryDialog):
 
       lblDescr = QRichLabel(\
          self.tr('Create a clickable link that you can copy into email or webpage to '
-         'request a payment.   If the user is running a Bitcoin program '
-         'that supports "bitcoin:" links, that program will open with '
+         'request a payment.   If the user is running a Unobtanium program '
+         'that supports "unobtanium:" links, that program will open with '
          'all this information pre-filled after they click the link.'))
 
       lblDescr.setContentsMargins(5, 5, 5, 5)
@@ -9491,8 +9491,8 @@ class DlgRequestPayment(ArmoryDialog):
 
 
       ttipPreview = self.main.createToolTipWidget(\
-         self.tr('The following Bitcoin desktop applications <i>try</i> to '
-         'register themselves with your computer to handle "bitcoin:" '
+         self.tr('The following Unobtanium desktop applications <i>try</i> to '
+         'register themselves with your computer to handle "unobtanium:" '
          'links: Armory, Multibit, Electrum'))
       ttipLinkText = self.main.createToolTipWidget(\
          self.tr('This is the text to be shown as the clickable link.  It should '
@@ -9793,10 +9793,10 @@ class DlgUriCopyAndPaste(ArmoryDialog):
 
       self.uriDict = {}
       lblDescr = QRichLabel(self.tr('Copy and paste a raw bitcoin URL string here.  '
-                            'A valid string starts with "bitcoin:" followed '
+                            'A valid string starts with "unobtanium:" followed '
                             'by a bitcoin address.'
                             '<br><br>'
-                            'You should use this feature if there is a "bitcoin:" '
+                            'You should use this feature if there is a "unobtanium:" '
                             'link in a webpage or email that does not load Armory '
                             'when you click on it.  Instead, right-click on the '
                             'link and select "Copy Link Location" then paste it '
@@ -9996,7 +9996,7 @@ class DlgSimpleBackup(ArmoryDialog):
       self.wlt = wlt
 
       lblDescrTitle = QRichLabel(self.tr(
-         '<b>Protect Your Bitcoins -- Make a Wallet Backup!</b>'))
+         '<b>Protect Your Unobtaniums -- Make a Wallet Backup!</b>'))
 
       lblDescr = QRichLabel(self.tr(
          'A failed hard-drive or forgotten passphrase will lead to '
@@ -13368,7 +13368,7 @@ class DlgFactoryReset(ArmoryDialog):
          'It is <i>strongly</i> recommended that you make backups of your '
          'wallets before continuing, though <b>wallet files will never be '
          'intentionally deleted!</b>  All Armory '
-         'wallet files, and the wallet.dat file used by Bitcoin Core/bitcoind '
+         'wallet files, and the wallet.dat file used by Unobtanium Core/unobtaniumd '
          'should remain untouched in their current locations.  All Armory '
          'wallets will automatically be detected and loaded after the reset. '
          '<br><br>'
@@ -13395,7 +13395,7 @@ class DlgFactoryReset(ArmoryDialog):
       self.lblBitcoinDBText = QRichLabel(self.tr('<b>Also re-download the blockchain (extreme)</b>'))
       self.lblBitcoinDB = QRichLabel(self.tr(
          'This will delete settings, network data, Armory\'s databases, '
-         '<b>and</b> Bitcoin Core\'s databases.  Bitcoin Core will '
+         '<b>and</b> Unobtanium Core\'s databases.  Unobtanium Core will '
          'have to download the blockchain again. This can take 8-72 hours depending on your '
          'system\'s speed and connection.  Only use this if you '
          'suspect blockchain corruption, such as receiving StdOut/StdErr errors '
@@ -13493,7 +13493,7 @@ class DlgFactoryReset(ArmoryDialog):
          if self.chkSaveSettings.isChecked():
             msg = self.tr(
                'You are about to delete <b>all</b> '
-               'blockchain databases on your system.  The Bitcoin software will '
+               'blockchain databases on your system.  The Unobtanium software will '
                'have to redownload all of the blockchain data over the peer-to-peer '
                'network again. This can take from 8 to 72 hours depending on '
                'your system\'s speed and connection.  <br><br><b>Are you absolutely '
@@ -13501,7 +13501,7 @@ class DlgFactoryReset(ArmoryDialog):
          else:
             msg = self.tr(
                'You are about to delete your settings and delete <b>all</b> '
-               'blockchain databases on your system.  The Bitcoin software will '
+               'blockchain databases on your system.  The Unobtanium software will '
                'have to redownload all of the blockchain data over the peer-to-peer '
                'network again. This can take from 8 to 72 hours depending on '
                'your system\'s speed and connection.  <br><br><b>Are you absolutely '
@@ -13519,13 +13519,13 @@ class DlgFactoryReset(ArmoryDialog):
 
 
          if not self.main.settings.get('ManageSatoshi'):
-            # Must have user shutdown Bitcoin sw now, and delete DBs now
+            # Must have user shutdown Unobtanium sw now, and delete DBs now
             reply = MsgBoxCustom(MSGBOX.Warning, self.tr('Restart Armory'), self.tr(
-               '<b>Bitcoin Core (or bitcoind) must be closed to do the reset!</b> '
-               'Please close all Bitcoin software, <u><b>right now</b></u>, '
+               '<b>Unobtanium Core (or unobtaniumd) must be closed to do the reset!</b> '
+               'Please close all Unobtanium software, <u><b>right now</b></u>, '
                'before clicking "Continue". '
                '<br><br>'
-               'Armory will now close.  Please restart Bitcoin Core/bitcoind '
+               'Armory will now close.  Please restart Unobtanium Core/unobtaniumd '
                'first and wait for it to finish synchronizing before restarting '
                'Armory.'), wCancel=True, yesStr="Continue")
 
@@ -13632,7 +13632,7 @@ class DlgBroadcastBlindTx(ArmoryDialog):
 
       lblDescr = QRichLabel(self.tr(
          'Copy a raw, hex-encoded transaction below to have Armory '
-         'broadcast it to the Bitcoin network.  This function is '
+         'broadcast it to the Unobtanium network.  This function is '
          'provided as a convenience to expert users, and carries '
          'no guarantees of usefulness. '
          '<br><br>'
@@ -13641,11 +13641,11 @@ class DlgBroadcastBlindTx(ArmoryDialog):
          '<ul>'
          '<li>The transaction will be "broadcast" by sending it '
          'to the connected Bitcon Core instance which will '
-         'forward it to the rest of the Bitcoin network. '
+         'forward it to the rest of the Unobtanium network. '
          'However, if the transaction is non-standard or '
-         'does not satisfy standard fee rules, Bitcoin Core '
+         'does not satisfy standard fee rules, Unobtanium Core '
          '<u>will</u> drop it and it '
-         'will never be seen by the Bitcoin network. '
+         'will never be seen by the Unobtanium network. '
          '</li>'
          '<li>There will be no feedback as to whether the '
          'transaction succeeded.  You will have to verify the '
@@ -13743,11 +13743,11 @@ class DlgBroadcastBlindTx(ArmoryDialog):
          dispToExplorer = 'https://blockchain.info/search/%s...' % hexhash[:16]
 
       QMessageBox.information(self, self.tr("Broadcast!"), self.tr(
-         'Your transaction was successfully sent to the local Bitcoin '
+         'Your transaction was successfully sent to the local Unobtanium '
          'Core instance, though there is no guarantees that it was '
          'forwarded to the rest of the network.   On testnet, just about '
          'every valid transaction will successfully propagate.  On the '
-         'main Bitcoin network, this will fail unless it was a standard '
+         'main Unobtanium network, this will fail unless it was a standard '
          'transaction type. '
          'The transaction '
          'had the following hash: '
@@ -13791,7 +13791,7 @@ class DlgRegAndTest(ArmoryDialog):
       self.connect(self.btcClose, SIGNAL(CLICKED), self.close)
       btnBox = makeHorizFrame([STRETCH, self.btcClose])
 
-      lblError = QRichLabel(self.tr('Error: You cannot run the Regression Test network and Bitcoin Test Network at the same time.'))
+      lblError = QRichLabel(self.tr('Error: You cannot run the Regression Test network and Unobtanium Test Network at the same time.'))
 
       dlgLayout = QVBoxLayout()
       frmBtn = makeHorizFrame([STRETCH, self.btcClose])
@@ -13838,7 +13838,7 @@ class DlgBrowserWarn(ArmoryDialog):
    def accept(self):
      import webbrowser
      webbrowser.open(self.link)
-     super(DlgBrowserWarn, self).accept() 
+     super(DlgBrowserWarn, self).accept()
 
 # Put circular imports at the end
 from ui.WalletFrames import SelectWalletFrame, WalletBackupFrame,\

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 # jackjack's signing/verifying tool
-# verifies base64 signatures from Bitcoin
+# verifies base64 signatures from Unobtanium
 # signs message in three formats:
-#   - Bitcoin base64 (compatible with Bitcoin)
+#   - Unobtanium base64 (compatible with Unobtanium)
 #   - ASCII armored, Clearsign
 #   - ASCII armored, Base64
 #
@@ -40,15 +40,15 @@ BITCOIN_SIG_TYPE_MARKER = 'BITCOIN SIGNATURE'
 BASE64_MSG_TYPE_MARKER = 'BITCOIN MESSAGE'
 BITCOIN_ARMORY_COMMENT = ''
 class UnknownSigBlockType(Exception): pass
-   
-def randomk():  
+
+def randomk():
    # Using Crypto++ CSPRNG instead of python's
    sbdRandK = CppBlockUtils.SecureBinaryData().GenerateRandom(32)
    hexRandK = sbdRandK.toBinStr().encode('hex_codec')
    return int(hexRandK, 16)
 
 
-# Common constants/functions for Bitcoin
+# Common constants/functions for Unobtanium
 def hash_160_to_bc_address(h160, addrtype=0):
    vh160 = chr(addrtype) + h160
    h = Hash(vh160)
@@ -119,7 +119,7 @@ def ASecretToSecret(key):
       return vch[1:]
    else:
       return False
-     
+
 def DecodeBase58Check(psz):
    vchRet = b58decode(psz, None)
    key = vchRet[0:-4]
@@ -131,7 +131,7 @@ def DecodeBase58Check(psz):
    else:
       return key
 
- 
+
 def regenerate_key(sec):
    b = ASecretToSecret(sec)
    if not b:
@@ -153,7 +153,7 @@ def GetSecret(pkey):
 def i2d_ECPrivateKey(pkey, compressed=False):#, crypted=True):
    part3='a081a53081a2020101302c06072a8648ce3d0101022100'  # for uncompressed keys
    if compressed:
-      if True:#not crypted:  ## Bitcoin accepts both part3's for crypted wallets...
+      if True:#not crypted:  ## Unobtanium accepts both part3's for crypted wallets...
          part3='a08185308182020101302c06072a8648ce3d0101022100'  # for compressed keys
       key = '3081d30201010420' + \
          '%064x' % pkey.secret + \
@@ -175,7 +175,7 @@ def i2d_ECPrivateKey(pkey, compressed=False):#, crypted=True):
          '022100' + \
          '%064x' % _r + \
          '020101a144034200'
-         
+
    return key.decode('hex') + i2o_ECPublicKey(pkey, compressed)
 
 def i2o_ECPublicKey(pkey, compressed=False):
@@ -429,7 +429,7 @@ def decvi(d):
    return '\xff'+decbin(d,8,True)
 
 def format_msg_to_sign(msg):
-   return "\x18Bitcoin Signed Message:\n"+decvi(len(msg))+msg
+   return "\x1bUnobtanium Signed Message:\n"+decvi(len(msg))+msg
 
 def sqrt_mod(a, p):
    return pow(a, (p+1)/4, p)

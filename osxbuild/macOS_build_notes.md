@@ -34,17 +34,17 @@ If a bug is found, please consult the [Bitcoin Forum](https://bitcointalk.org/in
 
         sudo ln -s /usr/local/bin/glibtoolize /usr/local/bin/libtoolize
 
- 7. Download Armory [here](https://github.com/goatpig/BitcoinArmory). There are two options.
+ 7. Download Armory [here](https://github.com/goatpig/BxtcoinArmory). There are two options.
 
-   7.1. Download the source code from the [GitHub Armory releases page](https://github.com/goatpig/BitcoinArmory/releases/). Ensure that you download **only** the relevant "src.tar.gz" file, and **not** the code from the "Download ZIP" buttonfound elsewhere on GitHub. (Long story short, the `fcgi` submodule, which Armory requires, will **only** be included in the "src.tar.gz" file due to a long-standing GitHub bug affecting code auto-downloads.) After verifying the code, per the [macOS README directions](../README_macOS.md), unzip the code.
+   7.1. Download the source code from the [GitHub Armory releases page](https://github.com/goatpig/BxtcoinArmory/releases/). Ensure that you download **only** the relevant "src.tar.gz" file, and **not** the code from the "Download ZIP" buttonfound elsewhere on GitHub. (Long story short, the `fcgi` submodule, which Armory requires, will **only** be included in the "src.tar.gz" file due to a long-standing GitHub bug affecting code auto-downloads.) After verifying the code, per the [macOS README directions](../README_macOS.md), unzip the code.
 
-   7.2. The more advanced method, which is recommended only for developers and other advanced tinkerers, is to use [Git version control](https://en.wikipedia.org/wiki/Git) in order to obtain the code. While more advanced, this makes it far easier to obtain code updates and to submit patches to Armory. Go [here](https://github.com/goatpig/BitcoinArmory) and use the "Clone or download" button to get a URL to use to clone the code. [This page](https://help.github.com/articles/cloning-a-repository-from-github/) has a partial tutorial, and [SourceTree](https://www.sourcetreeapp.com/) is a good app for starters. It is highly recommended that, at a bare minimum, users learn how to clone a repo and successfully switch between branches before going any further.
+   7.2. The more advanced method, which is recommended only for developers and other advanced tinkerers, is to use [Git version control](https://en.wikipedia.org/wiki/Git) in order to obtain the code. While more advanced, this makes it far easier to obtain code updates and to submit patches to Armory. Go [here](https://github.com/goatpig/BxtcoinArmory) and use the "Clone or download" button to get a URL to use to clone the code. [This page](https://help.github.com/articles/cloning-a-repository-from-github/) has a partial tutorial, and [SourceTree](https://www.sourcetreeapp.com/) is a good app for starters. It is highly recommended that, at a bare minimum, users learn how to clone a repo and successfully switch between branches before going any further.
 
  8. (*OPTIONAL*) If compiling on a pre-10.12 macOS version with the intention of compiling for macOS 10.7, change the minimum version to 10.7 from 10.8 in osxbuild/build-app.py, osxbuild/objc\_armory/ArmoryMac.pro, and osxbuild/qmake\_LFLAGS.patch by searching for instances of 10.8 and changing them to 10.7.
 
  9. Compile Armory.
 
-		cd *Location of Armory source code*  (An example would be ~/Projects/BitcoinArmory)
+		cd *Location of Armory source code*  (An example would be ~/Projects/BxtcoinArmory)
 		git submodule init  (Required only if using Git version control, as discussed in Step 7.2.)
 		git submodule update  (Required only if using Git version control, as discussed in Step 7.2.)
 		cd osxbuild
