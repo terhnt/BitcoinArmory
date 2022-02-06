@@ -29,7 +29,7 @@ To just build the _CppBlockUtils.pyd so you can run ArmoryQt.py, you can omit py
 
     - `C:\Python27\python.exe` was copied and renamed to `C:\Python27\python64.exe`
 
-    - `C:\Python27_64\Lib\site-packages\PyQt4\pyrcc4.exe` is referenced by a build script even though default python installation does not have the **_64**.  Either rename the base directory or modify *BxtcoinArmory/cppForSwig/BxtcoinArmory_SwigDLL/build_installer_64.bat* to reference the correct path.
+    - `C:\Python27_64\Lib\site-packages\PyQt4\pyrcc4.exe` is referenced by a build script even though default python installation does not have the **_64**.  Either rename the base directory or modify *BitcoinArmory/cppForSwig/BitcoinArmory_SwigDLL/build_installer_64.bat* to reference the correct path.
 
  - Make sure the following folders are in your PATH (environment variable):
 
@@ -43,4 +43,4 @@ To just build the _CppBlockUtils.pyd so you can run ArmoryQt.py, you can omit py
     - `C:\Python27\Lib\site-packages\zope\__init__.py`
 
 
- - Swig is not installed like the other packages.  Unpack swig directory into *cppForSwig* and rename it to *swigwin*.  The following path should be valid:  `BxtcoinArmory/cppForSwig/swigwin/swig.exe`
+ - Swig is not installed like the other packages.  Unpack swig directory into *cppForSwig* and rename it to *swigwin*.  The following path should be valid:  `BitcoinArmory/cppForSwig/swigwin/swig.exe`

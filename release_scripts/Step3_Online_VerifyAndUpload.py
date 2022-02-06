@@ -57,7 +57,7 @@ def logprint(s):
    print s
    uploadlog.write(s + '\n')
 
-srcGitRepo  = checkExists(os.path.join(inDir, 'BxtcoinArmory'))
+srcGitRepo  = checkExists(os.path.join(inDir, 'BitcoinArmory'))
 srcInstalls = checkExists(os.path.join(inDir, 'installers'))
 srcAnnounce = checkExists(os.path.join(inDir, 'signedannounce'))
 
@@ -224,5 +224,5 @@ if not isDryRun:
    logprint('')
    logprint('Not actually pushing the signed tag; do it manually --')
    logprint('Copy the following command to push the tag:')
-   logprint('   cd %s/BxtcoinArmory; git push origin v%s' % (inDir, verFullStr))
+   logprint('   cd %s/BitcoinArmory; git push origin v%s' % (inDir, verFullStr))
 

@@ -19,7 +19,7 @@ from release_settings import getReleaseParams, getMasterPackageList
 
 masterPkgList = getMasterPackageList()
 
-CLONE_URL = 'https://github.com/etotheipi/BxtcoinArmory.git'
+CLONE_URL = 'https://github.com/etotheipi/BitcoinArmory.git'
 
 if len(argv)<3:
    import textwrap
@@ -43,7 +43,7 @@ annSrc  = argv[4] if len(argv)>4 else './unsignedannounce'
 shaCore = argv[5] if len(argv)>5 else None
 
 instDst  = os.path.join(outDir, 'installers')
-cloneDir = os.path.join(outDir, 'BxtcoinArmory')
+cloneDir = os.path.join(outDir, 'BitcoinArmory')
 rscrDir  = os.path.join(outDir, 'release_scripts')
 annDst   = os.path.join(outDir, 'unsignedannounce')
 

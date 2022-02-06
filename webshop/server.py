@@ -83,7 +83,7 @@ def refund():
         # check to see if this refund request already exists
         refund_file = os.path.join(REFUNDS_DIRECTORY,orderid)
         if os.path.isfile(refund_file):
-            error = "order id %s is already in the process of a refund please contact orders@bxtcoinarmory.com if you have any questions" % orderid
+            error = "order id %s is already in the process of a refund please contact orders@bitcoinarmory.com if you have any questions" % orderid
         else:
             # check that the order exists
             order_file = os.path.join(ORDERS_DIRECTORY,orderid)

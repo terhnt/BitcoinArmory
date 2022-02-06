@@ -90,11 +90,11 @@ def signAnnounceFiles(wltPath):
    if CLI_OPTIONS.testAnnounceCode:
       signAddress  = '1PpAJyNoocJt38Vcf4AfPffaxo76D4AAEe'
       announceName = 'testannounce.txt'
-      pathPrefix   = 'https://s3.amazonaws.com/bxtcoinarmory-testing/'
+      pathPrefix   = 'https://s3.amazonaws.com/bitcoinarmory-testing/'
    else:
       signAddress  = '1NWvhByxfTXPYNT4zMBmEY3VL8QJQtQoei'
       announceName = 'announce.txt'
-      pathPrefix   = 'https://s3.amazonaws.com/bxtcoinarmory-media/'
+      pathPrefix   = 'https://s3.amazonaws.com/bitcoinarmory-media/'
    
    
    announcePath = os.path.join(outDir, announceName)

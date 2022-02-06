@@ -71,14 +71,14 @@ def logprint(s):
 
 
 # Check that all the paths expected from step 1 actually exist
-srcGitRepo  = checkExists(os.path.join(inDir, 'BxtcoinArmory'))
+srcGitRepo  = checkExists(os.path.join(inDir, 'BitcoinArmory'))
 srcInstalls = checkExists(os.path.join(inDir, 'installers'))
 srcAnnounce = checkExists(os.path.join(inDir, 'unsignedannounce'))
 srcRelease  = checkExists(os.path.join(inDir, 'release_scripts'))
 srcCoreSHA  = checkExists(os.path.join(inDir, 'SHA256SUMS.asc'), 'skip')
 
 # Check that all the paths expected from step 1 actually exist
-dstGitRepo  =               os.path.join(outDir, 'BxtcoinArmory')
+dstGitRepo  =               os.path.join(outDir, 'BitcoinArmory')
 dstInstalls = makeOutputDir(os.path.join(outDir, 'installers'))
 dstAnnounce = makeOutputDir(os.path.join(outDir, 'signedannounce'))
 dstRelease  = makeOutputDir(os.path.join(outDir, 'release_scripts'))

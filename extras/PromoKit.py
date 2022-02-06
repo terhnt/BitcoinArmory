@@ -58,7 +58,7 @@ def createPrintScene(wallet, amountString, expiresString):
    scene.newLine()
    scene.drawText('Paper Backup for Armory Wallet', GETFONT('Var', 11))
    scene.newLine()
-   scene.drawText('http://www.bxtcoinarmory.com')
+   scene.drawText('http://www.bitcoinarmory.com')
 
    scene.newLine(extra_dy=20)
    scene.drawHLine()

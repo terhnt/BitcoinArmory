@@ -1300,7 +1300,7 @@ class DlgWalletDetails(ArmoryDialog):
             'password before, only rely on a digital backup if you store '
             'the password with it!'
             '<br><br>'
-            '<a href="https://bxtcointalk.org/index.php?topic=152151.0">'
+            '<a href="https://bitcointalk.org/index.php?topic=152151.0">'
             'Read more about Armory backups</a>'), None, yesStr='Ok', \
             dnaaStartChk=True)
          self.main.setWltSetting(wlt.uniqueIDB58, 'DNAA_RemindBackup', result[1])

@@ -8,7 +8,7 @@
 #
 # Project:    Armory
 # Author:     Alan Reiner
-# Website:    www.bxtcoinarmory.com
+# Website:    www.bitcoinarmory.com
 # Orig Date:  20 November, 2011
 #
 ################################################################################

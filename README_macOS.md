@@ -4,7 +4,7 @@ Armory will run on macOS 10.8 and beyond. It is highly recommended to install Ar
 
 Due to [Python](https://python.org/) requirements that can't be met by default on macOS, users must use `brew` to install an updated version of OpenSSL in order for Armory to run. Please follow these instructions.
 
-1. Open a terminal and run the `brew` command. If `brew` isn't found, please execute the following commands from the terminal (aka command line). If the final command returns any errors, consult Google, the *bitcoin-armory* IRC channel on Freenode, or the [Bitcoin Forum](https://bxtcointalk.org/index.php?board=97.0) for further instructions.
+1. Open a terminal and run the `brew` command. If `brew` isn't found, please execute the following commands from the terminal (aka command line). If the final command returns any errors, consult Google, the *bitcoin-armory* IRC channel on Freenode, or the [Bitcoin Forum](https://bitcointalk.org/index.php?board=97.0) for further instructions.
 
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         touch ~/.bashrc
@@ -29,7 +29,7 @@ Official Armory builds are signed by goatpig, the lead maintainer. However, goat
 
         gpg --recv-keys --keyserver keyserver.ubuntu.com 4922589A
 
-4. Download the appropriate macOS build [from the release page](https://github.com/goatpig/BxtcoinArmory/releases/) (e.g., *armory\_2.4.1.99\_osx.tar.gz*), along with *sha256sum.txt.asc*, which will contain a GPG-signed list of SHA-256 hashes of the code posted by goatpig. If a macOS-specific *shasum* file is unavailable, try *sha256sum.txt.asc* instead.
+4. Download the appropriate macOS build [from the release page](https://github.com/goatpig/BitcoinArmory/releases/) (e.g., *armory\_2.4.1.99\_osx.tar.gz*), along with *sha256sum.txt.asc*, which will contain a GPG-signed list of SHA-256 hashes of the code posted by goatpig. If a macOS-specific *shasum* file is unavailable, try *sha256sum.txt.asc* instead.
 
 5. Verify the SHA-256 hash of the macOS build.
 
@@ -43,7 +43,7 @@ Official Armory builds are signed by goatpig, the lead maintainer. However, goat
 
    If you see `gpg: Good signature from "goatpig (Offline signing key for Armory releases) <moothecowlord@gmail.com>" [unknown]` in the terminal, the SHA-256 hash list was signed by goatpig. If the macOS code has the correct hash and the list of hashes were signed by goatpig, you now know the code is exactly what was uploaded by goatpig.
 
-If verification fails at any point, double-check the commands you're running, and double check the fingerprint on the Ubuntu keyserver. If the fingerprints match and the commands are correct, [please post on Bitcoin Forum's Armory subforum](https://bxtcointalk.org/index.php?board=97.0) or the *bitcoin-armory* IRC channel on Freenode and notify goatpig immediately.
+If verification fails at any point, double-check the commands you're running, and double check the fingerprint on the Ubuntu keyserver. If the fingerprints match and the commands are correct, [please post on Bitcoin Forum's Armory subforum](https://bitcointalk.org/index.php?board=97.0) or the *bitcoin-armory* IRC channel on Freenode and notify goatpig immediately.
 
 ## Running Armory
 Once the builds are verified, the following steps should be followed. (Note that these steps aren't required by people who compile their own version of Armory.)
@@ -65,7 +65,7 @@ See the [macOS build README](osxbuild/OSX_build_notes.md) for more info.
 As of 2017, armoryd (a JSON-RPC daemon for Armory) is [in its own repo](https://github.com/goatpig/armoryd), separate from Armory. If users wish to run armoryd under macOS, the easiest solution is to open up Armory.app and place armoryd.py alongside the Armory codebase (Contents/MacOS/py/usr/local/lib/armory). The user can then execute the script that kicks off armoryd (`Contents/MacOS/armoryd`).
 
 ## macOS-specific Bugs
-Armory developers make a best effort to ensure that all Armory features are available on all versions of Armory. Unfortunately, there are rare cases where the macOS version is missing features or has bugs not found elsewhere. The following is a list of known bugs/issues. Please report any other bugs on the [Bitcoin Forum](https://bxtcointalk.org/index.php?board=97.0) or on the *bitcoin-armory* IRC channel on Freenode.
+Armory developers make a best effort to ensure that all Armory features are available on all versions of Armory. Unfortunately, there are rare cases where the macOS version is missing features or has bugs not found elsewhere. The following is a list of known bugs/issues. Please report any other bugs on the [Bitcoin Forum](https://bitcointalk.org/index.php?board=97.0) or on the *bitcoin-armory* IRC channel on Freenode.
 
 - Due to unknown issues with multithreading on Qt 4 (a library Armory uses), there are rare instances where Armory may crash suddenly. The Armory team has done its best to mitigate the crashes, with very few users reporting any crashes at all. Armory developers themselves haven't experienced any such crashes since approximately June 2015, and no users have reported such issues since around that time.
 - The "File Open" dialog under macOS Armory is very "dumb." This is due to an unknown Qt 4 bug that causes Armory to crash whenever a "native" dialog is opened. This means opening files in certain locations (e.g., thumb drives) is very difficult. The only consistent solutions are to copy files over to a location that can be opened, or to generate a [symbolic link](http://askubuntu.com/questions/600714/creating-a-symlink-from-one-folder-to-another-with-different-names) to the desired directory.

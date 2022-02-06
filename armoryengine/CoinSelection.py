@@ -646,7 +646,7 @@ def PyEvalCoinSelect(utxoSelectList, targetOutVal, minFee, weights=WEIGHTS):
 
 
 ################################################################################
-# https://bxtcointalk.org/index.php?topic=92496.msg1126310#msg1126310 contains a
+# https://bitcointalk.org/index.php?topic=92496.msg1126310#msg1126310 contains a
 # description (possibly out-of-date?) of how this function works.
 @TimeThisFunction
 def PySelectCoins(unspentTxOutInfo, targetOutVal, minFee=0, numRand=10, margin=CENT):

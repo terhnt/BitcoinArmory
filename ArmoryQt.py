@@ -3163,7 +3163,7 @@ class ArmoryMainWindow(QMainWindow):
       LOGERROR('Failure message: %s' % (errorMsg))
       searchstr  = binary_to_hex(txHash, BIGENDIAN)
 
-      supportURL       = 'https://github.com/goatpig/BxtcoinArmory/issues'
+      supportURL       = 'https://github.com/goatpig/BitcoinArmory/issues'
       blkexplURL       = BLOCKEXPLORE_URL_TX % searchstr
       blkexplURL_short = BLOCKEXPLORE_URL_TX % searchstr[:20]
 
@@ -4178,10 +4178,10 @@ class ArmoryMainWindow(QMainWindow):
       if state == 'NewUserInfo':
          return self.tr(
          'For more information about Armory, and even Unobtanium itself, you should '
-         'visit the <a href="https://bxtcointalk.org/index.php?board=97.0">Armory Forum</a> '
+         'visit the <a href="https://bitcointalk.org/index.php?board=97.0">Armory Forum</a> '
 	     'and <a href="http://unobtanium.uno">Unobtanium.uno</a>.  If '
          'you are experiencing problems using this software, please visit the '
-         '<a href="https://bxtcointalk.org/index.php?board=97.0">Armory Forum</a>. Users '
+         '<a href="https://bitcointalk.org/index.php?board=97.0">Armory Forum</a>. Users '
 	     'there will help you with any issues that you have. '
          '<br><br>'
          '<b><u>IMPORTANT:</u></b> Make a backup of your wallet(s)!  Paper '
@@ -4284,7 +4284,7 @@ class ArmoryMainWindow(QMainWindow):
             'it is complete.  If Unobtanium Core is already running and you believe '
             'the lack of connection is an error (especially if using proxies), '
             'please see <a href="'
-            'https://bxtcointalk.org/index.php?topic=155717.msg1719077#msg1719077">'
+            'https://bitcointalk.org/index.php?topic=155717.msg1719077#msg1719077">'
             'this link</a> for options.'
             '<br><br>'
             '<b>If you prefer to have Armory do this for you</b>, '
@@ -4410,7 +4410,7 @@ class ArmoryMainWindow(QMainWindow):
             'accepting connections from localhost.  '
             '<br><br>'
             'If you have not changed anything, please export the log file '
-            '(from the "File" menu) and open an issue at https://github.com/goatpig/BxtcoinArmory/issues')
+            '(from the "File" menu) and open an issue at https://github.com/goatpig/BitcoinArmory/issues')
          if state == 'OfflineSatoshiAvail':
             return self.tr( \
             'Armory does not detect internet access, but it does detect '
@@ -4470,7 +4470,7 @@ class ArmoryMainWindow(QMainWindow):
                   '<br><br> '
                   'Unfortunately, this error is so strange, Armory does not '
                   'recognize it.  Please go to "Export Log File" from the "File" '
-                  'menu and submit an issue at https://github.com/goatpig/BxtcoinArmory/issues. '
+                  'menu and submit an issue at https://github.com/goatpig/BitcoinArmory/issues. '
                   'We apologize for the inconvenience!'))
 
    # TODO - move out of polling and call on events

@@ -238,8 +238,8 @@ segmentOrderList = [[0,1],     # maybe I got lazy and just used hello
 passwordFinder.searchForPassword(segmentList, segmentOrderList)
 
 # To run this script first download it and save it in the base directory of
-# Armory repository from git. For example mine is at C:\Users\Andy\BxtcoinArmory
-# You can clone the repository from here https://github.com/etotheipi/BxtcoinArmory
+# Armory repository from git. For example mine is at C:\Users\Andy\BitcoinArmory
+# You can clone the repository from here https://github.com/etotheipi/BitcoinArmory
 # The latest version of this file can be found in the extras directory in the repo.
 #
 # You also need to copy _CppBlockUtils.pyd and CppBlockUtils.py from the library.zip

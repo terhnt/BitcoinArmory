@@ -7,7 +7,7 @@ from announcefetch import AnnounceDataFetcher
 import unittest
 
 
-forceTestURL = 'https://s3.amazonaws.com/bxtcoinarmory-testing/testannounce.txt'
+forceTestURL = 'https://s3.amazonaws.com/bitcoinarmory-testing/testannounce.txt'
 fetchDump = './fetchedFiles'
 
 class AnnouncementTester(TiabTest):

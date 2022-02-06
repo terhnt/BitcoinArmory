@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D9733F9E-BE30-466F-B100-B686DF663C4D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>BxtcoinArmory_CppTests</RootNamespace>
+    <RootNamespace>BitcoinArmory_CppTests</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
