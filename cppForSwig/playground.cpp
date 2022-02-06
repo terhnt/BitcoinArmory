@@ -8,7 +8,7 @@ class Pager
    std::string pagerFile;
    std::ofstream stream_;
    pid_t child;
-   
+
 public:
    Pager()
    {
@@ -16,7 +16,7 @@ public:
       {
          std::ostringstream ss;
          ss << "/tmp/armory-pager-" << getpid() << i;
-      
+
          if (0==mkfifo(ss.str().c_str(), 0600))
          {
             pagerFile = ss.str();
@@ -31,8 +31,8 @@ public:
             throw std::runtime_error("Failed to create pager fifo");
          }
       }
-      
-      
+
+
       child = vfork();
       if (child == 0)
       {
@@ -45,9 +45,9 @@ public:
       }
       stream_.open(pagerFile);
    }
-   
+
    std::ostream &stream() { return stream_; }
-   
+
    ~Pager()
    {
       if (child != -1)
@@ -56,7 +56,7 @@ public:
          wait();
       }
    }
-   
+
    void wait()
    {
       stream_.close();
@@ -82,7 +82,7 @@ class Callback : public BDM_CallBack
 {
 public:
    bool ready=false;
-   
+
    virtual void run(BDMAction action, void* ptr, int block=0)
    {
       if (action==BDMAction_Ready)
@@ -95,7 +95,7 @@ public:
       unsigned progressNumeric
    )
    {
-   
+
    }
 };
 
@@ -106,7 +106,7 @@ class Inject : public BDM_Inject
 public:
    virtual void run()
    {
-   
+
    }
 };
 
@@ -121,7 +121,7 @@ int main()
    BlockDataManagerConfig config;
    config.armoryDbType = ARMORY_DB_SUPER;
    config.pruneType = DB_PRUNE_NONE;
-   config.blkFileLocation = std::string(getenv("HOME")) + "/.bitcoin/testnet3/blocks";
+   config.blkFileLocation = std::string(getenv("HOME")) + "/.unobtanium/testnet3/blocks";
    config.levelDBLocation = "/mnt/home/charles/tmp/blockchain2";
    config.selectNetwork("Test");
 
@@ -135,9 +135,9 @@ int main()
    {
       in.wait(1000);
    }
-   
+
    bdmthread.shutdownAndWait();
-   
+
    return 0;
 }
 

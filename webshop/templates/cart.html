@@ -61,7 +61,7 @@ function mark(el) {
     <div class="bigcart"></div>
     <h1>Your shopping cart</h1>
   </div>
-  
+
   <div class="col-md-7 col-sm-12 text-left">
     <ul>
       <li class="row list-inline columnCaptions">
@@ -75,12 +75,12 @@ function mark(el) {
 	<span class="hidden"><input type="text" value="{{product.quantity}}"></span>
 	<span class="itemName">{{product.nicename}}</span>
 	<span class="popbtn" onclick="mark(this)"><a class="arrow"></a></span>
-	<span class="price">{{product.total}} BTC</span>
+	<span class="price">{{product.total}} UNO</span>
       </li>
       {% endfor %}
       <li class="row totals">
 	<span class="itemName">Total:</span>
-	<span class="price">{{total}} BTC</span>
+	<span class="price">{{total}} UNO</span>
 	<span class="order"> <a class="text-center" href="/ship">Check Out</a></span>
       </li>
     </ul>

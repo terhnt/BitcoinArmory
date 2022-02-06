@@ -30,50 +30,50 @@ string BlockDataManagerConfig::bech32Prefix_;
 ////////////////////////////////////////////////////////////////////////////////
 const string BlockDataManagerConfig::dbDirExtention_ = "/databases";
 #if defined(_WIN32)
-const string BlockDataManagerConfig::defaultDataDir_ = 
+const string BlockDataManagerConfig::defaultDataDir_ =
    "~/Armory";
-const string BlockDataManagerConfig::defaultBlkFileLocation_ = 
-   "~/Bitcoin/blocks";
+const string BlockDataManagerConfig::defaultBlkFileLocation_ =
+   "~/Unobtanium/blocks";
 
-const string BlockDataManagerConfig::defaultTestnetDataDir_ = 
+const string BlockDataManagerConfig::defaultTestnetDataDir_ =
    "~/Armory/testnet3";
-const string BlockDataManagerConfig::defaultTestnetBlkFileLocation_ = 
-   "~/Bitcoin/testnet3/blocks";
+const string BlockDataManagerConfig::defaultTestnetBlkFileLocation_ =
+   "~/Unobtanium/testnet3/blocks";
 
-const string BlockDataManagerConfig::defaultRegtestDataDir_ = 
+const string BlockDataManagerConfig::defaultRegtestDataDir_ =
    "~/Armory/regtest";
-const string BlockDataManagerConfig::defaultRegtestBlkFileLocation_ = 
-   "~/Bitcoin/regtest/blocks";
+const string BlockDataManagerConfig::defaultRegtestBlkFileLocation_ =
+   "~/Unobtanium/regtest/blocks";
 #elif defined(__APPLE__)
-const string BlockDataManagerConfig::defaultDataDir_ = 
+const string BlockDataManagerConfig::defaultDataDir_ =
    "~/Library/Application Support/Armory";
-const string BlockDataManagerConfig::defaultBlkFileLocation_ = 
-   "~/Library/Application Support/Bitcoin/blocks";
+const string BlockDataManagerConfig::defaultBlkFileLocation_ =
+   "~/Library/Application Support/Unobtanium/blocks";
 
-const string BlockDataManagerConfig::defaultTestnetDataDir_ = 
+const string BlockDataManagerConfig::defaultTestnetDataDir_ =
    "~/Library/Application Support/Armory/testnet3";
-const string BlockDataManagerConfig::defaultTestnetBlkFileLocation_ =   
-   "~/Library/Application Support/Bitcoin/testnet3/blocks";
+const string BlockDataManagerConfig::defaultTestnetBlkFileLocation_ =
+   "~/Library/Application Support/Unobtanium/testnet3/blocks";
 
-const string BlockDataManagerConfig::defaultRegtestDataDir_ = 
+const string BlockDataManagerConfig::defaultRegtestDataDir_ =
    "~/Library/Application Support/Armory/regtest";
-const string BlockDataManagerConfig::defaultRegtestBlkFileLocation_ = 
-   "~/Library/Application Support/Bitcoin/regtest/blocks";
+const string BlockDataManagerConfig::defaultRegtestBlkFileLocation_ =
+   "~/Library/Application Support/Unobtanium/regtest/blocks";
 #else
-const string BlockDataManagerConfig::defaultDataDir_ = 
+const string BlockDataManagerConfig::defaultDataDir_ =
    "~/.armory";
-const string BlockDataManagerConfig::defaultBlkFileLocation_ = 
-   "~/.bitcoin/blocks";
+const string BlockDataManagerConfig::defaultBlkFileLocation_ =
+   "~/.unobtanium/blocks";
 
-const string BlockDataManagerConfig::defaultTestnetDataDir_ = 
+const string BlockDataManagerConfig::defaultTestnetDataDir_ =
    "~/.armory/testnet3";
-const string BlockDataManagerConfig::defaultTestnetBlkFileLocation_ = 
-   "~/.bitcoin/testnet3/blocks";
+const string BlockDataManagerConfig::defaultTestnetBlkFileLocation_ =
+   "~/.unobtanium/testnet3/blocks";
 
-const string BlockDataManagerConfig::defaultRegtestDataDir_ = 
+const string BlockDataManagerConfig::defaultRegtestDataDir_ =
    "~/.armory/regtest";
-const string BlockDataManagerConfig::defaultRegtestBlkFileLocation_ = 
-   "~/.bitcoin/regtest/blocks";
+const string BlockDataManagerConfig::defaultRegtestBlkFileLocation_ =
+   "~/.unobtanium/regtest/blocks";
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -103,10 +103,10 @@ void BlockDataManagerConfig::selectNetwork(const string &netname)
       pubkeyHashPrefix_ = SCRIPT_PREFIX_HASH160;
       scriptHashPrefix_ = SCRIPT_PREFIX_P2SH;
       bech32Prefix_ = "bc";
-      
+
       if (!customFcgiPort_)
          fcgiPort_ = portToString(FCGI_PORT_MAINNET);
-      
+
       if(!customBtcPort_)
          btcPort_ = portToString(NODE_PORT_MAINNET);
    }
@@ -121,7 +121,7 @@ void BlockDataManagerConfig::selectNetwork(const string &netname)
       bech32Prefix_ = "tb";
 
       testnet_ = true;
-      
+
       if (!customFcgiPort_)
          fcgiPort_ = portToString(FCGI_PORT_TESTNET);
 
@@ -139,7 +139,7 @@ void BlockDataManagerConfig::selectNetwork(const string &netname)
       bech32Prefix_ = "tb";
 
       regtest_ = true;
-      
+
       if (!customFcgiPort_)
          fcgiPort_ = portToString(FCGI_PORT_REGTEST);
 
@@ -180,7 +180,7 @@ void BlockDataManagerConfig::printHelp(void)
 void BlockDataManagerConfig::parseArgs(int argc, char* argv[])
 {
    /***
-   --testnet: run db against testnet bitcoin network
+   --testnet: run db against testnet unobtanium network
 
    --regtest: run db against regression test network
 
@@ -232,7 +232,7 @@ void BlockDataManagerConfig::parseArgs(int argc, char* argv[])
 
    --listen-all: listen to all incoming IPs (not just localhost)
 
-   --satoshi-port: set Bitcoin node port
+   --satoshi-port: set Unobtanium node port
 
    ***/
 
@@ -364,7 +364,7 @@ void BlockDataManagerConfig::parseArgs(int argc, char* argv[])
       //fcgi port
       if (useCookie_ && !customFcgiPort_)
       {
-         //no custom fcgi port was provided and the db was spawned with a 
+         //no custom fcgi port was provided and the db was spawned with a
          //cookie file, fcgi port will be randomized
          srand(time(0));
          while (1)
@@ -388,7 +388,7 @@ void BlockDataManagerConfig::parseArgs(int argc, char* argv[])
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-void BlockDataManagerConfig::processArgs(const map<string, string>& args, 
+void BlockDataManagerConfig::processArgs(const map<string, string>& args,
    bool onlyDetectNetwork)
 {
    //server networking
@@ -913,7 +913,7 @@ bool NodeChainState::processState(
 
    pct_ = min(pct_val->val_, 1.0);
    auto pct_int = unsigned(pct_ * 10000.0);
-   
+
    if (pct_int != prev_pct_int_)
    {
       LOGINFO << "waiting on node sync: " << float(pct_ * 100.0) << "%";
@@ -960,7 +960,7 @@ bool NodeChainState::processState(
    auto timediff = time_end - time_begin;
    blockSpeed_ = float(blockdiff) / float(timediff);
    eta_ = uint64_t(float(blocksLeft) * blockSpeed_);
-   
+
    blocksLeft_ = blocksLeft;
 
    return true;
@@ -1060,7 +1060,7 @@ void BDV_Error_Struct::deserialize(const BinaryData& data)
    BinaryRefReader brr(data);
 
    errType_ = BDV_ErrorType(brr.get_uint8_t());
-   
+
    auto len = brr.get_var_int();
    errorStr_ = move(string((char*)brr.get_BinaryDataRef(len).getPtr(), len));
 

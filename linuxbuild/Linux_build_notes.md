@@ -26,7 +26,7 @@ gpg: Good signature from "goatpig (Offline signing key for Armory releases) <moo
 ~~~
 
 
-The above example is specifically for checking the tag for version "v0.96", which may not be the latest version by the time you are reading these instructions.  You can replace it with the latest version number posted on our website. All releases can be viewed on the [github releases page](https://github.com/goatpig/BitcoinArmory/releases). All major releases are accompanied by a signed tag.
+The above example is specifically for checking the tag for version "v0.96", which may not be the latest version by the time you are reading these instructions.  You can replace it with the latest version number posted on our website. All releases can be viewed on the [github releases page](https://github.com/terhnt/BitcoinArmory/releases). All major releases are accompanied by a signed tag.
 
 ## Building in Linux
 

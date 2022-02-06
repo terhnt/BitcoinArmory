@@ -12,13 +12,13 @@ def execAndWait(cli_str):
       time.sleep(0.01)
 
 # Ubuntu 10.10+ has issues with the regular gconftool-2 commands
-# for registering URL handlers.  Need a different solution, but 
+# for registering URL handlers.  Need a different solution, but
 # it's a permanent one.
 perm_app_register = True
 
 
 def createDesktopFile(name, idstr, arglist, toDir=''):
-   toPath = os.path.join(toDir, 'armory%s.desktop' % idstr) 
+   toPath = os.path.join(toDir, 'armory%s.desktop' % idstr)
    deskfile = open(toPath, 'w')
    deskfile.write('[Desktop Entry]\n')
    deskfile.write('Type=Application\n')
@@ -38,7 +38,7 @@ def createDesktopFile(name, idstr, arglist, toDir=''):
    deskfile.write('Icon=armory%sicon\n' % idstr)
    deskfile.write('StartupNotify=false\n')
    deskfile.write('Terminal=false\n')
-   deskfile.write('MimeType=x-scheme-handler/bitcoin\n')
+   deskfile.write('MimeType=x-scheme-handler/unobtanium\n')
    deskfile.close()
 
 
@@ -57,12 +57,10 @@ if os.path.exists('/usr/share/desktop-directories'):
    execAndWait('xdg-desktop-menu  install --novendor /usr/share/applications/armory.desktop')
    execAndWait('xdg-desktop-menu  install --novendor /usr/share/applications/armorytestnet.desktop')
    execAndWait('xdg-desktop-menu  install --novendor /usr/share/applications/armoryoffline.desktop')
-   
+
 print ''
 print '!!! Armory installed successfully !!!'
 print ''
 print '  Armory can be removed at any time, either through your package '
 print '  manager, or through the following command:'
 print '      sudo dpkg -r armory'
-
-

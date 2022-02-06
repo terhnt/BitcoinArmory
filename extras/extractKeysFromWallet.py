@@ -1,19 +1,19 @@
 #! /usr/bin/python
 
 #
-#  IMPORTANT:  This script extracts *EVERY KEY & ADDR* out of your wallet.dat 
+#  IMPORTANT:  This script extracts *EVERY KEY & ADDR* out of your wallet.dat
 #              file and writes them to file!!   This is usually a terrible
 #              idea, but I made the script to help myself explore the file
 #              format.
 #
 #              Also, wallet.dat includes addresses you HAVE SEEN BUT DO NOT
-#              OWN.  This means that many of the addresses (especially the 
+#              OWN.  This means that many of the addresses (especially the
 #              ones without private keys) this script extracts don't actually
 #              contribute anything to your wallet.
 #
-#  NOTE:       This was created before wallets ever used encryption.  It's 
+#  NOTE:       This was created before wallets ever used encryption.  It's
 #              probably fairly useless... but any unencrypted wallets created
-#              before Bitcoin-Qt 0.6.0 would still be recoverable, even if 
+#              before Unobtanium-Qt 0.6.0 would still be recoverable, even if
 #              corrupted
 #
 #
@@ -40,7 +40,7 @@ def pretty(theStr, width=32):
       return ('\t\t' + theStr[2:2+64] + '\n\t\t' + theStr[2+64:])
    else:
       return ('\t\t' + theStr)
-      
+
 
 walletBytes = wallet.read()
 pubout = open(pubfile,'w')
@@ -79,7 +79,7 @@ for i in range(len(walletBytes)):
                   havePrivKey = True
                   privkeyHex =  potentialPrivKey.toHexStr()
                   break
-   
+
             if not havePrivKey:
                pubKeyDict[addrStr] = pubkeyHex
                print ' NOT_FOUND ',
@@ -88,7 +88,7 @@ for i in range(len(walletBytes)):
                print ' FOUND ',
       except:
          raise
-         
+
 for k,v in privKeyDict.iteritems():
    keyout.write('\nAddrStr : %s:\nPubX(BE): %s\nPubY(BE): %s\nPriv(BE): %s' % \
                            (k,v[0][2:2+64],v[0][2+64:2+64+64],v[1]))
@@ -110,6 +110,6 @@ print 'Please protect your keypair file.  It contains all the '
 print 'information an attacker would need to steal your money!'
 print '!!!'
 print ''
-      
+
 pubout.close()
 keyout.close()

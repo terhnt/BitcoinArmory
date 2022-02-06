@@ -29,7 +29,7 @@ if len(argv)<4:
          argv[0]   "python %s"
          argv[1]   inputDir  (from Step1)
          argv[2]   outputDir (for Step3)
-         argv[3]   bundleDir 
+         argv[3]   bundleDir
          argv[4]   isTestingRelease  (default ~ "0")
          argv[5]*  git branch to tag (default ~ "master")
          argv[6]*  use testing settings (default ~ "0")
@@ -83,7 +83,7 @@ dstInstalls = makeOutputDir(os.path.join(outDir, 'installers'))
 dstAnnounce = makeOutputDir(os.path.join(outDir, 'signedannounce'))
 dstRelease  = makeOutputDir(os.path.join(outDir, 'release_scripts'))
 
-# Scan the list of files in installers dir to get latest 
+# Scan the list of files in installers dir to get latest
 instList = [fn for fn in os.listdir(srcInstalls)]
 topVerInt,topVerStr,topVerType = getLatestVerFromList(instList)
 
@@ -112,7 +112,7 @@ for pkgName,pkgInfo in masterPkgList.iteritems():
    if pkgInfo['HasBundle']:
       logprint('Offline bundle  "%s": %s' % (pkgName.ljust(20), pkgInfo['BundleDeps']))
       checkExists(os.path.join(bundleDir, pkgInfo['BundleDeps']))
-   
+
 # Check for wallet in ARMORY_HOME_DIR
 wltPath = checkExists('~/.armory/armory_%s_.wallet' % btcWltID)
 
@@ -121,7 +121,7 @@ logprint('Please confirm all parameters before continuing:')
 logprint('   Dir with all the installers: "%s"' % srcInstalls)
 logprint('   Dir with announcement data : "%s"' % srcAnnounce)
 logprint('   Dir with fresh git checkout: "%s"' % srcGitRepo)
-logprint('   Path to Bitcoin Core SHA256: "%s"' % str(srcCoreSHA))
+logprint('   Path to Unobtanium Core SHA256: "%s"' % str(srcCoreSHA))
 logprint('   Detected Version Integer   : "%s"' % topVerInt)
 logprint('   Detected Version String    : "%s"' % topVerStr)
 logprint('   This is release of type    : "%s"' % topVerType)
@@ -155,7 +155,7 @@ if reply.lower().startswith('n'):
 
 logprint('*'*80)
 logprint('')
-         
+
 
 # First thing: sign all debs
 logprint('Signing all .deb files:')
@@ -188,7 +188,7 @@ for pkgName,pkgInfo in masterPkgList.iteritems():
    shutil.copytree(os.path.join(bundleDir, pkgInfo['BundleDeps']), tempDir)
    shutil.copy(getSrcPath(pkgName), tempDir)
    execAndWait('tar -zcf %s %s/*' % (bpath, tempDir))
-      
+
    if os.path.exists(tempDir):
       logprint('Removing temp bundle directory: ' + tempDir)
       shutil.rmtree(tempDir)
@@ -200,12 +200,12 @@ for pkgName,pkgInfo in masterPkgList.iteritems():
    filesToSign.append(getDstPath(pkgName))
    if pkgInfo['HasBundle']:
       filesToSign.append(getDstPath(pkgName, 'BundleSuffix'))
-      
+
 
 logprint('All files to be included in hashes file:')
 for f in filesToSign:
    logprint('   ' + f)
-   
+
 
 newHashes = getAllHashes(filesToSign)
 #hashname = 'armory_%s%s_sha256sum.txt' % (topVerStr, topVerType)
@@ -214,7 +214,7 @@ newHashes = getAllHashes(filesToSign)
 hashpath = getDstPath('SHAFILE_TXT')
 with open(hashpath, 'w') as hashfile:
    for fn,sha2 in newHashes:
-      basefn = os.path.basename(fn) 
+      basefn = os.path.basename(fn)
       logprint('   ' + sha2 + ' ' + basefn)
       hashfile.write('%s %s\n' % (sha2,basefn))
    hashfile.write('\n')
@@ -232,7 +232,7 @@ from armoryengine.ALL import PyBtcWallet, binary_to_hex, hex_to_binary, \
                              SecureBinaryData, addrStr_to_hash160, sha256, \
                              ADDRBYTE
 from jasvet import ASv1CS, readSigBlock, verifySignature
-   
+
 origDLFile   = os.path.join(srcAnnounce, 'dllinks.txt')
 newDLFile    = os.path.join(srcAnnounce, 'dllinks_temp.txt')
 announcePath = os.path.join(dstAnnounce, announceName)
@@ -274,24 +274,24 @@ fnew.write('\n')
 typeSuffix = 'Testing' if isTestRelease else ''
 for pkgName,pkgInfo in masterPkgList.iteritems():
    fn = 'armory_%s%s_%s' % (topVerStr, topVerType, pkgInfo['FileSuffix'])
-   outputStr = ['Armory%s' % typeSuffix, 
-                topVerStr, 
+   outputStr = ['Armory%s' % typeSuffix,
+                topVerStr,
                 pkgInfo['OSNameLink'],
                 pkgInfo['OSVarLink'],
                 pkgInfo['OSArchLink'],
-                os.path.join(bucketReleases, fn),                       
+                os.path.join(bucketReleases, fn),
                 getFileHash(dstInstalls, fn)]
    fnew.write(' '.join(outputStr) + '\n')
 
    if pkgInfo['HasBundle']:
       # Note different 4th arg for OSVar -- because bundles have different reqts
       fn = 'armory_%s%s_%s' % (topVerStr, topVerType, pkgInfo['BundleSuffix'])
-      outputStr = ['ArmoryOffline%s' % typeSuffix, 
-                   topVerStr, 
+      outputStr = ['ArmoryOffline%s' % typeSuffix,
+                   topVerStr,
                    pkgInfo['OSNameLink'],
                    pkgInfo['BundleDLLVar'],
                    pkgInfo['OSArchLink'],
-                   os.path.join(bucketReleases, fn),                       
+                   os.path.join(bucketReleases, fn),
                    getFileHash(dstInstalls, fn)]
       fnew.write(' '.join(outputStr) + '\n')
 
@@ -312,7 +312,7 @@ with open('announcemap.txt','r') as f:
          print 'ERROR:  Could not find %s-file (%s)' % (fid, inputPath)
          exit(1)
       print '   Map: %s --> %s' % (fname, fid)
-      
+
 
 
 print 'Signing and copying files to %s directory...' % dstAnnounce
@@ -337,7 +337,7 @@ with open('announcemap.txt','r') as f:
       fileMappings[fname] = [fid, fhash]
       longestID  = max(longestID,  len(fid))
       longestURL = max(longestURL, len(bucketAnnounce + fname))
-      
+
 
 
 print 'Creating digest file...'
@@ -361,7 +361,7 @@ print '------'
 
 print 'Please verify the above data to your satisfaction:'
 raw_input('Hit <enter> when ready: ')
-   
+
 
 doSignFile(announcePath, os.path.join(dstAnnounce, announceName))
 
@@ -380,7 +380,7 @@ for fname,vals in fileMappings.iteritems():
       sig,msg = readSigBlock(f.read())
       addrB58 = verifySignature(sig, msg, 'v1', ord(ADDRBYTE))
       print 'Sign addr for:', vals[0].ljust(longestID+3), addrB58
-   
+
 
 
 print 'Done!'
@@ -422,8 +422,3 @@ logprint('*'*80)
 #toExport.append("%s" % dstGitRepo)
 
 #execAndWait('tar -zcf signed_release_%s%s.tar.gz %s' % (topVerStr, topVerType, ' '.join(toExport)))
-
-
-
-
-

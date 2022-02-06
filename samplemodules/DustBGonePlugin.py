@@ -1,7 +1,7 @@
-# This is a sample plugin file that will be used to create a new tab 
-# in the Armory main window.  All plugin files (such as this one) will 
+# This is a sample plugin file that will be used to create a new tab
+# in the Armory main window.  All plugin files (such as this one) will
 # be injected with the globals() from ArmoryQt.py, which includes pretty
-# much all of Bitcoin & Armory related stuff that you need.  So this 
+# much all of Bitcoin & Armory related stuff that you need.  So this
 # file can use any utils or objects accessible to functions in ArmoryQt.py.
 from socket import socket
 
@@ -29,7 +29,7 @@ class PluginObject(object):
 
    tabName = 'Dust-B-Gone'
    maxVersion = '0.93.99'
-   
+
    #############################################################################
    def __init__(self, main):
 
@@ -39,7 +39,7 @@ class PluginObject(object):
                   str2coin(self.dustLimitText.text()))
             self.beGoneDustButton.setEnabled(len(self.dustTableModel.dustTxOutlist)>0)
             if self.dustTableModel.wlt:
-               self.lblHeader.setText(tr("""<b>Dust Outputs for Wallet: %s</b>""" 
+               self.lblHeader.setText(tr("""<b>Dust Outputs for Wallet: %s</b>"""
                      % self.dustTableModel.wlt.labelName))
          except NegativeValueError:
             pass
@@ -79,44 +79,44 @@ class PluginObject(object):
             signedTx = PyCreateAndSignTx(utxiList,
                   [],
                   privKeyMap, SIGHASH_NONE|SIGHASH_ANYONECANPAY )
-            
+
             print "-------------"
             print binary_to_hex(signedTx.serialize())
-            
+
             # sock = socket.create_connection(('dust-b-gone.bitcoin.petertodd.org',80))
             # sock.send(signedTx.serialize())
             # sock.send(b'\n')
             # sock.close()
-                  
+
 
          except socket.error as err:
             QMessageBox.critical(self.main, tr('Negative Value'), tr("""
-               Failed to connect to dust-b-gone server: %s""" % err.strerror), QMessageBox.Ok)            
+               Failed to connect to dust-b-gone server: %s""" % err.strerror), QMessageBox.Ok)
          except NegativeValueError:
             QMessageBox.critical(self.main, tr('Negative Value'), tr("""
-               You must enter a positive value of at least 0.0000 0001 
+               You must enter a positive value of at least 0.0000 0001
                and less than %s for the dust limit.""" % MAX_DUST_LIMIT_STR), QMessageBox.Ok)
          except TooMuchPrecisionError:
             QMessageBox.critical(self.main.main, tr('Too much precision'), tr("""
-               Bitcoins can only be specified down to 8 decimal places. 
-               The smallest unit of a Bitcoin is 0.0000 0001 BTC. 
+               Bitcoins can only be specified down to 8 decimal places.
+               The smallest unit of a Bitcoin is 0.0000 0001 UNO.
                Please enter a dust limit of at least 0.0000 0001 and less than %s.""" % MAX_DUST_LIMIT_STR), QMessageBox.Ok)
          finally:
             for scraddr in privKeyMap:
                privKeyMap[scraddr].destroy()
-         
-         
-         
-          
+
+
+
+
       self.main = main
- 
+
       self.lblHeader    = QRichLabel(tr("""<b>Dust Outputs for Wallet: None Selected</b>"""), doWrap=False)
       self.beGoneDustButton = QPushButton("Remove Dust")
       self.beGoneDustButton.setEnabled(False)
       self.main.connect(self.beGoneDustButton, SIGNAL('clicked()'), sendDust)
       topRow =  makeHorizFrame([self.lblHeader,'stretch'])
       secondRow =  makeHorizFrame([self.beGoneDustButton, 'stretch'])
-      
+
       self.dustLimitLabel = QLabel("Max Dust Value (BTC): ")
       self.dustLimitText = QLineEdit()
       self.dustLimitText.setFont(GETFONT('Fixed'))
@@ -125,11 +125,11 @@ class PluginObject(object):
       self.dustLimitText.setAlignment(Qt.AlignRight)
       self.dustLimitText.setText(coin2str(DEFAULT_DUST_LIMIT))
       self.main.connect(self.dustLimitText, SIGNAL('textChanged(QString)'), updateDustLimit)
-      
-      
+
+
       limitPanel = makeHorizFrame([self.dustLimitLabel, self.dustLimitText, 'stretch'])
-      
-      
+
+
       self.dustTableModel = DustDisplayModel()
       self.dustTableView = QTableView()
       self.dustTableView.setModel(self.dustTableModel)
@@ -145,8 +145,8 @@ class PluginObject(object):
 
       self.lblTxioInfo = QRichLabel('')
       self.lblTxioInfo.setMinimumWidth(tightSizeNChar(self.lblTxioInfo, 30)[0])
-      
-      self.main.connect(self.main.walletsView, SIGNAL('clicked(QModelIndex)'), 
+
+      self.main.connect(self.main.walletsView, SIGNAL('clicked(QModelIndex)'),
                    updateDustLimit)
 
       self.dustBGoneFrame = makeVertFrame([topRow, secondRow, limitPanel, self.dustTableView, 'stretch'])
@@ -169,13 +169,13 @@ class PluginObject(object):
    #############################################################################
    def getTabToDisplay(self):
       return self.tabToDisplay
-   
+
    def injectShutdownFunc(self):
       try:
          self.main.writeSetting('DustLedgerCols', saveTableView(self.dustTableView))
       except:
          LOGEXCEPT('Strange error during shutdown')
-    
+
 
 
 ################################################################################
@@ -234,7 +234,3 @@ class DustDisplayModel(QAbstractTableModel):
             if section==DUSTCOLS.AddrStr:   return QVariant(Qt.AlignHCenter | Qt.AlignVCenter)
             if section==DUSTCOLS.Btc:     return QVariant(Qt.AlignHCenter | Qt.AlignVCenter)
          return QVariant(int(Qt.AlignHCenter | Qt.AlignVCenter))
-
-
-
-

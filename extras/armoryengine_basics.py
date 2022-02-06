@@ -41,8 +41,8 @@ print 21, 'BITCOIN_PORT:    ', BITCOIN_PORT
 print 22, 'BITCOIN_RPC_PORT:', BITCOIN_RPC_PORT
 print 23, 'ARMORY_RPC_PORT: ', ARMORY_RPC_PORT
 print 24, 'MAGIC_BYTES:     ', binary_to_hex(MAGIC_BYTES)
-print 25, 'GENESIS_BLK_HASH:', GENESIS_BLOCK_HASH_HEX 
-print 26, 'GENESIS_TX_HASH: ', GENESIS_TX_HASH_HEX    
+print 25, 'GENESIS_BLK_HASH:', GENESIS_BLOCK_HASH_HEX
+print 26, 'GENESIS_TX_HASH: ', GENESIS_TX_HASH_HEX
 print 27, 'ADDRBYTE:        ', binary_to_hex(ADDRBYTE)
 print 28, 'NETWORK:         ', NETWORKS[ADDRBYTE]
 print 29, 'P2SHBYTE:        ', binary_to_hex(P2SHBYTE)
@@ -52,7 +52,7 @@ print '\nDetected values and CLI_OPTIONS:'
 print 31, '   Operating System      :', OS_NAME
 print 32, '   OS Variant            :', OS_VARIANT
 print 33, '   User home-directory   :', USER_HOME_DIR
-print 34, '   Satoshi BTC directory :', BTC_HOME_DIR
+print 34, '   Satoshi UNO directory :', BTC_HOME_DIR
 print 35, '   Armory home dir       :', ARMORY_HOME_DIR
 print 36, '   LevelDB directory     :', ARMORY_DB_DIR
 print 37, '   Armory settings file  :', SETTINGS_PATH
@@ -72,12 +72,12 @@ print 46, '   123456 seconds is     :', secondsToHumanTime(123456)
 print 47, '   123456 bytes is       :', bytesToHumanSize(123456)
 
 print '\nCoin2Str functions align the decimal point'
-print 48, '   coin2str(0.01 BTC)    :', coin2str(0.01 * ONE_BTC)
-print 49, '   coin2str(0.01 BTC)    :', coin2str(1000000, maxZeros=4)
-print 50, '   coin2str(0.01 BTC)    :', coin2str(1000000, maxZeros=0)
-print 51, '   coin2str(0.01 BTC)    :', coin2str(2300500000, maxZeros=0)
-print 51, '   coin2str(0.01 BTC)    :', coin2str(160400000000, maxZeros=0)
-print 51, '   coin2str(0.01 BTC)    :', coin2str(10000000, maxZeros=0)
+print 48, '   coin2str(0.01 UNO)    :', coin2str(0.01 * ONE_BTC)
+print 49, '   coin2str(0.01 UNO)    :', coin2str(1000000, maxZeros=4)
+print 50, '   coin2str(0.01 UNO)    :', coin2str(1000000, maxZeros=0)
+print 51, '   coin2str(0.01 UNO)    :', coin2str(2300500000, maxZeros=0)
+print 51, '   coin2str(0.01 UNO)    :', coin2str(160400000000, maxZeros=0)
+print 51, '   coin2str(0.01 UNO)    :', coin2str(10000000, maxZeros=0)
 
 
 print '\nRaw crypto operations:'
@@ -109,6 +109,3 @@ addrObj.pprint()
 
 print '\nUse pprintHex to visually break up large blocks of hex'
 pprintHex( binary_to_hex( sha256('a')[:13] * 12 ) )
-
-
-

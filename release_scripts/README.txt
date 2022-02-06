@@ -7,20 +7,20 @@ similar to an offline transaction:  create everything online, take offline
 for signing, take online again to broadcast (upload to Amazon S3).
 
 
-The following is assumed to have been done already before starting this 
+The following is assumed to have been done already before starting this
 process:
 
    - Local & remote machines and VMs have compiled & bundled installers
-   - release_settings.py file that returns nested dictionary of all 
+   - release_settings.py file that returns nested dictionary of all
      release/installer information (see example at end of this doc)
    - Each remote system has our public key in its authorized_keys file
    - Offline computer has GPG key & Armory wallet spec'd at top of Step2 script
    - All announce files are updated (except for dllinks which will be updated
       by the script itself once files are signed and hashes are known)
    - The Step2 script contains an accurate list of everything file/installer
-   - The computer running Step3 has write-access to the git repo, and a 
+   - The computer running Step3 has write-access to the git repo, and a
       configuration file with API key for uploading results to Amazon S3
-   - Directories on the offline computer containing dependencies for each 
+   - Directories on the offline computer containing dependencies for each
       OS-specific offline-bundle
    - Already have an installed version of Armory offline in the /usr/lib/armory
       directory, to be used for creating signature blocks
@@ -41,9 +41,9 @@ The output of this process will be:
 -----
 Step1 Script:
 
-Fetch all the installers, and do a fresh checkout of the 
+Fetch all the installers, and do a fresh checkout of the
 repo. It should also include updates to the announcement files
-After that, put everything into a single directory that 
+After that, put everything into a single directory that
 can be copied to a USB key to be taken to the offline computer.
 
    Script Arguments (* is optional)
@@ -54,7 +54,7 @@ can be copied to a USB key to be taken to the offline computer.
          argv[4]*  unsigned announce dir (default ~ ./unsignedannounce)
          argv[5]*  Bitcoin Core SHA256SUMS.asc (default ~ "None")
          argv[7]*  use testing settings (default ~ "0")
-      
+
    Script Output:
 
       <outputDir>/BitcoinArmory       (clone of repo)
@@ -64,10 +64,10 @@ can be copied to a USB key to be taken to the offline computer.
       <outputDir>/SHA256SUMS.asc      (if present)
 
 Note the release_scripts dir is itself copied because it has release_settings.py
-which is needed by all three steps.  Plus, we most likely made tweaks to 
-these Step* scripts to support the current release, and it wouldn't be in 
-the cloned repo yet.  After the release is successful, we commit the updated 
-scripts as the basis for the next release.  
+which is needed by all three steps.  Plus, we most likely made tweaks to
+these Step* scripts to support the current release, and it wouldn't be in
+the cloned repo yet.  After the release is successful, we commit the updated
+scripts as the basis for the next release.
 
 
 
@@ -76,7 +76,7 @@ scripts as the basis for the next release.
 Step2 Script:
 
 This script will be executed from the release_scripts directory above --
-we will copy the directory to the offline computer, then cd into it then run 
+we will copy the directory to the offline computer, then cd into it then run
 Step2 script from there.  It does not depend on the cloned repo -- it adds
 /usr/lib/armory to sys.path, to use the currently installed version
 of Armory for any non-generic-python operations.
@@ -85,10 +85,10 @@ of Armory for any non-generic-python operations.
          argv[0]   <>
          argv[1]   inputDir  (from Step1)
          argv[2]   outputDir (for Step3)
-         argv[3]   bundleDir 
+         argv[3]   bundleDir
          argv[6]*  git branch to tag (default ~ "master")
          argv[7]*  use testing settings (default ~ 0)
-      
+
    Script Output:
 
       <outputDir>/BitcoinArmory       (same repo but with signed tag v0.91.1)
@@ -100,13 +100,13 @@ The "bundleDir" should contain one directory for everything in the master
 package list that "hasBundle==True".  It's "BundleDeps" will be the name
 of the directory that the Step 2 script will look for.   The bundle deps dir
 will contain all dependencies (all of them .debs, as of this writing), as
-well as a script that installs everything including the package itself.  
+well as a script that installs everything including the package itself.
 i.e. Step2 script will make a copy of the bundle deps, it will copy the
 signed installer into the copy, and then tar it all up.  The bundle deps
 dir should have, in addition to the deps themselves, a script that will
 install everything in that directory including the signed package.
 
-The testing settings use a different GPG key, BTC key, and different bucket
+The testing settings use a different GPG key, UNO key, and different bucket
 for uploading
 
 
@@ -128,15 +128,15 @@ It will do the following:
          argv[0]   <>
          argv[1]   inputDir  (from Step2)
          argv[2]*  isDryRun  (default ~ False)
-      
+
    Script Output:
 
-         -- Upload all installers and offline bundles to BitcoinArmory-releases 
+         -- Upload all installers and offline bundles to BitcoinArmory-releases
          -- Upload all announce files to BitcoinArmory-media bucket
          -- Ask if you'd like to push the latest git tag (if this is a testing
             version, you may not want to push the tag)
 
-  
+
 
 
 ################################################################################
@@ -179,7 +179,7 @@ def getReleaseParams(doTest=False):
 def getMasterPackageList():
    masterPkgList = {}
    m = masterPkgList
-   
+
    pkg = 'Windows (All)'
    m[pkg] = {}
    m[pkg]['FetchFrom']  = ['cp', '~/windows_share/armory_%s_win32.exe']
@@ -191,7 +191,7 @@ def getMasterPackageList():
    m[pkg]['OSVarLink']  = 'XP,Vista,7,8,8.1'
    m[pkg]['OSArchLink'] = '32,64'
    m[pkg]['HasBundle']  = False
-   
+
    pkg = 'MacOSX (All)'
    m[pkg] = {}
    m[pkg]['FetchFrom']  = ['scp', 'joeschmoe', '192.168.1.22', 22, '~/BitcoinArmory/osxbuild/armory_%s_osx.tar.gz']
@@ -203,8 +203,8 @@ def getMasterPackageList():
    m[pkg]['OSVarLink']  = '10.7,10.8,10.9,10.9.1,10.9.2'
    m[pkg]['OSArchLink'] = '64''
    m[pkg]['HasBundle']  = False
-   
-   
+
+
    pkg = 'Ubuntu 12.04-32bit'
    m[pkg] = {}
    m[pkg]['FetchFrom']    = ['scp', 'guest', 'buildmachine1', 3822, '~/buildenv/armory_%s-1_i386.deb']
@@ -220,8 +220,8 @@ def getMasterPackageList():
    m[pkg]['BundleSuffix'] = 'offline_ubuntu_12.04-32.tar.gz'
    m[pkg]['BundleOSVar']  = '12.04 exact'
    m[pkg]['BundleDLLVar'] = '12.04'
-   
-   
+
+
    pkg = 'Ubuntu 12.04-64bit'
    m[pkg] = {}
    m[pkg]['FetchFrom']    = ['scp', 'guest', '192.168.0.83', 1899, '~/buildenv/armory_%s-1_amd64_osx.deb']
@@ -237,7 +237,7 @@ def getMasterPackageList():
    m[pkg]['BundleSuffix'] = 'offline_ubuntu_12.04-64.tar.gz'
    m[pkg]['BundleOSVar']  = '12.04 exact'
    m[pkg]['BundleDLLVar'] = '12.04'
-   
+
    pkg = 'RaspberryPi'
    m[pkg] = {}
    m[pkg]['FetchFrom']    = ['cp', '~/buildenv/rpibuild/armory_%s-1.tar.gz']
@@ -256,7 +256,3 @@ def getMasterPackageList():
 
 
    return masterPkgList
-
-
-
-

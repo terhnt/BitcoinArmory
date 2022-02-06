@@ -7,11 +7,11 @@
 Description
 -----------
 
-Webshop is a simple web store that works with bitcoin and armoryd. This is meant to be a demonstration of the ways armoryd can be leveraged to take payments in bitcoin.
+Webshop is a simple web store that works with unobtanium and armoryd. This is meant to be a demonstration of the ways armoryd can be leveraged to take payments in unobtanium.
 
 Dependencies
 ------------
- 
+
    * Flask - Install package "python-flask"
    * SocketIO - Use pip to install "flask-socketio"
 

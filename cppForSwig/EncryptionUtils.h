@@ -13,13 +13,13 @@
 // but it is slow, so we might as well use the fast C++ method if avail),
 // time- and memory-hard key derivation functions (resistent to brute
 // force, and designed to be too difficult for a GPU to implement), and
-// secure binary data handling (to make sure we don't leave sensitive 
+// secure binary data handling (to make sure we don't leave sensitive
 // data floating around in application memory).
 //
-// 
+//
 // For the KDF:
 //
-// This technique is described in Colin Percival's paper on memory-hard 
+// This technique is described in Colin Percival's paper on memory-hard
 // key-derivation functions, used to create "scrypt":
 //
 //       http://www.tarsnap.com/scrypt/scrypt.pdf
@@ -32,7 +32,7 @@
 //
 // Even with less than 1,000,000 hashes, as long as it requires more than 64
 // kB of memory, a GPU will have to store the computed lookup tables in global
-// memory, which is extremely slow for random lookup.  As a result, GPUs are 
+// memory, which is extremely slow for random lookup.  As a result, GPUs are
 // no better (and possibly much worse) than a CPU for brute-forcing the passwd
 //
 // This KDF is actually the ROMIX algorithm described on page 6 of Colin's
@@ -41,7 +41,7 @@
 //
 // The computeKdfParams method well test the speed of the system it is running
 // on, and try to pick the largest memory-size the system can compute in less
-// than 0.25s (or specified target).  
+// than 0.25s (or specified target).
 //
 //
 // NOTE:  If you are getting an error about invalid argument types, from python,
@@ -73,7 +73,7 @@
 #include "UniversalTimer.h"
 
 // This is used to attempt to keep keying material out of swap
-// I am stealing this from bitcoin 0.4.0 src, serialize.h
+// I am stealing this from unobtanium 0.4.0 src, serialize.h
 #if defined(_MSC_VER) || defined(__MINGW32__)
    // Note that VirtualLock does not provide this as a guarantee on Windows,
    // but, in practice, memory that has been VirtualLock'd almost never gets written to
@@ -130,18 +130,18 @@ using namespace std;
 // Make sure that all crypto information is handled with page-locked data,
 // and overwritten when it's destructor is called.  For simplicity, we will
 // use this data type for all crypto data, even for data values that aren't
-// really sensitive.  We can use the SecureBinaryData(bdObj) to convert our 
+// really sensitive.  We can use the SecureBinaryData(bdObj) to convert our
 // regular strings/BinaryData objects to secure objects
 //
 class SecureBinaryData : public BinaryData
 {
 public:
    // We want regular BinaryData, but page-locked and secure destruction
-   SecureBinaryData(void) : BinaryData() 
+   SecureBinaryData(void) : BinaryData()
                    { lockData(); }
-   SecureBinaryData(size_t sz) : BinaryData(sz) 
+   SecureBinaryData(size_t sz) : BinaryData(sz)
                    { lockData(); }
-   SecureBinaryData(BinaryData const & data) : BinaryData(data) 
+   SecureBinaryData(BinaryData const & data) : BinaryData(data)
                    { lockData(); }
    SecureBinaryData(uint8_t const * inData, size_t sz) : BinaryData(inData, sz)
                    { lockData(); }
@@ -160,11 +160,11 @@ public:
    uint8_t       *   getPtr(void)        { return BinaryData::getPtr();  }
    size_t            getSize(void) const { return BinaryData::getSize(); }
    SecureBinaryData  copy(void)    const { return SecureBinaryData(getPtr(), getSize());}
-   
+
    string toHexStr(bool BE=false) const { return BinaryData::toHexStr(BE);}
    string toBinStr(void) const          { return BinaryData::toBinStr();  }
 
-   SecureBinaryData(SecureBinaryData const & sbd2) : 
+   SecureBinaryData(SecureBinaryData const & sbd2) :
            BinaryData(sbd2.getPtr(), sbd2.getSize()) { lockData(); }
 
 
@@ -187,9 +187,9 @@ public:
    BinaryData getHash160(void) const { return BtcUtils::getHash160(getPtr(), (uint32_t)getSize()); }
 
    // This would be a static method, as would be appropriate, except SWIG won't
-   // play nice with static methods.  Instead, we will just use 
+   // play nice with static methods.  Instead, we will just use
    // SecureBinaryData().GenerateRandom(32), etc
-   SecureBinaryData GenerateRandom(uint32_t numBytes, 
+   SecureBinaryData GenerateRandom(uint32_t numBytes,
                               SecureBinaryData extraEntropy=SecureBinaryData());
 
    void lockData(void)
@@ -214,7 +214,7 @@ public:
 
 
 ////////////////////////////////////////////////////////////////////////////////
-// A memory-bound key-derivation function -- uses a variation of Colin 
+// A memory-bound key-derivation function -- uses a variation of Colin
 // Percival's ROMix algorithm: http://www.tarsnap.com/scrypt/scrypt.pdf
 //
 // The computeKdfParams method takes in a target time, T, for computation
@@ -232,13 +232,13 @@ public:
 
 
    /////////////////////////////////////////////////////////////////////////////
-   // Default max-memory reqt will 
-   void computeKdfParams(double   targetComputeSec=0.25, 
+   // Default max-memory reqt will
+   void computeKdfParams(double   targetComputeSec=0.25,
                          uint32_t maxMemReqtsBytes=DEFAULT_KDF_MAX_MEMORY);
 
    /////////////////////////////////////////////////////////////////////////////
-   void usePrecomputedKdfParams(uint32_t memReqts, 
-                                uint32_t numIter, 
+   void usePrecomputedKdfParams(uint32_t memReqts,
+                                uint32_t numIter,
                                 SecureBinaryData salt);
 
    /////////////////////////////////////////////////////////////////////////////
@@ -255,7 +255,7 @@ public:
    uint32_t     getMemoryReqtBytes(void) const  { return memoryReqtBytes_; }
    uint32_t     getNumIterations(void) const    { return numIterations_; }
    SecureBinaryData   getSalt(void) const       { return salt_; }
-   
+
 private:
 
    string   hashFunctionName_;  // name of hash function to use (only one)
@@ -268,7 +268,7 @@ private:
    SecureBinaryData salt_;            // prob not necessary amidst numIter, memReqts
                                 // but I guess it can't hurt
 
-   uint32_t numIterations_;     // We set the ROMIX params for a given memory 
+   uint32_t numIterations_;     // We set the ROMIX params for a given memory
                                 // req't. Then run it numIter times to meet
                                 // the computation-time req't
 };
@@ -282,22 +282,22 @@ public:
    CryptoAES(void) {}
 
    /////////////////////////////////////////////////////////////////////////////
-   SecureBinaryData EncryptCFB(SecureBinaryData & data, 
+   SecureBinaryData EncryptCFB(SecureBinaryData & data,
                                SecureBinaryData & key,
                                SecureBinaryData & iv);
 
    /////////////////////////////////////////////////////////////////////////////
-   SecureBinaryData DecryptCFB(SecureBinaryData & data, 
+   SecureBinaryData DecryptCFB(SecureBinaryData & data,
                                SecureBinaryData & key,
                                SecureBinaryData   iv);
 
    /////////////////////////////////////////////////////////////////////////////
-   SecureBinaryData EncryptCBC(const SecureBinaryData & data, 
+   SecureBinaryData EncryptCBC(const SecureBinaryData & data,
                                const SecureBinaryData & key,
                                SecureBinaryData & iv) const;
 
    /////////////////////////////////////////////////////////////////////////////
-   SecureBinaryData DecryptCBC(const SecureBinaryData & data, 
+   SecureBinaryData DecryptCBC(const SecureBinaryData & data,
                                const SecureBinaryData & key,
                                const SecureBinaryData & iv) const;
 };
@@ -323,38 +323,38 @@ public:
 
    /////////////////////////////////////////////////////////////////////////////
    static BTC_PRIVKEY ParsePrivateKey(SecureBinaryData const & privKeyData);
-   
+
    /////////////////////////////////////////////////////////////////////////////
    static BTC_PUBKEY ParsePublicKey(SecureBinaryData const & pubKey65B);
 
    /////////////////////////////////////////////////////////////////////////////
    static BTC_PUBKEY ParsePublicKey(SecureBinaryData const & pubKeyX32B,
                                     SecureBinaryData const & pubKeyY32B);
-   
+
    /////////////////////////////////////////////////////////////////////////////
    static SecureBinaryData SerializePrivateKey(BTC_PRIVKEY const & privKey);
-   
+
    /////////////////////////////////////////////////////////////////////////////
    static SecureBinaryData SerializePublicKey(BTC_PUBKEY const & pubKey);
 
    /////////////////////////////////////////////////////////////////////////////
    static BTC_PUBKEY ComputePublicKey(BTC_PRIVKEY const & cppPrivKey);
 
-   
+
    /////////////////////////////////////////////////////////////////////////////
    static bool CheckPubPrivKeyMatch(BTC_PRIVKEY const & cppPrivKey,
                                     BTC_PUBKEY  const & cppPubKey);
-   
+
    /////////////////////////////////////////////////////////////////////////////
    // For signing and verification, pass in original, UN-HASHED binary string.
    // For signing, k-value can use a PRNG or deterministic value (RFC 6979).
-   static SecureBinaryData SignData(SecureBinaryData const & binToSign, 
+   static SecureBinaryData SignData(SecureBinaryData const & binToSign,
                                     BTC_PRIVKEY const & cppPrivKey,
                                     const bool& detSign = true);
 
    /////////////////////////////////////////////////////////////////////////////
    // For signing and verification, pass in original, UN-HASHED binary string
-   static bool VerifyData(SecureBinaryData const & binMessage, 
+   static bool VerifyData(SecureBinaryData const & binMessage,
                           SecureBinaryData const & binSignature,
                           BTC_PUBKEY const & cppPubKey);
 
@@ -365,13 +365,13 @@ public:
 
    /////////////////////////////////////////////////////////////////////////////
    // We need to make sure that we have methods that take only secure strings
-   // and return secure strings (I don't feel like figuring out how to get 
+   // and return secure strings (I don't feel like figuring out how to get
    // SWIG to take BTC_PUBKEY and BTC_PRIVKEY
 
    /////////////////////////////////////////////////////////////////////////////
    SecureBinaryData GenerateNewPrivateKey(
                               SecureBinaryData extraEntropy=SecureBinaryData());
-   
+
    /////////////////////////////////////////////////////////////////////////////
    SecureBinaryData ComputePublicKey(SecureBinaryData const & cppPrivKey);
 
@@ -385,13 +385,13 @@ public:
    /////////////////////////////////////////////////////////////////////////////
    // For signing and verification, pass in original, UN-HASHED binary string.
    // For signing, k-value can use a PRNG or deterministic value (RFC 6979).
-   SecureBinaryData SignData(SecureBinaryData const & binToSign, 
+   SecureBinaryData SignData(SecureBinaryData const & binToSign,
                              SecureBinaryData const & binPrivKey,
                              const bool& detSign = true);
 
    /////////////////////////////////////////////////////////////////////////////
    // For signing and verification, pass in original, UN-HASHED binary string
-   bool VerifyData(SecureBinaryData const & binMessage, 
+   bool VerifyData(SecureBinaryData const & binMessage,
                    SecureBinaryData const & binSignature,
                    SecureBinaryData const & pubkey65B);
 
@@ -415,7 +415,7 @@ public:
                            SecureBinaryData const & chainCode,
                            SecureBinaryData binPubKey=SecureBinaryData(),
                            SecureBinaryData* computedMultiplier=NULL);
-                               
+
    /////////////////////////////////////////////////////////////////////////////
    // Deterministically generate new private key using a chaincode
    SecureBinaryData ComputeChainedPublicKey(
@@ -433,19 +433,19 @@ public:
    bool ECVerifyPoint(BinaryData const & x,
                       BinaryData const & y);
 
-   BinaryData ECMultiplyScalars(BinaryData const & A, 
+   BinaryData ECMultiplyScalars(BinaryData const & A,
                                 BinaryData const & B);
 
-   BinaryData ECMultiplyPoint(BinaryData const & A, 
+   BinaryData ECMultiplyPoint(BinaryData const & A,
                               BinaryData const & Bx,
                               BinaryData const & By);
 
-   BinaryData ECAddPoints(BinaryData const & Ax, 
+   BinaryData ECAddPoints(BinaryData const & Ax,
                           BinaryData const & Ay,
                           BinaryData const & Bx,
                           BinaryData const & By);
 
-   BinaryData ECInverse(BinaryData const & Ax, 
+   BinaryData ECInverse(BinaryData const & Ax,
                         BinaryData const & Ay);
 
    /////////////////////////////////////////////////////////////////////////////

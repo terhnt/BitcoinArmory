@@ -78,7 +78,7 @@ TIAB_WLT_1_PK_3 = '91rTQa47dLQhNGDenejW9qxcMTL73GRG347zKfa3qVvzun7ZcNe'
 TIAB_WLT_1_PK_UTXO_BAL_3  = 3.0
 TIAB_WLT_1_PK_UTXO_HEX_3  = '507b01123e9416eb6de996f64686b7c8290eacd13b9607438a8bab4a78d3afd503000000'
 
-# Has 938.8997 BTC
+# Has 938.8997 UNO
 TIAB_WLT_1_ADDR_8 = 'mikxgMUqkk6Tts1D39Hhx6wKEeQbBH3ons'
 TIAB_WLT_1_PK_8 = '92fXG1foeHfn8DYEwTXggCPrFEEY6KpokqoJkp9EhpJw5boc3GY'
 TIAB_WLT_1_PK_UTXO_BAL_8  = 938.8997
@@ -93,7 +93,7 @@ TIAB_WLT_2_PK_2 = '93LLsm4n19Dwbp6zbnmuvHmMjEJFR23h4xstnDnEBYMWSkXaFMT'
 TIAB_WLT_2_ADDR_3 = 'mhbmvVedo4i67maX6pfw9trcBWQQ3yXgkB'
 TIAB_WLT_2_PK_3 = '92aUXStPSfHDXydGh9MsBnnyacNzJwgWBC4G8W5BiTFkTJpeHEH'
 
-# Has 28.9 BTC
+# Has 28.9 UNO
 TIAB_WLT_2_ADDR_4 = 'mk7pAQ7YdmnwWaGFCgwiKiEbaGjyEsSVUE'
 TIAB_WLT_2_PK_4 = '92gYPs8i6qvSmc8moBAaWLB7M16kX5MBpbGoUygUmQTdrxkNnwR'
 
@@ -103,7 +103,7 @@ TIAB_WLT_3_PK_1 = '9295sDHkX1xDMzSxit3Bvi8GdLUQq1JFktBQFB8Ca45aLaw8neN'
 TIAB_WLT_3_ADDR_2 = 'mpXd2u8fPVYdL1Nf9bZ4EFnqhkNyghGLxL'
 TIAB_WLT_3_PK_2 = '92Mic29J44mKLn4qKXm31mMv45BtEnywBnJh36jn1Rk2RT9PTsK'
 
-# has 18.90 BTC
+# has 18.90 UNO
 TIAB_WLT_3_ADDR_3 = 'mmfN9oj2wtMTCACKJz7fUcDeAczz4kucvV'
 TIAB_WLT_3_PK_3 = '92ymyLuiEUJJz5madzhPtBTa3of46vLXDSuFPNMAA6DMLSeKA8S'
 
@@ -113,14 +113,14 @@ TEST_MESSAGE = "All your base are belong to us."
 
 # These tests need to be run in the TiaB
 class ArmoryDTiabTest(TiabTest):
-         
+
    def armoryDTiabTestCallback(self, action, args):
       if action == REFRESH_ACTION:
          for wltID in args:
             print wltID
             if wltID in self.wltIDs:
                self.numberOfWalletsScanned += 1
-         
+
    def setUp(self):
       self.verifyBlockHeight()
       # Load the primary file from the test net in a box
@@ -138,14 +138,14 @@ class ArmoryDTiabTest(TiabTest):
                                               THIRD_WLT_NAME : self.wltC}, \
                        armoryHomeDir=os.path.join(self.tiab.tiabDirectory, \
                                                   'tiab','armory'))
-      
+
       self.wltIDs = [self.wltA.uniqueIDB58, self.wltB.uniqueIDB58, self.wltC.uniqueIDB58]
       #register a callback
       TheBDM.registerCppNotification(self.armoryDTiabTestCallback)
 
       #flag to check on wallet scan status
       self.numberOfWalletsScanned = 0
-      
+
       self.wltA.registerWallet()
       time.sleep(0.5)
       self.wltB.registerWallet()
@@ -159,14 +159,14 @@ class ArmoryDTiabTest(TiabTest):
          i += 1
          if i >= 40:
             raise RuntimeError("self.numberOfWalletsScanned = %d" % self.numberOfWalletsScanned)
-      
+
    def tearDown(self):
       TheBDM.unregisterCppNotification(self.armoryDTiabTestCallback)
       self.wltA.unregisterWallet()
       self.wltB.unregisterWallet()
       self.wltC.unregisterWallet()
       self.resetWalletFiles()
-      
+
 
    def testActiveWallet(self):
       self.jsonServer.jsonrpc_setactivewallet(FIRST_WLT_NAME)
@@ -383,7 +383,7 @@ class ArmoryDTiabTest(TiabTest):
 
    def testListtransactions(self):
       #takes a history page count now, not an amount of transactions to return
-      txList = self.jsonServer.jsonrpc_listtransactions(0) 
+      txList = self.jsonServer.jsonrpc_listtransactions(0)
       self.assertTrue(len(txList)>10)
       self.assertEqual(txList[0], {'blockhash': '0000000064a1ad1f15981a713a6ef08fd98f69854c781dc7b8789cc5f678e01f',
                   'blockindex': 1, 'confirmations': 31, 'address': 'mtZ2d1jFZ9YNp3Ku5Fb2u8Tfu3RgimBHAD',
@@ -425,7 +425,7 @@ class ArmoryDTiabTest(TiabTest):
 
 
    def testSendtoaddress(self):
-      # Send 1 BTC
+      # Send 1 UNO
       serializedUnsignedTx = \
          self.jsonServer.jsonrpc_createustxtoaddress(TIAB_WLT_3_ADDR_3, \
                                                      BTC_TO_SEND)
@@ -445,7 +445,7 @@ class ArmoryDTiabTest(TiabTest):
       f.write(serializedUnsignedTx)
       f.close()
       serializedSignedTxUnencrypted = \
-            self.jsonServer.jsonrpc_signasciitransaction(TX_FILENAME) 
+            self.jsonServer.jsonrpc_signasciitransaction(TX_FILENAME)
       self.jsonServer.jsonrpc_encryptwallet(PASSPHRASE1)
       self.jsonServer.jsonrpc_walletpassphrase(PASSPHRASE1)
       serializedSignedTxEncrypted = \
@@ -478,7 +478,7 @@ class ArmoryDTiabTest(TiabTest):
 
 
    def testSendmany(self):
-      # Send 1 BTC
+      # Send 1 UNO
       serializedUnsignedTx = \
          self.jsonServer.jsonrpc_createustxformany(None, ','.join([TIAB_WLT_3_ADDR_2, str(BTC_TO_SEND)]), \
                                                    ','.join([TIAB_WLT_3_ADDR_3, str(BTC_TO_SEND)]))
@@ -518,7 +518,7 @@ class ArmoryDTiabTest(TiabTest):
             tx5Found = True
       self.assertTrue(tx1Found)
       self.assertTrue(tx5Found)
-      
+
 
 
 

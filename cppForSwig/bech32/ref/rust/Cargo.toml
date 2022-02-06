@@ -2,8 +2,8 @@
 name = "bech32"
 version = "0.1.0"
 authors = ["Clark Moody"]
-description = "Encodes and decodes Bitcoin Segregated Witness addresses in Bech32"
-keywords = ["bitcoin", "base32", "encoding"]
+description = "Encodes and decodes Unobtanium Segregated Witness addresses in Bech32"
+keywords = ["unobtanium", "base32", "encoding"]
 categories = ["encoding"]
 license = "MIT"
 

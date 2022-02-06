@@ -1,6 +1,6 @@
 ################################################################################
 #
-# Copyright (C) 2011-2014, Armory Technologies, Inc.                         
+# Copyright (C) 2011-2014, Armory Technologies, Inc.
 # Distributed under the GNU Affero General Public License (AGPL v3)
 # See LICENSE or http://www.gnu.org/licenses/agpl.html
 #
@@ -28,7 +28,7 @@ from armoryengine.CoinSelection import calcMinSuggestedFees, PySelectCoins
 from armoryengine.Transaction import UnsignedTransaction, getTxOutScriptType
 from qtdefines import GETFONT, tr
 from qtdialogs import SimplePrintableGraphicsScene
-   
+
 sys.path.append('..')
 sys.path.append('.')
 
@@ -48,13 +48,13 @@ def createWalletList(n, nameString):
 
 # Pulled from qtdialogs. Assumes single sheet 1.35c backups
 def createPrintScene(wallet, amountString, expiresString):
-   
+
    scene = SimplePrintableGraphicsScene(None, None)
 
    INCH = scene.INCH
-   MARGIN = scene.MARGIN_PIXELS 
+   MARGIN = scene.MARGIN_PIXELS
    scene.resetCursor()
-   scene.drawPixmapFile(':/armory_logo_h36.png') 
+   scene.drawPixmapFile(':/armory_logo_h36.png')
    scene.newLine()
    scene.drawText('Paper Backup for Armory Wallet', GETFONT('Var', 11))
    scene.newLine()
@@ -79,9 +79,9 @@ def createPrintScene(wallet, amountString, expiresString):
    wrap = 0.9*scene.pageRect().width()
 
    container = 'this wallet'
-   warnMsg = tr(""" 
-         <font color="#aa0000"><b>WARNING:</b></font> Anyone who has access to this 
-         page has access to all the bitcoins in %s!  Please keep this 
+   warnMsg = tr("""
+         <font color="#aa0000"><b>WARNING:</b></font> Anyone who has access to this
+         page has access to all the unobtaniums in %s!  Please keep this
          page in a safe place.""" % container)
 
    scene.newLine()
@@ -92,36 +92,36 @@ def createPrintScene(wallet, amountString, expiresString):
    scene.newLine(extra_dy=20)
    numLine = 'two'
 
-   descrMsg = tr(""" 
-      The following %s lines backup all addresses 
+   descrMsg = tr("""
+      The following %s lines backup all addresses
       <i>ever generated</i> by this wallet (previous and future).
-      This can be used to recover your wallet if you forget your passphrase or 
+      This can be used to recover your wallet if you forget your passphrase or
       suffer hardware failure and lose your wallet files. """ % numLine)
    scene.drawText(descrMsg, GETFONT('var', 8), wrapWidth=wrap)
    scene.newLine(extra_dy=10)
-  
+
    ###########################################################################
    # Finally, draw the backup information.
    bottomOfSceneHeader = scene.cursorPos.y()
 
    code12 = wallet.addrMap['ROOT'].binPrivKey32_Plain.toBinStr()
    Lines = []
-   Prefix = [] 
+   Prefix = []
    Prefix.append('Root Key:')
    Lines.append(makeSixteenBytesEasy(code12[:16]))
    Prefix.append('')
    Lines.append(makeSixteenBytesEasy(code12[16:]))
    # Draw the prefix
    origX,origY = scene.getCursorXY()
-   scene.moveCursor(20,0) 
+   scene.moveCursor(20,0)
    colRect, rowHgt = scene.drawColumn(['<b>'+l+'</b>' for l in Prefix])
-   
+
    nudgeDown = 2  # because the differing font size makes it look unaligned
    scene.moveCursor(20, nudgeDown)
-   scene.drawColumn(Lines, 
-                    
+   scene.drawColumn(Lines,
+
                            font=GETFONT('Fixed', 8, bold=True), \
-                           rowHeight=rowHgt, 
+                           rowHeight=rowHgt,
                            useHtml=False)
 
    scene.moveCursor(MARGIN, colRect.y()-2, absolute=True)
@@ -130,8 +130,8 @@ def createPrintScene(wallet, amountString, expiresString):
 
    scene.newLine(extra_dy=30)
    scene.drawText( tr("""
-      The following QR code is for convenience only.  It contains the 
-      exact same data as the %s lines above.  If you copy this backup 
+      The following QR code is for convenience only.  It contains the
+      exact same data as the %s lines above.  If you copy this backup
       by hand, you can safely ignore this QR code. """ % numLine), wrapWidth=4*INCH)
 
    scene.moveCursor(20,0)
@@ -144,16 +144,16 @@ def createPrintScene(wallet, amountString, expiresString):
    scene.newLine(extra_dy=25)
    scene.drawHLine(7*INCH, 5)
    scene.newLine(extra_dy=25)
-   scene.drawText(tr(""" 
+   scene.drawText(tr("""
          <font color="#aa0000"><b>CONGRATULATIONS:</b></font> Thank you for participating
          in the MIT BitComp. You have received a Bitcoin Armory
-         wallet containing %s You may collect this money by installing Bitcoin Armory
+         wallet containing %s You may collect this money by installing Unobtanium Armory
          from the website shown above. After you install the software move the funds to a new
-         wallet or any address that you own. Do not deposit any bitcoins to this wallet. You
-         don't know who else has access to this wallet! You have until %s to claim your bitcoins. After
-         this date we will remove all remaining bitcoins from this wallet.""" %
+         wallet or any address that you own. Do not deposit any unobtaniums to this wallet. You
+         don't know who else has access to this wallet! You have until %s to claim your unobtaniums. After
+         this date we will remove all remaining unobtaniums from this wallet.""" %
          (amountString, expiresString)), GETFONT('Var', 11), wrapWidth=wrap)
-      
+
    scene.newLine(extra_dy=25)
    return scene
 
@@ -173,7 +173,7 @@ def printWalletList(walletList, amountString, expiresString):
       painter.end()
 
 # Assumes a secure wallet has been created and is provided. There should not be any
-# imported addresses in this wallet. It is assumed that all of this wallet's imported 
+# imported addresses in this wallet. It is assumed that all of this wallet's imported
 # addresses are about to be imported in this function
 def importAddrsToMasterWallet(masterWallet, walletList, addrsPerWallet, masterWalletName):
    masterWallet.unlock(securePassphrase = SecureBinaryData(getpass('Enter your secret string:')))
@@ -197,7 +197,7 @@ def distributeBtc(masterWallet, amount, sendingAddrList):
          if not masterWallet.hasAddr(addr160):
             raise WalletAddressError, 'Address is not in wallet! [%s]' % sendingAddr.getAddrStr()
          utxoList.extend(masterWallet.getAddrTxOutList(addr160))
-   
+
 
       for importedAddr in masterWallet.getLinearAddrList():
          if importedAddr.chainIndex<0:
@@ -206,7 +206,7 @@ def distributeBtc(masterWallet, amount, sendingAddrList):
       fee = calcMinSuggestedFees(utxoList, totalSpend, MIN_RELAY_TX_FEE, len(recipValuePairs))
       # Get the necessary utxo list
       selectedUtxoList = PySelectCoins(utxoList, totalSpend, fee)
-      # get total value   
+      # get total value
       totalAvailable = sum([u.getValue() for u in selectedUtxoList])
       totalChange = totalAvailable - (totalSpend + fee)
 
@@ -232,12 +232,12 @@ def distributeBtc(masterWallet, amount, sendingAddrList):
                pubKeyMap[scrAddr] = addrObj.binPublicKey65.toBinStr()
 
       ustx = UnsignedTransaction().createFromTxOutSelection(selectedUtxoList, scrPairs, pubKeyMap)
-      
+
       masterWallet.unlock(securePassphrase = SecureBinaryData(getpass('Enter your secret string:')))
       # Sign and prepare the final transaction for broadcast
       masterWallet.signUnsignedTx(ustx)
       pytx = ustx.getPyTxSignedIfPossible()
-   
+
       print '\nSigned transaction to be broadcast using Armory "offline transactions"...'
       print ustx.serializeAscii()
    finally:
@@ -265,7 +265,7 @@ def sweepImportedAddrs(masterWallet):
          addr160 = importedAddr.getAddr160()
          utxoList.extend(masterWallet.getAddrTxOutList(addr160))
 
-   # get total value   
+   # get total value
    totalAvailable = sum([u.getValue() for u in utxoList])
    fee = calcMinSuggestedFees(utxoList, totalAvailable, MIN_RELAY_TX_FEE, 1)
    totalSpend = totalAvailable - fee
@@ -279,7 +279,7 @@ def sweepImportedAddrs(masterWallet):
    #       before passing it in
    scrPairs = [[hash160_to_p2pkhash_script(r), v] for r,v in recipValuePairs]
    ustx = UnsignedTransaction().createFromTxOutSelection(utxoList, scrPairs)
-   
+
    masterWallet.unlock(securePassphrase = SecureBinaryData(getpass('Enter your secret string:')))
    # Sign and prepare the final transaction for broadcast
    masterWallet.signTxDistProposal(ustx)
@@ -290,7 +290,7 @@ def sweepImportedAddrs(masterWallet):
    return pytx
 
 
-# Example execution generates 3 promo wallets and imports 2 address each to 
+# Example execution generates 3 promo wallets and imports 2 address each to
 # a master wallet that is provided
 '''
 walletList = createWalletList(100, 'Cambridge Bitcoin Meetup')
@@ -312,7 +312,7 @@ def printHelp():
    print '   or: %s --distribute <master wallet file path> <satoshis per addr>' % sys.argv[0]
    print '   or: %s --sweep <master wallet file path>' % sys.argv[0]
    exit(0)
-   
+
 # Main execution path
 # Do not ever access the same wallet file from two different processes at the same time
 print '\n'

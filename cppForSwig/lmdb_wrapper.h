@@ -5,9 +5,9 @@
 //  See LICENSE-ATI or http://www.gnu.org/licenses/agpl.html                  //
 //                                                                            //
 //                                                                            //
-//  Copyright (C) 2016, goatpig                                               //            
+//  Copyright (C) 2016, goatpig                                               //
 //  Distributed under the MIT license                                         //
-//  See LICENSE-MIT or https://opensource.org/licenses/MIT                    //                                   
+//  See LICENSE-MIT or https://opensource.org/licenses/MIT                    //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -36,7 +36,7 @@ class Blockchain;
 #define STD_READ_OPTS       leveldb::ReadOptions()
 #define STD_WRITE_OPTS      leveldb::WriteOptions()
 
-#define KVLIST vector<pair<BinaryData,BinaryData> > 
+#define KVLIST vector<pair<BinaryData,BinaryData> >
 
 #define DEFAULT_LDB_BLOCK_SIZE 32*1024
 
@@ -62,24 +62,24 @@ class StoredScriptHistory;
 ////////////////////////////////////////////////////////////////////////////////
 // NOTE:  VERY IMPORTANT NOTE ABOUT THE DATABASE STRUCTURE
 //
-//    Almost everywhere you see integers serialized throughout Bitcoin, is uses
+//    Almost everywhere you see integers serialized throughout Unobtanium, is uses
 //    little-endian.  This is critical to follow because you are always handling
 //    hashes of these serializations, so the byte-ordering matters.
 //
-// *HOWEVER*:  
-//     
+// *HOWEVER*:
+//
 //    This database design relies on the natural ordering of database
-//    keys which are frequently concatenations of integers.  For instance, each 
+//    keys which are frequently concatenations of integers.  For instance, each
 //    block is indexed by height, and we expect an iteration over all keys will
 //    traverse the blocks in height-order.  BUT THIS DOESN'T WORK IF THE KEYS
-//    ARE WRITTEN IN LITTLE-ENDIAN.  Therefore, all serialized integers in 
+//    ARE WRITTEN IN LITTLE-ENDIAN.  Therefore, all serialized integers in
 //    database KEYS are BIG-ENDIAN.  All other serializations in database VALUES
 //    are LITTLE-ENDIAN (including var_ints, and all put/get_uintX_t() calls).
 //
 // *HOWEVER-2*:
 //
-//    This gets exceptionally confusing because some of the DB VALUES include 
-//    references to DB KEYS, thus requiring those specific serializations to be 
+//    This gets exceptionally confusing because some of the DB VALUES include
+//    references to DB KEYS, thus requiring those specific serializations to be
 //    BE, even though the rest of the data uses LE.
 //
 // REPEATED:
@@ -102,10 +102,10 @@ class StoredScriptHistory;
 //       BinaryReader.get_uint16_t(BIGENDIAN);
 //
 //
-// *OR*  
+// *OR*
 //
 //    Don't mess with the internals of the DB!  The public methods that are
-//    used to access the data in the DB externally do not require an 
+//    used to access the data in the DB externally do not require an
 //    understanding of how the data is actually serialized under the hood.
 //
 //
@@ -114,7 +114,7 @@ class StoredScriptHistory;
 
 class LDBIter
 {
-public: 
+public:
 
    // fill_cache argument should be false for large bulk scans
    LDBIter(void) { isDirty_=true;}
@@ -129,7 +129,7 @@ public:
    bool isValid(DB_PREFIX dbpref);
 
    bool readIterData(void);
-   
+
    bool retreat();
    bool advance(void);
    bool advance(DB_PREFIX prefix);
@@ -143,7 +143,7 @@ public:
    BinaryRefReader& getKeyReader(void) const;
    BinaryRefReader& getValueReader(void) const;
 
-   // All the seekTo* methods do the exact same thing, the variant simply 
+   // All the seekTo* methods do the exact same thing, the variant simply
    // determines the meaning of the return true/false value.
    bool seekTo(BinaryDataRef key);
    bool seekTo(DB_PREFIX pref, BinaryDataRef key);
@@ -176,8 +176,8 @@ private:
    mutable BinaryRefReader  currKeyReader_;
    mutable BinaryRefReader  currValueReader_;
    bool isDirty_;
-   
-   
+
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -192,7 +192,7 @@ private:
    size_t len_ = SIZE_MAX;
 
 public:
-   TxFilterPool(void) 
+   TxFilterPool(void)
    {}
 
    TxFilterPool(set<TxFilter<T>> pool) :
@@ -417,15 +417,15 @@ public:
    BinaryDataRef getValueNoCopy(DB_SELECT db, BinaryDataRef keyWithPrefix) const;
 
    /////////////////////////////////////////////////////////////////////////////
-   // Get value using BinaryDataRef object.  The data from the get* call is 
-   // actually stored in a member variable, and thus the refs are valid only 
+   // Get value using BinaryDataRef object.  The data from the get* call is
+   // actually stored in a member variable, and thus the refs are valid only
    // until the next get* call.
    BinaryDataRef getValueRef(DB_SELECT db, BinaryDataRef keyWithPrefix) const;
    BinaryDataRef getValueRef(DB_SELECT db, DB_PREFIX prefix, BinaryDataRef key) const;
 
    /////////////////////////////////////////////////////////////////////////////
    // Same as the getValueRef, in that they are only valid until the next get*
-   // call.  These are convenience methods which basically just save us 
+   // call.  These are convenience methods which basically just save us
    BinaryRefReader getValueReader(DB_SELECT db, BinaryDataRef keyWithPrefix) const;
    BinaryRefReader getValueReader(DB_SELECT db, DB_PREFIX prefix, BinaryDataRef key) const;
 
@@ -462,7 +462,7 @@ public:
    /////////////////////////////////////////////////////////////////////////////
    // "Skip" refers to the behavior that the previous operation may have left
    // the iterator already on the next desired block.  So our "advance" op may
-   // have finished before it started.  Alternatively, we may be on this block 
+   // have finished before it started.  Alternatively, we may be on this block
    // because we checked it and decide we don't care, so we want to skip it.
    bool advanceToNextBlock(LDBIter & iter, bool skip = false) const;
    bool advanceIterAndRead(DB_SELECT, DB_PREFIX);
@@ -600,7 +600,7 @@ public:
 
    bool getStoredSubHistoryAtHgtX(StoredSubHistory& subssh,
       const BinaryData& scrAddrStr, const BinaryData& hgtX) const;
-   
+
    bool getStoredSubHistoryAtHgtX(StoredSubHistory& subssh,
       const BinaryData& dbkey) const;
 
@@ -611,10 +611,10 @@ public:
       StoredScriptHistory & ssh,
       BinaryDataRef rawScript) const;
 
-   // This method breaks from the convention I've used for getting/putting 
+   // This method breaks from the convention I've used for getting/putting
    // stored objects, because we never really handle Sub-ssh objects directly,
    // but we do need to harness them.  This method could be renamed to
-   // "getPartialScriptHistory()" ... it reads the main 
+   // "getPartialScriptHistory()" ... it reads the main
    // sub-ssh from DB and adds it to the supplied regular-ssh.
    bool fetchStoredSubHistory(StoredScriptHistory & ssh,
       BinaryData hgtX,
@@ -797,7 +797,7 @@ private:
 
    // In this case, a address is any TxOut script, which is usually
    // just a 25-byte script.  But this generically captures all types
-   // of addresses including pubkey-only, P2SH, 
+   // of addresses including pubkey-only, P2SH,
    map<BinaryData, StoredScriptHistory>   registeredSSHs_;
 
    const BinaryData ZCprefix_ = BinaryData(2);

@@ -1,7 +1,7 @@
-# This is a sample plugin file that will be used to create a new tab 
-# in the Armory main window.  All plugin files (such as this one) will 
+# This is a sample plugin file that will be used to create a new tab
+# in the Armory main window.  All plugin files (such as this one) will
 # be injected with the globals() from ArmoryQt.py, which includes pretty
-# much all of Bitcoin & Armory related stuff that you need.  So this 
+# much all of Bitcoin & Armory related stuff that you need.  So this
 # file can use any utils or objects accessible to functions in ArmoryQt.py.
 
 import ast
@@ -30,7 +30,7 @@ class PluginObject(object):
 
    tabName = 'Exchange Rates'
    maxVersion = '0.94.99'
-   
+
    #############################################################################
    def __init__(self, main):
 
@@ -39,7 +39,7 @@ class PluginObject(object):
       ##########################################################################
       ##### Display the conversion values based on the Coinbase API
       self.lastPriceFetch = 0
-      self.lblHeader    = QRichLabel(tr("""<b>Tracking buy and sell prices on 
+      self.lblHeader    = QRichLabel(tr("""<b>Tracking buy and sell prices on
          Coinbase every 60 seconds</b>"""), doWrap=False)
       self.lblLastTime  = QRichLabel('', doWrap=False)
       self.lblSellLabel = QRichLabel(tr('Coinbase <b>Sell</b> Price (USD):'), doWrap=False)
@@ -54,14 +54,14 @@ class PluginObject(object):
       self.main.connect(self.btnUpdate, SIGNAL('clicked()'), self.checkUpdatePrice)
 
       ##########################################################################
-      ##### A calculator for converting prices between USD and BTC
-      lblCalcTitle = QRichLabel(tr("""Convert between USD and BTC using 
+      ##### A calculator for converting prices between USD and UNO
+      lblCalcTitle = QRichLabel(tr("""Convert between USD and UNO using
          Coinbase sell price"""), hAlign=Qt.AlignHCenter, doWrap=False)
       self.edtEnterUSD = QLineEdit()
       self.edtEnterBTC = QLineEdit()
       self.lblEnterUSD1 = QRichLabel('$')
       self.lblEnterUSD2 = QRichLabel('USD')
-      self.lblEnterBTC = QRichLabel('BTC')
+      self.lblEnterBTC = QRichLabel('UNO')
       btnClear = QPushButton('Clear')
 
       self.main.connect(self.edtEnterUSD, SIGNAL('textEdited(QString)'), self.updateCalcBTC)
@@ -80,8 +80,8 @@ class PluginObject(object):
       frmCalc = makeVertFrame([lblCalcTitle, frmCalcMid, frmCalcClear], STYLE_PLAIN)
 
       ##########################################################################
-      ##### A table showing you the total balance of each wallet in USD and BTC
-      lblWltTableTitle = QRichLabel(tr("Wallet balances converted to USD"), 
+      ##### A table showing you the total balance of each wallet in USD and UNO
+      lblWltTableTitle = QRichLabel(tr("Wallet balances converted to USD"),
                                             doWrap=False, hAlign=Qt.AlignHCenter)
       numWallets = len(self.main.walletMap)
       self.wltTable = QTableWidget(self.main)
@@ -145,7 +145,7 @@ class PluginObject(object):
 
    #############################################################################
    def addCommasToPrice(self, pstr):
-      dispStr = pstr.strip().split('.')[0] 
+      dispStr = pstr.strip().split('.')[0]
       dispStr = ','.join([dispStr[::-1][3*i:3*(i+1)][::-1] \
                             for i in range((len(dispStr)-1)/3+1)][::-1])
       if '.' in pstr:
@@ -171,12 +171,12 @@ class PluginObject(object):
       try:
          self.lastSellStr = self.fetchFormattedPrice(urlSell)
          self.lastBuyStr  = self.fetchFormattedPrice(urlBuy)
-         
-         self.lblSellPrice.setText('<b><font color="%s">$%s</font> / BTC</b>' % \
+
+         self.lblSellPrice.setText('<b><font color="%s">$%s</font> / UNO</b>' % \
                                            (htmlColor('TextBlue'), self.lastSellStr))
-         self.lblBuyPrice.setText( '<b><font color="%s">$%s</font> / BTC</b>' % \
+         self.lblBuyPrice.setText( '<b><font color="%s">$%s</font> / UNO</b>' % \
                                            (htmlColor('TextBlue'), self.lastBuyStr))
-      
+
          self.lastPriceFetch = RightNow()
 
          self.updateLastTimeStr()
@@ -186,7 +186,7 @@ class PluginObject(object):
          #LOGEXCEPT('Failed to fetch price data from %s' % urlBase)
          pass
 
-   
+
 
    #############################################################################
    def updateLastTimeStr(self):
@@ -195,7 +195,7 @@ class PluginObject(object):
       if secs > 60:
          tstr = secondsToHumanTime(secs)
 
-      self.lblLastTime.setText(tr("""<font color="%s">Last updated:  
+      self.lblLastTime.setText(tr("""<font color="%s">Last updated:
          %s ago</font>""") % (htmlColor('DisableFG'), tstr))
 
    #############################################################################
@@ -210,7 +210,7 @@ class PluginObject(object):
          return
 
       self.lastPriceFetch = RightNow()
-      self.checkUpdatePrice() 
+      self.checkUpdatePrice()
 
 
    #############################################################################
@@ -221,7 +221,7 @@ class PluginObject(object):
          self.edtEnterUSD.setText(self.addCommasToPrice('%0.2f' % usdVal))
       except:
          self.edtEnterUSD.setText('')
-         
+
    #############################################################################
    def updateCalcBTC(self, newUSDVal):
       try:
@@ -230,8 +230,8 @@ class PluginObject(object):
          self.edtEnterBTC.setText(self.addCommasToPrice('%0.8f' % btcVal))
       except:
          self.edtEnterBTC.setText('')
-      
-      
+
+
    #############################################################################
    def updateWalletTable(self):
       numWallets = len(self.main.walletMap)
@@ -270,4 +270,3 @@ class PluginObject(object):
          self.wltTable.verticalHeader().hide()
 
          row += 1
-      

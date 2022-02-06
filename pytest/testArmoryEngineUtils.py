@@ -60,7 +60,7 @@ class ArmoryEngineTest(unittest.TestCase):
 
    #############################################################################
    def testBasicUtils(self):
-      addr = '1Ncui8YjT7JJD91tkf42dijPnqywbupf7w'  # Sam Rushing's BTC address
+      addr = '1Ncui8YjT7JJD91tkf42dijPnqywbupf7w'  # Sam Rushing's UNO address
       i    =  4093
       hstr = 'fd0f'
       bstr = '\xfd\x0f'
@@ -256,14 +256,14 @@ class ArmoryEngineTest(unittest.TestCase):
    #############################################################################
    def testBitcoinUriParser(self):
       ##### Test BIP 0021 parser functions.
-      uri1 = "bitcoin:1BTCorgHwCg6u2YSAWKgS17qUad6kHmtQW?amount=0.1&label=Foo%20bar&r=https://example.com/foo/bar/"
-      uri2 = "bitcoin:mq7se9wy2egettFxPbmn99cK8v5AFq55Lx?amount=0.11&r=https://merchant.com/pay.php?h%3D2a8628fc2fbe"
-      uri3 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W"
-      uri4 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?label=Luke-Jr"
-      uri5 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=20.3&label=Luke-Jr"
-      uri6 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-Jr&message=Donation%20for%20project%20xyz"
-      uri7 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?req-somethingyoudontunderstand=50&req-somethingelseyoudontget=999"
-      uri8 = "bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?somethingyoudontunderstand=50&somethingelseyoudontget=999"
+      uri1 = "unobtanium:1BTCorgHwCg6u2YSAWKgS17qUad6kHmtQW?amount=0.1&label=Foo%20bar&r=https://example.com/foo/bar/"
+      uri2 = "unobtanium:mq7se9wy2egettFxPbmn99cK8v5AFq55Lx?amount=0.11&r=https://merchant.com/pay.php?h%3D2a8628fc2fbe"
+      uri3 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W"
+      uri4 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?label=Luke-Jr"
+      uri5 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=20.3&label=Luke-Jr"
+      uri6 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-Jr&message=Donation%20for%20project%20xyz"
+      uri7 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?req-somethingyoudontunderstand=50&req-somethingelseyoudontget=999"
+      uri8 = "unobtanium:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?somethingyoudontunderstand=50&somethingelseyoudontget=999"
 
       expectedOut1 = {
          "address": "1BTCorgHwCg6u2YSAWKgS17qUad6kHmtQW",
@@ -405,7 +405,7 @@ class ArmoryEngineTest(unittest.TestCase):
       computed = hash160_to_p2sh_script(scriptHash)
       expected = '\xa9\x14' + scriptHash + '\x87'
       self.assertEqual(computed, expected)
-   
+
       # Make sure it raises an error on non-20-byte inputs
       self.assertRaises(InvalidHashError, hash160_to_p2sh_script, '\xab'*21)
 
@@ -450,7 +450,7 @@ class ArmoryEngineTest(unittest.TestCase):
       pkList4 = [pk1, pkNot, pk3] # error
 
       #self.assertTrue(False) # STUB
-     
+
 
    #############################################################################
    def testCppScrAddr(self):
@@ -464,7 +464,7 @@ class ArmoryEngineTest(unittest.TestCase):
       self.assertEqual(scraddr, script_to_scrAddr(script))  # this uses C++
       # Go round trip to avoid dependency on the network. Works in both main-net or testnet
       self.assertEqual(scraddr, addrStr_to_scrAddr(scrAddr_to_addrStr(scraddr)))
-      
+
 
       ##### Pay to PubKey65
       script = hex_to_binary( "4104"
@@ -496,7 +496,7 @@ class ArmoryEngineTest(unittest.TestCase):
 
       self.assertEqual(scraddr, script_to_scrAddr(script))
 
-      
+
       ##### P2SH
       script  = hex_to_binary("a914d0c15a7d41500976056b3345f542d8c944077c8a87")
       a160    = hex_to_binary(  "d0c15a7d41500976056b3345f542d8c944077c8a")

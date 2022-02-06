@@ -80,7 +80,7 @@ def pprintScript(binScript, nIndent=0):
       print indstr + indent + op
 
 def scriptPushData(binObj):
-   sz = len(binObj) 
+   sz = len(binObj)
    if sz <= 76:
       lenByte = int_to_binary(sz, widthBytes=1)
       return lenByte+binObj
@@ -99,7 +99,7 @@ class ScriptBuilder(object):
 
    def addOpCode(self, opStr):
       self.opList.append(getOpCode(opStr))
-      
+
    def pushData(self, data):
       if data.startswith('OP_'):
          LOGWARN('Looks like you accidentally called pushData instead of addOpCode')
@@ -115,7 +115,7 @@ class ScriptBuilder(object):
    def getHumanScript(self):
       # Human-readable
       return ' '.join(convertScriptToOpStrings(self.getBinaryScript()))
-      
+
 
 TX_INVALID = 0
 OP_NOT_IMPLEMENTED = 1
@@ -240,7 +240,7 @@ class PyScriptProcessor(object):
 
    def checkSig(self,binSig, binPubKey, txOutScript, txInTx, txInIndex, lastOpCodeSep=None):
       """
-      Generic method for checking Bitcoin tx signatures.  This needs to be used for both
+      Generic method for checking Unobtanium tx signatures.  This needs to be used for both
       OP_CHECKSIG and OP_CHECKMULTISIG.  Step 1 is to pop signature and public key off
       the stack, which must be done outside this method and passed in through the argument
       list.  The remaining steps do not require access to the stack.

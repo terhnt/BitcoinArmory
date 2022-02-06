@@ -22,7 +22,7 @@ BinaryData LedgerEntry::ZCheader_ = WRITE_UINT16_BE(0xFFFF);
 
 ////////////////////////////////////////////////////////////////////////////////
 BinaryData const & LedgerEntry::getScrAddr(void) const
-{ 
+{
    if (ID_.getSize() == 21) return ID_;
    return EmptyID_;
 }
@@ -36,9 +36,9 @@ string LedgerEntry::getWalletID(void) const
 
 ////////////////////////////////////////////////////////////////////////////////
 void LedgerEntry::setScrAddr(BinaryData const & bd)
-{ 
-   if(bd.getSize() == 21) 
-      ID_ = bd; 
+{
+   if(bd.getSize() == 21)
+      ID_ = bd;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -50,7 +50,7 @@ void LedgerEntry::setWalletID(BinaryData const & bd)
 
 ////////////////////////////////////////////////////////////////////////////////
 bool LedgerEntry::operator<(LedgerEntry const & le2) const
-{  
+{
    if( blockNum_ != le2.blockNum_)
       return blockNum_ < le2.blockNum_;
    else if( index_ != le2.index_)
@@ -63,8 +63,8 @@ bool LedgerEntry::operator<(LedgerEntry const & le2) const
 bool LedgerEntry::operator==(LedgerEntry const & le2) const
 {
    //TODO
-   //return (blockNum_ == le2.blockNum_ && 
-           //index_    == le2.index_ && 
+   //return (blockNum_ == le2.blockNum_ &&
+           //index_    == le2.index_ &&
            //txTime_   == le2.txTime_);
    return (blockNum_ == le2.blockNum_ && index_ == le2.index_);
 }
@@ -88,7 +88,7 @@ void LedgerEntry::pprint(void)
 //////////////////////////////////////////////////////////////////////////////
 void LedgerEntry::pprintOneLine(void) const
 {
-   printf("   Addr:%s Tx:%s:%02d   BTC:%0.3f   Blk:%06d\n", 
+   printf("   Addr:%s Tx:%s:%02d   UNO:%0.3f   Blk:%06d\n",
                            "   ",
                            getTxHash().getSliceCopy(0,8).toHexStr().c_str(),
                            getIndex(),
@@ -110,11 +110,11 @@ bool LedgerEntry::operator>(LedgerEntry const & le2) const
 
 //////////////////////////////////////////////////////////////////////////////
 void LedgerEntry::purgeLedgerMapFromHeight(
-   map<BinaryData, LedgerEntry>& leMap, 
+   map<BinaryData, LedgerEntry>& leMap,
    uint32_t purgeFrom)
 {
    //Remove all entries starting this height, included.
-   
+
 
    BinaryData cutOffHeight(6);
    auto heightPtr = cutOffHeight.getPtr();
@@ -146,7 +146,7 @@ void LedgerEntry::purgeLedgerVectorFromHeight(
 
       i++;
    }
-   
+
    leVec.erase(leVec.begin() +i, leVec.end());
 
 }
@@ -197,7 +197,7 @@ void LedgerEntry::computeLedgerMap(map<BinaryData, LedgerEntry> &leMap,
       bool isRBF = false;
       bool usesWitness = false;
       bool isChained = false;
-      
+
       //grab iterator
       auto txioIter = txioVec.second.cbegin();
 
@@ -229,7 +229,7 @@ void LedgerEntry::computeLedgerMap(map<BinaryData, LedgerEntry> &leMap,
       int64_t value=0;
       int64_t valIn=0, valOut=0;
       uint32_t nTxInAreOurs = 0, nTxOutAreOurs = 0;
-     
+
       while (txioIter != txioVec.second.cend())
       {
 
@@ -237,7 +237,7 @@ void LedgerEntry::computeLedgerMap(map<BinaryData, LedgerEntry> &leMap,
          {
             if ((*txioIter)->isRBF())
                isRBF = true;
-            
+
             if ((*txioIter)->getTxTime() > txTime)
                txTime = (*txioIter)->getTxTime();
          }
@@ -268,7 +268,7 @@ void LedgerEntry::computeLedgerMap(map<BinaryData, LedgerEntry> &leMap,
 
       bool isSentToSelf = false;
       bool isChangeBack = false;
-      
+
       if (nTxInAreOurs * nTxOutAreOurs > 0)
       {
          //if some of the txins AND some of the txouts are ours, this could be an STS
@@ -303,7 +303,7 @@ void LedgerEntry::computeLedgerMap(map<BinaryData, LedgerEntry> &leMap,
 
       When the tx is signed offline, there is no guarantee that the txhash will be known
       when the offline tx is crafted. Therefor the comments for each outgoing address are
-      registered under that address only. 
+      registered under that address only.
 
       In order for the GUI to be able to resolve outgoing address comments, the ledger entry
       needs to carry those for pay out transactions
@@ -315,7 +315,7 @@ void LedgerEntry::computeLedgerMap(map<BinaryData, LedgerEntry> &leMap,
          {
             //grab tx by hash
             auto&& payout_tx = db->getFullTxCopy(txioVec.first);
-         
+
             //get scrAddr for each txout
             for (unsigned i=0; i < payout_tx.getNumTxOut(); i++)
             {

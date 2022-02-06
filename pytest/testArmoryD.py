@@ -35,18 +35,18 @@ PASSPHRASE1 = 'abcde'
 UNLOCK_TIMEOUT = 5
 
 # These tests could be run in or out of the TiaB
-class ArmoryDTest(TiabTest):      
+class ArmoryDTest(TiabTest):
    def removeFileList(self, fileList):
       for f in fileList:
          if os.path.exists(f):
             os.remove(f)
-      
+
    def armoryDTestCallback(self, action, args):
       if action == REFRESH_ACTION:
          self.walletIsScanned = True
-         
+
    def setUp(self):
-      
+
       self.verifyBlockHeight()
       self.fileA    = os.path.join(self.armoryHomeDir, 'armory_%s_.wallet' % TEST_WALLET_ID)
       self.fileB    = os.path.join(self.armoryHomeDir, 'armory_%s_backup.wallet' % TEST_WALLET_ID)
@@ -54,7 +54,7 @@ class ArmoryDTest(TiabTest):
       self.fileBupd = os.path.join(self.armoryHomeDir, 'armory_%s_update_unsuccessful.wallet' % TEST_WALLET_ID)
 
       self.removeFileList([self.fileA, self.fileB, self.fileAupd, self.fileBupd])
-   
+
       # We need a controlled test, so we script the all the normally-random stuff
       self.privKey   = SecureBinaryData('\xaa'*32)
       self.privKey2  = SecureBinaryData('\x33'*32)
@@ -62,13 +62,13 @@ class ArmoryDTest(TiabTest):
       theIV     = SecureBinaryData(hex_to_binary('77'*16))
       self.passphrase  = SecureBinaryData('A self.passphrase')
       self.passphrase2 = SecureBinaryData('A new self.passphrase')
-      
+
       #register a callback
       TheBDM.registerCppNotification(self.armoryDTestCallback)
 
       #flag to check on wallet scan status
       self.walletIsScanned = False
-      
+
       #create the wallet
       self.wallet = PyBtcWallet().createNewWallet(withEncrypt=False, \
                                           plainRootKey=self.privKey, \
@@ -78,10 +78,10 @@ class ArmoryDTest(TiabTest):
                                           longLabel=TEST_WALLET_DESCRIPTION,
                                           armoryHomeDir = self.armoryHomeDir)
       self.jsonServer = Armory_Json_Rpc_Server(self.wallet)
-      
+
       #register it
       self.wallet.registerWallet()
-      
+
       #wait on scan for 2 min then raise if the scan hasn't finished yet
       i = 0
       while not self.walletIsScanned:
@@ -89,12 +89,12 @@ class ArmoryDTest(TiabTest):
          i += 1
          if i >= 60*4:
             raise RuntimeError("Timeout waiting for TheBDM to register the wallet.")
-      
+
    def tearDown(self):
       TheBDM.unregisterCppNotification(self.armoryDTestCallback)
       self.wallet.unregisterWallet()
       self.removeFileList([self.fileA, self.fileB, self.fileAupd, self.fileBupd])
-   
+
 
    # Can't test with actual transactions in this environment. See ARMORY-34.
    # This wallet has no txs
@@ -113,13 +113,13 @@ class ArmoryDTest(TiabTest):
       self.assertEquals(txOut['value'],TX_ID1_OUTPUT0_VALUE)
       txOut = self.jsonServer.jsonrpc_gettxout(TX_ID1, 1)
       self.assertEquals(txOut['value'],TX_ID1_OUTPUT1_VALUE)
-         
+
    def testGetreceivedbyaddress(self):
       a160 = hash160(self.wallet.getNextUnusedAddress().binPublicKey65.toBinStr())
       testAddr = hash160_to_addrStr(a160)
       result = self.jsonServer.jsonrpc_getreceivedbyaddress(testAddr)
       self.assertEqual(result, 0)
-      
+
    # Requires Supernode
    @SkipTest
    def testGetrawtransaction(self):
@@ -138,7 +138,7 @@ class ArmoryDTest(TiabTest):
       self.assertTrue(os.path.exists(backupTestPath))
       self.wallet.backupWalletFile()
       self.assertTrue(os.path.exists(self.fileB))
-      
+
    def testDecoderawtransaction(self):
       actualDD = self.jsonServer.jsonrpc_decoderawtransaction(RAW_TX1)
       # Test specific values pulled from bitcoin daemon's output for the test raw TX
@@ -164,10 +164,10 @@ class ArmoryDTest(TiabTest):
       testPrivKey = self.privKey.toBinStr()
       hash160 = convertKeyDataToAddress(testPrivKey)
       addr58 = hash160_to_addrStr(hash160)
-      
+
       # Verify that a bogus addrss Raises InvalidBitcoinAddress Exception
       result =  self.jsonServer.jsonrpc_dumpprivkey('bogus', 'hex')
-      self.assertEqual(result['Error Type'],'InvalidBitcoinAddress')
+      self.assertEqual(result['Error Type'],'InvalidUnobtaniumAddress')
 
       result =  self.jsonServer.jsonrpc_dumpprivkey(addr58, 'hex')
       self.assertEqual(result['Error Type'],'PrivateKeyNotFound')
@@ -192,18 +192,18 @@ class ArmoryDTest(TiabTest):
       self.wallet.lock()
       result = self.jsonServer.jsonrpc_dumpprivkey(addr58, 'hex')
       self.assertEqual(result['Error Type'],'WalletUnlockNeeded')
-      
+
    def testEncryptwallet(self):
       kdfParams = self.wallet.computeSystemSpecificKdfParams(0.1)
       self.wallet.changeKdfParams(*kdfParams)
       self.jsonServer.jsonrpc_encryptwallet(PASSPHRASE1)
       self.assertTrue(self.wallet.isLocked)
-      
+
       # Verify that a locked wallet Raises WalletUnlockNeeded Exception
       # self.assertRaises(WalletUnlockNeeded, self.jsonServer.jsonrpc_encryptwallet, PASSPHRASE1)
       result = self.jsonServer.jsonrpc_encryptwallet(PASSPHRASE1)
       print result
-      
+
    def testUnlockwallet(self):
       kdfParams = self.wallet.computeSystemSpecificKdfParams(0.1)
       self.wallet.changeKdfParams(*kdfParams)
@@ -214,7 +214,7 @@ class ArmoryDTest(TiabTest):
       time.sleep(UNLOCK_TIMEOUT+1)
       self.wallet.checkWalletLockTimeout()
       self.assertTrue(self.wallet.isLocked)
-      
+
    def testGetWalletInfo(self):
       wltInfo = self.jsonServer.jsonrpc_getwalletinfo()
       self.assertEqual(wltInfo['name'], TEST_WALLET_NAME)
@@ -223,7 +223,7 @@ class ArmoryDTest(TiabTest):
       self.assertEqual(wltInfo['keypoolsize'], self.wallet.addrPoolSize)
       self.assertEqual(wltInfo['numaddrgen'], len(self.wallet.addrMap))
       self.assertEqual(wltInfo['highestusedindex'], self.wallet.highestUsedChainIndex)
-   
+
    # This should always return 0 balance
    # Need to create our own test net to test with balances
    def testGetBalance(self):
@@ -231,8 +231,8 @@ class ArmoryDTest(TiabTest):
                            'unconfirmed', 'total', 'ultimate','unspent', 'full']:
          self.assertEqual(self.jsonServer.jsonrpc_getbalance(ballanceType),
                           AmountToJSON(self.wallet.getBalance(ballanceType)))
-      
-      
+
+
 # Running tests with "python <module name>" will NOT work for any Armory tests
 # You must run tests with "python -m unittest <module name>" or run all tests with "python -m unittest discover"
 # if __name__ == "__main__":

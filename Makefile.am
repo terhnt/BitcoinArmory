@@ -1,4 +1,4 @@
-# Makefile for BitcoinArmory bitcoin wallet
+# Makefile for BitcoinArmory unobtanium wallet
 SUBDIRS = cppForSwig
 
 EXTRA_DIST = *.py *.md LICENSE LICENSE-ATI LICENSE-MIT \

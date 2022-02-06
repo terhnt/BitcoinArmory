@@ -759,7 +759,7 @@ DEFAULT_PRIORITY = 57600000
 ################################################################################
 # Call bitcoin core to get the fee estimate per KB
 def estimateFee(nblocksToConfirm, strategy):
-   # See https://bitcoin.org/en/developer-reference#estimatefee for
+   # See http://unobtanium.uno/en/developer-reference#estimatefee for
    # documentation about this RPC call
    return TheBDM.bdv().estimateFee(nblocksToConfirm, strategy)
    
